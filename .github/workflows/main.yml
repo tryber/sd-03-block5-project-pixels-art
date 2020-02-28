@@ -2,9 +2,6 @@ on:
   pull_request:
     types: [opened, synchronize]
 
-env:
-  TEST_REPOSITORY_BRANCH: project-tests
-
 jobs:
   evaluator_job:
     runs-on: ubuntu-16.04
