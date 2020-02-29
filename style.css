@@ -6,6 +6,7 @@ body {
   border: 1px solid black;
   height: 34px;
   padding: 2px;
+  position: relative;
   width: 34px;
 }
 
@@ -27,7 +28,7 @@ body {
 
 .pixel-board {
   border-collapse: collapse;
-  object-position: bottom;
+  position: relative;
 }
 
 .pixel {
