@@ -30,4 +30,9 @@ let selected = document.getElementsByClassName('selected');
   pixel.addEventListener('click', function(){
      pixel.style.backgroundColor = selected[0].getAttribute("id");
   });
+
+  document.getElementById('clear').addEventListener('click', function(){
+    pixel.style.backgroundColor = 'white';
+  });
+
 });
