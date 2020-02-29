@@ -20,6 +20,7 @@ body {
 
 .pixel-board {
   border-collapse: collapse;
+  object-position: bottom;
 }
 
 .pixel{
