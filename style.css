@@ -22,8 +22,12 @@ body {
   border-collapse: collapse;
 }
 
+.pixel{
+  background-color: white;
+}
+
 td {
   border: 1px solid black;
-  height: 37px;
-  width: 37px;
+  height: 40px;
+  width: 40px;
 }
