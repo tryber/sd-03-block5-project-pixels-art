@@ -10,12 +10,12 @@ body{
   color: #3D7051;
   font-size: 42px;
 }
-#color-palette{
-  margin-top: 40px;
+.palette{
+  margin-top: 60px;
 }
 .color{
-  margin-top: 20px;
   display: inline-block;
+  margin-top: 20px;
   height: 70px;
   width: 75px;
 }
@@ -33,12 +33,13 @@ body{
 }
 #pixel-board{
   margin-top: 60px;
-  background-color: white;
+  background-color: black; /*possivel erro detectado*/
+
 }
 .pixel{
   display: inline-block;
   background-color: white;
   border: 1px solid black;
-  height: 5px;
-  width: 5px;
+  height: 50px;
+  width: 58px;
 }
