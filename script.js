@@ -9,16 +9,16 @@ function colorSelector() {
   document.getElementsByClassName('cor4')[0].className = 'color cor4';
 //  Seleciona nova cor
   if (document.getElementsByClassName('cor1')[0] === corSelecionada) {
-    corSelecionada.className = corSelecionada.className + ' selected';
+    corSelecionada.className += ' selected';
   }
   else if (document.getElementsByClassName('cor2')[0] === corSelecionada) {
-    corSelecionada.className = corSelecionada.className + ' selected';
+    corSelecionada.className += ' selected';
   }
   else if (document.getElementsByClassName('cor3')[0] === corSelecionada) {
-    corSelecionada.className = corSelecionada.className + ' selected';
+    corSelecionada.className += ' selected';
   }
   else if (document.getElementsByClassName('cor4')[0] === corSelecionada) {
-    corSelecionada.className = corSelecionada.className + ' selected';
+    corSelecionada.className += ' selected';
   }
   corPintura = corSelecionada.className;
 }
@@ -26,15 +26,15 @@ function colorSelector() {
 function pintaCorSelecionada() {
   let pixelSelecionado = event.srcElement;
   if(corPintura === 'color cor1 selected') {
-    pixelSelecionado.style.backgroundColor = "black";
+    pixelSelecionado.style.backgroundColor = 'black';
   }
   if(corPintura === 'color cor2 selected') {
-    pixelSelecionado.style.backgroundColor = "red";
+    pixelSelecionado.style.backgroundColor = 'red';
   }
   if(corPintura === 'color cor3 selected') {
-    pixelSelecionado.style.backgroundColor = "green";
+    pixelSelecionado.style.backgroundColor = 'green';
   }
   if(corPintura === 'color cor4 selected') {
-    pixelSelecionado.style.backgroundColor = "blue";
+    pixelSelecionado.style.backgroundColor = 'blue';
   }
 }
