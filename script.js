@@ -22,13 +22,12 @@ for (let i = 0; i < 25; i++) {
   newdiv.className = 'pixel';
   pixel_board.append(newdiv);
 }
+
 const pixels = document.querySelectorAll('.pixel');
 let selected = document.getElementsByClassName('selected');
-
 
 [].forEach.call(pixels, pixel => {
   pixel.addEventListener('click', function(){
      pixel.style.backgroundColor = selected[0].getAttribute("id");
   });
-
 });
