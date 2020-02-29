@@ -2,6 +2,10 @@
   border: 1px solid red;
 } */
 
+table {
+  border-spacing: 0;
+}
+
 .color {
   border: 1px solid black;
   height: 100px;
@@ -10,8 +14,21 @@
 
 .flex-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+/* .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* .pixel-board{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+} */
 
 .black-bg {
   background-color: black;
@@ -36,6 +53,6 @@
   width: 40px;
 }
 
-.line {
-  display: flex;
-}
+/* .line {
+  display: ;
+} */
