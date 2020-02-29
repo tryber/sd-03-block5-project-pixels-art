@@ -1,40 +1,22 @@
 .color {
   display: inline-block;
+  height: 25px;
+  width: 25px;
 }
 
 .black {
   background-color: black;
-  height: 25px;
-  width: 25px;
 }
 
 .blue {
   background-color: rgba(13, 51, 84, 1);
-  height: 25px;
-  width: 25px;
 }
 
 .ciano {
   background-color: rgba(48, 188, 237, 1);
-  height: 25px;
-  width: 25px;
 }
 
 .orange {
   background-color: rgba(252, 81, 48, 1);
-  height: 25px;
-  width: 25px;
 }
 
-#pixel-board {
-    width: 250px;
-}
-
-.pixel {
-  width: 40px;
-  height: 40px;
-  border: 1px black solid;
-  padding: 4px;
-  margin-bottom: -4px;
-  background-color: white;
-}
