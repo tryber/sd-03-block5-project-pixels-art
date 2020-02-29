@@ -1,0 +1,30 @@
+* {
+  border: 1px solid red;
+}
+
+.color {
+  width: 100px;
+  height: 100px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.green-bg {
+  background-color: green;
+}
+
+.blue-bg {
+  background-color: blue;
+}
+
+.red-bg {
+  background-color: red;
+}
