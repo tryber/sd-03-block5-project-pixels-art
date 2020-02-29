@@ -3,8 +3,8 @@
 } */
 
 .color {
-  width: 100px;
   height: 100px;
+  width: 100px;
 }
 
 .flex-container {
@@ -30,9 +30,9 @@
 }
 
 .pixel {
-  width: 25px;
-  height: 25px;
   border: 1px solid black;
+  height: 40px;
+  width: 40px;
 }
 
 .line {
