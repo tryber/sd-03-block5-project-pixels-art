@@ -18,12 +18,12 @@ body {
   background-color: blue;
 }
 
-.pixels {
+.pixel-board {
   border-collapse: collapse;
 }
 
 td {
   border: 1px solid black;
-  height: 40px;
-  width: 40px;
+  height: 37px;
+  width: 37px;
 }
