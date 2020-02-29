@@ -27,18 +27,18 @@ function selectColor(indicador) {
   }
 }
 
-cor1.addEventListener('click', function() {
+cor1.addEventListener('click', function () {
   selectColor(1);
 });
 
-cor2.addEventListener('click', function() {
+cor2.addEventListener('click', function () {
   selectColor(2);
 });
 
-cor3.addEventListener('click', function() {
+cor3.addEventListener('click', function () {
   selectColor(3);
 });
 
-cor4.addEventListener('click', function() {
+cor4.addEventListener('click', function () {
   selectColor(4);
 });
