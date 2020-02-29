@@ -1,16 +1,16 @@
-.black {
+#black {
   background-color: black;
 }
 
-.red {
+#red {
   background-color: red;
 }
 
-.blue {
+#blue {
  background-color: blue;
 }
 
-.green {
+#green {
   background-color: green;
 }
 
@@ -25,7 +25,8 @@ div{
   height: 40px;
   border: 1px black solid;
   padding: 4px;
-  margin-top: 0;
+  margin: 0;
+  background-color: white;
 }
 
 #pixel-board{
