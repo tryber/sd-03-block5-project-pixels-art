@@ -4,6 +4,7 @@
 }
 body{
   font-family: Helvetica, sans-serif;
+  background-color: white;
 }
 #title{
   color: #3D7051;
@@ -22,13 +23,13 @@ body{
   background-color: black;
 }
 #dark{
-  background-color: #3D7051;
+  background-color: blue;
 }
 #medium{
-  background-color: #0FA368;
+  background-color: red;
 }
 #light{
-  background-color: #79E0B0;
+  background-color: green;
 }
 #pixel-board{
   margin-top: 60px;
