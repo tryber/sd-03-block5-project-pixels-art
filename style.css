@@ -1,22 +1,22 @@
 .color {
   display: inline-block;
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
 }
 
-.color1 {
+.color.cor1 {
   background-color: black;
 }
 
-.color2 {
+.color.cor2 {
   background-color: rgba(13, 51, 84, 1);
 }
 
-.color3 {
+.color.cor3 {
   background-color: rgba(48, 188, 237, 1);
 }
 
-.color4 {
+.color.cor4 {
   background-color: rgba(252, 81, 48, 1);
 }
 
