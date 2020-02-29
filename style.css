@@ -8,15 +8,16 @@ body{
 }
 #title{
   color: #3D7051;
-  margin-top: 30px;
+  font-size: 42px;
 }
 ul li{
   display: inline-block;
 }
 #color-palette{
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .color{
+  margin-top: 20px;
   display: inline-block;
   height: 70px;
   width: 75px;
@@ -32,4 +33,15 @@ ul li{
 }
 #light{
   background-color: #79E0B0;
+}
+#pixel-board{
+  margin-top: 60px;
+  background-color: white;
+}
+.pixel{
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  height: 5px;
+  width: 5px;
 }
