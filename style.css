@@ -27,3 +27,7 @@ div{
   padding: 4px;
   margin-top: 0;
 }
+
+#pixel-board{
+  width: 250px;
+}
