@@ -1,3 +1,7 @@
+table {
+    border-spacing: 10px;
+}
+
 .color {
   border: 1px solid black;
   height: 40px;
@@ -18,4 +22,11 @@
 
 .cor4 {
   background-color: rgba(252, 81, 48, 1);
+}
+/*border-collapse: collapse*/
+.pixelBoard {
+    background-color: white;
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
 }
