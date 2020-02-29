@@ -4,14 +4,10 @@
 }
 body{
   font-family: Helvetica, sans-serif;
-  text-align: center;
 }
 #title{
   color: #3D7051;
   font-size: 42px;
-}
-ul li{
-  display: inline-block;
 }
 #color-palette{
   margin-top: 40px;
