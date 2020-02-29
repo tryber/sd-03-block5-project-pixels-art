@@ -19,27 +19,28 @@ body{
   height: 70px;
   width: 75px;
 }
-#black{
+.black{
   background-color: black;
 }
-#dark{
+.dark{
   background-color: blue;
 }
-#medium{
+.medium{
   background-color: red;
 }
-#light{
+.light{
   background-color: green;
 }
 #pixel-board{
   margin-top: 60px;
-  background-color: black; /*possivel erro detectado*/
+  background-color: white;
 
 }
 .pixel{
   display: inline-block;
   background-color: white;
   border: 1px solid black;
-  height: 50px;
-  width: 58px;
+  height: 38px;
+  padding: 1px;
+  width: 38px;
 }
