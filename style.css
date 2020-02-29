@@ -23,17 +23,17 @@ body {
   object-position: bottom;
 }
 
-.pixel{
+.pixel {
   background-color: white;
   border: 1px solid black;
   height: 35px;
-  padding:2px;
+  padding: 2px;
   width: 35px;
 }
 
 td {
   border: 1px solid black;
   height: 34px;
-  padding:2px;
+  padding: 2px;
   width: 34px;
 }
