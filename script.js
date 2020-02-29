@@ -1,6 +1,6 @@
 let corPintura = 'color cor1 selected';
 
-function colorSelector() {
+function _colorSelector() {
   const corSelecionada = event.srcElement;
 //  Limpa a seleção
   document.getElementsByClassName('cor1')[0].className = 'color cor1';
@@ -20,7 +20,7 @@ function colorSelector() {
   corPintura = corSelecionada.className;
 }
 
-function pintaCorSelecionada() {
+function _pintaCorSelecionada() {
   const pixelSelecionado = event.srcElement;
   if (corPintura === 'color cor1 selected') {
     pixelSelecionado.style.backgroundColor = 'black';

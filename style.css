@@ -29,6 +29,7 @@ body {
   position: absolute;
   top: 100px;
 }
+
 .pixel-board {
   border-collapse: collapse;
   position: absolute;
