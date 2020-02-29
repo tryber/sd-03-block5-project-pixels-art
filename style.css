@@ -20,3 +20,9 @@
   background-color: rgba(252, 81, 48, 1);
 }
 
+.pixelBoard {
+    background-color: white;
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+}
