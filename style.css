@@ -25,9 +25,9 @@ body {
 .pixel{
   background-color: white;
   border: 1px solid black;
-  height: 35px;
+  height: 36px;
   padding:2px;
-  width: 35px;
+  width: 36px;
 }
 
 td {
