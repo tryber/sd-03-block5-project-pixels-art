@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+#title{
+  color: #3D7051;
+  margin-top: 30px;
+}
+#color-palette{
+  margin-top: 30px;
+}
+.color{
+  display: inline-block;
+  height: 70px;
+  width: 75px;
+}
+#black{
+  background-color: black;
+}
+#dark{
+  background-color: #3D7051;
+}
+#medium{
+  background-color: #0FA368;
+}
+#light{
+  background-color: #79E0B0;
+}
