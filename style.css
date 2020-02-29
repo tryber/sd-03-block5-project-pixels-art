@@ -10,8 +10,11 @@ body{
   color: #3D7051;
   font-size: 42px;
 }
-.teste{
-  margin-left: 530px;
+ul li{
+  display: inline-block;
+}
+#color-palette{
+  margin-top: 40px;
 }
 .color{
   margin-top: 20px;
@@ -32,24 +35,13 @@ body{
   background-color: #79E0B0;
 }
 #pixel-board{
-  margin-top: 10px;
+  margin-top: 60px;
   background-color: white;
-  line-height: 0;
 }
 .pixel{
   display: inline-block;
-  background-color: white; 
+  background-color: white;
+  border: 1px solid black;
   height: 5px;
   width: 5px;
-  line-height: 50px;
 }
-.pixel-maior{
-  border: black solid 1px;
-  display: inline-block;
-  height: 39px;
-  width: 39px;
-}
-.pixel-board-maior{
-  margin-top: 20px;
-}
-
