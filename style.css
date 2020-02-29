@@ -4,25 +4,24 @@
   width: 25px;
 }
 
-.black {
+.cor1 {
   background-color: black;
 }
 
-.blue {
+.cor2 {
   background-color: rgba(13, 51, 84, 1);
 }
 
-.ciano {
+.cor3 {
   background-color: rgba(48, 188, 237, 1);
 }
 
-.orange {
+.cor4 {
   background-color: rgba(252, 81, 48, 1);
 }
 
 .pixelBoard {
-    background-color: white;
-    border: 1px solid black;
-    height: 250px;
-    width: 250px;
+  background-color: white;
+  border: 1px solid black;
+  width: 250px;
 }
