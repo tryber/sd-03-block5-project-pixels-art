@@ -10,11 +10,8 @@ body{
   color: #3D7051;
   font-size: 42px;
 }
-ul li{
-  display: inline-block;
-}
-#color-palette{
-  margin-top: 40px;
+.teste{
+  margin-left: 530px;
 }
 .color{
   margin-top: 20px;
