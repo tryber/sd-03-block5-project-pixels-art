@@ -1,19 +1,29 @@
-body{
+body {
+background-color: white;
 }
-.color{
+
+.cor1 {
+background-color: black;
+}
+
+.cor2 {
+background-color: red;
+}
+
+.cor3 {
+background-color: green;
+}
+
+.cor4 {
+background-color: blue;
+}
+
+.pixels {
+border-collapse: collapse;
+}
+
+td {
 border: 1px solid black;
 height: 40px;
 width: 40px;
-}
-.color.cor1{
-background-color: black;
-}
-.color.cor2{
-background-color: red;
-}
-.color.cor3{
-background-color: green;
-}
-.color.cor4{
-background-color: blue;
 }
