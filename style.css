@@ -19,16 +19,20 @@ body {
 }
 
 .pixel-board {
-  border-collapse: collapse;
+   border-collapse: collapse;
 }
 
 .pixel{
   background-color: white;
+  border: 1px solid black;
+  height: 35px;
+  padding:2px;
+  width: 35px;
 }
 
 td {
   border: 1px solid black;
-  height: 39px;
-  padding:0;
-  width: 39px;
+  height: 34px;
+  padding:2px;
+  width: 34px;
 }
