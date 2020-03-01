@@ -2,8 +2,22 @@
   border: 1px solid red;
 } */
 
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
+  font-family: Ubuntu, Roboto;
+}
+
 table {
   border-spacing: 0;
+}
+
+header {
+  margin-top: 5%;
+  padding-top: 1em;
+  font-size: 35px;
+  text-align: center;
 }
 
 .color {
@@ -16,19 +30,27 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 2em;
 }
 
-/* .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
+.content {
+  background-color: rgb(239, 200, 139);
+}
 
-/* .pixel-board{
- display: flex;
- justify-content: center;
- flex-direction: column;
-} */
+.pixel-board {
+  display: block;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.line {
+  display: flex;
+}
 
 .black-bg {
   background-color: black;
@@ -46,13 +68,3 @@ table {
   background-color: red;
 }
 
-.pixel {
-  background-color: white;
-  border: 1px solid black;
-  height: 40px;
-  width: 40px;
-}
-
-/* .line {
-  display: ;
-} */
