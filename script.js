@@ -1,7 +1,6 @@
 let corPintura = 'color cor1 selected';
 /* exported global_var */
 let colorSelector;
-
 colorSelector = function () {    
   const corSelecionada = event.srcElement;
 //  Limpa a seleção
@@ -21,10 +20,8 @@ colorSelector = function () {
   }
   corPintura = corSelecionada.className;
 };
-
 /* exported global_var */
 let pintaCorSelecionada;
-
 pintaCorSelecionada = function () {
   const pixelSelecionado = event.srcElement;
   if (corPintura === 'color cor1 selected') {
@@ -39,4 +36,4 @@ pintaCorSelecionada = function () {
   if (corPintura === 'color cor4 selected') {
     pixelSelecionado.style.backgroundColor = 'blue';
   }
-}
+};
