@@ -10,3 +10,16 @@
   border: black solid 1px;
   display: inline-block;
 }
+
+#pixel-board {
+  width: 200px;
+  height: 200px;
+}
+
+.pixel {
+  display: inline-block;
+  float: left;
+  width: 38px;
+  height: 38px;
+  border: black solid 1px;
+}
