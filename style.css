@@ -1,6 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .color {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     height: 50px;
     width: 50px;
     display: inline-block;
+}
+
+.tabela {
+    border-collapse: collapse;
+}
+
+.pixel {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
 }
