@@ -6,7 +6,6 @@ const azul = "rgb(0, 0, 255)"
 const verde = "rgb(0, 128, 0)"
 const paletaCores = [preto,vermelho,azul,verde]
 
-
 // elementos
 
 let divCores = document.querySelectorAll(".color")
@@ -16,7 +15,16 @@ console.log(divCores[0])
 let pixel = document.querySelectorAll(".pixel")
 console.log(pixel)
 
+
+// set da Paleta 
+
+divCores[0].style.backgroundColor = preto
+divCores[1].style.backgroundColor = vermelho
+divCores[2].style.backgroundColor = azul
+divCores[3].style.backgroundColor = verde
+
 // funções
+
 
 function setDeCores(){
     for (let i = 0; i<divCores.length; i+=1) {
@@ -33,7 +41,7 @@ function setCorPadrao(){
 
 // execução de Funções ao carregar a página
 
-setDeCores()
-setCorPadrao()
+// setDeCores()
+// setCorPadrao()
 
 
