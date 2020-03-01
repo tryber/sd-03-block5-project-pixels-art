@@ -5,15 +5,15 @@ const pallete2 = document.querySelectorAll(".color")[1];
 const pallete3 = document.querySelectorAll(".color")[2];
 const pallete4 = document.querySelectorAll(".color")[3];
 
+// Set default selected color as black
+sessionStorage.setItem('color', 'black');
+allColors[0].className = "selected";
+
 // Set collors initially
 pallete1.style.backgroundColor = 'black';
 pallete2.style.backgroundColor = 'red';
 pallete3.style.backgroundColor = 'blue';
 pallete4.style.backgroundColor = 'grey';
-
-// Set default selected color as black
-sessionStorage.setItem('color', 'black');
-allColors[0].className = "selected";
 
 // Color selector
 pallete1.addEventListener('click', function (event) {
