@@ -4,6 +4,7 @@
 }
 
 .color {
+  float: left;
   margin-left: 10px;
   width: 25px;
   height: 25px;
@@ -12,6 +13,7 @@
 }
 
 #pixel-board {
+  clear: both;
   width: 210px;
   height: 210px;
 }
