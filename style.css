@@ -1,37 +1,37 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .paleta {
-    display: block;
-    margin-left: 1em;
+  display: block;
+  margin-left: 1em;
 }
 
 .color {
-    border: 2px solid rgb(0, 0, 0);
-    display: inline-block;
-    height: 50px;
-    width: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  height: 50px;
+  width: 50px;
 }
 
 .tabela {
-    border-collapse: collapse;
-    display: block;
-    margin-left: 1em;
+  border-collapse: collapse;
+  display: block;
+  margin-left: 1em;
 }
 
 .pixel {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-    height: 40px;
-    width: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  height: 40px;
+  width: 40px;
 }
 
 .selected {
-    border: 2px solid rgb(0, 0, 0);
-    display: inline-block;
-    height: 50px;
-    width: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  height: 50px;
+  width: 50px;
 }
