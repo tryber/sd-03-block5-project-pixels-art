@@ -1,0 +1,35 @@
+body {
+    margin: 15px;
+}
+
+#title {}
+
+#main-content {}
+
+#color-palette {}
+
+.color {
+    width: 50px;
+    height: 50px
+}
+
+th {
+    border: 1.5px solid black;
+    text-align: center;
+}
+
+#colorRed {
+    background-color: red;
+}
+
+#colorBlue {
+    background-color: blue;
+}
+
+#colorBlack {
+    background-color: black;
+}
+
+#colorGreen {
+    background-color: green;
+}
