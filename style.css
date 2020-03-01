@@ -1,0 +1,33 @@
+body {
+  background-color: peachpuff;
+}
+.color {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: inline-block;
+}
+#black {
+    background-color: black;
+}
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+#gold {
+    background-color: gold;
+}
+#pixel-board {
+    background-color: black;
+    display: table;
+    border-spacing: 1px;
+}
+
+.pixel{
+    background-color: white;
+    display: table-cell;
+    height: 40px;
+    width: 40px;
+}
