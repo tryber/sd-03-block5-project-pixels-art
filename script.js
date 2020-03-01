@@ -1,6 +1,6 @@
 let corPintura = 'color cor1 selected';
 /* exported global_var */
-var colorSelector;
+let colorSelector;
 
 colorSelector = function () {    
   const corSelecionada = event.srcElement;
@@ -23,7 +23,7 @@ colorSelector = function () {
 };
 
 /* exported global_var */
-var pintaCorSelecionada
+let pintaCorSelecionada;
 
 pintaCorSelecionada = function () {
   const pixelSelecionado = event.srcElement;
