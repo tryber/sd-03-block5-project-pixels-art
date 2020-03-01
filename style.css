@@ -1,0 +1,30 @@
+header {
+    border: 2px solid black;
+    width: 50%;
+}
+
+article {
+    border: 1px solid black;
+    height: auto;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+td {
+    height: 38px;
+    width: 38px;
+}
+
+.grades {
+    display: flex;
+}
+
+.color, .selected {
+    border: 1px solid black;
+    height: 40px;
+    margin: 1px;
+    position: relative;
+    width: 40px;
+}
