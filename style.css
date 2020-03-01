@@ -1,4 +1,6 @@
 .pixel{
+    position: relative;
+    float: left;
     height: 40px;
     width: 40px;
     border-style: solid;
@@ -25,8 +27,8 @@
     background: yellow;
 }
 #pixel-board{
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     border-style: dotted;
     border-width: 1px;
     border-color: red;
