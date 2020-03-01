@@ -7,7 +7,6 @@ const pallete4 = document.querySelectorAll(".color")[3];
 
 // Set default selected color as black
 sessionStorage.setItem('color', 'black');
-allColors[0].className = "selected";
 
 // Set collors initially
 pallete1.style.backgroundColor = 'black';
