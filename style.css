@@ -10,10 +10,10 @@
 }
 
 .color {
-  border: 2px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .tabela {
@@ -32,6 +32,6 @@
 .selected {
   border: 2px solid rgb(0, 0, 0);
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }

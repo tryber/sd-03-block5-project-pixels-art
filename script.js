@@ -54,14 +54,14 @@ function setCorPadrao() {
 function arrumarClasseCss(ultimaCor, refCorAtual) {
   divCores[ultimaCor].classList.remove("selected")
   divCores[refCorAtual].classList.add("selected")
-  // return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
+//   return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
 }
 
 function setLocalStorage(refCorAtual) {
   localStorage.clear()
   localStorage.setItem("color", refCorAtual)
   ultimaCorEscolhida = parseInt(localStorage.getItem("color"))
-  // return alert("Efetuado limpeza no storage e setado a cor escolhida")
+//   return alert("Efetuado limpeza no storage e setado a cor escolhida")
 }
 
 function pintarPixel() {
