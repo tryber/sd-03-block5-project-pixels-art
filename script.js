@@ -34,7 +34,42 @@ window.onload = function () {
         }
     })
 
+    let size = document.getElementById("board-size");
+    let generate = document.getElementById("generate-board");
+    let board = document.getElementById("pixel-board");
 
+    
+
+    generate.addEventListener('click', function(){
+        console.log (size.value)
+        let appPixels = (size.value*size.value) - pixels.length;
+        console.log (appPixels)
+        let multiplier = parseInt(size.value)+0.5;
+        console.log (multiplier)
+        let newDimensions = (40 * multiplier) + "px";
+        console.log (newDimensions)
+        board.style.height = newDimensions;
+        console.log (board.style.height)
+        board.style.width = newDimensions;
+        console.log (board.style.width);
+        
+
+        for (let z = 0; z<appPixels; z+=1){
+            let addPixel = document.createElement("div");
+            addPixel.className = "pixel";
+            board.appendChild(addPixel);
+        }
+
+        for (let x = 0; x < pixels.length; x+=1) {
+
+
+            pixels[x].addEventListener('click', function () {
+                let coloring = sessionStorage.getItem("uColor")
+                pixels[x].style.backgroundColor = coloring;
+            })
+    
+        }
+    })
 
 
 
