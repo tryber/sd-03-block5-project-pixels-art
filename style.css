@@ -5,22 +5,22 @@
   width: 40px;
 }
 
-div#color-black {
+.selected {
   background-color: black;
   float: left;
 }
 
-div#color-yellow {
+.color-yellow {
   background-color: yellow;
   float: left;
 }
 
-div#color-blue {
+.color-blue {
   background-color: blue;
   float: left;
 }
 
-div#color-green {
+.color-green {
   background-color: green;
   float: left;
 }
@@ -37,175 +37,175 @@ div#color-green {
   left: 10px;
 }
 
-div#pixel1 {
+.pixel1 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel2 {
+.pixel2 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel3 {
+.pixel3 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel4 {
+.pixel4 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel5 {
+.pixel5 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel6 {
+.pixel6 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel7 {
+.pixel7 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel8 {
+.pixel8 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel9 {
+.pixel9 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel10 {
+.pixel10 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel11 {
+.pixel11 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel12 {
+.pixel12 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel13 {
+.pixel13 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel14 {
+.pixel14 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel15 {
+.pixel15 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel16 {
+.pixel16 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel17 {
+.pixel17 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel18 {
+.pixel18 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel19 {
+.pixel19 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel20 {
+.pixel20 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel21 {
+.pixel21 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel22 {
+.pixel22 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel23 {
+.pixel23 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel24 {
+.pixel24 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-div#pixel25 {
+.pixel25 {
   background-color: white;
   border: 1px solid black;
   height: 40px;
