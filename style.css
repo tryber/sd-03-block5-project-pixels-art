@@ -1,7 +1,30 @@
-.color{
+.color-palette {
+  position: relative;
+}
+
+.color {
   border: 1px solid black;
-  padding: 100px;
-  margin: 50px;
+  margin: 0px;
+  padding: 30px;
   width: 5px;
-  position: absolute;
+}
+
+div#color-red {
+  background-color: red;
+  float: left;
+}
+
+div#color-yellow {
+  background-color: yellow;
+  float: left;
+}
+
+div#color-blue {
+  background-color: blue;
+  float: left;
+}
+
+div#color-green {
+  background-color: green;
+  float: left;
 }
