@@ -13,9 +13,6 @@ let divCores = document.querySelectorAll(".color")
 console.log(divCores)
 console.log(divCores[0])
 
-let body = document.querySelector("body")
-console.log(body)
-
 let pixel = document.querySelectorAll(".pixel")
 console.log(pixel)
 
@@ -28,7 +25,6 @@ function setDeCores(){
 }
 
 function setCorPadrao(){
-    divCores[0].classList.remove("color")
     divCores[0].classList.add("selected")
     divCores[0].style.backgroundColor = preto
 }
