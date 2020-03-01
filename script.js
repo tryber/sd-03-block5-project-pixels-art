@@ -27,15 +27,15 @@ pallete4.addEventListener('click', function(event) {
   sessionStorage.setItem('color', 'grey')
 })
 
-// Set initial pixel colors to white
-for (let i = 0; i < pixelSize; i++) {
-  getPixel[i].style.backgroundColor = 'white';
-}
-
 
 // Pixel detection
 const getPixel = document.querySelectorAll(".pixel");
 const pixelSize = document.querySelectorAll(".pixel").length;
+
+// Set initial pixel colors to white
+for (let i = 0; i < pixelSize; i++) {
+  getPixel[i].style.backgroundColor = 'white';
+}
 
 for (let i = 0; i < pixelSize; i++) {
   getPixel[i].addEventListener('click', function(event) {
