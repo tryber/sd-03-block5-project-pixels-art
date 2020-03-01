@@ -11,7 +11,7 @@ pallete3.style.backgroundColor = 'blue';
 pallete4.style.backgroundColor = 'grey';
 
 // Set default selected color as black
-sessionStorage.setItem('color', 'black')
+sessionStorage.setItem('color', 'black');
 
 // Color selector
 pallete1.addEventListener('click', function(event) {
