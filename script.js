@@ -1,11 +1,3 @@
-// variaveis Constantes
-
-const preto = "rgb(0, 0, 0)"
-const vermelho = "rgb(255, 0, 0)"
-const azul = "rgb(0, 0, 255)"
-const verde = "rgb(0, 128, 0)"
-const paletaCores = [preto,vermelho,azul,verde]
-
 // elementos
 
 let divCores = document.querySelectorAll(".color")
@@ -34,7 +26,7 @@ function setDeCores(){
 
 function setCorPadrao(){
     divCores[0].classList.add("selected")
-    divCores[0].style.backgroundColor = preto
+    divCores[0].style.backgroundColor = "black"
 }
 
 
@@ -42,6 +34,6 @@ function setCorPadrao(){
 // execução de Funções ao carregar a página
 
 // setDeCores()
-// setCorPadrao()
+setCorPadrao()
 
 
