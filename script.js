@@ -1,25 +1,17 @@
-let corActual = "black"
-let x = document.querySelector('.pixel');
+let corActual = 'black';
 function aplicaCorAtual(id) {
-  let caixasPixelBoard = document.querySelector('.' + id);
+  let caixasPixelBoard = document.querySelector(`.${id}`);
   caixasPixelBoard.style.backgroundColor = corActual;
 }
-function selecionaPreto(id) {
-  corActual = "black"
+function selecionaPreto() {
+  corActual = 'black';
 }
-
-function selecionaAmarelo(id) {
-  corActual = "yellow"
+function selecionaAmarelo() {
+  corActual = 'yellow';
 }
-function selecionaAzul(id) {
-  corActual = "blue"
+function selecionaAzul() {
+  corActual = 'blue';
 }
-function selecionaVerde(id) {
-  corActual = "green"
+function selecionaVerde() {
+  corActual = 'green';
 }
-
-// for (let i = 0; i < x.length[i]; i++) {
-//   if (caixasPixelBoard) {
-//     x[i] = aplicaCorAtual;
-//   }
-// }
