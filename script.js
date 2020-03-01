@@ -19,7 +19,7 @@ pallete1.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'black');
   for (let i = 0; i < allColors.length; i++) {
     if (i == 0) {
-      allColors[i].className = "selected";
+      allColors[i].className += " selected";
     } else {
       allColors[i].className = "color";
     }
@@ -29,7 +29,7 @@ pallete2.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'red');
   for (let i = 0; i < allColors.length; i++) {
     if (i == 1) {
-      allColors[i].className = "selected";
+      allColors[i].className += " selected";
     } else {
       allColors[i].className = "color";
     }
@@ -39,7 +39,7 @@ pallete3.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'blue');
   for (let i = 0; i < allColors.length; i++) {
     if (i == 2) {
-      allColors[i].className = "selected";
+      allColors[i].className += " selected";
     } else {
       allColors[i].className = "color";
     }
@@ -49,7 +49,7 @@ pallete4.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'grey');
   for (let i = 0; i < allColors.length; i++) {
     if (i == 3) {
-      allColors[i].className = "selected";
+      allColors[i].className += " selected";
     } else {
       allColors[i].className = "color";
     }
