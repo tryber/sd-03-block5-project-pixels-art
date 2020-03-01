@@ -13,7 +13,7 @@ pallete2.style.backgroundColor = 'red';
 pallete3.style.backgroundColor = 'blue';
 pallete4.style.backgroundColor = 'grey';
 
-// Click events
+// Color selector
 pallete1.addEventListener('click', function(event) {
   sessionStorage.setItem('color', 'black')
 })
@@ -26,3 +26,13 @@ pallete3.addEventListener('click', function(event) {
 pallete4.addEventListener('click', function(event) {
   sessionStorage.setItem('color', 'grey')
 })
+
+// Pixel detection
+const getPixel = document.querySelectorAll(".pixel");
+const pixelSize = document.querySelectorAll(".pixel").length;
+
+for (let i = 0; i < pixelSize; i++) {
+  getPixel[i].addEventListener('click', function(event) {
+    getPixel[i].style.backgroundColor = sessionStorage.color;
+  })
+}
