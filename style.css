@@ -10,14 +10,17 @@ body{
   color: #3D7051;
   font-size: 42px;
 }
+table{
+  border-spacing: 0;
+}
 .palette{
   margin-top: 60px;
 }
 .color{
-  display: inline-block;
+  border: 1px black solid;
   margin-top: 20px;
-  height: 70px;
-  width: 75px;
+  height: 60px;
+  width: 65px;
 }
 .black{
   background-color: black;
@@ -37,10 +40,8 @@ body{
 
 }
 .pixel{
-  display: inline-block;
   background-color: white;
   border: 1px solid black;
-  height: 38px;
-  padding: 1px;
-  width: 38px;
+  height: 40px;
+  width: 40px;
 }
