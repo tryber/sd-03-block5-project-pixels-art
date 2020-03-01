@@ -5,6 +5,7 @@
 }
 
 .paleta {
+    display: block;
     margin-left: 1em;
 }
 
@@ -17,6 +18,7 @@
 
 .tabela {
     border-collapse: collapse;
+    display: block;
     margin-left: 1em;
 }
 

@@ -18,10 +18,10 @@ console.log(pixel)
 
 // set da Paleta 
 
-divCores[0].style.backgroundColor = preto
-divCores[1].style.backgroundColor = vermelho
-divCores[2].style.backgroundColor = azul
-divCores[3].style.backgroundColor = verde
+divCores[0].style.backgroundColor = "black"
+divCores[1].style.backgroundColor = "red"
+divCores[2].style.backgroundColor = "blue"
+divCores[3].style.backgroundColor = "green"
 
 // funções
 
