@@ -12,18 +12,19 @@ pallete4.style.backgroundColor = 'grey';
 
 // Set default selected color as black
 sessionStorage.setItem('color', 'black');
+document.getElementsByClassName("color")[0].className = 'selected';
 
 // Color selector
-pallete1.addEventListener('click', function(event) {
+pallete1.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'black')
 })
-pallete2.addEventListener('click', function(event) {
+pallete2.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'red')
 })
-pallete3.addEventListener('click', function(event) {
+pallete3.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'blue')
 })
-pallete4.addEventListener('click', function(event) {
+pallete4.addEventListener('click', function (event) {
   sessionStorage.setItem('color', 'grey')
 })
 
@@ -38,7 +39,7 @@ for (let i = 0; i < pixelSize; i++) {
 }
 
 for (let i = 0; i < pixelSize; i++) {
-  getPixel[i].addEventListener('click', function(event) {
+  getPixel[i].addEventListener('click', function (event) {
     getPixel[i].style.backgroundColor = sessionStorage.color;
   })
 }
