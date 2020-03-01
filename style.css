@@ -1,7 +1,7 @@
 #color-palette {
     width: 240px;
     height: 70px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .color {
@@ -17,7 +17,7 @@
 #title {
     width: 300px;
     height: 30px;
-    margin-left: 41%;
+    /* margin-left: 41%; */
 }
 
 #pixel-board {
@@ -25,7 +25,7 @@
     padding: 0;
     width: 220px;
     height: 220px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .pixel {
@@ -38,4 +38,15 @@
     height: 40px;
     width: 40px;
     display: inline-block;
+}
+
+#clear-board {
+    width: 50px;
+    margin-bottom: 50px;
+}
+
+#container {
+    align-items: center;
+    align-content: center;
+    align-self: center;
 }
