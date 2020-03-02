@@ -3,7 +3,8 @@
   margin: 0;
 }
 
-.color, .selected {
+.color,
+.selected {
   cursor: pointer;
   float: left;
   margin-left: 10px;
