@@ -5,7 +5,7 @@ window.onload = function() {
   let colorGreen = document.getElementsByClassName("green")[0];
   let pixel = document.querySelectorAll(".pixel");
   pixel.forEach(element => element.addEventListener("click", () => element.style.backgroundColor = mouseColor))
-  let mouseColor = "";
+  let mouseColor = "black";
 
   function anyColor(color) {
     mouseColor = color;
