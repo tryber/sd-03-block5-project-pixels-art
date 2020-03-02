@@ -33,7 +33,6 @@ function selecionaCor(indicador) {
   }
 }
 
-
 cor1.addEventListener('click', function () {
   selecionaCor(1);
 });
