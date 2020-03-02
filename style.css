@@ -1,0 +1,13 @@
+td, th {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+  }
+  th {
+    border-color: black;
+  }
+body {
+    background-color: darkblue;
+}
