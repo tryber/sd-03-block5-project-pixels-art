@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+
+th {
+  border: 1px solid #000;
+  height: 50px;
+  padding: 0.5rem;
+  width: 50px;
+}
+
+td {
+  border: 1px solid black;
+  height: 38px;
+  padding: 1px;
+  width: 38px;
+}
