@@ -20,9 +20,9 @@
   background-color: blue;
 }
 
-.pixel {
+td.pixel {
   background-color: white;
   border: 1px solid black;
-  height: 40px ;
-  width: 40px ;
+  height: 40px;
+  width: 40px;
 }
