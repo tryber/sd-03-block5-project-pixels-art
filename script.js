@@ -1,39 +1,13 @@
 // Variaveis e constantes
 
-const paletaCores = ["black", "red", "blue", "green"]
-let corEscolhida = paletaCores[0]
-let ultimaCorEscolhida = null
+const paletaCores = ['black', 'red', 'blue', 'green'];
+let corEscolhida = paletaCores[0];
+let ultimaCorEscolhida = null;
 
 // elementos
 
-let divCores = document.querySelectorAll(".color")
-let pixel = document.querySelectorAll(".pixel")
-
-// eventListeners
-
-divCores[0].addEventListener("click", function (event) {
-  corEscolhida = divCores[0].style.backgroundColor
-  arrumarClasseCss(ultimaCorEscolhida, 0)
-  setLocalStorage("0")
-})
-
-divCores[1].addEventListener("click", function (event) {
-  corEscolhida = divCores[1].style.backgroundColor
-  arrumarClasseCss(ultimaCorEscolhida, 1)
-  setLocalStorage("1")
-})
-
-divCores[2].addEventListener("click", function (event) {
-  corEscolhida = divCores[2].style.backgroundColor
-  arrumarClasseCss(ultimaCorEscolhida, 2)
-  setLocalStorage("2")
-})
-
-divCores[3].addEventListener("click", function (event) {
-  corEscolhida = divCores[3].style.backgroundColor
-  arrumarClasseCss(ultimaCorEscolhida, 3)
-  setLocalStorage("3")
-})
+const divCores = document.querySelectorAll('.color');
+const pixel = document.querySelectorAll('.pixel');
 
 // funções
 
@@ -72,9 +46,34 @@ function pintarPixel() {
   }
 }
 
+// eventListeners
+
+divCores[0].addEventListener('click', function () {
+  corEscolhida = divCores[0].style.backgroundColor;
+  arrumarClasseCss(ultimaCorEscolhida, 0);
+  setLocalStorage('0');
+})
+
+divCores[1].addEventListener('click', function () {
+  corEscolhida = divCores[1].style.backgroundColor;
+  arrumarClasseCss(ultimaCorEscolhida, 1);
+  setLocalStorage('1');
+})
+
+divCores[2].addEventListener('click', function () {
+  corEscolhida = divCores[2].style.backgroundColor;
+  arrumarClasseCss(ultimaCorEscolhida, 2);
+  setLocalStorage('2');
+})
+
+divCores[3].addEventListener('click', function () {
+  corEscolhida = divCores[3].style.backgroundColor;
+  arrumarClasseCss(ultimaCorEscolhida, 3);
+  setLocalStorage('3');
+})
 
 // execução de Funções ao carregar a página
 
-setDeCores()
-setCorPadrao()
-pintarPixel()
+setDeCores();
+setCorPadrao();
+pintarPixel();

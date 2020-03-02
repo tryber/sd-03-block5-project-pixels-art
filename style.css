@@ -1,14 +1,18 @@
-* {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+h1 {
+    margin-left: 0.5em;
+}
+
 .paleta {
     clear: right;
     float: left;
-    margin-left: 1em;
     margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 .color {
