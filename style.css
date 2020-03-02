@@ -4,9 +4,9 @@ body{
 }
 
 table{
- height: 190px; 
- width: 190px;
- border: 1px;
- border-color: black;
-border-style: solid;
+  height: 190px; 
+  width: 190px;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
 } 
