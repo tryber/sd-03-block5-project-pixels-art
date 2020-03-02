@@ -31,7 +31,7 @@ let selected = document.getElementsByClassName('selected');
   });
 });
 
-const clear = document.getElementById('clear');
+const clear = document.getElementById('clear-board');
 
 clear.addEventListener('click', function(){
   [].forEach.call(pixels, pixel => {
