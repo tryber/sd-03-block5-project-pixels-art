@@ -4,11 +4,12 @@ body {
 
 * {
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
 }
 
-#title {}
+#title {
+    border-bottom: 1.75px solid black;
+    width: 28%;
+}
 
 #main-content {}
 
@@ -22,6 +23,11 @@ body {
     width: 50px;
     height: 50px;
     padding: 0px;
+}
+
+#pixel-board {
+    position: relative;
+    left: 5px;
 }
 
 .pixel {

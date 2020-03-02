@@ -15,47 +15,47 @@
     </header>
     <section id='main-content'>
         <table id='color-palette'>
-            <th class='color' id="colorBlack"></th>
-            <th class='color' id="colorBlue"></th>
-            <th class='color' id="colorGreen"></th>
-            <th class='color' id="colorRed"></th>
+            <th class='color' selected onclick="setColor('black')" id="colorBlack"></th>
+            <th class='color' onclick="setColor('blue')" id="colorBlue"></th>
+            <th class='color' onclick="setColor('green')" id="colorGreen"></th>
+            <th class='color' onclick="setColor('red')" id="colorRed"></th>
         </table>
         <br>
         <table class='tabela' id='pixel-board'>
             <tr>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
+                <td class='pixel' id='px1' onclick="paintPixel('px1')"></td>
+                <td class='pixel' id='px2' onclick="paintPixel('px2')"></td>
+                <td class='pixel' id='px3' onclick="paintPixel('px3')"></td>
+                <td class='pixel' id='px4' onclick="paintPixel('px4')"></td>
+                <td class='pixel' id='px5' onclick="paintPixel('px5')"></td>
             </tr>
             <tr>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
+                <td class='pixel' id='px6' onclick="paintPixel('px6')"></td>
+                <td class='pixel' id='px7' onclick="paintPixel('px7')"></td>
+                <td class='pixel' id='px8' onclick="paintPixel('px8')"></td>
+                <td class='pixel' id='px9' onclick="paintPixel('px9')"></td>
+                <td class='pixel' id='px10' onclick="paintPixel('px10')"></td>
             </tr>
             <tr>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
+                <td class='pixel' id='px11' onclick="paintPixel('px11')"></td>
+                <td class='pixel' id='px12' onclick="paintPixel('px12')"></td>
+                <td class='pixel' id='px13' onclick="paintPixel('px13')"></td>
+                <td class='pixel' id='px14' onclick="paintPixel('px14')"></td>
+                <td class='pixel' id='px15' onclick="paintPixel('px15')"></td>
             </tr>
             <tr>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
+                <td class='pixel' id='px16' onclick="paintPixel('px16')"></td>
+                <td class='pixel' id='px17' onclick="paintPixel('px17')"></td>
+                <td class='pixel' id='px18' onclick="paintPixel('px18')"></td>
+                <td class='pixel' id='px19' onclick="paintPixel('px19')"></td>
+                <td class='pixel' id='px20' onclick="paintPixel('px20')"></td>
             </tr>
             <tr>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
-                <td class='pixel'></td>
+                <td class='pixel' id='px21' onclick="paintPixel('px21')"></td>
+                <td class='pixel' id='px22' onclick="paintPixel('px22')"></td>
+                <td class='pixel' id='px23' onclick="paintPixel('px23')"></td>
+                <td class='pixel' id='px24' onclick="paintPixel('px24')"></td>
+                <td class='pixel' id='px25' onclick="paintPixel('px25')"></td>
             </tr>
         </table>
     </section>
