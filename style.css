@@ -4,19 +4,20 @@
 }
 
 .color{
-    width: 40px;
-    height: 40px;
     border-color: black;
     border-style: solid;
     border-width: 1px;
+    height: 40px;
+    width: 40px;
 }
 
 .pixel{
-    width: 40px;
-    height: 40px;
+    background-color: white;
     border-color: black;
     border-style: solid;
     border-width: 1px;
+    height: 40px;
+    width: 40px;
 }
 
 .cor1{
@@ -33,4 +34,8 @@
 
 .cor4{
     background-color: green;
+}
+
+.selected{
+    background-color: black;
 }
