@@ -19,15 +19,7 @@ window.onload = () => {
   document.getElementById("clear-board").addEventListener("click", () => document.querySelectorAll('.pixel').forEach(element => element.style.backgroundColor = "White"))
 
   // Função para criar quadro de pixels de tamanho N por N
-  document.getElementById('generate-board').addEventListener("click", () => {
-    let size = document.getElementById('board-size').value;
-    if (size < 5) {
-      size = 5
-    }
-    if (size >50){
-      size = 50
-    }
-
+  const createTable = (size) => {
     document.querySelector('#pixel-board').remove()
     let board = document.createElement("table");
     board.id = "pixel-board";
@@ -40,7 +32,21 @@ window.onload = () => {
         pixel.className = "pixel";
         document.getElementsByTagName('tr')[c].appendChild(pixel)
       }
-      addListenerColor()
     };
+  }
+
+  // Adiciona listener para usuário definir numero de pixels no quadro
+  document.getElementById('generate-board').addEventListener("click", () => {
+    let size = document.getElementById('board-size').value;
+    if (size < 5) {
+      size = 5
+    }
+    if (size >50){
+      size = 50
+    }
+    createTable(size)
+    addListenerColor()
   });
+
+  createTable(5)
 }
