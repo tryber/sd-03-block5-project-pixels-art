@@ -1,18 +1,18 @@
 
-let selecOne = document.getElementsByClassName("black-palet");
-let selecTwo = document.getElementsByClassName("green-palet");
-let selecThree = document.getElementsByClassName("yellow-palet");
-let selecFour = document.getElementsByClassName("red-palet");
+// let selecOne = document.getElementsByClassName("black-palet");
+// let selecTwo = document.getElementsByClassName("green-palet");
+// let selecThree = document.getElementsByClassName("yellow-palet");
+// let selecFour = document.getElementsByClassName("red-palet");
 // let corSel = " ";
 
-selecOne.addEventListener("click", change); 
+// selecOne.addEventListener("click", change); 
 // selecTwo.addEventListener("click" changeTwo); 
 // selecThree.addEventListener("click" changeThree); 
 // selecFour.addEventListener("click" changeFour); 
 
-function change () {
-    let corSel = style.background-color
-}
+// function change () {
+//     let corSel = style.background-color
+// }
 
 
 
