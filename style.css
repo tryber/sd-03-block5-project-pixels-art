@@ -1,0 +1,12 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+table{
+ height: 190px; 
+ width: 190px;
+ border: 1px;
+ border-color: black;
+border-style: solid;
+} 
