@@ -1,39 +1,38 @@
-.pixel{
-    width: 40px;
-    border: 1px black;
-    background-color: white;
-    height: 40px;
-    padding: 0;
-
+.pixel {
+    background-color:  white;
+    border:  1px  black;
+    height:  40px;
+    padding:  0;
+    width:  40px;
 }
 
-.color{
-    width: 50px;
-    border: 1px black;
-    height: 50px;
+.color {
+    border:  1px black;
+    height:  50px;
+    width:  50px;
 }
 
-.preta{
+.preta {
+    background-color:  black;
+    display:  inline-block;
+}
+
+.azul {
+    background-color:  blue;
+    display:  inline-block;
+}
+
+.amarelo {
+    background-color:  yellow;
+    display:  inline-block;
+}
+
+.vermelho {
+    background-color:  red;
+    display:  inline-block;
+}
+
+table {
     background-color: black;
-}
-
-.azul{
-    background-color: blue;
-}
-
-.amarelo{
-    background-color: yellow;
-}
-
-.vermelho{
-    background-color: red;
-}
-
-.paleta{
-    display: inline-block;
-}
-
-table{
     border: 1px black;
-    background-color: black;
 }
