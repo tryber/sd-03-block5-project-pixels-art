@@ -57,8 +57,8 @@
 
 <button id="clear-board" onclick="clearBoard()">Limpar</button><br><br>
 
-<input id="board-size" type="text" min="5" max="50" placeholder="Insira o tamanho do quadro">
-<button id="generate-board">Gerar</button>
+<input id="board-size" type="number" min="5" max="50" placeholder="Insira o tamanho do quadro">
+<button id="generate-board" onclick="makeBoard(sendInfo())" >Gerar</button>
 
 </body>
 <script src="script.js"></script>
