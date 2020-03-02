@@ -33,3 +33,7 @@
     border-width: 1px;
     border-color: red;
 }
+#color-palette{
+    display: flex;
+
+}
