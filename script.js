@@ -14,7 +14,7 @@ for (let i = 0; i < cl.length; i++) {
 
     });
   }
-  let pcolor = document.querySelector('.selected');
+
   pixel.addEventListener("click", function() {
-    pixel.style.backgroundColor = pcolor.value
+    pixel.style.backgroundColor = 'rgb(000, 000, 000)'
   })
