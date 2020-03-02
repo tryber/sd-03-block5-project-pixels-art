@@ -1,7 +1,5 @@
 function choseColor(event) {
   const color = event.target.style.backgroundColor;
-  console.log(color);
-  
   window.sessionStorage.setItem('color', color);
 }
 
@@ -65,20 +63,18 @@ function randonColor() {
   const red = String(Math.floor(Math.random() * 256));
   const green = String(Math.floor(Math.random() * 256));
   const blue = String(Math.floor(Math.random() * 256));
-  return ('rgb(' + red + ' , ' + green + ' , ' + blue + ')')
+  return (`rgb(${red} , ${green}  , ${blue})`);
 }
 
 function setInitialColor() {
-  let colors = document.querySelectorAll('.color');
-  
-  for (let i in colors) {
-    if (i === '0') {
+  const colors = document.querySelectorAll('.color');
+
+  for (let i = 0; i < colors.length; i += 1) {
+    if (i >= '0' && i < colors.length) {
+      colors[i].style.backgroundColor = randonColor();
+    } else if (i === 0) {
       colors[i].style.backgroundColor = 'black';
-      continue;
-    } else if (i === 'length') {
-      break;
     }
-    colors[i].style.backgroundColor = randonColor();
   }
 }
 
