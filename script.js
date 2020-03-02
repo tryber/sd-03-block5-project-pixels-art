@@ -11,34 +11,21 @@ function adcElementos () {
         console.log(`pixel` + `${i}`)
     }
 }
-document.addEventListener ('click', function (e) {
-    var id = (e.target.id);
-    alert(id);
-    var cor = document.getElementById(`${id}`).style.backgroundColor;
-    alert(cor);
-})
 
+var selectedColor = 'black';
 
-function pickColor () {
-    var cor = document.getElementsById()
-
-    
-    console.log(cor)
+function pickId (e) {
+    var idSelect = (e.target.id);
+    alert(idSelect);
 }
 
-addEventListener ('click', pickColor)
+function changeColor(){
+    selectedColor = idSelect.getElementById.style.backgroundColor;
+}
+
+
+document.addEventListener ('click', pickId)
+document.addEventListener ('click', changeColor)
 
 
 
-
-
-// var pixelBoard = document.getElementById("pixel-board")
-// for(var i = 1; i <= 25; i++){ 
-//     // var pix1 = document.createElement(`"div"pixel + ${i}`);
-//     pixelBoard.document.createElement("div")
-//     // pix1.className = 'pixel';
-//     // pix1.
-//     // pixels.className = 'pixel';
-//     // pixelsPlace.appendChild(pix1);
-//     console.log(i)
-// 

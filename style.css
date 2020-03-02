@@ -3,7 +3,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 700px;
+    width: 1366px;
+    height:  768px;
     background-color: cornflowerblue;
 }
 
