@@ -1,45 +1,45 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-h1{
+h1 {
   font-size: 26pt;
 }
 
-table{
+table {
   border-collapse: collapse;
 }
-  
-.black{
-  background-color: black;
-}  
 
-.blue{
+.black {
+  background-color: black;
+}
+
+.blue {
   background-color: blue;
 }
 
-.color{
-  height: 28px; 
+.color {
+  height: 28px;
   width: 28px;
   border: 1px;
   border-color: black;
   border-style: solid;
-  padding: 0; 
+  padding: 0;
 }
 
-.green{
+.green {
   background-color: green;
 }
 
 .pixel {
-  height: 38px; 
+  height: 38px;
   width: 38px;
   border: 1px;
   border-color: black;
   border-style: solid;
   padding: 0;
-} 
+}
 
 .red {
   background-color: red;
