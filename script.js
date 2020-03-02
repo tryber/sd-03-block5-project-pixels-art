@@ -37,9 +37,6 @@ c3.addEventListener('click', cor3);
 const c4 = document.getElementById('c4');
 c4.addEventListener('click', cor4);
 
-const tam = document.getElementById('board-size');
-tam.addEventListener('change', ctam);
-
 function ctam() {
   const p1 = document.getElementsByClassName('pixel');
   for (let i=0; i<25; i+=1) {
@@ -47,3 +44,6 @@ function ctam() {
     p1[i].style.height = tam.value+'px';
   }
 }
+
+const tam = document.getElementById('board-size');
+tam.addEventListener('change', ctam);
