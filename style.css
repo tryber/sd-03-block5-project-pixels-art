@@ -1,0 +1,33 @@
+.color{
+  border: 1px solid black;
+  height: 70px;
+  width: 70px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+#preto{
+  background-color: black;
+
+}
+#laranja{
+  background-color: orange;
+  border: 1 px solid black;
+}
+#azul{
+  background-color: blue;
+}
+#verde{
+  background-color: green;
+}
+
+.pixel{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+}
+
+.line{
+  display: flex;
+}
