@@ -1,32 +1,18 @@
 body {
   background-color: turquoise;
 }
-
 table {
+  border-collapse: collapse;
   background-color: white;
 }
-
-.pixel {
-  background-color: white;
-  border-collapse: collapse;
+td {
   border: 1px solid black;
   height: 40px;
   padding: 8px;
+  text-align: left;
   width: 40px;
 }
-
-.primeira.cor {
-  background-color: black;
-}
-
-.segunda.cor {
-  background-color: red;
-}
-
-.terceira.cor {
-  background-color: blue;
-}
-
-.quarta.cor {
-  background-color: green;
+.pixel {
+  height: 40px;
+  width: ;
 }
