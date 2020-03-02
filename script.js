@@ -70,7 +70,7 @@ function setInitialColor() {
   const colors = document.querySelectorAll('.color');
 
   for (let i = 0; i < colors.length; i += 1) {
-    if (i >= '0' && i < colors.length) {
+    if (i > '0' && i < colors.length) {
       colors[i].style.backgroundColor = randonColor();
     } else if (i === 0) {
       colors[i].style.backgroundColor = 'black';
