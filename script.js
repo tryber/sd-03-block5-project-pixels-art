@@ -4,6 +4,7 @@ const cor3 = document.querySelector('.cor3');
 const cor4 = document.querySelector('.cor4');
 const cores = document.querySelectorAll('.color')
 const pixel = document.querySelectorAll('.pixel');
+const limpar = document.querySelector('#clear-board');
 
 function selectColor(indicador) {
   if (indicador === 1) {
@@ -29,6 +30,16 @@ function selectColor(indicador) {
   }
 }
 
+function paintPixel() {
+
+}
+
+function cleanBoard() {
+  for(let i = 0; i < pixel.length; i+=1) {
+    pixel[i].style.backgroundColor = 'white';
+  }
+}
+
 cor1.addEventListener('click', function () {
   selectColor(1);
 });
@@ -45,8 +56,4 @@ cor4.addEventListener('click', function () {
   selectColor(4);
 });
 
-pixel.addEventListener('click', function (event) {
-  for(let i = 0; i < pixel.length; i+=1) {
-    event.style.backgroundColor = cores.classList.contains('selected');
-  }
-})
+limpar.addEventListener('click', cleanBoard);
