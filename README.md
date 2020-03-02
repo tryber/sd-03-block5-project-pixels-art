@@ -50,9 +50,7 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 
 
 
-### 9 - Ao clicar em um pixel com uma cor selecionada, o pixel deve ser preenchido com esta cor
 
-### 10 - Ao clicar em um pixel com uma cor selecionada, somente esse pixel deverá ser preenchido, sem influenciar na cor dos demais pixels
 
 ## BÔNUS
 

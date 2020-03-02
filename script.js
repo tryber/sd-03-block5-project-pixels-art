@@ -35,3 +35,15 @@ for (let i = 0; i < 25; i++) {
         pickPixel[i].style.backgroundColor = colorChange
     }
 }
+
+let button = document.querySelector(".button")
+button.addEventListener("click", cleanOut)
+
+
+function cleanOut() {
+
+    for (let i = 0; i < 25; i++) {
+
+        document.getElementsByClassName("pixel")[i].style.backgroundColor = "white"
+    }
+}
