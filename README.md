@@ -36,27 +36,15 @@ A seguir, estão listados todos os requisitos do projeto. Leia-os atentamente e 
 
 Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na forma de aperfeiçoamentos em requisitos propostos ou novas funcionalidades, **desde que tais comportamentos adicionais não conflitem com os requisitos propostos**. Em outras palavras, você pode fazer mais do que for pedido, mas nunca menos. Contudo, tenha em mente que **nada além do que for pedido nos requisitos será avaliado**. Esta é uma oportunidade de você exercitar sua criatividade e experimentar com os conhecimentos adquiridos.
 
-### 1 - A página deve possuir o título "Paleta de Cores"
 
-O título deverá ficar dentro de uma tag `h1` com o **id** `title`.
 
-### 2 - A página deve possuir uma paleta de quatro cores
 
-A paleta deverá listar todas as cores disponíveis para utilização, lado a lado, e deverá ser posicionada abaixo do título "Paleta de Cores".
-
-A paleta de cores deve possuir o **id** `color-palette`, ao passo que cada cor individual da paleta de cores deve possuir a **classe** `color`.
-
-A cor de fundo de cada elemento da paleta deverá ser a cor que o elemento representa.
 
 ### 3 - A cor **preta** deve ser a primeira na paleta de cores
 
 As demais cores podem ser escolhidas livremente.
 
-### 4 - A página deve possuir um quadro de pixels, com 25 pixels
 
-O quadro de pixels deve possuir 5 pixels de largura por 5 pixels de altura. A cor inicial dos pixels, ao abrir a página, deve ser branca.
-
-O quadro de pixels deve possuir o **id** `pixel-board`, ao passo que cada pixel individual no quadro deve possuir a **classe** `pixel`.
 
 ### 5 - O quadro de pixels deve aparecer abaixo da paleta de cores
 
