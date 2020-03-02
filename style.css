@@ -3,3 +3,35 @@ h1 {
     font-family: Arial;
     
 }
+
+.black-palet {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.green-palet {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+.yellow-palet {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+.red-palet {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: red;
+}
+
+#color-pallete {
+
+}
