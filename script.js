@@ -8,8 +8,8 @@ window.onload = function(){
   for (let i = 0; i < cores.length; i += 1){
     cores[i].style.backgroundColor = cor[i];
     cores[i].addEventListener('click', function(){
-    let corAtual = cor[i];
-    sessionStorage.setItem("backgroundColor", corAtual);
+      let corAtual = cor[i];
+      sessionStorage.setItem("backgroundColor", corAtual);
     })
   };
 
