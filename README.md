@@ -40,17 +40,11 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 
 
 
-### 3 - A cor **preta** deve ser a primeira na paleta de cores
-
-As demais cores podem ser escolhidas livremente.
-
 
 
 ### 5 - O quadro de pixels deve aparecer abaixo da paleta de cores
 
-### 6 - Cada pixel do quadro de pixels deve possuir 40 pixels de largura e 40 pixels de altura e ser delimitado por uma margem preta de 1 pixel
 
-40 pixels deve ser o tamanho total do elemento, incluindo conteúdo, padding e boda.
 
 ### 7 - Ao carregar a página, a cor **preta** da paleta já deve estar selecionada para pintar os pixels
 
