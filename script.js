@@ -20,3 +20,18 @@ for (let i = 0; i < 4; i++) {
         colorSelected[i].classList.add("selected")
     }
 }
+
+//aplicando a cor
+
+let pickPixel = document.getElementsByClassName("pixel")
+
+
+
+for (let i = 0; i < 25; i++) {
+    pickPixel[i].addEventListener("click", changeColor)
+
+    function changeColor() {
+        colorChange = document.getElementsByClassName("selected")[0].innerHTML
+        pickPixel[i].style.backgroundColor = colorChange
+    }
+}

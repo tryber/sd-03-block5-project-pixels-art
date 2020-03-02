@@ -48,11 +48,7 @@ Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na 
 
 
 
-### 8 - Ao clicar em uma das cores da paleta, a cor selecionada na paleta é que vai ser usada para preencher os pixels
 
-A **classe** `selected` deve ser adicionada à cor selecionada, ao mesmo tempo em que é removida da cor anteriormente selecionada.
-
-**Note que os elementos que deverão receber a classe `selected` devem ser os mesmos elementos que possuem a classe `color`, como especificado no requisito 2.**
 
 ### 9 - Ao clicar em um pixel com uma cor selecionada, o pixel deve ser preenchido com esta cor
 
