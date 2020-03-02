@@ -11,6 +11,27 @@ function adcElementos () {
         console.log(`pixel` + `${i}`)
     }
 }
+document.addEventListener ('click', function (e) {
+    var id = (e.target.id);
+    alert(id);
+    var cor = document.getElementById(`${id}`).style.backgroundColor;
+    alert(cor);
+})
+
+
+function pickColor () {
+    var cor = document.getElementsById()
+
+    
+    console.log(cor)
+}
+
+addEventListener ('click', pickColor)
+
+
+
+
+
 // var pixelBoard = document.getElementById("pixel-board")
 // for(var i = 1; i <= 25; i++){ 
 //     // var pix1 = document.createElement(`"div"pixel + ${i}`);

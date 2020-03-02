@@ -7,17 +7,18 @@ body {
     background-color: cornflowerblue;
 }
 
-/* #color-palette {
+#color-palette {
     border: 1px solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
     width: 200px;
-    height: 100px;
+    height: 50px;
     background-color: white;
     justify-content: space-around;
-} */
+    margin: 20px;
+}
 
 #black {
     background-color: black;
@@ -59,7 +60,8 @@ body {
     background-color: crimson;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     width: 200px;
     height:200px;
