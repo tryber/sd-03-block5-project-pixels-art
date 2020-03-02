@@ -16,14 +16,14 @@ for(i = 0; i < pixels; i++ ){
     pixelBoard.appendChild(createElemment);
     var getPixel = pixelBoard.children[i];
     getPixel.className = 'pixel white';
-    pixelBoard.children[i].parametro = i;
+    pixelBoard.children[i].parametro = i; // seta cada pixel com um parametro = indice
     pixelBoard.children[i].addEventListener('click', pintaCorSelecionada);
     console.log(getPixel);
 }
 
-function pintaCorSelecionada(testeparametro){
-
-    var pixelAtual = testeparametro.currentTarget.parametro;
+//pinta pixel com a cor selecionada
+function pintaCorSelecionada(parametro1){
+    var pixelAtual = parametro1.currentTarget.parametro;
     pixelBoard.children[pixelAtual].className = ('pixel ' + corOn);
     console.log(pixelBoard.children[pixelAtual]);
 }
@@ -40,20 +40,21 @@ function pintaCorSelecionada(testeparametro){
 
 
 //criando eventlisneters dos pixels de selecionar cor
-for(i=0; i<4; i++){
-    var getDiv = divColors.children[i];
-    var getColor = divColors.children[i].id; //pega as cores
-    console.log(qtdClass.length);
+// for(i=0; i<4; i++){
+//     var getDiv = divColors.children[i];
+//     var getColor = divColors.children[i].id; //pega as cores
+//     console.log(qtdClass.length);
     
-    getDiv.addEventListener('click', function clicouCor(getColor){
+//     getDiv.addEventListener('click', function clicouCor(getColor){
 
-            console.log(getColor);
-        });
-    //console.log(divColors.children[i]);
-    for(child in children){
-    }
-}
+//             console.log(getColor);
+//         });
+//     //console.log(divColors.children[i]);
+//     for(child in children){
+//     }
+// }
 
+//SETando cor selecionada
 var getDivBlack = divColors.children[0];
 var getDivGreen = divColors.children[1];
 var getDivBlue = divColors.children[2];
@@ -85,6 +86,8 @@ getDivYellow.addEventListener('click', function clicouCor(){
     getDivYellow.className = "color selected";
     corOn = 'yellow';
 });
+
+//chama Clear All
 getClearAllDiv.addEventListener('click', clearAll);
 
 
@@ -99,6 +102,8 @@ function setAllSimple(){
         getDivYellow.className = "color";
   //  }
 }
+
+//seta white em todos os pixels
 function clearAll(){
     for(i = 0; i < pixels; i++ ){
         pixelBoard.children[i].className = ('pixel ' + corWhite);
