@@ -2,28 +2,28 @@ function cor1() {
   const color = 'black';
   return color;
 }
-  
+
 function cor2() {
   const color = 'red';
   return color;
 }
-  
+
 function cor3() {
   const color = 'blue';
   return color;
 }
-  
+
 function cor4() {
   const color = 'green';
   return color;
 }
-  
-function paint() {
-  for (let i=1; i<=25; i++){
-    let pixel = document.getElementById(`p${i}`)
-    pixel.style.backgroundColor = cor1();
-  }
-}
+
+// function paint() {
+//   for (let i=1; i<=25; i++) {
+//     const pixel = document.getElementById(`p${i}`);
+//     pixel.style.backgroundColor = cor1();
+//   }
+// }
 
 const c1 = document.getElementById('c1');
 c1.addEventListener('click', cor1);
