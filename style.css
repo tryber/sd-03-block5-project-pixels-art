@@ -3,6 +3,10 @@ html {
   padding: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .color ,
 .selected {
   border: black solid 1px;
@@ -15,7 +19,7 @@ html {
 
 .pixel-board-class {
   clear: both;
-  height: 210px;
+  height: 200px;
   width: 210px;
 }
 
