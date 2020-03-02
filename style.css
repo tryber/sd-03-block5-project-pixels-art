@@ -38,9 +38,9 @@ body {
 
 .pixel {
   background-color: white;
-  border: 0;
-  height: 36px;
-  margin: 1px solid black;
+  border: 1px solid black;
+  height: 37px;
+  margin: 1px;
   padding: 1px;
-  width: 36px;
+  width: 37px;
 }
