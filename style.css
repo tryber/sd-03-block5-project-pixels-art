@@ -10,3 +10,31 @@
 .color-palette {
     display: inline-flex;
 }
+
+.pixel {
+    height: 50px;
+    width: 50px;
+    border: black solid 1px;
+    background-color: white;
+    margin: 2px;
+}
+
+.first-row {
+    display: flex;
+}
+
+.second-row {
+    display: flex;
+}
+
+.third-row {
+    display: flex;
+}
+
+.fourth-row {
+    display: flex;
+}
+
+.fifth-row {
+    display: flex;
+}
