@@ -17,17 +17,17 @@
 }
 
 .selected{
-    background: black;
+    background-color: black;
 }
 
 .azul{
-    background: blue;
+    background-color: blue;
 }
 
 .verde{
-    background: green;
+    background-color: green;
 }
 
-.branco{
-    background: rgb(255, 255, 255);
+.vermelho{
+    background-color: red;
 }
