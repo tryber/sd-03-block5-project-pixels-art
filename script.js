@@ -38,13 +38,15 @@ function setLocalStorage(refCorAtual) {
 //   return alert("Efetuado limpeza no storage e setado a cor escolhida")
 }
 
+function colorir(event) {
+  event.target.style.backgroundColor = corEscolhida;
+};
+
 function pintarPixel() {
   for (let i = 0; i < pixel.length; i += 1) {
-    pixel[i].addEventListener('click', function () {
-      pixel[i].style.backgroundColor = corEscolhida;
-    });
+    pixel[i].addEventListener('click', colorir)
   }
-}
+};
 
 // eventListeners
 
