@@ -98,6 +98,10 @@ O novo quadro deve ter todos os pixels preenchidos com a cor branca.
 
 O input e o botão deve ter os **ids** `board-size` e `generate-board`, respectivamente.
 
+Caso o valor digitado fuja do intervalo de 5 a 50, faça:
+- Valor menor que 5, considerar 5 como padrão;
+- Valor maior que 50, considerar 50 como padrão.
+
 ### 13 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página
 
 Lembre-se de que a cor preta ainda precisa estar presente e deve ser a primeira na sua paleta de cores.
