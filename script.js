@@ -20,6 +20,7 @@ window.onload = () => {
 
   // Faz com que a cor selecionada pelo usuário seja definida para colorir
   document.querySelectorAll('.color').forEach(element => element.addEventListener("click", (event) => {
+    console.log(event)
     document.getElementsByClassName("selected")[0].classList.remove("selected");
     sessionStorage.setItem("SelectedColor", event.target.style.backgroundColor);
     element.classList.add("selected");

@@ -10,7 +10,7 @@
   <body>
     <div class="content">
       <header><h1 id="title">Paleta de Cores</h1></header>
-      <form>
+      <form class="flex-column">
         <input type="button" value="Limpar Quadro" id="clear-board" />
         <label for="board-size">Digite o numero de pixels:</label>
         <input type="number" id="board-size" min="5" max="50" />
@@ -21,10 +21,10 @@
         />
       </form>
       <div id="color-palette" class="flex-container">
-        <div class="color black-bg selected" value="black"></div>
-        <div class="color green-bg" value="green"></div>
-        <div class="color blue-bg" value="blue"></div>
-        <div class="color red-bg" value="red"></div>
+        <div class="color black-bg selected"></div>
+        <div class="color green-bg"></div>
+        <div class="color blue-bg"></div>
+        <div class="color red-bg"></div>
       </div>
       <div id="board-div" class="flex-container">
         <div id="pixel-board" class="pixel-board"></div>
