@@ -45,7 +45,9 @@
         background-color: #f8f7f2;
     }
 
-
+    .E {
+        background-color: #48b8e7
+    }
 
     #container {
         display: flex;
