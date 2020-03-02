@@ -1,0 +1,5 @@
+function getColor(color) {
+    
+
+    
+}
