@@ -1,25 +1,25 @@
-.color{
+.color {
   padding: 40px;
   border: 1px black solid;
 }
 
-.cor1{
+.cor1 {
   background-color: black;
 }
 
-.cor2{
+.cor2 {
   background-color: green;
 }
 
-.cor3{
+.cor3 {
   background-color: yellow;
 }
 
-.cor4{
+.cor4 {
   background-color: blue;
 }
 
-.pixel{
-  padding: 40px;
+.pixel {
   border: 1px black solid;
+  padding: 40px;
 }
