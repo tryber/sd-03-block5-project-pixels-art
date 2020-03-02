@@ -9,14 +9,19 @@
   <body>
     <div class="content">
       <header><h1 id="title">Paleta de Cores</h1></header>
+      <form>
+        <input type="button" value="Limpar Quadro" id="clear-board">
+        <label for="board-size">Digite o numero de pixels:</label>
+        <input type="text" id="board-size">
+        <input type="button" value="Alterar tamanho do quadro" id="generate-board">
+      </form>
       <div id="color-palette" class="flex-container">
         <div class="color black-bg selected" value="black"></div>
         <div class="color green-bg" value="green"></div>
         <div class="color blue-bg" value="blue"></div>
         <div class="color red-bg" value="red"></div>
-        <button id="clear-board">Limpar quadro</button>
       </div>
-      <div class="flex-container">
+      <div id="board-div" class="flex-container">
         <div id="pixel-board" class="pixel-board">
           <div class="line">
             <div class="pixel"></div>
