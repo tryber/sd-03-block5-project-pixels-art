@@ -6,7 +6,7 @@ body {
   width: 80%;
   margin: 0 auto;
   background-color: black;
-  font-family: Ubuntu, Roboto;
+  font-family: Ubuntu, Roboto, Arial, Helvetica, sans-serif;
 }
 
 table {
@@ -67,4 +67,3 @@ header {
 .red-bg {
   background-color: red;
 }
-

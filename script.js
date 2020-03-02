@@ -12,9 +12,6 @@ window.onload = () => {
   // Função que adiciona um listener para cada elemento com classe pixel que colore o pixel clicado
   const addListenerColor = () => document.querySelectorAll('.pixel').forEach(element => element.addEventListener("click", (event) => event.srcElement.style.backgroundColor = sessionStorage.getItem("SelectedColor")));
 
-  // Adiciona o listener ao inicializar a página
-  addListenerColor()
-
   // Adiciona listener que colore de branco todos os pixels da página
   document.getElementById("clear-board").addEventListener("click", () => document.querySelectorAll('.pixel').forEach(element => element.style.backgroundColor = "White"))
 
@@ -48,5 +45,8 @@ window.onload = () => {
     addListenerColor()
   });
 
+  //Cria tabela 5x5 inicial
   createTable(5)
+  // Adiciona o listener ao inicializar a página
+  addListenerColor()
 }
