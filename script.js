@@ -1,5 +1,7 @@
 function choseColor(event) {
-  const color = event.target.classList[1];
+  const color = event.target.style.backgroundColor;
+  console.log(color);
+  
   window.sessionStorage.setItem('color', color);
 }
 
@@ -10,8 +12,8 @@ function Selected() {
 }
 
 function insertColor(event) {
-  const classColor = sessionStorage.color;
-  event.target.style.backgroundColor = classColor;
+  const selectedColor = sessionStorage.color;
+  event.target.style.backgroundColor = selectedColor;
 }
 
 function clearBoard() {
@@ -59,6 +61,27 @@ function squareSize() {
   makeSquare(size);
 }
 
+function randonColor() {
+  const red = String(Math.floor(Math.random() * 256));
+  const green = String(Math.floor(Math.random() * 256));
+  const blue = String(Math.floor(Math.random() * 256));
+  return ('rgb(' + red + ' , ' + green + ' , ' + blue + ')')
+}
+
+function setInitialColor() {
+  let colors = document.querySelectorAll('.color');
+  
+  for (let i in colors) {
+    if (i === '0') {
+      colors[i].style.backgroundColor = 'black';
+      continue;
+    } else if (i === 'length') {
+      break;
+    }
+    colors[i].style.backgroundColor = randonColor();
+  }
+}
+
 function LOADED() {
   const colorsParent = document.getElementById('color-palette');
   colorsParent.addEventListener('click', choseColor);
@@ -73,5 +96,8 @@ function LOADED() {
 
   const scale = document.getElementById('generate-board');
   scale.addEventListener('click', squareSize);
+
+  setInitialColor();
 }
+
 window.onload = LOADED();

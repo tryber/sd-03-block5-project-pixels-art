@@ -6,22 +6,6 @@
   margin: 10px;
 }
 
-div > .black {
-  background-color: black;
-}
-
-div > .green {
-  background-color: green;
-}
-
-div > .yellow {
-  background-color: yellow;
-}
-
-div > .blue {
-  background-color: blue;
-}
-
 .column {
   display: flex;
 }
