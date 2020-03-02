@@ -14,7 +14,7 @@ for (let i = 0; i < pegaPixel.length; i++) {
     });
 }
 
-let apagaTudo = document.getElementById("clear");
+let apagaTudo = document.getElementById("clear-board");
 apagaTudo.addEventListener("click", function(){
     let pegaPixel = document.querySelectorAll(".pixel");
     for(i=0; i < pegaPixel.length; i++){
