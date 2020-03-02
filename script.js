@@ -13,3 +13,39 @@ for (let i = 0; i < pixels.length; i +=1 ) {
         pixels[i].style.backgroundColor = color;
     })
 }
+let buttonErase = document.getElementById("erase");
+buttonErase.addEventListener("click", function(){
+    let pixels = document.querySelectorAll(".pixel");
+    for (let i = 0; i < pixels.length; i +=1 ) {
+        pixels[i].style.backgroundColor = "white";
+    }
+})
+let buttonSize = document.getElementById("generate-board");
+buttonSize.addEventListener("click", function() {
+    debugger
+    document.getElementById("pixel-board").innerHTML="";
+    let size = document.querySelector("#board-size").value;
+    if (size < 5) {
+        size = 5;
+    } else if (size > 50) {
+        size = 50;
+    }
+    for (let i = 0; i < size; i+= 1){
+        let newRow = document.createElement("div");
+            newRow.className = "row";
+            document.getElementById("pixel-board").appendChild(newRow);
+            for (let i = 0; i < size; i += 1){
+                let newPixel = document.createElement("div");
+                newPixel.className = "pixel";
+                newRow.appendChild(newPixel);
+            }
+    }
+    let pixels = document.querySelectorAll(".pixel");
+    for (let i = 0; i < pixels.length; i +=1 ) {
+    pixels[i].addEventListener("click", function(){
+        let colorSquare = document.querySelector(".selected");
+        let color = colorSquare.id;
+        pixels[i].style.backgroundColor = color;
+    })
+}
+})
