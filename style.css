@@ -18,8 +18,8 @@ h1 {
   border: 1px solid black;
   box-sizing: border-box;
   float: left;
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
 }
 
 .tabela {
@@ -31,14 +31,14 @@ h1 {
 .pixel {
   background-color: white;
   border: 1px solid black;
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
 }
 
 .selected {
   border: 1px solid black;
   box-sizing: border-box;
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
 }
