@@ -2,6 +2,7 @@ const pixels = 25;
 var pixelBoard = document.querySelector("#pixel-board");
 var createElemment = document.createElement("div");
 var corOn = black;
+var corWhite = 'white';
 var divColors = document.querySelector('#color-palette');
 var qtdClass = document.querySelectorAll('.color');
 var children = divColors.childNodes; //aqui pega as divs filhas que tem as cores
@@ -29,13 +30,13 @@ function pintaCorSelecionada(testeparametro){
 //--
 
 
-const someInput = document.querySelector('button');
-someInput.addEventListener('click', myFunc, false);
-someInput.myParam = 'This is my parameter';
-function myFunc(evt)
-{
-  window.alert(evt.currentTarget.myParam);
-}
+// const someInput = document.querySelector('button');
+// someInput.addEventListener('click', myFunc, false);
+// someInput.myParam = 'This is my parameter';
+// function myFunc(evt)
+// {
+//   window.alert(evt.currentTarget.myParam);
+// }
 
 
 //criando eventlisneters dos pixels de selecionar cor
@@ -61,6 +62,7 @@ var getColorBlack = divColors.children[0].id; //pega as cores
 var getColorGreen = divColors.children[1].id;
 var getColorBlue = divColors.children[2].id;
 var getColorYellow = divColors.children[3].id;
+var getClearAllDiv = document.querySelector('#clear');
 console.log(qtdClass.length);
 
 getDivBlack.addEventListener('click', function clicouCor(){
@@ -83,6 +85,10 @@ getDivYellow.addEventListener('click', function clicouCor(){
     getDivYellow.className = "color selected";
     corOn = 'yellow';
 });
+getClearAllDiv.addEventListener('click', clearAll);
+
+
+
 //seta todos apenas com color, sem selected
 function setAllSimple(){
   //  for(i=0;i<4;i++){
@@ -92,4 +98,9 @@ function setAllSimple(){
         getDivBlue.className = "color";
         getDivYellow.className = "color";
   //  }
+}
+function clearAll(){
+    for(i = 0; i < pixels; i++ ){
+        pixelBoard.children[i].className = ('pixel ' + corWhite);
+    }
 }
