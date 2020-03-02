@@ -3,7 +3,8 @@ window.onload = function() {
   let colorRed = document.getElementsByClassName("red")[0];
   let colorBlue = document.getElementsByClassName("blue")[0];
   let colorGreen = document.getElementsByClassName("green")[0];
-  let pixel = document.getElementsByClassName("pixel");
+  let pixel = document.querySelectorAll(".pixel");
+  pixel.forEach(element => element.addEventListener("click", () => element.style.backgroundColor = mouseColor));
   let mouseColor = "";
 
   function anyColor(color) {
@@ -30,12 +31,9 @@ window.onload = function() {
     colorGreen.classList.add("selected");
   });
 
-  function pixelColor() {
-    pixel.this.style.backgroundColor = mouseColor;
+  function pixelColor(i) {
+    i.style.backgroundColor = mouseColor;
   }
-  pixel.addEventListener("click", () => {
-    for (let i = 0; i < 25; i++){
-
-    }
-  })
+  
+  
 }
