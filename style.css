@@ -1,6 +1,8 @@
 body, html{
-    margin:0px;
-    padding:0px;
+  margin:0px;
+  padding:0px;
+  background-color: #1C1E26;
+  color: white;
 }
 
 div{
@@ -22,6 +24,11 @@ div{
   
 #pixel-board{
   display: table;
+}
+
+#clear-board{
+  width: 120px;
+  height: 40px;
 }
   
 #black {
