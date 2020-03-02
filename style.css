@@ -1,42 +1,45 @@
 .color-pallete {
 }
 
-.color-pallete td, .color-pallete th {
-    border:  1px  solid  black;
-    height:  40px;
-    width:  40px;
+.color-pallete td , .color-pallete th {
+  border:  1px  solid  black;
+  height:  40px;
+  width:  40px;
 }
 
 .primeiracaixa {
-    background-color: black;
+  background-color: black;
 }
 
 .segundacaixa {
-    background-color: blue;
+  background-color: blue;
 }
 
 .terceiracaixa {
-    background-color: green;
+  background-color: green;
 }
 
 .quartacaixa {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .pixel-board {
 }
 
 .pixel {
-    height:  40px;
-    width:  40px;
-    background-color: rgb(255, 255, 255);
-    border:  1px  solid  black;
-    
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px  solid  black;  
 }
 
 #clear-board {
-    background-color:  lawngreen;
-    border: 1px  solid  black;
-    height:  40px;
-    width:  50px;
+  background-color:  lawngreen;
+  border: 1px  solid  black;
+  height: 40px;
+  width: 50px;
+}
+
+.selected {
+  background-color: white;
 }
