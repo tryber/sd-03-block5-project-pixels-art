@@ -22,16 +22,16 @@ table{
   height: 60px;
   width: 65px;
 }
-.black{
+#c1{
   background-color: black;
 }
-.dark{
+#c2{
   background-color: blue;
 }
-.medium{
+#c3{
   background-color: red;
 }
-.light{
+#c4{
   background-color: green;
 }
 #pixel-board{
@@ -44,4 +44,7 @@ table{
   border: 1px solid black;
   height: 40px;
   width: 40px;
+}
+.selected{
+  border: 5px solid black;
 }
