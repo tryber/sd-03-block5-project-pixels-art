@@ -3,10 +3,10 @@ body {
 }
 
 table {
-  background-color: black;
+  background-color: white;
 }
 
-td {
+.pixel {
   background-color: white;
   border-collapse: collapse;
   border: 1px solid black;
@@ -15,7 +15,18 @@ td {
   width: 40px;
 }
 
-.pixel {
-  height: 40px;
-  width: 40px;
+.primeira.cor {
+  background-color: black;
+}
+
+.segunda.cor {
+  background-color: red;
+}
+
+.terceira.cor {
+  background-color: blue;
+}
+
+.quarta.cor {
+  background-color: green;
 }
