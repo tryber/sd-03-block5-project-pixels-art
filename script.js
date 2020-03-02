@@ -22,7 +22,7 @@ function setCorPadrao() {
   divCores[0].style.backgroundColor = 'black';
   localStorage.clear();
   localStorage.setItem('color', '0');
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 10)); 
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
 }
 
 function arrumarClasseCss(ultimaCor, refCorAtual) {
@@ -34,7 +34,7 @@ function arrumarClasseCss(ultimaCor, refCorAtual) {
 function setLocalStorage(refCorAtual) {
   localStorage.clear();
   localStorage.setItem('color', refCorAtual);
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 10));
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
 //   return alert("Efetuado limpeza no storage e setado a cor escolhida")
 }
 
