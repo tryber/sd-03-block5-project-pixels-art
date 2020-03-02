@@ -1,9 +1,6 @@
-table {
-  border-spacing: 10px;
-}
-
 .color {
   border: 1px solid black;
+  display: inline-block;
   height: 39px;
   width: 39px;
 }
@@ -31,11 +28,9 @@ table {
 }
 
 .pixel {
-  background-color: white;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  height: 40px;
+  background: white;
+  border: 1px solid black;
+  height: 39px;
   padding: 0;
-  width: 40px;
+  width: 39px;
 }
