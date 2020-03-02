@@ -4,19 +4,19 @@ document.getElementById("yellow").style.backgroundColor = document.getElementByI
 document.getElementById("red").style.backgroundColor = document.getElementById("red").innerHTML
 
 
-// mudando as cores da paleta
+// selecionando a cor preta
 let color = document.querySelector(".selected").innerHTML
 
+//selecionando as cores
 
-let pixelSelected1 = document.getElementById("pixel1")
-pixelSelected1.addEventListener("click", changeColor)
+let colorSelected = document.querySelectorAll(".color");
 
-function changeColor() {
-    pixelSelected1.style.backgroundColor = color
-}
-let pixelSelected2 = document.getElementById("pixel1")
-pixelSelected2.addEventListener("click", changeColor)
+for (let i = 0; i < 4; i++) {
 
-function changeColor() {
-    pixelSelected2.style.backgroundColor = color
+    colorSelected[i].addEventListener("click", changeSelection)
+
+    function changeSelection() {
+        document.querySelector(".selected").classList.remove("selected")
+        colorSelected[i].classList.add("selected")
+    }
 }
