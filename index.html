@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paleta de Cores</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Cores</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1 id="title">Paleta de Cores</h1>
+    <h1 id="title">Paleta de Cores</h1>
 
-  <table id="color-palette" class="color-palette">
-    <tr>
-      <td id="primeira.color" class="primeira.cor pixel">black</td>
-      <td id="segunda.color" class="segunda.cor pixel">red</td>
-      <td id="terceira.color" class="terceira.cor pixel">blue</td>
-      <td id="quarta.color" class="quarta.cor pixel">green</td>
-    </tr>
-  </table>
+    <button id="clear-board">Limpar</button>
+    <input id="board-size" type="text" placeholder="Digite o tamanho">
 
-  &nbsp
-  <table id="pixel-board" class="pixel-board">
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-    <tr>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-      <td class="pixel"></td>
-    </tr>
-  </table>
+    <table id="color-palette" class="color-palette">
+        <tbody>
+            <tr>
+                <td id="c1" class="color cor1 selected"></td>
+                <td id="c2" class="color cor2"></td>
+                <td id="c3" class="color cor3"></td>
+                <td id="c4" class="color cor4"></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <table id="pixel-board" class="pixel-board">
+        <tbody>
+            <tr>
+                <td id="p1" class="pixel"></td>
+                <td id="p2" class="pixel"></td>
+                <td id="p3" class="pixel"></td>
+                <td id="p4" class="pixel"></td>
+                <td id="p5" class="pixel"></td>
+            </tr>
+            <tr>
+                <td id="p6" class="pixel"></td>
+                <td id="p7" class="pixel"></td>
+                <td id="p8" class="pixel"></td>
+                <td id="p9" class="pixel"></td>
+                <td id="p10" class="pixel"></td>
+            </tr>
+            <tr>
+                <td id="p11" class="pixel"></td>
+                <td id="p12" class="pixel"></td>
+                <td id="p13" class="pixel"></td>
+                <td id="p14" class="pixel"></td>
+                <td id="p15" class="pixel"></td>
+            </tr>
+            <tr>
+                <td id="p16" class="pixel"></td>
+                <td id="p17" class="pixel"></td>
+                <td id="p18" class="pixel"></td>
+                <td id="p19" class="pixel"></td>
+                <td id="p20" class="pixel"></td>
+            </tr>
+            <tr>
+                <td id="p21" class="pixel"></td>
+                <td id="p22" class="pixel"></td>
+                <td id="p23" class="pixel"></td>
+                <td id="p24" class="pixel"></td>
+                <td id="p25" class="pixel"></td>
+            </tr>
+        </tbody>
+    </table>
+<script src="script.js"></script>
 </body>
-
 </html>
