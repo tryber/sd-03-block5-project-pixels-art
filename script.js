@@ -71,7 +71,7 @@ function LOADED() {
   const clear = document.getElementById('clear-board');
   clear.addEventListener('click', clearBoard);
 
-  const scale = document.getElementById('board-size-button');
+  const scale = document.getElementById('generate-board');
   scale.addEventListener('click', squareSize);
 }
 window.onload = LOADED();
