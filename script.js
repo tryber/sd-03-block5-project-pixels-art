@@ -3,7 +3,7 @@ const cor2 = document.querySelector('.cor2');
 const cor3 = document.querySelector('.cor3');
 const cor4 = document.querySelector('.cor4');
 
-let corSelecionada = document.querySelector('.selected')
+let corSelecionada = document.querySelector('.selected');
 
 function selectColor(indicador) {
   if (indicador === 1) {
@@ -30,7 +30,7 @@ function selectColor(indicador) {
     cor3.className = 'color cor3';
     cor4.className = 'color selected cor4';
     corSelecionada = document.querySelector('.selected').style.backgroundColor;
-  } 
+  }
 }
 
 cor1.addEventListener('click', function () {
