@@ -1,3 +1,4 @@
+const cores = document.querySelectorAll('.color');
 const cor1 = document.querySelector('.cor1');
 const cor2 = document.querySelector('.cor2');
 const cor3 = document.querySelector('.cor3');
@@ -33,26 +34,26 @@ function selecionaCor(indicador) {
   }
 }
 
-cor1.addEventListener('click', function() {
+cor1.addEventListener('click', function () {
   selecionaCor(1);
 });
 
-cor2.addEventListener('click', function() {
+cor2.addEventListener('click', function () {
   selecionaCor(2);
 });
 
-cor3.addEventListener('click', function() {
+cor3.addEventListener('click', function () {
   selecionaCor(3);
 });
 
-cor4.addEventListener('click', function() {
+cor4.addEventListener('click', function () {
   selecionaCor(4);
 });
 
 const pixel = document.querySelectorAll('.pixel');
 
-for(let i = 0; i < pixel.length; i += 1) {
-  pixel[i].addEventListener('click', function(event) {
+for (let i = 0; i < pixel.length; i += 1) {
+  pixel[i].addEventListener('click', function () {
     pixel[i].style.backgroundColor = sessionStorage.color;
   })
 }
