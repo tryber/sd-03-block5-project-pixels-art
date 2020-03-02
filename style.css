@@ -4,6 +4,7 @@
     width: 40px;
     margin:1px;
     border: solid black;
+    margin-bottom: 10px;
 }
 
 .pixel{
@@ -12,8 +13,8 @@
     width: 40px;
     background-color: white;
     border: solid black;
-    padding: 0%;
-    margin: 0px;
+    padding: 0px;
+    margin: -3px;
 }
 
 .preto{
