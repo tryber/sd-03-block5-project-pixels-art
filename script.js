@@ -1,4 +1,3 @@
-const cores = document.querySelectorAll('.color');
 const cor1 = document.querySelector('.cor1');
 const cor2 = document.querySelector('.cor2');
 const cor3 = document.querySelector('.cor3');
@@ -55,9 +54,8 @@ const pixel = document.querySelectorAll('.pixel');
 for (let i = 0; i < pixel.length; i += 1) {
   pixel[i].addEventListener('click', function () {
     pixel[i].style.backgroundColor = sessionStorage.color;
-  })
+  });
 }
-
 
 const botaoLimpar = document.querySelector('#clear-board');
 
