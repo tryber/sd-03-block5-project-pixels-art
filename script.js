@@ -1,4 +1,5 @@
 let cl = document.querySelectorAll('.color');
+let pixel = document.querySelector('.pixel');
 //selecionar a cor criando uma class
 for (let i = 0; i < cl.length; i++) {
 
@@ -13,3 +14,7 @@ for (let i = 0; i < cl.length; i++) {
 
     });
   }
+  let pcolor = document.querySelector('.selected');
+  pixel.addEventListener("click", function() {
+    pixel.style.backgroundColor = pcolor.value
+  })
