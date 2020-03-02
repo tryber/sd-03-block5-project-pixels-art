@@ -13,11 +13,11 @@ table {
   padding: 0;
 }
 
-.black {
+#black {
   background-color: black;
 }
 
-.blue {
+#blue {
   background-color: blue;
 }
 
@@ -30,13 +30,13 @@ table {
   padding: 0;
 }
 
-.green {
+#green {
   background-color: green;
 }
 
 .pixel {
-  height: 39px;
-  width: 39px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   border: 1px;
   border-color: black;
@@ -45,6 +45,6 @@ table {
   padding: 0;
 }
 
-.red {
+#red {
   background-color: red;
 }
