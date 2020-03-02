@@ -2,10 +2,26 @@ window.onload = () => {
   // Faz com que cor Preta seja a escolhida ao carregar a página
   sessionStorage.setItem("SelectedColor", "black");
 
+  //Cria números de 0 a 255
+  const random255 = () => {
+    return 0 + Math.floor((255 - 0) * Math.random());
+  }
+
+  //Cria cores aleatórias
+  const randomColor = () => {
+    return "rgb(" + random255() + ", " + random255() + ", " + random255() + ")"
+  }
+
+  // Coloca cores aleatórias na paleta
+  document.querySelectorAll('.color')[0].style.backgroundColor = "black"
+  for (let cont = 1; cont < document.querySelectorAll('.color').length; cont++) {
+    document.querySelectorAll('.color')[cont].style.backgroundColor = randomColor()
+  }
+
   // Faz com que a cor selecionada pelo usuário seja definida para colorir
   document.querySelectorAll('.color').forEach(element => element.addEventListener("click", (event) => {
     document.getElementsByClassName("selected")[0].classList.remove("selected");
-    sessionStorage.setItem("SelectedColor", event.toElement.attributes.value.value);
+    sessionStorage.setItem("SelectedColor", event.target.style.backgroundColor);
     element.classList.add("selected");
   }));
 
@@ -38,7 +54,7 @@ window.onload = () => {
     if (size < 5) {
       size = 5
     }
-    if (size >50){
+    if (size > 50) {
       size = 50
     }
     createTable(size)
@@ -47,6 +63,7 @@ window.onload = () => {
 
   //Cria tabela 5x5 inicial
   createTable(5)
+
   // Adiciona o listener ao inicializar a página
   addListenerColor()
 }
