@@ -12,9 +12,7 @@
     height: 40px;
     width: 40px;
     background-color: white;
-    border: solid black;
-    padding: 0px;
-    margin: -3px;
+    border: 1px solid black;
 }
 
 .preto{
