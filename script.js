@@ -2,6 +2,8 @@ const cor1 = document.querySelector('.cor1');
 const cor2 = document.querySelector('.cor2');
 const cor3 = document.querySelector('.cor3');
 const cor4 = document.querySelector('.cor4');
+const cores = document.querySelectorAll('.color')
+const pixel = document.getElementsByClassName('pixel');
 
 function selectColor(indicador) {
   if (indicador === 1) {
@@ -42,3 +44,9 @@ cor3.addEventListener('click', function () {
 cor4.addEventListener('click', function () {
   selectColor(4);
 });
+
+pixel.addEventListener('click', function (event) {
+  for(let i = 0; i < pixel.length; i+=1) {
+    event.style.backgroundColor = cores.classList.contains('selected');
+  }
+})
