@@ -1,6 +1,7 @@
 .color {
   border: 1px solid black;
-  padding: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .cor1 {
@@ -22,5 +23,6 @@
 .pixel {
   background-color: white;
   border: 1px solid black;
-  padding: 40px;
+  height: 40px ;
+  width: 40px ;
 }
