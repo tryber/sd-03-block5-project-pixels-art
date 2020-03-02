@@ -38,9 +38,8 @@ h1 {
 td.pixel {
   background-color: white;
   border: 1px solid black;
-  height: 37px;
-  padding: 2px;
-  width: 37px;
+  height: 40px;
+  width: 40px;
 }
 
 .clear {
