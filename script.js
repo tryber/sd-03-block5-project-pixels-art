@@ -49,3 +49,14 @@ buttonSize.addEventListener("click", function() {
     })
 }
 })
+let colorArray = document.querySelectorAll(".color");
+for (let j = 1; j < colorArray.length; j += 1){
+    var letters = '0123456789ABCDEF';
+    var newColor = '#';
+    for (var i = 0; i < 6; i++) {
+        newColor += letters[Math.floor(Math.random() * 16)];
+    }
+    colorArray[j].style.backgroundColor = newColor;
+    colorArray[j].id = newColor;
+}
+
