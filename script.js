@@ -54,15 +54,15 @@ document.getElementById("green").style.backgroundColor = randomColor();
 function makeBoard(n) {
 
   if(n > 50){
-    alert('numero escolhido deve ser menor que 50, escolha outro')
+    n=50
   }
 
   else if(n<5){
-    alert('Número escolhido deve ser maior que 5, escolha outro')
+    n=5
 
   }
 
-  else{
+
     //Deleta todos os filhos
     let pai = document.getElementById('pixel-board');
     while(pai.firstChild){
@@ -91,7 +91,7 @@ function makeBoard(n) {
       pixel.addEventListener('click', setColor)
     }
 
-  }
+
 
 
 }
