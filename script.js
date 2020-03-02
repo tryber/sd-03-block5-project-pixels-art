@@ -1,15 +1,24 @@
-let colors = document.querySelectorAll(".color");
-for (let i = 0; i < colors.length; i +=1 ) {
-    colors[i].addEventListener("click", function() {
+let pegaCor = document.querySelectorAll(".color");
+for (let i = 0; i < pegaCor.length; i++) {
+    pegaCor[i].addEventListener("click", function() {
         document.querySelector(".selected").classList.remove("selected");
-        colors[i].classList.add("selected");
+        pegaCor[i].classList.add("selected");
     });
 }
-let pixels = document.querySelectorAll(".pixel");
-for (let i = 0; i < pixels.length; i +=1 ) {
-    pixels[i].addEventListener("click", function(){
-        let colorSquare = document.querySelector(".selected");
-        let color = colorSquare.id;
-        pixels[i].style.backgroundColor = color;
-    })
+
+let pegaPixel = document.querySelectorAll(".pixel");
+for (let i = 0; i < pegaPixel.length; i++) {
+    pegaPixel[i].addEventListener("click", function(){
+        let escolheCor = document.querySelector(".selected");
+        pegaPixel[i].style.backgroundColor = escolheCor.id;
+    });
 }
+
+let apagaTudo = document.getElementById("clear");
+apagaTudo.addEventListener("click", function(){
+    let pegaPixel = document.querySelectorAll(".pixel");
+    for(i=0; i < pegaPixel.length; i++){
+        
+        pegaPixel[i].style.backgroundColor = "white";
+    }
+});
