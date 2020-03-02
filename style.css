@@ -1,6 +1,4 @@
-.color-palette {
-    
-}
+
 
 .color {
     width: 45px;
@@ -14,10 +12,6 @@
 
 .color-text {
     margin-top:10px;
-}
-
-.selected {
-    border: 3px solid orange;
 }
 
 #black {
