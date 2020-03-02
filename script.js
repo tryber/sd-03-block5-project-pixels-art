@@ -49,7 +49,7 @@ function makeSquare(N) {
 }
 
 function squareSize() {
-  let size = document.getElementById('square-size').value;
+  let size = document.getElementById('board-size').value;
   if (size < 5) {
     size = 5;
   } else if (size > 50) {
@@ -71,7 +71,7 @@ function LOADED() {
   const clear = document.getElementById('clear-board');
   clear.addEventListener('click', clearBoard);
 
-  const scale = document.getElementById('square-size-button');
+  const scale = document.getElementById('board-size-button');
   scale.addEventListener('click', squareSize);
 }
 window.onload = LOADED();
