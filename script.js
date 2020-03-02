@@ -13,35 +13,35 @@ const pixel = document.querySelectorAll('.pixel');
 
 function setDeCores() {
   for (let i = 0; i < divCores.length; i += 1) {
-    divCores[i].style.backgroundColor = paletaCores[i]
+    divCores[i].style.backgroundColor = paletaCores[i];
   }
 }
 
 function setCorPadrao() {
-  divCores[0].classList.add("selected")
-  divCores[0].style.backgroundColor = "black"
-  localStorage.clear()
-  localStorage.setItem("color", "0")
-  ultimaCorEscolhida = parseInt(localStorage.getItem("color"))
+  divCores[0].classList.add('selected');
+  divCores[0].style.backgroundColor = 'black';
+  localStorage.clear();
+  localStorage.setItem('color', '0');
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color'));
 }
 
 function arrumarClasseCss(ultimaCor, refCorAtual) {
-  divCores[ultimaCor].classList.remove("selected")
-  divCores[refCorAtual].classList.add("selected")
+  divCores[ultimaCor].classList.remove('selected');
+  divCores[refCorAtual].classList.add('selected');
 //   return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
 }
 
 function setLocalStorage(refCorAtual) {
-  localStorage.clear()
-  localStorage.setItem("color", refCorAtual)
-  ultimaCorEscolhida = parseInt(localStorage.getItem("color"))
+  localStorage.clear();
+  localStorage.setItem('color', refCorAtual);
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color'));
 //   return alert("Efetuado limpeza no storage e setado a cor escolhida")
 }
 
 function pintarPixel() {
   for (let i = 0; i < pixel.length; i += 1) {
-    pixel[i].addEventListener("click", function (event) {
-      pixel[i].style.backgroundColor = corEscolhida
+    pixel[i].addEventListener('click', function () {
+      pixel[i].style.backgroundColor = corEscolhida;
     })
   }
 }
