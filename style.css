@@ -1,0 +1,27 @@
+.color {
+    border-collapse: 1px solid black;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+}
+.corum {
+    background-color: black;
+}
+.cordois {
+    background-color: red;
+}
+.cortres {
+    background-color: orange;
+}
+.corquatro {
+    background-color: yellow;
+}
+.pixel {
+    background-color: white;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    outline: 1px solid black;
+}
