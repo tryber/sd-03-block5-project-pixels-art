@@ -8,4 +8,7 @@ window.onload = () => {
     document.querySelectorAll('.pixel').forEach(element => element.addEventListener("click", (event) => {
         event.srcElement.style.backgroundColor = sessionStorage.getItem("SelectedColor")
     }));
+    document.getElementById("clear-board").addEventListener("click", () => {
+      document.querySelectorAll('.pixel').forEach(element => element.style.backgroundColor = "White")
+    })
 }
