@@ -4,8 +4,8 @@
     border: 2px solid black;
 }
 
-#red-color {
-    background-color: red;
+#black-color {
+    background-color: black;
 }
 
 #blue-color {
@@ -16,6 +16,6 @@
     background-color: green;
 }
 
-#yellow-color {
-    background-color: yellow;
+#red-color {
+    background-color: red;
 }
