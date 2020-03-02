@@ -5,7 +5,11 @@ const cor4 = document.querySelector('.cor4');
 
 let corSelecionada = document.querySelector('.selected');
 
-function selectColor(indicador) {
+const pixel = document.getElementsByClassName('pixel');
+
+const botaoLimpar = document.querySelector('#clear-board');
+
+function selecionaCor(indicador) {
   if (indicador === 1) {
     cor1.className = 'color selected cor1';
     cor2.className = 'color cor2';
@@ -31,20 +35,32 @@ function selectColor(indicador) {
     cor4.className = 'color selected cor4';
     corSelecionada = document.querySelector('.selected').style.backgroundColor;
   }
-}
+};
+
+function pintaPixel () {
+
+};
+
+function limpaPixel () {
+  for(let i in pixel) {
+    pixel[i].style.backgroundColor = 'white';
+  }
+};
 
 cor1.addEventListener('click', function () {
-  selectColor(1);
+  selecionaCor(1);
 });
 
 cor2.addEventListener('click', function () {
-  selectColor(2);
+  selecionaCor(2);
 });
 
 cor3.addEventListener('click', function () {
-  selectColor(3);
+  selecionaCor(3);
 });
 
 cor4.addEventListener('click', function () {
-  selectColor(4);
+  selecionaCor(4);
 });
+
+botaoLimpar.addEventListener('click', limpaPixel);
