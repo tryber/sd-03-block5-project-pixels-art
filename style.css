@@ -5,7 +5,7 @@ body {
     align-items: center;
     width: 1366px;
     height:  768px;
-    background-color: cornflowerblue;
+    
 }
 
 #color-palette {
@@ -58,7 +58,7 @@ body {
 }
 
 #pixel-board {
-    background-color: crimson;
+    background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: row;
