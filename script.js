@@ -3,18 +3,14 @@ window.onload = () => {
   sessionStorage.setItem('SelectedColor', 'black');
 
   // Cria números de 0 a 255
-  const random255 = () => {
-    return 0 + Math.floor((255 - 0) * Math.random());
-  };
+  const random255 = () => 0 + Math.floor((255 - 0) * Math.random());
 
   // Cria cores aleatórias
-  const randomColor = () => {
-    return 'rgb(' + random255() + ', ' + random255() + ', ' + random255() + ')';
-  };
-
+  const randomColor = () => 'rgb(' + random255() + ', ' + random255() + ', ' + random255() + ')';
+  // console.log('rgb(${random255()} , ${random255()} ,${random255()})')
   // Coloca cores aleatórias na paleta
   document.querySelectorAll('.color')[0].style.backgroundColor = 'black';
-  for (let cont = 1; cont < document.querySelectorAll('.color').length; cont++) {
+  for (let cont = 1; cont < document.querySelectorAll('.color').length; cont = cont + 1) {
     document.querySelectorAll('.color')[cont].style.backgroundColor = randomColor();
   };
 
@@ -37,10 +33,10 @@ window.onload = () => {
     let board = document.createElement('table');
     board.id = 'pixel-board';
     document.getElementById('board-div').appendChild(board);
-    for (let c = 0; c < size; c++) {
+    for (let c = 0; c < size; c = c + 1) {
       let line = document.createElement('tr');
       document.getElementById('pixel-board').appendChild(line);
-      for (let d = 0; d < size; d++) {
+      for (let d = 0; d < size; d = d + 1) {
         let pixel = document.createElement('td');
         pixel.className = 'pixel';
         document.getElementsByTagName('tr')[c].appendChild(pixel);
