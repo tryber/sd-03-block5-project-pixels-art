@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paleta de Cores</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1 id="title">Paleta de Cores</h1>
@@ -17,25 +19,52 @@
             <div id="cor03" style="background-color: dodgerblue;" class="color"></div>
             <div id="cor04" style="background-color: lawngreen;" class="color"></div>
         </div>
-        <p><button id="clear-board" onclick="limpaGrade()">Limpar grade</button></p>
-        <table id="pixel-board">
-            <tr>
-                <td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel">
-            </tr>
-            <tr>
-                <td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel">
-            </tr>
-            <tr>
-                <td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel">
-            </tr>
-            <tr>
-                <td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel">
-            </tr>
-            <tr>
-                <td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel"><td class="pixel"></td class="pixel">
-            </tr>
-        </table>
+        <div class="controles">
+            <button id="clear-board" onclick="limpaGrade()">Limpar grade</button>
+            Insira a quantidade de linhas/colunas desejada: <input type="number" id="cxLinhasColunas" value=7>
+            <button onclick="geraGrade()">Gerar tabela com tamanho selecionado</button>
+        </div>
+        <div class="grade">
+            <table id="pixel-board">
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+            </table>
+        </div>
     </article>
     <script src="script.js"></script>
 </body>
+
 </html>
