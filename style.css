@@ -3,14 +3,14 @@ h1 {
 }
 
 .paleta {
-  margin: auto;
+  text-align: center;
 }
 
 .color {
   border: 1px solid black;
   display: inline-block;
-  height: 39px;
-  width: 39px;
+  height: 38px;
+  width: 38px;
 }
 
 .cor1 {
@@ -32,12 +32,21 @@ h1 {
 .pixelBoard {
   border-collapse: collapse;
   border-spacing: 0;
-  display: block;
+  margin: 0 auto 0 auto;
 }
 
 .pixel {
   background: white;
   border: 1px solid black;
-  height: 37px;
-  width: 37px;
+  height: 40px;
+  width: 40px;
+}
+
+.clear {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
 }
