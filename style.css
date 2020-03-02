@@ -2,9 +2,9 @@
 }
 
 .color-pallete td, .color-pallete th {
-    border: 1px solid #000000;
-    height: 40px;
-    width: 40px;
+    border:  1px  solid  black;
+    height:  40px;
+    width:  40px;
 }
 
 .primeiracaixa {
@@ -27,7 +27,14 @@
 }
 
 .pixel {
-    height: 40px;
-    width: 40px;
-    border: 1px solid black;
+    height:  40px;
+    width:  40px;
+    border:  1px  solid  black;
+}
+
+#clear-board {
+    background-color:  lawngreen;
+    border: 1px  solid  black;
+    height:  40px;
+    width:  50px;
 }
