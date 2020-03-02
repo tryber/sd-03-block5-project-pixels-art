@@ -1,9 +1,7 @@
 .color{
-    border: black 3px solid;
+    border: 1px solid black;
     height: 40px;
-    margin: 1px;
     width: 40px;
-
 }
 
 .cor1{
