@@ -1,38 +1,37 @@
 .pixel {
-    background-color:  white;
-    border:  1px  black;
-    height:  40px;
-    padding:  0;
-    width:  40px;
+  background-color: white;
+  border: 1px solid black;
+  height:  40px;
+  padding:  0;
+  width:  40px;
 }
 
 .color {
-    border:  1px black;
-    height:  50px;
-    width:  50px;
+  border: 1px black;
+  height: 50px;
+  width: 50px;
 }
 
 .preta {
-    background-color:  black;
-    display:  inline-block;
+  background-color: black;
+  display: inline-block;
 }
 
 .azul {
-    background-color:  blue;
-    display:  inline-block;
+  background-color: blue;
+  display: inline-block;
 }
 
 .amarelo {
-    background-color:  yellow;
-    display:  inline-block;
+  background-color: yellow;
+  display: inline-block;
 }
 
 .vermelho {
-    background-color:  red;
-    display:  inline-block;
+  background-color: red;
+  display: inline-block;
 }
 
 table {
-    background-color: black;
-    border: 1px black;
+  border-spacing: 0;
 }
