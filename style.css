@@ -36,7 +36,6 @@
 
 .pixel {
     display: table-cell;
-    background-color: white;
     width: 40px;
     height: 40px;
     margin: 1px;
