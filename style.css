@@ -16,19 +16,19 @@ h1 {
     width: 40px;
 }
 
-#black-palet {
+.black-palet {
     background-color: black;
 }
 
-#green-palet {
+.green-palet {
     background-color: green;
 }
 
-#yellow-palet {
+.yellow-palet {
     background-color: yellow;
 }
 
-#red-palet {
+.red-palet {
     background-color: red;
 }
 
