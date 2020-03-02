@@ -24,10 +24,10 @@ body {
     display: table;
     border-spacing: 1px;
 }
-
 .pixel{
     background-color: white;
     display: table-cell;
     height: 40px;
     width: 40px;
+    border: 1px solid black;
 }
