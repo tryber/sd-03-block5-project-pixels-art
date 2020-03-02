@@ -36,21 +36,49 @@ A seguir, estão listados todos os requisitos do projeto. Leia-os atentamente e 
 
 Você tem liberdade para adicionar novos comportamentos ao seu projeto, seja na forma de aperfeiçoamentos em requisitos propostos ou novas funcionalidades, **desde que tais comportamentos adicionais não conflitem com os requisitos propostos**. Em outras palavras, você pode fazer mais do que for pedido, mas nunca menos. Contudo, tenha em mente que **nada além do que for pedido nos requisitos será avaliado**. Esta é uma oportunidade de você exercitar sua criatividade e experimentar com os conhecimentos adquiridos.
 
+### 1 - A página deve possuir o título "Paleta de Cores"
 
+O título deverá ficar dentro de uma tag `h1` com o **id** `title`.
 
+### 2 - A página deve possuir uma paleta de quatro cores
 
+A paleta deverá listar todas as cores disponíveis para utilização, lado a lado, e deverá ser posicionada abaixo do título "Paleta de Cores".
 
+A paleta de cores deve possuir o **id** `color-palette`, ao passo que cada cor individual da paleta de cores deve possuir a **classe** `color`.
 
+A cor de fundo de cada elemento da paleta deverá ser a cor que o elemento representa.
+
+### 3 - A cor **preta** deve ser a primeira na paleta de cores
+
+As demais cores podem ser escolhidas livremente.
+
+### 4 - A página deve possuir um quadro de pixels, com 25 pixels
+
+O quadro de pixels deve possuir 5 pixels de largura por 5 pixels de altura. A cor inicial dos pixels, ao abrir a página, deve ser branca.
+
+O quadro de pixels deve possuir o **id** `pixel-board`, ao passo que cada pixel individual no quadro deve possuir a **classe** `pixel`.
 
 ### 5 - O quadro de pixels deve aparecer abaixo da paleta de cores
 
+### 6 - Cada pixel do quadro de pixels deve possuir 40 pixels de largura e 40 pixels de altura e ser delimitado por uma margem preta de 1 pixel
 
+40 pixels deve ser o tamanho total do elemento, incluindo conteúdo, padding e boda.
 
+### 7 - Ao carregar a página, a cor **preta** da paleta já deve estar selecionada para pintar os pixels
 
+O elemento da cor preta deve possuir, inicialmente, a **classe** `selected`.
 
+**Note que o elemento que deverá receber a classe `selected` deve ser um dos elementos que possuem a classe `color`, como especificado no requisito 2.**
 
+### 8 - Ao clicar em uma das cores da paleta, a cor selecionada na paleta é que vai ser usada para preencher os pixels
 
+A **classe** `selected` deve ser adicionada à cor selecionada, ao mesmo tempo em que é removida da cor anteriormente selecionada.
 
+**Note que os elementos que deverão receber a classe `selected` devem ser os mesmos elementos que possuem a classe `color`, como especificado no requisito 2.**
+
+### 9 - Ao clicar em um pixel com uma cor selecionada, o pixel deve ser preenchido com esta cor
+
+### 10 - Ao clicar em um pixel com uma cor selecionada, somente esse pixel deverá ser preenchido, sem influenciar na cor dos demais pixels
 
 ## BÔNUS
 
