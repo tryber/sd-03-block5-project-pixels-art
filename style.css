@@ -14,6 +14,9 @@
     height: 40px;
     width: 40px;
     background-color: white;
+    border: solid black;
+    padding: 0%;
+    margin: 0px;
 }
 
 .preto{
