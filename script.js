@@ -24,4 +24,12 @@ function LOADED() {
   square.addEventListener('click', insertColor);
 }
 
+function clearBoard() {
+  const board = document.querySelectorAll('td');
+  
+  for (let i of board) {
+    i.style.backgroundColor = 'white';    
+  }
+}
+
 window.onload = LOADED();
