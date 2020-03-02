@@ -35,12 +35,11 @@ h1 {
   margin: 0 auto;
 }
 
-.pixel {
+td.pixel {
   background: white;
   border: 1px solid black;
-  height: 35px;
-  padding: 2px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
 }
 
 .clear {
