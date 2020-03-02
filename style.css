@@ -22,12 +22,12 @@ table {
 }
 
 .color {
-  height: 28px;
-  width: 28px;
   border: 1px;
   border-color: black;
   border-style: solid;
+  height: 28px;
   padding: 0;
+  width: 28px;
 }
 
 #green {
@@ -35,13 +35,14 @@ table {
 }
 
 .pixel {
-  height: 40px;
-  width: 40px;
   background-color: white;
   border: 1px;
   border-color: black;
   border-style: solid;
+  height: 40px;
+  margin: 1px;
   padding: 0;
+  width: 40px;
 }
 
 #red {
