@@ -1,0 +1,12 @@
+.color {
+    height: 50px;
+    width: 50px;
+    border: black solid 1px;
+    background-color: white;
+    margin: 4px;
+    color: rgba(0, 0, 0, 0);
+}
+
+.color-palette {
+    display: inline-flex;
+}
