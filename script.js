@@ -13,7 +13,7 @@ for (let i = 0; i < pixels.length; i +=1 ) {
         pixels[i].style.backgroundColor = color;
     })
 }
-let buttonErase = document.getElementById("erase");
+let buttonErase = document.getElementById("clear-board");
 buttonErase.addEventListener("click", function(){
     let pixels = document.querySelectorAll(".pixel");
     for (let i = 0; i < pixels.length; i +=1 ) {
