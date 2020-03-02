@@ -1,3 +1,25 @@
-h1{
-  color: green;
+.color{
+  padding: 40px;
+  border: 1px black solid;
+}
+
+.cor1{
+  background-color: black;
+}
+
+.cor2{
+  background-color: green;
+}
+
+.cor3{
+  background-color: yellow;
+}
+
+.cor4{
+  background-color: blue;
+}
+
+.pixel{
+  padding: 40px;
+  border: 1px black solid;
 }
