@@ -6,7 +6,7 @@ window.onload = () => {
   document.querySelectorAll('.color').forEach(element => element.addEventListener("click", (event) => {
     document.getElementsByClassName("selected")[0].classList.remove("selected");
     sessionStorage.setItem("SelectedColor", event.toElement.attributes.value.value);
-    document.getElementsByClassName(sessionStorage.getItem("SelectedColor") + "-bg")[0].classList.add("selected");
+    element.classList.add("selected")
   }));
 
   // Função que adiciona um listener para cada elemento com classe pixel que colore o pixel clicado
@@ -23,7 +23,7 @@ window.onload = () => {
 
 
     let size = document.getElementById('board-size').value;
-    // if(size>4 && size<51){
+    if(size>4 && size<51){
       document.querySelector('#pixel-board').remove()
 
       let board = document.createElement("table");
@@ -31,7 +31,6 @@ window.onload = () => {
       document.getElementById("board-div").appendChild(board)
       for (let c = 0; c < size; c++) {
         let line = document.createElement("tr");
-        // line.className = "line";
         document.getElementById('pixel-board').appendChild(line)
         for (let d = 0; d < size; d++) {
           let pixel = document.createElement("td");
@@ -41,6 +40,6 @@ window.onload = () => {
 
         addListenerColor()
       };
-    // }
+    }
   });
 }
