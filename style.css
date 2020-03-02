@@ -1,10 +1,11 @@
 body {
+  display: table-cell;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  font-size: 26pt;
+header {
+  font-size: 22pt;
 }
 
 table {
