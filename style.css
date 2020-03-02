@@ -1,0 +1,39 @@
+.pixel{
+    width: 40px;
+    border: 1px black;
+    background-color: white;
+    height: 40px;
+    padding: 0;
+
+}
+
+.color{
+    width: 50px;
+    border: 1px black;
+    height: 50px;
+}
+
+.preta{
+    background-color: black;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.paleta{
+    display: inline-block;
+}
+
+table{
+    border: 1px black;
+    background-color: black;
+}
