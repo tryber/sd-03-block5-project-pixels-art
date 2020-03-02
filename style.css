@@ -36,11 +36,12 @@
 
 .pixel-board {
     border: 1px solid #000000;
-    background-color: #EEEEEE;
+    background-color: white;
   }
 
 .pixel {
     border: 1px solid #000000;
+    background-color: white;
     width: 40px;
     height: 40px;
   }
