@@ -4,7 +4,7 @@ window.onload = function() {
   let colorBlue = document.getElementsByClassName("blue")[0];
   let colorGreen = document.getElementsByClassName("green")[0];
   let pixel = document.querySelectorAll(".pixel");
-  pixel.forEach(element => element.addEventListener("click", () => element.style.backgroundColor = mouseColor));
+  pixel.forEach(element => element.addEventListener("click", () => element.style.backgroundColor = mouseColor))
   let mouseColor = "";
 
   function anyColor(color) {
@@ -31,8 +31,8 @@ window.onload = function() {
     colorGreen.classList.add("selected");
   });
 
-  function pixelColor(i) {
-    i.style.backgroundColor = mouseColor;
+  function hehe(element) {
+    element.style.backgroundColor = mouseColor;
   }
   
   
