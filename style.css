@@ -23,11 +23,10 @@ div > .blue {
 }
 
 .column {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
 }
 
-.pixel, .color {
+.pixel , .color {
   background-color: white;
   border: solid 1px black;
   height: 40px;
