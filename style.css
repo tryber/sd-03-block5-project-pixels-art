@@ -1,8 +1,24 @@
 .color{
-    height: 50px;
-    width: 50px;
-    float: left;
     border: black 3px solid;
+    float: left;
+    height: 50px;
     margin: 3px;
+    width: 50px;
 
+}
+
+.cor1{
+    background-color: black;
+}
+
+.cor2{
+    background-color: red ;
+}
+
+.cor3{
+    background-color: green ;
+}
+
+.cor4{
+    background-color: blue ;
 }
