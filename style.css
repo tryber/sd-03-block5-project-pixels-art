@@ -2,7 +2,11 @@
     display: inline-block;
     height: 40px;
     width: 40px;
-    border:1px solid black;
+    margin:1px;
+    border: solid black;
+}
+.selected{
+
 }
 
 .pixel{
