@@ -10,6 +10,6 @@ for (let i = 0; i < pixels.length; i +=1 ) {
     pixels[i].addEventListener("click", function(){
         let colorSquare = document.querySelector(".selected");
         let color = colorSquare.id;
-        pixels[i].style.backgroundColor = color;   
-     })
+        pixels[i].style.backgroundColor = color;
+    })
 }
