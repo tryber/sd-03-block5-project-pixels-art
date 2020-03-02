@@ -1,0 +1,9 @@
+body {
+  background-color: white;
+}
+.color {
+  border: 2px solid black;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
