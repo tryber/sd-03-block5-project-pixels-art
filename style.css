@@ -3,7 +3,7 @@ html {
   padding: 0;
 }
 
-.color,
+.color ,
 .selected {
   border: black solid 1px;
   cursor: pointer;
@@ -13,7 +13,7 @@ html {
   width: 25px;
 }
 
-#pixel-board {
+.pixel-board-class {
   clear: both;
   height: 210px;
   width: 210px;
@@ -22,7 +22,6 @@ html {
 .pixel {
   border: black solid 1px;
   cursor: pointer;
-  display: inline-block;
   float: left;
   height: 40px;
   width: 40px;

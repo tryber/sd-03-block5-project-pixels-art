@@ -16,40 +16,40 @@ pallete3.style.backgroundColor = 'blue';
 pallete4.style.backgroundColor = 'grey';
 
 // Color selector
-pallete1.addEventListener('click', function(event) {
+pallete1.addEventListener ('click', function () {
   sessionStorage.setItem('color', 'black');
-  for (let i = 0; i < allColors.length; i++) {
-    if (i == 0) {
+  for (let i = 0; i < allColors.length; i+=1) {
+    if (i === 0) {
       allColors[i].className += ' selected';
     } else {
       allColors[i].className = 'color';
     }
   }
 });
-pallete2.addEventListener('click', function(event) {
+pallete2.addEventListener ('click', function () {
   sessionStorage.setItem('color', 'red');
-  for (let i = 0; i < allColors.length; i++) {
-    if (i == 1) {
+  for (let i = 0; i < allColors.length; i+=1) {
+    if (i === 1) {
       allColors[i].className += ' selected';
     } else {
       allColors[i].className = 'color';
     }
   }
 });
-pallete3.addEventListener('click', function(event) {
+pallete3.addEventListener ('click', function () {
   sessionStorage.setItem('color', 'blue');
-  for (let i = 0; i < allColors.length; i++) {
-    if (i == 2) {
+  for (let i = 0; i < allColors.length; i+=1) {
+    if (i === 2) {
       allColors[i].className += ' selected';
     } else {
       allColors[i].className = 'color';
     }
   }
 });
-pallete4.addEventListener('click', function(event) {
+pallete4.addEventListener ('click', function () {
   sessionStorage.setItem('color', 'grey');
-  for (let i = 0; i < allColors.length; i++) {
-    if (i == 3) {
+  for (let i = 0; i < allColors.length; i+=1) {
+    if (i === 3) {
       allColors[i].className += ' selected';
     } else {
       allColors[i].className = 'color';
@@ -62,12 +62,12 @@ const getPixel = document.querySelectorAll('.pixel');
 const pixelSize = document.querySelectorAll('.pixel').length;
 
 // Set initial pixel colors to white
-for (let i = 0; i < pixelSize; i++) {
+for (let i = 0; i < pixelSize; i+=1) {
   getPixel[i].style.backgroundColor = 'white';
 }
 
-for (let i = 0; i < pixelSize; i++) {
-  getPixel[i].addEventListener('click', function(event) {
+for (let i = 0; i < pixelSize; i+=1) {
+  getPixel[i].addEventListener ('click', function () {
     getPixel[i].style.backgroundColor = sessionStorage.color;
   });
 }
