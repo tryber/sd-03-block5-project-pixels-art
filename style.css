@@ -32,8 +32,10 @@ table {
 
 .pixel {
   background-color: white;
-  border: 1px solid black;
-  height: 39px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  height: 40px;
   padding: 0;
-  width: 39px;
+  width: 40px;
 }

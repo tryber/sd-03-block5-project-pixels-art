@@ -3,7 +3,7 @@ const cor2 = document.querySelector('.cor2');
 const cor3 = document.querySelector('.cor3');
 const cor4 = document.querySelector('.cor4');
 const cores = document.querySelectorAll('.color')
-const pixel = document.getElementsByClassName('pixel');
+const pixel = document.querySelectorAll('.pixel');
 
 function selectColor(indicador) {
   if (indicador === 1) {
