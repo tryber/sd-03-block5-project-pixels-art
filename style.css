@@ -1,14 +1,15 @@
 .color{
     display: inline-block;
     height: 40px;
-    width: 50px;
+    width: 40px;
+    border:1px solid black;
 }
 
 .pixel{
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: violet;
+    background-color: white;
 }
 
 .preto{
