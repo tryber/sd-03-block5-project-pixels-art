@@ -1,8 +1,7 @@
 /* DivTable.com */
 .divTable{
 	display: table;
-    width: 100%;
-    width: 250px;
+    width: 200px;
     border: 1px solid black;
 }
 .divTableRow {
@@ -14,18 +13,31 @@
 .divTableCell, .divTableHead {
 	border: 1px solid black;
 	display: table-cell;
-    padding: 3px 10px;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
 }
 .divTableHeading {
 	display: table-header-group;
-	font-weight: bold;
 }
 .divTableFoot {
 	display: table-footer-group;
-	font-weight: bold;
 }
 .divTableBody {
 	display: table-row-group;
+}
+
+#bgc-black {
+    background-color: black;
+}
+
+#bgc-purple {
+    background-color: purple;
+}
+
+#bgc-green {
+    background-color: green;
+}
+
+#bgc-orange {
+    background-color: orangered;
 }
