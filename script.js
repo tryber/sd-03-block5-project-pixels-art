@@ -1,1 +1,3 @@
-// let aquiVaiMeuCodigoSofrido = "logo eu começo";
+function colorSelected (){
+    
+}
