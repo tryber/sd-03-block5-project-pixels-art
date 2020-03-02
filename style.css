@@ -8,11 +8,10 @@
     border: 1px black solid;
 }
 .color{
-    height: 25px;
-    width: 25px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+    height: 70px;
+    width: 70px;
+    border: 1px black solid;
+    display: inline-block;
 }
 #black{
     background: black;
@@ -29,10 +28,11 @@
 #pixel-board{
     width: 250px;
     height: 250px;
-    border-style: dotted;
+    /* border-style: dotted;
     border-width: 1px;
-    border-color: red;
+    border-color: red; */
 }
 #color-palette{
+    width: 250px;
     display: flex;
 }
