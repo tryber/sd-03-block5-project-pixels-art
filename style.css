@@ -2,13 +2,18 @@
     display: table;
     border-spacing: 1px;
     background-color: black;
-    border:5px solid black
+    border:5px solid black;
 }
 .color{
     display: table-cell;
     background-color: white;
     width: 50px;
     height: 50px;
+}
+.color{
+    border:5px solid black;
+    height: 100%;
+    width: 100%;
 }
 #green{
     background-color: green;
