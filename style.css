@@ -5,18 +5,18 @@ body {
 }
 
 h1 {
-    margin-left: 0.5em;
+  margin-left: 0.5em;
 }
 
 .paleta {
-    clear: right;
-    float: left;
-    margin-bottom: 1em;
-    margin-left: 1em;
+  clear: right;
+  float: left;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .color {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
   float: left;
   height: 40px;
   width: 40px;
@@ -29,14 +29,14 @@ h1 {
 }
 
 .pixel {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
 .selected {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
   display: inline-block;
   height: 40px;
   width: 40px;

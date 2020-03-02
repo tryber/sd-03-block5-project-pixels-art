@@ -22,7 +22,7 @@ function setCorPadrao() {
   divCores[0].style.backgroundColor = 'black';
   localStorage.clear();
   localStorage.setItem('color', '0');
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color'));
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 10)); 
 }
 
 function arrumarClasseCss(ultimaCor, refCorAtual) {
@@ -34,7 +34,7 @@ function arrumarClasseCss(ultimaCor, refCorAtual) {
 function setLocalStorage(refCorAtual) {
   localStorage.clear();
   localStorage.setItem('color', refCorAtual);
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color'));
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 10));
 //   return alert("Efetuado limpeza no storage e setado a cor escolhida")
 }
 
@@ -42,7 +42,7 @@ function pintarPixel() {
   for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].addEventListener('click', function () {
       pixel[i].style.backgroundColor = corEscolhida;
-    })
+    });
   }
 }
 
@@ -52,25 +52,25 @@ divCores[0].addEventListener('click', function () {
   corEscolhida = divCores[0].style.backgroundColor;
   arrumarClasseCss(ultimaCorEscolhida, 0);
   setLocalStorage('0');
-})
+});
 
 divCores[1].addEventListener('click', function () {
   corEscolhida = divCores[1].style.backgroundColor;
   arrumarClasseCss(ultimaCorEscolhida, 1);
   setLocalStorage('1');
-})
+});
 
 divCores[2].addEventListener('click', function () {
   corEscolhida = divCores[2].style.backgroundColor;
   arrumarClasseCss(ultimaCorEscolhida, 2);
   setLocalStorage('2');
-})
+});
 
 divCores[3].addEventListener('click', function () {
   corEscolhida = divCores[3].style.backgroundColor;
   arrumarClasseCss(ultimaCorEscolhida, 3);
   setLocalStorage('3');
-})
+});
 
 // execução de Funções ao carregar a página
 
