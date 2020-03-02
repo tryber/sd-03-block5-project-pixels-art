@@ -26,17 +26,17 @@ window.onload = () => {
     // if(size>4 && size<51){
       document.querySelector('#pixel-board').remove()
 
-      let board = document.createElement("div");
+      let board = document.createElement("table");
       board.id = "pixel-board";
       document.getElementById("board-div").appendChild(board)
       for (let c = 0; c < size; c++) {
-        let line = document.createElement("div");
-        line.className = "line";
+        let line = document.createElement("tr");
+        // line.className = "line";
         document.getElementById('pixel-board').appendChild(line)
         for (let d = 0; d < size; d++) {
-          let pixel = document.createElement("div");
+          let pixel = document.createElement("td");
           pixel.className = "pixel";
-          document.getElementsByClassName('line')[c].appendChild(pixel)
+          document.getElementsByTagName('tr')[c].appendChild(pixel)
         }
 
         addListenerColor()
