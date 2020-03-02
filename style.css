@@ -2,5 +2,19 @@
     display: inline-block;
     height: 40px;
     width: 50px;
+}
+
+.preto{
     background-color: black;
+}
+.azul{
+    background-color: blue;
+}
+
+.verde{
+    background-color: green;
+}
+
+.branco{
+    background-color: white;
 }
