@@ -10,27 +10,27 @@ window.onload = () => {
   document.getElementById("clear-board").addEventListener("click", () => document.querySelectorAll('.pixel').forEach(element => element.style.backgroundColor = "White"))
 
   document.getElementById('generate-board').addEventListener("click", () => {
-    document.querySelector('#pixel-board').remove()
 
-    let board = document.createElement("div");
-    board.id = "pixel-board";
-    document.getElementById("board-div").appendChild(board)
 
     let size = document.getElementById('board-size').value;
-    console.log(size)
-    for (let c = 0; c < size; c++) {
-      let line = document.createElement("div");
-      line.className = "line";
-      document.getElementById('pixel-board').appendChild(line)
-      for (let d = 0; d < size; d++) {
-        console.log(c)
-        let pixel = document.createElement("div");
-        pixel.className = "pixel";
-        console.log(document.getElementsByClassName('line')[c])
-        document.getElementsByClassName('line')[c].appendChild(pixel)
-      }
+    if(size>4 && size<51){
+      document.querySelector('#pixel-board').remove()
 
-      addListenerColor()
-    };
+      let board = document.createElement("div");
+      board.id = "pixel-board";
+      document.getElementById("board-div").appendChild(board)
+      for (let c = 0; c < size; c++) {
+        let line = document.createElement("div");
+        line.className = "line";
+        document.getElementById('pixel-board').appendChild(line)
+        for (let d = 0; d < size; d++) {
+          let pixel = document.createElement("div");
+          pixel.className = "pixel";
+          document.getElementsByClassName('line')[c].appendChild(pixel)
+        }
+
+        addListenerColor()
+      };
+    }
   });
 }
