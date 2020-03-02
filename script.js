@@ -21,21 +21,26 @@ window.onload = () => {
   // Função para criar quadro de pixels de tamanho N por N
   document.getElementById('generate-board').addEventListener("click", () => {
     let size = document.getElementById('board-size').value;
-    if(size>4 && size<51){
-      document.querySelector('#pixel-board').remove()
-      let board = document.createElement("table");
-      board.id = "pixel-board";
-      document.getElementById("board-div").appendChild(board)
-      for (let c = 0; c < size; c++) {
-        let line = document.createElement("tr");
-        document.getElementById('pixel-board').appendChild(line)
-        for (let d = 0; d < size; d++) {
-          let pixel = document.createElement("td");
-          pixel.className = "pixel";
-          document.getElementsByTagName('tr')[c].appendChild(pixel)
-        }
-        addListenerColor()
-      };
+    if (size < 5) {
+      size = 5
     }
+    if (size >50){
+      size = 50
+    }
+
+    document.querySelector('#pixel-board').remove()
+    let board = document.createElement("table");
+    board.id = "pixel-board";
+    document.getElementById("board-div").appendChild(board)
+    for (let c = 0; c < size; c++) {
+      let line = document.createElement("tr");
+      document.getElementById('pixel-board').appendChild(line)
+      for (let d = 0; d < size; d++) {
+        let pixel = document.createElement("td");
+        pixel.className = "pixel";
+        document.getElementsByTagName('tr')[c].appendChild(pixel)
+      }
+      addListenerColor()
+    };
   });
 }
