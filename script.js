@@ -15,7 +15,6 @@ for (let i = 0; i < colors_pallet.length; i++) {
     });
   }
   
-
   //Criando pixels
 for (let i = 0; i < 25; i++) {
   let newdiv = document.createElement('div');
@@ -29,5 +28,13 @@ let selected = document.getElementsByClassName('selected');
 [].forEach.call(pixels, pixel => {
   pixel.addEventListener('click', function(){
      pixel.style.backgroundColor = selected[0].getAttribute("id");
+  });
+});
+
+const clear = document.getElementById('clear');
+
+clear.addEventListener('click', function(){
+  [].forEach.call(pixels, pixel => {
+      pixel.style.backgroundColor = 'white';
   });
 });
