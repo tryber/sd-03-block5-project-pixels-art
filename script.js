@@ -11,6 +11,7 @@ pallete3.style.backgroundColor = "purple";
 pallete4.style.backgroundColor = "lightblue";
 
 sessionStorage.setItem("color", "black");
+pallete1.classList.add("selected");
 
 pallete1.addEventListener("click", function() {
   sessionStorage.setItem("color", "black");
@@ -33,3 +34,19 @@ for (let i = 0; i < allPixels; i++) {
     onePixel[i].style.backgroundColor = sessionStorage.color;
   });
 }
+
+let colors = document.querySelectorAll(".color");
+for (let i = 0; i < colors.length; i++) {
+  colors[i].addEventListener("click", function() {
+    document.querySelector(".selected").classList.remove("selected");
+    colors[i].classList.add("selected");
+  });
+}
+
+/* let colors = document.querySelectorAll(".color");
+for (let i = 0; i < colors.length; i += 1) {
+  colors[i].addEventListener("click", function() {
+    document.querySelector(".selected").classList.remove("selected");
+    colors[i].classList.add("selected");
+  });
+} */
