@@ -1,25 +1,49 @@
-paletaCor01 = document.getElementById("cor01");
-paletaCor02 = document.getElementById("cor02");
-paletaCor03 = document.getElementById("cor03");
-paletaCor04 = document.getElementById("cor04");
+var i, 
+paletaCor01 = document.getElementById('cor01'),
+paletaCor02 = document.getElementById('cor02'),
+paletaCor03 = document.getElementById('cor03'),
+paletaCor04 = document.getElementById('cor04');
 
-paletaCor01.addEventListener('click', selectColor(paletaCor01));
-paletaCor02.addEventListener('click', selectColor(paletaCor02));
-paletaCor03.addEventListener('click', selectColor(paletaCor03));
-paletaCor04.addEventListener('click', selectColor(paletaCor04));
-let matrizPixels = document.getElementsByTagName("td");
+paletaCor01.addEventListener('click', selectCor1);
+paletaCor02.addEventListener('click', selectCor2);
+paletaCor03.addEventListener('click', selectCor3);
+paletaCor04.addEventListener('click', selectCor4);
 
-for (let i in matrizPixels)
-    matrizPixels[i].addEventListener('click', pixelPaint(matrizPixels[i]));
+let matrizPixels = document.getElementsByClassName('pixel');
 
-function selectColor(paletaSelecionada) {
-    document.getElementsByClassName("selected")[0].classList.remove('selected');
-    paletaSelecionada.classList.add('selected');
-    console.log("Selecionada a paleta " + paletaSelecionada);
-    }
+for (i = 0 ; i < 25 ; i+=1)
+{
+    matrizPixels[i].addEventListener('click', pixelPaint);
+}
 
-function pixelPaint(quadrado) {
-    let corSelecionada = document.getElementsByClassName("selected")[0].style.backgroundColor;
-    quadrado.style.backgroundColor = corSelecionada;
-    console.log("Quadrado pintado com a cor " + corSelecionada);
+
+function pixelPaint() {
+    let corSelecionada = document.getElementsByClassName('selected')[0].style.backgroundColor;
+//    quadrado.style.backgroundColor = corSelecionada;
+    console.log('Quadrado pintado com a cor ' + corSelecionada);
+}
+
+//Para que tenha apenas uma cor com a classe 'selecionada', é necessário procurar a que tem essa classe e remover antes para depois atribuir a classe à nova cor clicada.
+function selectCor1() {
+    document.getElementsByClassName('selected')[0].classList.remove('selected');
+    console.log("A cor selecionada é a preta");
+    paletaCor01.classList.add('selected');
+}
+
+function selectCor2() {
+    document.getElementsByClassName('selected')[0].classList.remove('selected');
+    console.log("A cor selecionada é a vermelha");
+    paletaCor02.classList.add('selected');
+}
+
+function selectCor3() {
+    document.getElementsByClassName('selected')[0].classList.remove('selected');
+    console.log("A cor selecionada é a azul");
+    paletaCor03.classList.add('selected');
+}
+
+function selectCor4() {
+    document.getElementsByClassName('selected')[0].classList.remove('selected');
+    console.log("A cor selecionada é a verde");
+    paletaCor04.classList.add('selected');
 }
