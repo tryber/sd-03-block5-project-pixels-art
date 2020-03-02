@@ -1,0 +1,44 @@
+body, html{
+    margin:0px;
+    padding: 0px;
+}
+
+div{
+    display: inline-block;
+    border: 1px solid black;
+  }
+
+.color{
+    width: 40px;
+    height: 40px;
+}
+  
+  .pixel{
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+    margin-bottom: 0px;
+    background-color: white;
+  }
+  
+  #pixel-board{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+  }
+  
+  #black {
+    background-color: black;
+  }
+  
+  #red {
+    background-color: red;
+  }
+  
+  #blue {
+   background-color: blue;
+  }
+  
+  #green {
+    background-color: green;
+  }
