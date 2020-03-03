@@ -7,51 +7,56 @@
     <title>Pixel Art Project</title>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <script src='script.js' type='text/javascript'></script>
+    <style>
+        .selected {
+            border: 1px ridge yellow;
+        }
+    </style>
 </head>
 
 <body>
     <h1 id='title'>Paleta de Cores</h1>
     <div id='color-palette'>
-        <button class='color' id='black-color'></button>
-        <button class='color' id='blue-color'></button>
-        <button class='color' id='green-color'></button>
-        <button class='color' id='red-color'></button>
+        <button type='button' class='color selected' id='black-color' onclick='getColor("black", "black-color")'></button>
+        <button type='button' class='color' id='blue-color' onclick='getColor("blue", "blue-color")'></button>
+        <button type='button' class='color' id='green-color' onclick='getColor("green", "green-color")'></button>
+        <button type='button' class='color' id='red-color' onclick='getColor("red", "red-color")'></button>
     </div>
     <table id='pixel-board'>
         <tbody>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
+            <td class='pixel' id='p1' onclick='paintPixel("p1")'></td>
+            <td class='pixel' id='p2' onclick='paintPixel("p2")'></td>
+            <td class='pixel' id='p3' onclick='paintPixel("p3")'></td>
+            <td class='pixel' id='p4' onclick='paintPixel("p4")'></td>
+            <td class='pixel' id='p5' onclick='paintPixel("p5")'></td>
         </tbody>
         <tbody>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
+            <td class='pixel' id='p6' onclick='paintPixel("p6")'></td>
+            <td class='pixel' id='p7' onclick='paintPixel("p7")'></td>
+            <td class='pixel' id='p8' onclick='paintPixel("p8")'></td>
+            <td class='pixel' id='p9' onclick='paintPixel("p9")'></td>
+            <td class='pixel' id='p10' onclick='paintPixel("p10")'></td>
         </tbody>
         <tbody>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
+            <td class='pixel' id='p11' onclick='paintPixel("p11")'></td>
+            <td class='pixel' id='p12' onclick='paintPixel("p12")'></td>
+            <td class='pixel' id='p13' onclick='paintPixel("p13")'></td>
+            <td class='pixel' id='p14' onclick='paintPixel("p14")'></td>
+            <td class='pixel' id='p15' onclick='paintPixel("p15")'></td>
         </tbody>
         <tbody>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
+            <td class='pixel' id='p16' onclick='paintPixel("p16")'></td>
+            <td class='pixel' id='p17' onclick='paintPixel("p17")'></td>
+            <td class='pixel' id='p18' onclick='paintPixel("p18")'></td>
+            <td class='pixel' id='p19' onclick='paintPixel("p19")'></td>
+            <td class='pixel' id='p20' onclick='paintPixel("p20")'></td>
         </tbody>
         <tbody>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
-            <td class='pixel'></td>
+            <td class='pixel' id='p21' onclick='paintPixel("p21")'></td>
+            <td class='pixel' id='p22' onclick='paintPixel("p22")'></td>
+            <td class='pixel' id='p23' onclick='paintPixel("p23")'></td>
+            <td class='pixel' id='p24' onclick='paintPixel("p24")'></td>
+            <td class='pixel' id='p25' onclick='paintPixel("p25")'></td>
         </tbody>
     </table>
 </body>
