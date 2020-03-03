@@ -28,16 +28,19 @@
     background-color: green;
 }
 #pixel-board{
-    background-color: black;
     border: 1px solid black;
     height: 210px;
-    margin: auto;
+    margin: auto; 
     width: 210px;
 }
 .pixel{
-    background-color: white;
-    margin: 1px;
+   background-color:rgb(255, 255,255);
+    border: 1px solid black;
     float: left;
     height: 40px;
     width: 40px;
+}
+
+.selected{
+  
 }
