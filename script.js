@@ -1,7 +1,9 @@
 let actualColor = 'black';
 
+
 function setColor(color) {
-    actualColor = color
+    actualColor = color;
+
 }
 
 function paintPixel(id) {
@@ -10,6 +12,9 @@ function paintPixel(id) {
 }
 
 function clearBoard() {
-    let limpaQuadro = 'white';
-    document.querySelector('.pixel').style.backgroundColor = limpaQuadro;
+    let a = document.querySelectorAll('.pixel');
+    for (i = 0; i < a.length; i++) {
+        a[i].style.backgroundColor = 'white';
+    }
+    console.log(a);
 }
