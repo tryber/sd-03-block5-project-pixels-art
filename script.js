@@ -1,62 +1,58 @@
 // Get each pallete position
-let allColors = document.querySelectorAll('.color');
-let pallete1 = document.querySelectorAll('.color')[0];
-let pallete2 = document.querySelectorAll('.color')[1];
-let pallete3 = document.querySelectorAll('.color')[2];
-let pallete4 = document.querySelectorAll('.color')[3];
+let pallete = document.querySelectorAll('.color');
 let clearAll = document.querySelectorAll('#clear-board')[0];
 let allPixels = document.querySelectorAll('.pixel');
-let getButton = document.querySelectorAll('button')[1];
+let getButton = document.querySelectorAll('button');
 let getInput = document.querySelector('input');
 
 // Set default selected color as black
 sessionStorage.setItem('color', 'black');
-allColors[0].className += ' selected';
+pallete[0].className += ' selected';
 
 // Set collors initially
-pallete1.style.backgroundColor = 'black';
-pallete2.style.backgroundColor = 'red';
-pallete3.style.backgroundColor = 'blue';
-pallete4.style.backgroundColor = 'grey';
+pallete[0].style.backgroundColor = 'black';
+pallete[1].style.backgroundColor = 'red';
+pallete[2].style.backgroundColor = 'blue';
+pallete[3].style.backgroundColor = 'grey';
 
 // Color selector
-pallete1.addEventListener('click', function() {
+pallete[0].addEventListener('click', function() {
   sessionStorage.setItem('color', 'black');
-  for (let i = 0; i < allColors.length; i += 1) {
+  for (let i = 0; i < pallete.length; i += 1) {
     if (i === 0) {
-      allColors[i].className += ' selected';
+      pallete[i].className += ' selected';
     } else {
-      allColors[i].className = 'color';
+      pallete[i].className = 'color';
     }
   }
 });
-pallete2.addEventListener('click', function() {
+pallete[1].addEventListener('click', function() {
   sessionStorage.setItem('color', 'red');
-  for (let i = 0; i < allColors.length; i += 1) {
+  for (let i = 0; i < pallete.length; i += 1) {
     if (i === 1) {
-      allColors[i].className += ' selected';
+      pallete[i].className += ' selected';
     } else {
-      allColors[i].className = 'color';
+      pallete[i].className = 'color';
     }
   }
 });
-pallete3.addEventListener('click', function() {
+pallete[2].addEventListener('click', function() {
   sessionStorage.setItem('color', 'blue');
-  for (let i = 0; i < allColors.length; i += 1) {
+  for (let i = 0; i < pallete.length; i += 1) {
     if (i === 2) {
-      allColors[i].className += ' selected';
+      pallete[i].className += ' selected';
     } else {
-      allColors[i].className = 'color';
+      pallete[i].className = 'color';
     }
   }
 });
-pallete4.addEventListener('click', function() {
+pallete[3].addEventListener('click', function() {
   sessionStorage.setItem('color', 'grey');
-  for (let i = 0; i < allColors.length; i += 1) {
+  for (let i = 0; i < pallete.length; i += 1) {
     if (i === 3) {
-      allColors[i].className += ' selected';
+      pallete[i].className += ' selected';
     } else {
-      allColors[i].className = 'color';
+      pallete[i].className = 'color';
     }
   }
 });
@@ -72,7 +68,6 @@ for (let i = 0; i < pixelSize; i += 1) {
 
 function detectarCores() {
   for (let i = 0; i < pixelSize; i += 1) {
-    console.log(pixelSize);
     getPixel[i].addEventListener('click', function() {
       getPixel[i].style.backgroundColor = sessionStorage.color;
     });
@@ -86,6 +81,10 @@ clearAll.addEventListener('click', function() {
     document.querySelectorAll('.pixel')[i].style.backgroundColor = 'white';
   }
 });
+
+function randomColor() {
+  return Math.floor(Math.random() * 255);
+}
 
 function criaClique(event) {
   event.target.style.backgroundColor = sessionStorage.color;
@@ -113,6 +112,16 @@ function verificarValidez() {
   getPixelBoard.style.height = getInput.value * 40 + 'px';
   getPixelBoard.style.width = getInput.value * 42 + 'px';
 }
+
+// Generate 3 random colors each time page loads
+function randomPixels() {
+  for (let i = 1; i < 4; i += 1) {
+    pallete[i].style.backgroundColor =
+      'rgb(' + randomColor() + ',' + randomColor() + ',' + randomColor() + ')';
+  }
+}
+randomPixels();
+
 // Create your own pixels
 let getPixelBoard = document.querySelectorAll('section')[1];
-getButton.addEventListener('click', verificarValidez);
+getButton[1].addEventListener('click', verificarValidez);
