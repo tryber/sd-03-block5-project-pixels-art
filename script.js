@@ -2,10 +2,15 @@ let colorPallete = ["red", "blue", "green", "red", "orange", "grey"]
 
 
 document.getElementById("black").style.backgroundColor = document.getElementById("black").innerHTML
-document.getElementById("green").style.backgroundColor = colorPallete[Math.floor(Math.random() * colorPallete.length)]
-document.getElementById("yellow").style.backgroundColor = colorPallete[Math.floor(Math.random() * colorPallete.length)]
-document.getElementById("red").style.backgroundColor = colorPallete[Math.floor(Math.random() * colorPallete.length)]
-
+let color1 = colorPallete[Math.floor(Math.random() * colorPallete.length)]
+document.getElementById("green").style.backgroundColor = color1
+document.getElementById("green").innerHTML = color1
+let color2 = colorPallete[Math.floor(Math.random() * colorPallete.length)]
+document.getElementById("red").style.backgroundColor = color2
+document.getElementById("red").innerHTML = color2
+let color3 = colorPallete[Math.floor(Math.random() * colorPallete.length)]
+document.getElementById("yellow").style.backgroundColor = color3
+document.getElementById("yellow").innerHTML = color3
 
 // selecionando a cor preta
 let color = document.querySelector(".selected").innerHTML
@@ -50,13 +55,6 @@ function cleanOut() {
 }
 
 //exercicio 12
-
-
-
-
-
-
-
 
 let redefineButton = document.getElementById("generate-board")
 redefineButton.addEventListener("click", defineSize)

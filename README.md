@@ -95,7 +95,6 @@ Ou seja, se o valor passado para o input for 7, ao clicar no botão, vai ser ger
 O novo quadro deve ter todos os pixels preenchidos com a cor branca.
 
 
-
 ### 13 - Faça com que as cores da paleta sejam geradas aleatoriamente ao carregar a página
 
 Lembre-se de que a cor preta ainda precisa estar presente e deve ser a primeira na sua paleta de cores.
