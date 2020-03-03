@@ -3,12 +3,21 @@ const cor2 = document.querySelectorAll('.color')[1];
 const cor3 = document.querySelectorAll('.color')[2];
 const cor4 = document.querySelectorAll('.color')[3];
 
-sessionStorage.setItem('color', 'black');
+function corAleatoria() {
+  const hexadecimais = '0123456789ABCDEF';
+  let cor = '#';
+  for (let i = 0; i < 6; i += 1 ) {
+    cor += hexadecimais[Math.floor(Math.random() * 16)];
+  }
+  return cor;
+}
 
 cor1.style.backgroundColor = 'black';
 cor2.style.backgroundColor = corAleatoria();
 cor3.style.backgroundColor = corAleatoria();
 cor4.style.backgroundColor = corAleatoria();
+
+sessionStorage.setItem('color', 'black');
 
 function selecionaCor(indicador) {
   if (indicador === 1) {
@@ -54,7 +63,7 @@ cor4.addEventListener('click', function () {
   selecionaCor(4);
 });
 
-const pixel = document.querySelectorAll('.pixel');
+let pixel = document.querySelectorAll('.pixel');
 
 for (let i = 0; i < pixel.length; i += 1) {
   pixel[i].addEventListener('click', function () {
@@ -72,11 +81,42 @@ function limpaPixel() {
 
 botaoLimpar.addEventListener('click', limpaPixel);
 
-function corAleatoria(){
-  const hexadecimais = '0123456789ABCDEF';
-  let cor = '#';
-  for (let i = 0; i < 6; i++ ) {
-    cor += hexadecimais[Math.floor(Math.random() * 16)];
+const inputTamanho = document.getElementById('board-size');
+const botaoQuadro = document.getElementById('generate-board');
+let tr = document.querySelectorAll('tr');
+const tbody = document.querySelector('tbody');
+
+function criaQuadro() {
+  for(let i = 0; i < tr.length; i += 1) {
+    tr[i].remove();
+  };
+
+  if(inputTamanho.value > 50) {
+    inputTamanho.value = 50;
+  } else if (inputTamanho.value < 5) {
+    inputTamanho.value = 5;
+  };
+
+  for(let j = 0; j < inputTamanho.value; j += 1) {
+    const trCriado = document.createElement('tr');
+    tbody.appendChild(trCriado);
+    for(let k = 0; k < inputTamanho.value; k += 1) {
+      const tdCriado = document.createElement('td');
+      tdCriado.className = 'pixel'
+      trCriado.appendChild(tdCriado);
+    }
+  };
+
+  pixel = document.querySelectorAll('.pixel');
+
+  for (let i = 0; i < pixel.length; i += 1) {
+    pixel[i].addEventListener('click', function () {
+      pixel[i].style.backgroundColor = sessionStorage.color;
+    });
   }
-  return cor;
+
+  inputTamanho.value = "";
+  tr = document.querySelectorAll('tr');
 }
+
+botaoQuadro.addEventListener('click', criaQuadro);
