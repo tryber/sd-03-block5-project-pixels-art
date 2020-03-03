@@ -1,0 +1,40 @@
+.color-pallete td , .color-pallete th {
+  border: 1px  solid  black;
+  height: 40px;
+  width: 40px;
+}
+
+.primeiracaixa {
+  background-color: black;
+}
+
+.segundacaixa {
+  background-color: blue;
+}
+
+.terceiracaixa {
+  background-color: green;
+}
+
+.quartacaixa {
+  background-color: yellow;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px  solid  black;
+  height: 40px;
+  width: 40px;
+}
+
+.clear-board {
+  background-color: lawngreen;
+  border: 1px  solid  black;
+  height: 20px;
+  width: 50px;
+}
+
+
+/* .selected {
+  background-color: black;
+} */
