@@ -8,8 +8,33 @@ let ultimaCorEscolhida = null;
 
 const divCores = document.querySelectorAll('.color');
 const pixel = document.querySelectorAll('.pixel');
+const limpaTudo = document.querySelector('#clear-board');
 
 // funções
+
+function arrumarClasseCss(ultimaCor, refCorAtual) {
+  divCores[ultimaCor].classList.remove('selected');
+  divCores[refCorAtual].classList.add('selected');
+//   return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
+}
+
+function colorir(event) {
+  event.target.style.backgroundColor = corEscolhida;
+}
+
+function limparTabela() {
+  corEscolhida = 'white'
+  for(let i=0; i<pixel.length; i+=1) {
+    pixel[i].style.backgroundColor = corEscolhida;
+  }
+}
+
+function setLocalStorage(refCorAtual) {
+  localStorage.clear();
+  localStorage.setItem('color', refCorAtual);
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
+//   return alert("Efetuado limpeza no storage e setado a cor escolhida")
+}
 
 function setDeCores() {
   for (let i = 0; i < divCores.length; i += 1) {
@@ -25,28 +50,11 @@ function setCorPadrao() {
   ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
 }
 
-function arrumarClasseCss(ultimaCor, refCorAtual) {
-  divCores[ultimaCor].classList.remove('selected');
-  divCores[refCorAtual].classList.add('selected');
-//   return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
-}
-
-function setLocalStorage(refCorAtual) {
-  localStorage.clear();
-  localStorage.setItem('color', refCorAtual);
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
-//   return alert("Efetuado limpeza no storage e setado a cor escolhida")
-}
-
-function colorir(event) {
-  event.target.style.backgroundColor = corEscolhida;
-};
-
 function pintarPixel() {
   for (let i = 0; i < pixel.length; i += 1) {
-    pixel[i].addEventListener('click', colorir)
+    pixel[i].addEventListener('click', colorir);
   }
-};
+}
 
 // eventListeners
 
@@ -73,6 +81,8 @@ divCores[3].addEventListener('click', function () {
   arrumarClasseCss(ultimaCorEscolhida, 3);
   setLocalStorage('3');
 });
+
+limpaTudo.addEventListener('click', limparTabela);
 
 // execução de Funções ao carregar a página
 
