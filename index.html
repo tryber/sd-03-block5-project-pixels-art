@@ -9,8 +9,7 @@
 </head>
 
 <body>
-  <h1 id='title'> Title</h1>
-  <h2>Paleta de Cores</h2>
+  <h1 id='title'> Paleta de Cores</h1>
   <div id='color-palette'>
     <ul>
       <button class="color selected" style='background-color:black'></button>
@@ -22,8 +21,8 @@
   <button id='clear-board'>Clear</button>
   <form>
     <label> Insira um tamanho de 5-50 para o quadro</label>
-      <input id='board-size' maxlength="50" minlength="5">
-      <input id='generate-board' type='submit' value="Submit">
+      <input id='board-size' max="50" min="5">
+      <button id='generate-board'>generate</button>
   </form>
   <div id='pixel-board'>
   </div>

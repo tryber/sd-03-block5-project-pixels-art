@@ -1,6 +1,6 @@
 
 sessionStorage.color = 'black'
-const n = 5;
+let n = 5 ;
 function makeGrid(n) {
   const where = document.getElementById('pixel-board');
   where.appendChild(document.createElement('table'))
@@ -44,4 +44,9 @@ document.getElementById('clear-board').addEventListener('click', function () {
   for (let i = 0; i < pix.length; i++) {
     pix[i].style.backgroundColor = 'white'
   }
+})
+const input = document.getElementsByTagName('input');
+document.getElementById('generate-board').addEventListener('click', function(){
+ n = input[0].value
+ makeGrid(n)
 })
