@@ -42,7 +42,7 @@ table {
   border-color: black;
   border-style: solid;
   height: 40px;
-  margin: 1px;
+  margin: 0;
   padding: 0;
   width: 40px;
 }
