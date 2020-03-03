@@ -5,7 +5,7 @@ const clear = document.getElementById('clear-board');
 
 function limpa() {
   for (let i = 0; i < pixel.length; i =+ 1) {
-    pixel[i].style.backgroundColor = "white";
+    pixel[i].style.backgroundColor = 'white';
   }
 }
 
