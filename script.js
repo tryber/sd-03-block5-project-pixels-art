@@ -33,7 +33,7 @@ window.onload = function() {
             element.style.backgroundColor = 'white';
         });
     }
-    document.getElementById('btn-clear').addEventListener('click', clear);
+    document.getElementById('clear-board').addEventListener('click', clear);
 
 
 
