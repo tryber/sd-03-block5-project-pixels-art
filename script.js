@@ -1,6 +1,6 @@
 const linhasDaTabela = document.querySelectorAll('tr');
 const pixels = document.querySelectorAll('.pixel');
-
+/* 
 function colocarBordarTodosPixels() {
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].style.borderRight = '1px solid black';
@@ -12,7 +12,7 @@ function colocarBordarTodosPixels() {
   }
 }
 
-colocarBordarTodosPixels();
+colocarBordarTodosPixels(); */
 
 
 const paletaDeCores = document.getElementById('color-palette');
