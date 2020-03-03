@@ -45,10 +45,10 @@ body {
   margin: 0 auto 0 auto;
   margin-top: 5px;
 }
-/* #pixel-board td {
-  border: black solid 1px;
+#pixel-board td {
+  /* border: black solid 1px; */
   background: white;
-} */
+}
 td.pixel {
   width: 40px;
   height: 40px;
