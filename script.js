@@ -1,3 +1,20 @@
+const linhasDaTabela = document.querySelectorAll('tr');
+const pixels = document.querySelectorAll('.pixel');
+
+function colocarBordarTodosPixels() {
+  for (let i = 0; i < pixels.length; i += 1) {
+    pixels[i].style.borderRight = '1px solid black';
+    pixels[i].style.borderTop = '1px solid black'
+  }
+  for (let i = 0; i < linhasDaTabela.length; i += 1) {
+    linhasDaTabela[i].children[0].style.borderLeft = '1px solid black'
+    linhasDaTabela[linhasDaTabela.length -1].children[i].style.borderBottom = '1px solid black'
+  }
+}
+
+colocarBordarTodosPixels();
+
+
 const paletaDeCores = document.getElementById('color-palette');
 
 function backgroundColorPaletaDeCores() {
@@ -39,8 +56,6 @@ function backgroundColorQuadroDePixels() {
 }
 
 backgroundColorQuadroDePixels();
-
-const pixels = document.querySelectorAll('.pixel');
 
 function apagaQuadroPixels() {
   const botaoApagaQuadro = document.getElementById('clear-board');
