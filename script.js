@@ -25,7 +25,7 @@ document.querySelectorAll('.color').forEach( (element) => element.addEventListen
 const addListenerColor = () => document.querySelectorAll('.pixel').forEach( (element) => element.addEventListener('click', (event) => event.srcElement.style.backgroundColor = sessionStorage.getItem('SelectedColor')));
 
 // Adiciona listener que colore de branco todos os pixels da página
-document.getElementById('clear-board').addEventListener('click', () => document.querySelectorAll('.pixel').forEach( (element) => element.style.backgroundColor = 'White'));
+document.getElementById('clear-board').addEventListener('click', () => document.querySelectorAll('.pixel').forEach(function (element) { element.style.backgroundColor = 'White'}));
 
 // Função para criar quadro de pixels de tamanho N por N
 const createTable = (size) => {
@@ -62,4 +62,3 @@ createTable(5);
 
 // Adiciona o listener ao inicializar a página
 addListenerColor();
-
