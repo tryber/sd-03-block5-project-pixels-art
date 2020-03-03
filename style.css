@@ -1,5 +1,7 @@
 body {
   background-color: white;
+}
+* {
   box-sizing: border-box;
 }
 .color {
@@ -11,8 +13,8 @@ body {
 .pixel {
   background-color: white;
   border: 1px solid black;
-  height: 37px;
-  width: 37px;
+  height: 40px;
+  width: 40px;
 }
 #pixel-board {
   border-collapse: collapse;
