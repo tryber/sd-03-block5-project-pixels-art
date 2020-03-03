@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Art</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1 id="title">Paleta de Cores</h1><br>
+
+<div id="color-palette">
+    <div class="color selected"  id="black"></div>
+    <div class="color" id="blue"></div>
+    <div class="color" id="red"></div>
+    <div class="color" id="green"></div>
+</div><br>
+
+<div id="pixel-board">
+    <div class="pixel-row">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+    </div>
+    <div class="pixel-row">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+    </div>
+    <div class="pixel-row">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+    </div>
+    <div class="pixel-row">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+    </div>
+    <div class="pixel-row">
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+        <div class="pixel"></div>
+    </div>
+
+</div>
+
+<button id="clear-board" onclick="clearBoard()">Limpar</button><br><br>
+
+<input id="board-size" type="number" min="5" max="50" placeholder="Insira o tamanho do quadro">
+<button id="generate-board" onclick="makeBoard(sendInfo())" >Gerar</button>
+
+</body>
+<script src="script.js"></script>
+</html>
