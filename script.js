@@ -86,6 +86,17 @@ clearAll.addEventListener('click', function() {
   }
 });
 
+// Validate number between 5 and 50
+function verificarValidez() {
+  if (getInput.value < 5) {
+    getInput.setCustomValidity('Valor menor que 5, considerar 5 como padrão');
+  } else if (getInput.value > 50) {
+    getInput.setCustomValidity(
+      'Valor maior que 50, considerar 50 como padrão.'
+    );
+  }
+}
+
 // Create your own pixels
 let getPixelBoard = document.querySelectorAll('section')[1];
 getButton.addEventListener('click', function() {
@@ -106,3 +117,4 @@ getButton.addEventListener('click', function() {
     });
   }
 });
+
