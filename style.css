@@ -1,34 +1,32 @@
 body {
   align-items: center;
   margin: flex;
-
 }
 
 .color {
-  border: 1px solid  black;
+  border: 1px solid black;
   width: 40px;
   height: 40px;
   background-color: rebeccapurple;
   list-style: none;
 }
-.color.selected{
+
+.color.selected {
   border: 2px groove red;
 }
 
 .pixel {
-  border: 1px solid  black;
+  border: 1px solid black;
   width: 40px;
   height: 40px;
   background-color: whitesmoke;
 }
 
 table {
-border: 2px groove black;
-
+  border: 2px groove black;
 }
 
 #color-pallete {
   margin: 0 auto;
   width: 80%;
-
 }
