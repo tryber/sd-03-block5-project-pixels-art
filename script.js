@@ -1,11 +1,20 @@
-const coresArr = document.getElementById('coresArr').childNodes[1]
+const coresArr = document.getElementsByClassName("color");
+const pixel = document.getElementsByClassName("pixel");
+const clear = document.getElementById("clear-board");
 
-function mudaSelected() {
+pixel[3].style.backgroundColor = "red";
+
+function mudaSelected(c) {
   const name = "selected";
-  const arr = coresArr.className.split(" ");
-  if (arr.indexOf(name) == -1) {
-    coresArr.className += " " + name;
+  const arr = coresArr[c].className.split(" ");
+  if (arr.indexOf(name) === -1) {
+    coresArr[c].className += " " + name;
   }
 }
 
-mudaSelected()
+function tiraSelected() {
+  for (let i = 0; i < coresArr.length; i += 1)
+    coresArr[i].classList.remove("selected");
+}
+
+mudaSelected(0);
