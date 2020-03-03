@@ -12,8 +12,12 @@
     }
     
     #pixel-board {
-        display: flex;
+        display: flex-column;
         background-color: white;
+    }
+    
+    .line {
+        display: flex;
     }
     
     #color-palette {
