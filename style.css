@@ -33,18 +33,6 @@ article {
   background-color: black;
 }
 
-.cor2 {
-  background-color: rgba(13, 51, 84, 1);
-}
-
-.cor3 {
-  background-color: rgba(48, 188, 237, 1);
-}
-
-.cor4 {
-  background-color: rgba(252, 81, 48, 1);
-}
-
 .pixelBoard {
   border-collapse: collapse;
   border-spacing: 0;

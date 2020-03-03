@@ -1,35 +1,40 @@
-const cor1 = document.querySelector('.cor1');
-const cor2 = document.querySelector('.cor2');
-const cor3 = document.querySelector('.cor3');
-const cor4 = document.querySelector('.cor4');
+const cor1 = document.querySelectorAll('.color')[0];
+const cor2 = document.querySelectorAll('.color')[1];
+const cor3 = document.querySelectorAll('.color')[2];
+const cor4 = document.querySelectorAll('.color')[3];
 
 sessionStorage.setItem('color', 'black');
 
+cor1.style.backgroundColor = 'black';
+cor2.style.backgroundColor = corAleatoria();
+cor3.style.backgroundColor = corAleatoria();
+cor4.style.backgroundColor = corAleatoria();
+
 function selecionaCor(indicador) {
   if (indicador === 1) {
-    sessionStorage.setItem('color', 'black');
-    cor1.className = 'color selected cor1';
-    cor2.className = 'color cor2';
-    cor3.className = 'color cor3';
-    cor4.className = 'color cor4';
+    sessionStorage.setItem('color', cor1.style.backgroundColor);
+    cor1.className = 'color selected';
+    cor2.className = 'color';
+    cor3.className = 'color';
+    cor4.className = 'color';
   } else if (indicador === 2) {
-    sessionStorage.setItem('color', 'rgba(13, 51, 84, 1)');
-    cor1.className = 'color cor1';
-    cor2.className = 'color selected cor2';
-    cor3.className = 'color cor3';
-    cor4.className = 'color cor4';
+    sessionStorage.setItem('color', cor2.style.backgroundColor);
+    cor1.className = 'color';
+    cor2.className = 'color selected';
+    cor3.className = 'color';
+    cor4.className = 'color';
   } else if (indicador === 3) {
-    sessionStorage.setItem('color', 'rgba(48, 188, 237, 1)');
-    cor1.className = 'color cor1';
-    cor2.className = 'color cor2';
-    cor3.className = 'color selected cor3';
-    cor4.className = 'color cor4';
+    sessionStorage.setItem('color', cor3.style.backgroundColor);
+    cor1.className = 'color';
+    cor2.className = 'color';
+    cor3.className = 'color selected';
+    cor4.className = 'color';
   } else if (indicador === 4) {
-    sessionStorage.setItem('color', 'rgba(252, 81, 48, 1)');
-    cor1.className = 'color cor1';
-    cor2.className = 'color cor2';
-    cor3.className = 'color cor3';
-    cor4.className = 'color selected cor4';
+    sessionStorage.setItem('color', cor4.style.backgroundColor);
+    cor1.className = 'color';
+    cor2.className = 'color';
+    cor3.className = 'color';
+    cor4.className = 'color selected';
   }
 }
 
@@ -66,3 +71,12 @@ function limpaPixel() {
 }
 
 botaoLimpar.addEventListener('click', limpaPixel);
+
+function corAleatoria(){
+  const hexadecimais = '0123456789ABCDEF';
+  let cor = '#';
+  for (let i = 0; i < 6; i++ ) {
+    cor += hexadecimais[Math.floor(Math.random() * 16)];
+  }
+  return cor;
+}
