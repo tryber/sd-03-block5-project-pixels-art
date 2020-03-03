@@ -1,5 +1,4 @@
 let cor = 'black';
-const teste = '';
 const paleta = document.getElementsByClassName('color');
 const blocos = document.getElementsByClassName('pixel');
 const clear = document.getElementById('clear-board');
@@ -11,6 +10,7 @@ function cls() {
   for (const i of blocos)
   clear.addEventListener('click', function() {
     i.style.background = 'white'
+    cor = '';
   });
 }
 
@@ -21,7 +21,7 @@ function select() {
       const selecionada = window.getComputedStyle(pick).getPropertyValue('background-color');
       cor = selecionada;
 
-      c4 = document.getElementsByClassName('.selecionada');
+      c4 = document.getElementsByClassName('.selected');
       c5.style.backgroundColor = selecionada;
     });
   }
