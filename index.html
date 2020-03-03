@@ -17,6 +17,8 @@
         <button type='button' class='color' id='green-color' onclick='getColor("green", "green-color")'></button>
         <button type='button' class='color' id='red-color' onclick='getColor("red", "red-color")'></button>
     </div>
+    <br>
+    <!-- Fix 'pixel-board has to be below of { Object ... }' issue -->
     <table id='pixel-board'>
         <tbody>
             <td class='pixel' onclick='paintPixel(0)'></td>
@@ -54,7 +56,7 @@
             <td class='pixel' onclick='paintPixel(24)'></td>
         </tbody>
     </table>
-    <button type="button" id="clear-board" onclick='clearArt()'>Limpar</button>
+    <button type="button" id="clear-board" onclick='clearArt()'>Limpar Obra de Arte</button>
 </body>
 
 </html>
