@@ -20,6 +20,7 @@ body {
     height: 40px;
     border: 1px solid black;
     margin: 5px;
+    display: inline-block;
 }
 #color-palette1 {
     background-color: black;
@@ -50,7 +51,7 @@ td {
 #botoes {
     padding-left: 485px;
 }
-.select {
+.selecao {
     padding-left: 525px;
 }
 #mostraSelecao {
