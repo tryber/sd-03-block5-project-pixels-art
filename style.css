@@ -9,7 +9,7 @@ body {
 }
 
 #color-palette {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,7 +18,7 @@ body {
   height: 50px;
   background-color: white;
   justify-content: space-around;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .selected {

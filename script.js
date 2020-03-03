@@ -7,8 +7,8 @@ var colorPicked = 'black'
 function adcElementos() {
   for (var i = 1; i <= 25; i++) {
     var pixelDiv = document.createElement("div")
-    pixelDiv.className = "pixel"
     pixelDiv.id = `pixel` + `${i}`
+    pixelDiv.className = "pixel"
     pixelBoard.appendChild(pixelDiv)
   }
 }
