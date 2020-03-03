@@ -3,6 +3,14 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+table {
+  border-collapse: collapse;
+}
+
 .color {
   border: 1px solid black;
   display: inline-block;
@@ -16,15 +24,15 @@ body {
 }
 
 .cor1 {
-  background-color: darkslateblue;
+  background-color:magenta;
 }
 
 .cor2 {
-  background-color: indianred;
+  background-color: cyan;
 }
 
 .cor3 {
-  background-color: lightcoral;
+  background-color: yellow;
 }
 
 .pixel {
