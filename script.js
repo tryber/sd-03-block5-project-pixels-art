@@ -6,7 +6,7 @@ sessionStorage.setItem('color', 'black');
 
 // Seletor de cores - Paleta
 let selectionPalette = function(e) {
-    selectedColor = e.target.style.backgroundColor
+    selectedColor = window.getComputedStyle( e.target ).getPropertyValue( 'background-color' )
     console.log(`a cor selecionada é ${selectedColor}`)
 };
 
@@ -17,7 +17,7 @@ window.onload = function () {
 
   for (let i = 0; i < pixelColor.length; i += 1) {
     pixelColor[i].addEventListener('click', function () {
-      pixelColor[i].style.backgroundColor = sessionStorage.color;
+      pixelColor[i].style.backgroundColor = selectedColor;
     });
   }
 }
