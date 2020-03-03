@@ -1,0 +1,30 @@
+.color {
+    border: black 2px solid;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+#preto {
+    background: black;
+}
+
+#azul {
+    background: blue;
+}
+
+#rosa {
+    background: pink;
+}
+
+#laranja {
+    background: orangered;
+}
+
+#verde {
+    background: green;
+}
+table td{
+    border: black 2px solid;
+    width: 40px;
+    height: 40px;
+}
