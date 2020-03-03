@@ -11,6 +11,11 @@ body {
   list-style: none;
 }
 
+#color-pallete {
+  margin: 0 auto;
+  width: 80%;
+}
+
 .color.selected {
   border: 2px groove red;
 }
@@ -24,9 +29,4 @@ body {
 
 table {
   border: 2px groove black;
-}
-
-#color-pallete {
-  margin: 0 auto;
-  width: 80%;
 }

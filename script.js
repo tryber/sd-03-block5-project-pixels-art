@@ -41,7 +41,7 @@ for (let i = 0; i < pix.length; i++) {
   })
 }
 document.getElementById('clear-board').addEventListener('click', function () {
-for(let i = 0; i < pix.length; i++){
-  pix[i].style.backgroundColor = 'white'
-}
+  for (let i = 0; i < pix.length; i++) {
+    pix[i].style.backgroundColor = 'white'
+  }
 })
