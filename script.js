@@ -1,35 +1,36 @@
 let cor = 'black';
-const blocos = document.getElementsByClassName('pixel');
+const teste = '';
 const paleta = document.getElementsByClassName('color');
+const blocos = document.getElementsByClassName('pixel');
 const clear = document.getElementById('clear-board');
 
 //https://www.w3schools.com/jsref/event_target.asp
 //https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
 
 function cls() {
-  for (const a of blocos)
+  for (const i of blocos)
   clear.addEventListener('click', function() {
-    a.style.background = 'white'
+    i.style.background = 'white'
   });
 }
 
 function select() {
-  for (const n of paleta) {
-    n.addEventListener('click', function(e) {
-      const pick = document.querySelector("#" + e.target.id);
-      const selected = window.getComputedStyle(pick).getPropertyValue('background-color');
-      cor = selected;
+  for (const i of paleta) {
+    i.addEventListener('click', function(e) {
+      const pick = document.getElementById(e.target.id);
+      const selecionada = window.getComputedStyle(pick).getPropertyValue('background-color');
+      cor = selecionada;
 
-      c4 = document.getElementsByClassName('.selected');
-      c5.style.backgroundColor = selected;
+      c4 = document.getElementsByClassName('.selecionada');
+      c5.style.backgroundColor = selecionada;
     });
   }
 }
 
 function paint() {
-  for (const p of blocos)
-      p.addEventListener('click', function () {
-        p.style.background = cor;
+  for (const i of blocos)
+      i.addEventListener('click', function () {
+        i.style.background = cor;
   });
 }
 
