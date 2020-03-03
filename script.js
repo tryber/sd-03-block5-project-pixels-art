@@ -1,7 +1,10 @@
+let colorPallete = ["red", "blue", "green", "red", "orange", "grey"]
+
+
 document.getElementById("black").style.backgroundColor = document.getElementById("black").innerHTML
-document.getElementById("green").style.backgroundColor = document.getElementById("green").innerHTML
-document.getElementById("yellow").style.backgroundColor = document.getElementById("yellow").innerHTML
-document.getElementById("red").style.backgroundColor = document.getElementById("red").innerHTML
+document.getElementById("green").style.backgroundColor = colorPallete[Math.floor(Math.random() * colorPallete.length)]
+document.getElementById("yellow").style.backgroundColor = colorPallete[Math.floor(Math.random() * colorPallete.length)]
+document.getElementById("red").style.backgroundColor = colorPallete[Math.floor(Math.random() * colorPallete.length)]
 
 
 // selecionando a cor preta
