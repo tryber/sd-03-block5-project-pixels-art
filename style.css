@@ -21,7 +21,7 @@
 }
 
 .row {
-    display: flex;
+    display: inline-block;
 }
 
 .clean-out {

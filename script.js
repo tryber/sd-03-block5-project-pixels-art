@@ -45,3 +45,42 @@ function cleanOut() {
         document.getElementsByClassName("pixel")[i].style.backgroundColor = "white"
     }
 }
+
+//exercicio 12
+
+
+
+
+
+
+
+
+let redefineButton = document.getElementById("generate-board")
+redefineButton.addEventListener("click", defineSize)
+
+function defineSize() {
+    document.getElementById("pixel-board").innerHTML = "";
+    let n = document.getElementById("board-size").value
+    if (n <= 5) {
+        n = 5
+    }
+    if (n >= 50) {
+        n = 50
+    }
+
+    for (let i = 0; i < n; i++) {
+        let divRow = document.createElement("div")
+        divRow.className = "row"
+        divRow.id = "row"
+        document.getElementById("pixel-board").appendChild(divRow)
+        for (let j = 0; j < n; j++) {
+            let divColumn = document.createElement("div")
+            divColumn.className = "pixel"
+            divColumn.id = "pixel"
+            document.getElementById("row").appendChild(divColumn)
+
+        }
+
+    }
+
+}
