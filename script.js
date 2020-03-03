@@ -6,29 +6,31 @@ let pixel = document.querySelectorAll(".pixel");
 let mouseSelect = black;
 
 
-pixel.forEach(element => element.addEventListener("click", () => element.style.backgroundColor = mouseSelect))
-
-function anyColor(color) {
-  mouseSelect = color;
-}
-black.addEventListener("click", function() {
-  anyColor("black");
+black.addEventListener("click", function () {
+  Cor("black");
   black.classList.add("selected");
 });
-red.addEventListener("click", () => {
-  anyColor("red");
+red.addEventListener("click", function () {
+  Cor("red");
   red.classList.add("selected");
 });
-blue.addEventListener("click", () => {
-  anyColor("blue")
+blue.addEventListener("click", function () {
+  Cor("blue")
   blue.classList.add("selected");
 });
-green.addEventListener("click", () => {
-  anyColor("green");
+green.addEventListener("click", function () {
+  Cor("green");
   green.classList.add("selected");
 });
-function hehe(element) {
+
+function selected(element) {
   element.style.backgroundColor = mouseSelect;
 }
 
+pixel.forEach(function selected(element) {
+  element.addEventListener("click", function () { element.style.backgroundColor = mouseSelect })
+});
 
+function Cor(color) {
+  mouseSelect = color;
+}
