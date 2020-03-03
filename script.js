@@ -10,6 +10,10 @@ window.onload = function(){
     cores[i].addEventListener('click', function(){
       let corAtual = cor[i];
      sessionStorage.setItem("backgroundColor", corAtual);
+     let mudaSelected = document.getElementsByClassName('selected');
+
+     mudaSelected[0].classList.remove('selected');
+     cores[i].classList.add('selected');
     })
    };
 
