@@ -10,14 +10,17 @@
 
 .cor2 {
   background-color: green;
+  color: green;
 }
 
 .cor3 {
   background-color: yellow;
+  color: yellow;
 }
 
 .cor4 {
   background-color: blue;
+  color: blue;
 }
 
 .pixel {
@@ -27,6 +30,10 @@
   width: 40px;
 }
 
-/* .selected{
-    border: 5px solid orange;
-} */
+.selected{
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}

@@ -1,10 +1,10 @@
+const coresArr = document.getElementById('coresArr').childNodes[1]
+
 function mudaSelected() {
-  var element, name, arr;
-  element = document.getElementById("black");
-  name = "selected";
-  arr = element.className.split(" ");
+  const name = "selected";
+  const arr = coresArr.className.split(" ");
   if (arr.indexOf(name) == -1) {
-    element.className += " " + name;
+    coresArr.className += " " + name;
   }
 }
 
