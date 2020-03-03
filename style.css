@@ -7,7 +7,7 @@
 body {
 }
 #pixel-board td {
-    border: black solid 1px;
+    /* border: black solid 1px; */
     padding: 0.5rem 0.5rem;
 }
 #color-palette {
@@ -44,9 +44,10 @@ body {
     border: black solid 1px;
     background: white;
 }
-td {
+td.pixel {
     width: 40px;
     height: 40px;
+    border: 1px solid black;
 }
 #botoes {
     padding-left: 485px;
