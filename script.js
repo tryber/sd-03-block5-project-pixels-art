@@ -1,5 +1,4 @@
 const allColors = document.getElementsByClassName('color');
-const pixel = document.getElementsByClassName('pixel');
 let currentColor = 'black';
 
 function getColor(color, option) {
