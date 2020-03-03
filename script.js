@@ -72,12 +72,14 @@ for (let i = 0; i < pixelSize; i += 1) {
 
 function detectarCores() {
   for (let i = 0; i < pixelSize; i += 1) {
+    console.log(pixelSize);
     getPixel[i].addEventListener('click', function() {
       getPixel[i].style.backgroundColor = sessionStorage.color;
     });
   }
 }
 detectarCores();
+
 
 // Clear all pixels
 clearAll.addEventListener('click', function() {
@@ -86,35 +88,32 @@ clearAll.addEventListener('click', function() {
   }
 });
 
+function criaClique(event) {
+  event.target.style.backgroundColor = sessionStorage.color;
+}
+
 // Validate number between 5 and 50
 function verificarValidez() {
+  console.log(event.target.innerText);
   if (getInput.value < 5) {
-    getInput.setCustomValidity('Valor menor que 5, considerar 5 como padrão');
+    alert('Valor menor que 5, considerar 5 como padrão');
   } else if (getInput.value > 50) {
-    getInput.setCustomValidity(
-      'Valor maior que 50, considerar 50 como padrão.'
-    );
+    alert('Valor maior que 50, considerar 50 como padrão.');
+  } else {
+    getPixelBoard.innerHTML = '';
+    let numCaixas = getInput.value * getInput.value;
+    for (let i = 0; i < numCaixas; i += 1) {
+      let createDiv = document.createElement('div');
+      createDiv.className = 'pixel';
+      getPixelBoard.appendChild(createDiv);
+      createDiv.addEventListener('click', criaClique);
+    }
+    getPixel = document.querySelectorAll('.pixel');
+    getPixelBoard.style.height = getInput.value * 40 + 'px';
+    getPixelBoard.style.width = getInput.value * 42 + 'px';
   }
 }
 
 // Create your own pixels
 let getPixelBoard = document.querySelectorAll('section')[1];
-getButton.addEventListener('click', function() {
-  getPixelBoard.innerHTML = '';
-  document.querySelectorAll('section')[1].style.height =
-    getInput.value * 40 + 'px';
-  document.querySelectorAll('section')[1].style.width = getInput.value * 42+"px";
-  for (let i = 0; i < getInput.value * getInput.value; i += 1) {
-    let createDiv = document.createElement('div');
-    createDiv.className = 'pixel';
-    getPixelBoard.appendChild(createDiv);
-  }
-  let getPixel = document.querySelectorAll('.pixel');
-  let pixelSize = document.querySelectorAll('.pixel').length;
-  for (let i = 0; i < pixelSize; i += 1) {
-    getPixel[i].addEventListener('click', function() {
-      getPixel[i].style.backgroundColor = sessionStorage.color;
-    });
-  }
-});
-
+getButton.addEventListener('click', verificarValidez);
