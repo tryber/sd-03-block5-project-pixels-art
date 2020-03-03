@@ -15,8 +15,8 @@ body{
 }
 
 #pixel-board{
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
 }
 .pixel{
   background-color: white;
@@ -24,5 +24,5 @@ body{
   height: 40px;
   width: 40px;
   display: inline-block;
-  margin: -3px;
+  margin: 1px;
 }
