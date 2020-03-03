@@ -28,7 +28,7 @@ body {
 #black {
   background-color: black;
   display: block;
-
+  border: 1px solid rgb(0, 0, 0, );
   flex-direction: row;
   width: 30px;
   height: 30px;
@@ -37,7 +37,7 @@ body {
 #red {
   background-color: red;
   display: block;
-
+  border: 1px solid rgb(0, 0, 0, );
   flex-direction: row;
   width: 30px;
   height: 30px;
@@ -46,16 +46,17 @@ body {
 #blue {
   background-color: blue;
   display: block;
-
+  border: 1px solid rgb(0, 0, 0, );
   flex-direction: row;
   width: 30px;
   height: 30px;
 }
 
 #green {
+  border: 1px solid rgb(0, 0, 0, );
   background-color: green;
   display: block;
-
+  
   flex-direction: row;
   width: 30px;
   height: 30px;
