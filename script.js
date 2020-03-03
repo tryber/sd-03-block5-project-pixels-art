@@ -68,6 +68,7 @@ function defineSize() {
         n = 50
     }
 
+
     for (let i = 0; i < n; i++) {
         let divRow = document.createElement("div")
         divRow.className = "row"
