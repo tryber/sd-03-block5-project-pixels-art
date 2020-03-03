@@ -1,4 +1,8 @@
-#color-palette {
+*{
+  margin: 0;
+  padding: 0;
+}
+.color-palette {
   margin-left: 20px;
   margin-bottom: 0;
 }
