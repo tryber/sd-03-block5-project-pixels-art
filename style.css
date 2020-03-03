@@ -9,6 +9,10 @@ h1 {
   margin-left: 0.5em;
 }
 
+label {
+  margin-left: 1em;
+}
+
 .paleta {
   clear: right;
   float: left;
