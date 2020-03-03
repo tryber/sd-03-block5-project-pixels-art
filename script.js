@@ -5,11 +5,26 @@ let corAzul = document.querySelectorAll(".color")[2];
 let corVerde = document.querySelectorAll(".color")[3];
 let selecionado = document.querySelector(".selected");
 let pixels = document.querySelectorAll(".pixel");
-let preto = "black", vermelho = "red", azul = "blue", verde = "green";
+let paleta = document.querySelectorAll(".color");
+let cores = ["black", "red", "blue", "green"];
+cor = "black"; 
 
+function removerSelected(){
+    for(let i = 0; i < paleta.length; i++){
+        paleta[i].className = "color";
+    
+    }
+}
 
-cor = preto; 
-
+for(let i = 0; i < paleta.length; i++){
+    paleta[i].addEventListener("click", function(){
+        console.log(paleta[i]);
+        removerSelected();
+        paleta[i].className = "color " + "selected";
+            cor = cores[i];
+    });
+}
+   
 for(let i = 0; i < pixels.length; i++){
     pixels[i].addEventListener("click", function(){
         console.log(pixels[i]);
