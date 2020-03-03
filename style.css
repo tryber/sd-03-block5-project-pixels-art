@@ -11,10 +11,11 @@
     height: 40px;
     border: solid black 1px;
     margin: 1px;
+    background-color: rgb(255, 255, 255);
 }
 
 .selected {
-    border: solid rgb(5, 221, 210) 1px;
+    border: 1px solid black;
 }
 
 body {
