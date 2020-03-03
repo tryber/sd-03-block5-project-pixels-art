@@ -1,10 +1,13 @@
 // Get each pallete position
-const allColors = document.querySelectorAll('.color');
-const pallete1 = document.querySelectorAll('.color')[0];
-const pallete2 = document.querySelectorAll('.color')[1];
-const pallete3 = document.querySelectorAll('.color')[2];
-const pallete4 = document.querySelectorAll('.color')[3];
-const clearAll = document.querySelectorAll('#clear-board')[0];
+let allColors = document.querySelectorAll('.color');
+let pallete1 = document.querySelectorAll('.color')[0];
+let pallete2 = document.querySelectorAll('.color')[1];
+let pallete3 = document.querySelectorAll('.color')[2];
+let pallete4 = document.querySelectorAll('.color')[3];
+let clearAll = document.querySelectorAll('#clear-board')[0];
+let allPixels = document.querySelectorAll('.pixel');
+let getButton = document.querySelectorAll('button')[1];
+let getInput = document.querySelector('input');
 
 // Set default selected color as black
 sessionStorage.setItem('color', 'black');
@@ -59,23 +62,47 @@ pallete4.addEventListener('click', function() {
 });
 
 // Pixel detection
-const getPixel = document.querySelectorAll('.pixel');
-const pixelSize = document.querySelectorAll('.pixel').length;
+let getPixel = document.querySelectorAll('.pixel');
+let pixelSize = document.querySelectorAll('.pixel').length;
 
 // Set initial pixel colors to white
 for (let i = 0; i < pixelSize; i += 1) {
   getPixel[i].style.backgroundColor = 'white';
 }
 
-for (let i = 0; i < pixelSize; i += 1) {
-  getPixel[i].addEventListener('click', function() {
-    getPixel[i].style.backgroundColor = sessionStorage.color;
-  });
+function detectarCores() {
+  for (let i = 0; i < pixelSize; i += 1) {
+    getPixel[i].addEventListener('click', function() {
+      getPixel[i].style.backgroundColor = sessionStorage.color;
+    });
+  }
 }
+detectarCores();
 
 // Clear all pixels
 clearAll.addEventListener('click', function() {
   for (let i = 0; i < document.querySelectorAll('.pixel').length; i += 1) {
     document.querySelectorAll('.pixel')[i].style.backgroundColor = 'white';
   }
-})
+});
+
+// Create your own pixels
+let getPixelBoard = document.querySelectorAll('section')[1];
+getButton.addEventListener('click', function() {
+  getPixelBoard.innerHTML = '';
+  document.querySelectorAll('section')[1].style.height =
+    getInput.value * 40 + 'px';
+  document.querySelectorAll('section')[1].style.width = getInput.value * 42+"px";
+  for (let i = 0; i < getInput.value * getInput.value; i += 1) {
+    let createDiv = document.createElement('div');
+    createDiv.className = 'pixel';
+    getPixelBoard.appendChild(createDiv);
+  }
+  let getPixel = document.querySelectorAll('.pixel');
+  let pixelSize = document.querySelectorAll('.pixel').length;
+  for (let i = 0; i < pixelSize; i += 1) {
+    getPixel[i].addEventListener('click', function() {
+      getPixel[i].style.backgroundColor = sessionStorage.color;
+    });
+  }
+});
