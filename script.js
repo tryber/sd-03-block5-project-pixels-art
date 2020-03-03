@@ -1,7 +1,7 @@
 
 let selecionado = document.querySelectorAll('.color')[0];
 window.addEventListener("load",function(s){
-   selecionado.classList.add("selected");
+            adicioarSelected(selecionado);
 });
 
 window.addEventListener("click", function(s){ 
@@ -11,6 +11,7 @@ window.addEventListener("click", function(s){
         if(verificarPaleta(s.toElement)){
             removerSelected(selecionado);
             guardarElementCorSelecionada(s.toElement);
+            adicioarSelected(selecionado);
         }
     });
 
@@ -25,6 +26,9 @@ function guardarElementCorSelecionada(elemento){
 }
 function removerSelected(elemento){
      elemento.classList.remove("selected");
+}
+function adicioarSelected(elemento){
+    elemento.classList.add("selected");
 }   
 function aplicarCorSelecionada(elemento,cor){
     console.log("essa é cor "+cor);
