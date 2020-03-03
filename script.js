@@ -3,7 +3,15 @@ let red = document.querySelector("#red");
 let blue = document.querySelector("#blue");
 let green = document.querySelector("#green");
 let pixel = document.querySelectorAll(".pixel");
-let mouseSelect = black;
+let mouseSelect = " ";
+
+if(typeof(Storage) != undefined){
+  Cor("black")
+  
+}
+
+else {
+}
 
 
 black.addEventListener("click", function () {
