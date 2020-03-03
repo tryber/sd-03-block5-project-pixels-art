@@ -19,6 +19,18 @@ function makeGrid(n) {
     }
   }
 }
+/* table.appendChild(col)
+for (let j = 0; j < n; j++) {
+  let createTr = document.createElement('tr')
+  let td = document.getElementsByTagName('td')[i]
+  td.appendChild(createTr)
+  let tr = document.getElementsByTagName('tr')[i]
+  let div = document.createElement('div')
+  div.className = 'pixel';
+  div.id = 'pixel_' + i + '_' + j
+  tr.appendChild(div)
+
+} */
 
 makeGrid(n)
 const buttons = document.getElementsByTagName('button')

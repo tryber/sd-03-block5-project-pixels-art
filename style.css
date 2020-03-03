@@ -7,7 +7,7 @@ body {
   border: 1px solid black;
   width: 40px;
   height: 40px;
-  background-color: rebeccapurple;
+  background-color: rgb(57, 47, 68);
   list-style: none;
 }
 
@@ -17,16 +17,18 @@ body {
 }
 
 .color.selected {
-  border:1px solid rgb(0, 0, 0);
+  border: 1px solid rgb (0, 0, 0);
 }
 
 .pixel {
   border: 1px solid black;
   width: 40px;
   height: 40px;
-  background-color:white;
+  background-color: white;
 }
 
 table {
   border: 2px groove black;
+  display: inline-block;
+  background-color: black;
 }
