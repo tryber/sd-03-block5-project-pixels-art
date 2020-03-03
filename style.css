@@ -15,15 +15,16 @@ background-color: rgb(0,0,0);
 
 
 #pixel-board{
-    
-}	
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+position: absolute;
+}
 
 .pixel{
     border: 1px solid rgb(0,0,0);
     width: 40px;
     height: 40px;
     background-color: rgb(255, 255, 255);
-    margin: 5px;
     
 }
 
