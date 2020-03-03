@@ -44,7 +44,7 @@ td {
 }
 
 .pixel {
-  background-color: rgb(255 , 255 , 255);
+  background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
