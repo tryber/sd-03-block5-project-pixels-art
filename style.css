@@ -41,6 +41,10 @@
     width: 40px;
 }
 
-.selected{
-  
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
 }
