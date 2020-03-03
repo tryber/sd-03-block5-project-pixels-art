@@ -1,0 +1,18 @@
+.color {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.pixel {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: -1px;
+}
+
+.selected {
+    border: solid rgb(5, 221, 210) 1px;
+}
