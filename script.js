@@ -6,6 +6,8 @@ function changeColor(id) {
 
 function changeSelectedColor(newColor) {
   selectedColor = newColor;
+  document.querySelector(".selected").classList.remove("selected");
+  document.getElementById(newColor).classList.add("selected");
 }
 
 function clearBoard() {
