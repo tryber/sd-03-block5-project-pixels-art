@@ -29,7 +29,7 @@
 #pixel-board {
   width: 200px;
   height: 40px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 #pixel-board tr{
@@ -50,6 +50,12 @@
  
 }
 
-tr:last-child td {
+tr:last-child .pixel {
   border-bottom: 1px solid black;
+}
+
+#clear-board {
+  display: block;
+  margin: 20px auto 0px;
+  padding: 10px;
 }

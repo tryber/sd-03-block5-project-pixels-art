@@ -39,3 +39,16 @@ function backgroundColorQuadroDePixels() {
 }
 
 backgroundColorQuadroDePixels();
+
+const pixels = document.querySelectorAll('.pixel');
+
+function apagaQuadroPixels() {
+  const botaoApagaQuadro = document.getElementById('clear-board');
+  botaoApagaQuadro.addEventListener('click', () => {
+    for (let i = 0; i < pixels.length; i += 1) {
+      pixels[i].style.backgroundColor = 'rgb(255, 255, 255)'
+    }
+  });
+}
+
+apagaQuadroPixels();
