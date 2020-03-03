@@ -9,9 +9,9 @@ window.onload = function(){
     cores[i].style.backgroundColor = cor[i];
     cores[i].addEventListener('click', function(){
       let corAtual = cor[i];
-      sessionStorage.setItem("backgroundColor", corAtual);
+     sessionStorage.setItem("backgroundColor", corAtual);
     })
-  };
+   };
 
   let pixel = document.getElementsByClassName('pixel');
 
@@ -19,8 +19,5 @@ window.onload = function(){
     pixel[i].addEventListener('click', function(){
       pixel[i].style.backgroundColor = sessionStorage.getItem("backgroundColor");
     })
-  }
-
-
-
+  };
 }
