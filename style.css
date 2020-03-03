@@ -21,7 +21,7 @@ body {
 }
 .selected {
 }
-.buton {
+#clear-board {
   height: 50px;
   width: 100px;
 }
