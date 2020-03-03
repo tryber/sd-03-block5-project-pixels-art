@@ -6,8 +6,8 @@ sessionStorage.setItem('SelectedColor', 'black');
 const random255 = () => 0 + Math.floor((255 - 0) * Math.random());
 
 // Cria cores aleatórias
-const randomColor = () => 'rgb(' + random255() + ', ' + random255() + ', ' + random255() + ')';
-// console.log('rgb(${random255()} , ${random255()} ,${random255()})')
+const randomColor = () => `rgb(${random255()} ,${random255()} ,${random255()})`;
+
 // Coloca cores aleatórias na paleta
 document.querySelectorAll('.color')[0].style.backgroundColor = 'black';
 for (let cont = 1; cont < document.querySelectorAll('.color').length; cont += 1) {
@@ -22,7 +22,7 @@ document.querySelectorAll('.color').forEach((element) => element.addEventListene
 }));
 
 // Função que adiciona um listener para cada elemento com classe pixel que colore o pixel clicado
-const addListenerColor = () => document.querySelectorAll('.pixel').forEach((element) => element.addEventListener('click', function (event) { event.srcElement.style.backgroundColor = sessionStorage.getItem('SelectedColor') }));
+const addListenerColor = () => document.querySelectorAll('.pixel').forEach((element) => element.addEventListener('click', function (event) { event.srcElement.style.backgroundColor = sessionStorage.getItem('SelectedColor'); }));
 
 // Adiciona listener que colore de branco todos os pixels da página
 document.getElementById('clear-board').addEventListener('click', () => document.querySelectorAll('.pixel').forEach(function (element) { element.style.backgroundColor = 'White'; }));
