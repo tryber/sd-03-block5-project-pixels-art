@@ -18,8 +18,13 @@
       <button class="color" style='background-color: yellow'></button>
       <button class="color" style='background-color: rgb(185, 8, 52)'></button>
     </ul>
-    <button id='clear-board'>Clear</button>
   </div>
+  <button id='clear-board'>Clear</button>
+  <form>
+    <label> Insira um tamanho de 5-50 para o quadro</label>
+      <input id='board-size' maxlength="50" minlength="5">
+      <input id='generate-board' type='submit' value="Submit">
+  </form>
   <div id='pixel-board'>
   </div>
   <script src="script.js">
