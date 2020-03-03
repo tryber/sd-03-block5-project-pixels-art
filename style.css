@@ -50,8 +50,8 @@ td {
 #botoes {
     padding-left: 485px;
 }
-.selecao {
-    padding-left: 485px;
+.select {
+    padding-left: 525px;
 }
 #mostraSelecao {
     width: 280px;
@@ -76,5 +76,6 @@ td {
     font-size: 20px;
     color: black;
     margin-top: 15px;
+    margin-left: 525px;
     box-shadow: 0em 0.1em 0.1em black;
 }
