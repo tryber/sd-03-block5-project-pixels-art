@@ -1,12 +1,7 @@
-
-let corPreta = document.querySelectorAll(".color")[0];
-let corVermelho = document.querySelectorAll(".color")[1];
-let corAzul = document.querySelectorAll(".color")[2];
-let corVerde = document.querySelectorAll(".color")[3];
-let selecionado = document.querySelector(".selected");
 let pixels = document.querySelectorAll(".pixel");
 let paleta = document.querySelectorAll(".color");
 let cores = ["black", "red", "blue", "green"];
+let reset = document.querySelector(".botao");
 cor = "black"; 
 
 function removerSelected(){
@@ -31,5 +26,12 @@ for(let i = 0; i < pixels.length; i++){
         pixels[i].className = "pixel" + " " + " " + cor; 
     });
 }
+
+function resetarPixelBoard(){
+    for(let i = 0; i < pixels.length; i++){
+        pixels[i].className = "pixel";
+    }
+}
+reset.addEventListener("click", resetarPixelBoard);
 
 
