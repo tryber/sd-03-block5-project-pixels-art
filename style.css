@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.color {
+    border: 1px solid black;
+    display: inline-block;
+    height: 36px;
+    margin: 2px;
+    width: 36px;
+}
+.pixel {
+    border: 1px solid black;
+    display: inline-block;
+    height: 36px;
+    margin: 1px;
+    width: 36px;
+}
+
+#preto {
+    background-color: black;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#roxo {
+    background-color: purple;
+}
+
+#cyano {
+    background-color: darkcyan;
+}
