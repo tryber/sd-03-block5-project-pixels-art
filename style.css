@@ -1,3 +1,9 @@
+.color {
+    border: 1px black solid;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+}
 .pixel {
     border: 1px black solid;
     margin: 5px;
