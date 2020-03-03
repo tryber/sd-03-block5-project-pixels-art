@@ -2,8 +2,6 @@ const coresArr = document.getElementsByClassName("color");
 const pixel = document.getElementsByClassName("pixel");
 const clear = document.getElementById("clear-board");
 
-pixel[3].style.backgroundColor = "red";
-
 function mudaSelected(c) {
   const name = "selected";
   const arr = coresArr[c].className.split(" ");
@@ -17,4 +15,18 @@ function tiraSelected() {
     coresArr[i].classList.remove("selected");
 }
 
+function mudaCor(p) {
+  pixel[p].style.backgroundColor = "black";
+}
+
 mudaSelected(0);
+
+// function adicionaClass(cn, i) {
+//   const name = cn, ;
+//   const arr = coresArr[i].className.split(" ");
+//   if (arr.indexOf(name) === -1) {
+//     coresArr[i].className += " " + name;
+//   }
+// }
+
+// adicionaClass(0)
