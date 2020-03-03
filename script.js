@@ -80,7 +80,6 @@ function detectarCores() {
 }
 detectarCores();
 
-
 // Clear all pixels
 clearAll.addEventListener('click', function() {
   for (let i = 0; i < document.querySelectorAll('.pixel').length; i += 1) {
@@ -96,24 +95,24 @@ function criaClique(event) {
 function verificarValidez() {
   console.log(event.target.innerText);
   if (getInput.value < 5) {
-    alert('Valor menor que 5, considerar 5 como padrão');
+    getInput.value = 5;
   } else if (getInput.value > 50) {
+    getInput.value = 50;
     alert('Valor maior que 50, considerar 50 como padrão.');
-  } else {
-    getPixelBoard.innerHTML = '';
-    let numCaixas = getInput.value * getInput.value;
-    for (let i = 0; i < numCaixas; i += 1) {
-      let createDiv = document.createElement('div');
-      createDiv.className = 'pixel';
-      getPixelBoard.appendChild(createDiv);
-      createDiv.addEventListener('click', criaClique);
-    }
-    getPixel = document.querySelectorAll('.pixel');
-    getPixelBoard.style.height = getInput.value * 40 + 'px';
-    getPixelBoard.style.width = getInput.value * 42 + 'px';
   }
-}
 
+  getPixelBoard.innerHTML = '';
+  let numCaixas = getInput.value * getInput.value;
+  for (let i = 0; i < numCaixas; i += 1) {
+    let createDiv = document.createElement('div');
+    createDiv.className = 'pixel';
+    getPixelBoard.appendChild(createDiv);
+    createDiv.addEventListener('click', criaClique);
+  }
+  getPixel = document.querySelectorAll('.pixel');
+  getPixelBoard.style.height = getInput.value * 40 + 'px';
+  getPixelBoard.style.width = getInput.value * 42 + 'px';
+}
 // Create your own pixels
 let getPixelBoard = document.querySelectorAll('section')[1];
 getButton.addEventListener('click', verificarValidez);
