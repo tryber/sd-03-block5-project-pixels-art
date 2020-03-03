@@ -1,0 +1,9 @@
+#color-palette {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+table tr td{
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
