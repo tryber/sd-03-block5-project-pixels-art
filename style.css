@@ -1,5 +1,7 @@
-body {
+* {
   box-sizing: border-box;
+}
+body {
   display: table-cell;
   margin: 0;
   padding: 0;
@@ -13,6 +15,10 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
+}
+
+td, th{
+  border: 1px solid black;
 }
 
 #black {
@@ -38,9 +44,6 @@ table {
 
 .pixel {
   background-color: white;
-  border: 1px;
-  border-color: black;
-  border-style: solid;
   height: 40px;
   margin: 0;
   padding: 0;
