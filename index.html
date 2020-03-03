@@ -11,10 +11,26 @@
     <h1 id="title">Paleta de Cores</h1>
     <br />
     <div id="color-palette">
-      <div class="color selected" style="background-color: black;" onclick="changeSelectedColor('black')"></div>
-      <div class="color" style="background-color: red;" onclick="changeSelectedColor('red')"></div>
-      <div class="color" style="background-color: green;" onclick="changeSelectedColor('green')"></div>
-      <div class="color" style="background-color: blue;" onclick="changeSelectedColor('blue')"></div>
+      <div
+        class="color selected"
+        style="background-color: black;"
+        onclick="changeSelectedColor('black')"
+      ></div>
+      <div
+        class="color"
+        style="background-color: red;"
+        onclick="changeSelectedColor('red')"
+      ></div>
+      <div
+        class="color"
+        style="background-color: green;"
+        onclick="changeSelectedColor('green')"
+      ></div>
+      <div
+        class="color"
+        style="background-color: blue;"
+        onclick="changeSelectedColor('blue')"
+      ></div>
     </div>
     <br />
     <table id="pixel-board">
@@ -54,5 +70,9 @@
           <td class="pixel" id="pixel24" onclick="changeColor('pixel24')"></td>
           <td class="pixel" id="pixel25" onclick="changeColor('pixel25')"></td>
         </tr>
+      </tbody>
+    </table>
+    <br />
+    <button class="buton" onclick="clearBoard()">clear</button>
   </body>
 </html>
