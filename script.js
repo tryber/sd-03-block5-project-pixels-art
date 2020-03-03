@@ -1,81 +1,32 @@
 // Cores selecionaveis
 const paleta = [
-    document.getElementById('preto').backgroundColor = "black",
-    document.getElementById('vermelho').backgroundColor = "red",
-    document.getElementById('roxo').backgroundColor = "purple",
-    document.getElementById('cyano').backgroundColor = "darkCyan",
-]
+    document.getElementById('preto').backgroundColor = 'black',
+    document.getElementById('vermelho').backgroundColor = 'red',
+    document.getElementById('roxo').backgroundColor = 'purple',
+    document.getElementById('cyano').backgroundColor = 'darkCyan',
+];
+const cores = document.querySelectorAll('.color').length;
 const cor = document.querySelectorAll('.color');
 
-for (let i in paleta.length){
+for (let i in paleta.length) {
     cor[i].style.backgroundColor = paleta[i];
 }
 
 cor[0].classList.add('selected');
 sessionStorage.setItem('color', cor[0].style.backgroundColor);
-
-for (let indice in paleta.length) {
-    cor[indice].addEventeListener('click', function () {
-        document.querySelector('.selected').classList.remove('.selected');
-        cor[indice].classList.add('.selected');
-        sessionStorage.setItem('color', cor[indice].style.backgroundColor);
-    })
-}
-
-const caixasBranca = document.querySelectorAll('.pixel');
-const caixa = document.querySelectorAll('.pixel');
-
-for (let i in caixasBranca.length) {
-    caixa[i].addEventeListener('click', function () {
-        caixa[i].style.backgroundColor = sessionStorage.color;
+for (let i = 0; i < cores; i += 1) {
+    cor[i].addEventListener('click', function () {
+        document.querySelector('.selected').classList.remove('selected');
+        cor[i].classList.add('selected');
+        sessionStorage.setItem('color', cor[i].style.backgroundColor);
     });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* // Classe que seleciona a cor
-let select = document.getElementsByClassName('selected')[0];
-
-// Pixels brancos
 const caixasBranca = document.querySelectorAll('.pixel').length;
+const caixa = document.querySelectorAll('.pixel');
 
-corPreta.addEventListener('click', function () {
-    select.value = "black";
-    alert(select.innerHTML.length + 1);
-})
-
-corVermelha.addEventListener('click', function () {
-    select.value = "red";
-    alert(select.innerHTML.length + 1);
-})
-
-corRoxa.addEventListener('click', function () {
-    corRoxa.value = "purple"
-    alert(corRoxa.value);
-})
-
-corCyan.addEventListener('click', function () {
-    corCyan.value = "darkCyan"
-    alert(corCyan.value);
-}) */
+for (let i = 0; i < caixasBranca; i += 1) {
+    caixa[i].addEventListener('click', function () {
+        caixa[i].style.backgroundColor = sessionStorage.color;
+    });
+}

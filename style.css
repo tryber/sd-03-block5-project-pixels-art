@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-.selected {
-    border: 1px solid black;
-    display: inline-block;
-    height: 40px;
-    margin: 1px;
-    width: 40px;
-}
-
 .color {
     border: 1px solid black;
     display: inline-block;
@@ -15,6 +7,15 @@
     margin: 1px;
     width: 40px;
 }
+
+.selected {
+    border: 2px solid cyan;
+    display: inline-block;
+    height: 40px;
+    margin: 1px;
+    width: 40px;
+}
+
 .pixel {
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
@@ -22,20 +23,4 @@
     height: 40px;
     margin: 1px;
     width: 40px;
-}
-
-#preto {
-    background-color: black;
-}
-
-#vermelho {
-    background-color: red;
-}
-
-#roxo {
-    background-color: purple;
-}
-
-#cyano {
-    background-color: darkcyan;
 }
