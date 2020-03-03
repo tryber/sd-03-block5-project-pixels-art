@@ -3,17 +3,16 @@
   padding: 0;
 }
 
-table tr td{
-  border: 1px solid black;
-  height: 40px;
-  width: 40px;
-}
-table tr th {
+.color-palette {
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
 
-.pixels {
+.pixel {
   background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
 }
+
