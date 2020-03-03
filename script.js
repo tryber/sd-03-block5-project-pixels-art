@@ -1,8 +1,9 @@
 let actualColor = 'black';
 
-
-function setColor(color) {
+function setColor(color, id) {
     actualColor = color;
+    document.querySelector('.selected').classList.remove('selected');
+    document.getElementById(id).classList.add('selected');
 
 }
 
@@ -16,5 +17,4 @@ function clearBoard() {
     for (i = 0; i < a.length; i++) {
         a[i].style.backgroundColor = 'white';
     }
-    console.log(a);
 }
