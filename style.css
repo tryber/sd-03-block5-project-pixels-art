@@ -25,6 +25,10 @@ body {
     padding: 0px;
 }
 
+.color:hover {
+    opacity: 0.6;
+}
+
 #pixel-board {
     position: relative;
     left: 5px;
@@ -35,6 +39,10 @@ body {
     height: 40px;
     padding: 0px;
     background-color: white;
+}
+
+.pixel:hover {
+    border: 3px solid gray;
 }
 
 td {
