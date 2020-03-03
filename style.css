@@ -1,0 +1,18 @@
+.pixel {
+    border: 1px black solid;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+}   
+.first {
+    background-color: black;
+}
+.fourth {
+    background-color: white;
+}
+.second {
+    background-color: green;
+}
+.third {
+    background-color: blue;
+}
