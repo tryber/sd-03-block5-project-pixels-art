@@ -21,8 +21,8 @@ function select() {
       const selecionada = window.getComputedStyle(pick).getPropertyValue('background-color');
       cor = selecionada;
 
-      c4 = document.getElementsByClassName('.selected');
-      // c5.style.backgroundColor = selecionada;
+      c5 = document.getElementsByClassName('.selected');
+      c5.style.backgroundColor = selecionada;
     });
   }
 }
