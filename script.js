@@ -22,7 +22,7 @@ function select() {
       cor = selecionada;
 
       c5 = document.getElementsByClassName('.selected');
-      c5.style.backgroundColor = selecionada;
+      // c5.style.backgroundColor = selecionada;
     });
   }
 }
