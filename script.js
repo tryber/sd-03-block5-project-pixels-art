@@ -12,14 +12,20 @@ function mudaSelected(c) {
 
 function tiraSelected() {
   for (let i = 0; i < coresArr.length; i += 1)
-    coresArr[i].classList.remove("selected");
-}
-
-function mudaCor(p) {
-  pixel[p].style.backgroundColor = "black";
+  coresArr[i].classList.remove("selected");
 }
 
 mudaSelected(0);
+
+function paint() {
+  let color = document.querySelector('.selected');
+
+  event.target.style.backgroundColor = color.id;
+}
+
+for (i = 0; i < pixel.length; i += 1) {
+  pixel[i].addEventListener('click', paint);
+}
 
 // function adicionaClass(cn, i) {
 //   const name = cn, ;
