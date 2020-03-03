@@ -6,7 +6,7 @@
 }
 body {
 }
-#tabela td {
+#pixel-board td {
     border: black solid 1px;
     padding: 0.5rem 0.5rem;
 }
@@ -16,8 +16,8 @@ body {
     
 }
 .color {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
     margin: 5px;
 }
@@ -33,13 +33,13 @@ body {
 #color-palette4 {
     background-color: rgb(4, 53, 101);
 }
-#tabela {
+#pixel-board {
     border: black solid 1px;
     border-collapse: collapse;
     margin: 0 auto 0 auto;
     margin-top: 5px;
 }
-#tabela td {
+#pixel-board td {
     border: black solid 1px;
     background: white;
 }
