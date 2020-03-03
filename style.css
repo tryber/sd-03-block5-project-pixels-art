@@ -9,8 +9,9 @@
 .color{
     border: 1px solid black;
     display: inline-block;
-    width: 40px;
     height: 40px;
+    width: 40px;
+   
 }
 #paleta-preta{
     background-color: black;
@@ -25,4 +26,16 @@
 }
 #paleta-4{
     background-color: green;
+}
+#pixel-board{
+    border: 1px solid black;
+    height: 200px;
+    margin: auto;
+    width: 200px;
+}
+.pixel{
+    border: 1px solid black;
+    float: left;
+    height: 38px;
+    width: 38px;
 }
