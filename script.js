@@ -1,19 +1,26 @@
-const allColors = document.getElementsByClassName('color');
 let currentColor = 'black';
 
-function getColor(color, option) {
+function getColor(color, id) {
     // Changes current color (for painting)
-    let selectedColor = document.getElementById(option);
     currentColor = color;
-    // Remove 'selected' class from all colors
+    // Remove 'selected' class from all colors on palette
+    const allColors = document.getElementsByClassName('color');
     for (i in allColors) {
         allColors[i].className = 'color';
     }
-    // Add 'selected' to current color
+    // Add 'selected' to current color on palette
+    let selectedColor = document.getElementById(id);
     selectedColor.classList.add('selected')
 }
 
-function paintPixel(id) {
-    let clickedPixel = document.getElementById(id);
-    clickedPixel.style.backgroundColor = currentColor;
+const pixels = document.getElementsByClassName('pixel');
+
+function paintPixel(i) {
+    pixels[i].style.backgroundColor = currentColor;
+}
+
+function clearArt() {
+    for (i in pixels) {
+        pixels[i].style.backgroundColor = 'white';
+    }
 }
