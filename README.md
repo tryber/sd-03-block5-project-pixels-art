@@ -64,7 +64,7 @@ O quadro de pixels deve possuir o **id** `pixel-board`, ao passo que cada pixel 
 
 ### 6 - Cada pixel do quadro de pixels deve possuir 40 pixels de largura e 40 pixels de altura e ser delimitado por uma margem preta de 1 pixel
 
-40 pixels deve ser o tamanho total do elemento, incluindo conteúdo, padding e boda.
+40 pixels deve ser o tamanho total do elemento, incluindo seu conteúdo e excluindo a margem preta, que deve ser contada à parte.
 
 ### 7 - Ao carregar a página, a cor **preta** da paleta já deve estar selecionada para pintar os pixels
 
