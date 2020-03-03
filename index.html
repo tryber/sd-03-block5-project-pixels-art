@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paleta de Cores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Paleta de Cores</h1>
+  <div id="color-palette" class="colors-parent">
+    <div class="color black selected"></div>
+    <div class="color color2"></div>
+    <div class="color color3"></div>
+    <div class="color color4"></div>
+  </div>
+
+  <label for="square-size">
+    <input type="number" id="board-size">
+    <button type="submit" id="generate-board">Definir quadrado</button>
+  </label>
+
+  <table class="grid" id="pixel-board">
+    <tbody>
+      <tr class="column">
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+      </tr>
+      <tr class="column">
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+      </tr>
+      <tr class="column">
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+      </tr>
+      <tr class="column">
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+      </tr>
+      <tr class="column">
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+        <td class="pixel"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" id="clear-board" onclick="clearBoard()">Limpe o quadro</button>
+  <script src="script.js"></script>
+</body>
+</html>

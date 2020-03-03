@@ -1,0 +1,18 @@
+.color {
+  display: inline-block;
+}
+
+.colors-parent {
+  margin: 10px;
+}
+
+.column {
+  display: flex;
+}
+
+.pixel , .color {
+  background-color: white;
+  border: solid 1px black;
+  height: 40px;
+  width: 40px;
+}
