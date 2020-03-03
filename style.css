@@ -5,7 +5,12 @@
     border:5px solid black;
 }
 
-
+.color{
+    display: table;
+    border:5px solid black;
+    height: 100%;
+    width: 100%;
+}
 .green{
     background-color: green;
 }
