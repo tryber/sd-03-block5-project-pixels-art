@@ -1,0 +1,29 @@
+#title{
+
+}
+#color-palette{
+
+}
+.color{
+    border-width:1px;
+    border-style: solid;
+    width:40px;
+    height:40px;
+}
+#color-palette{
+
+}
+#pixel-board{
+
+}
+.pixel{
+    background-color: white;
+    border: 1px solid black;
+    width:40px;
+    height:40px;
+    padding:0;
+    margin: -2px;
+}
+.selected{
+
+}
