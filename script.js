@@ -1,5 +1,5 @@
 
-sessionStorage.color
+sessionStorage.color = 'black'
 const n = 5;
 function makeGrid(n) {
   const where = document.getElementById('pixel-board');
