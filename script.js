@@ -1,52 +1,34 @@
 let black = document.querySelector("#black");
 let red = document.querySelector("#red");
 let blue = document.querySelector("#blue");
-let green = document.querySelector("green");
+let green = document.querySelector("#green");
+let pixel = document.querySelectorAll(".pixel");
+let mouseSelect = black;
 
 
-let corSelecionada = document.querySelector(".selected");
+pixel.forEach(element => element.addEventListener("click", () => element.style.backgroundColor = mouseSelect))
 
-const pixel = document.querySelectorAll(".pixel");
-
-sessionStorage.setItem('color', black)
-
-/* function cor(indicador) {
-  if (indicador === 1) {
-    sessionStorage.setItem('color', black)
-    black = "color selected black";
-    corSelecionada = document.querySelector(".selected").style.backgroundColor;
-  }
-  else if (indicador === 2) {
-    sessionStorage.setItem('color', red);
-    red.className = 'color selected red';
-    corSelecionada = document.querySelector(".selected").style.backgroundColor;
-  }
-  else if (indicador === 3) {
-    sessionStorage.setItem('color', blue);
-    blue.className = 'color selected blue';
-    corSelecionada = document.querySelector(".selected").style.backgroundColor;
-  }
-  else if (indicador === 4) {
-    sessionStorage.setItem('color', green);
-    green.className = 'color selected green';
-    corSelecionada = document.querySelector(".selected").style.backgroundColor;
-  }
+function anyColor(color) {
+  mouseSelect = color;
+}
+black.addEventListener("click", function() {
+  anyColor("black");
+  black.classList.add("selected");
+});
+red.addEventListener("click", () => {
+  anyColor("red");
+  red.classList.add("selected");
+});
+blue.addEventListener("click", () => {
+  anyColor("blue")
+  blue.classList.add("selected");
+});
+green.addEventListener("click", () => {
+  anyColor("green");
+  green.classList.add("selected");
+});
+function hehe(element) {
+  element.style.backgroundColor = mouseSelect;
 }
 
-black.addEventListener('click', function () {
-  cor(1)
-});
-
-red.addEventListener('click', function () {
-  cor(2)
-});
-
-blue.addEventListener('click', function () {
-  cor(3)
-});
-
-green.addEventListener('click', function () {
-  cor(4)
-});
- */
 
