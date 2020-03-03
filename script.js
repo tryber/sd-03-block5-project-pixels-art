@@ -34,3 +34,14 @@ function aplicarCorSelecionada(elemento,cor){
     console.log("essa é cor "+cor);
       elemento.style.backgroundColor = cor;
 }
+let botaoLimpar = document.getElementById("clear-board");
+botaoLimpar.addEventListener("click",function(s){
+    limparPixeis();
+});
+function limparPixeis(){
+    console.log("aui");
+    let pixeis = document.querySelectorAll('.pixel');
+    for(let i=0;i<pixeis.length;i++){
+         pixeis[i].style.backgroundColor = "white";
+    }
+}
