@@ -71,7 +71,7 @@ td.pixel {
   box-shadow: 0em 0.1em 0.1em black;
 }
 #corSelecionada {
-  background: white;
+  background: rgb(255, 255, 255);
   width: 100%;
   font-weight: bold;
   text-align: center;
