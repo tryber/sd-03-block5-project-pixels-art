@@ -13,6 +13,10 @@ const paletaCor = document.getElementsByClassName("color")
 
 const selecionado = document.getElementsByClassName("selected")
 
+const pixel = document.getElementsByClassName("pixel")
+
+const black = document.getElementsByClassName("cor1")
+
 function selected(s){
     for (let i = 0; i < paletaCor.length; i += 1)
     paletaCor[i].classList.remove("selected")
@@ -21,6 +25,19 @@ function selected(s){
     if (array.indexOf(name) === -1){
         paletaCor[s].className += " " + name
     }
+
+    function paint() {
+        let color = document.querySelector(".selected");
+      
+        event.target.style.backgroundColor = color.id;
+      }
+      
+      for (i = 0; i < pixel.length; i += 1) {
+        pixel[i].addEventListener("click", paint);
+      }
 }
+/*function mudarCor(p){
+    const arrayP = paletaCor[1].className.split (" ")
 
-
+    pixel[p].style.backgroundColor = "arrayP[1].style.backgroundColor"
+}*/
