@@ -1,69 +1,26 @@
-/* * {
-  border: 1px solid red;
-} */
-
-body {
-  width: 80%;
-  margin: 0 auto;
-  background-color: black;
-  font-family: Ubuntu, Roboto;
-}
-
-table {
-  border-spacing: 0;
-}
-
-header {
-  margin-top: 5%;
-  padding-top: 1em;
-  font-size: 35px;
-  text-align: center;
-}
-
 .color {
   border: 1px solid black;
   height: 100px;
   width: 100px;
 }
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2em;
-}
-
-.content {
-  background-color: rgb(239, 200, 139);
-}
-
-.pixel-board {
-  display: block;
-}
-
 .pixel {
   background-color: white;
   border: 1px solid black;
   height: 40px;
   width: 40px;
 }
-
-.line {
-  display: flex;
-}
-
-.black-bg {
+.black {
   background-color: black;
 }
 
-.green-bg {
+.green {
   background-color: green;
 }
 
-.blue-bg {
+.blue {
   background-color: blue;
 }
 
-.red-bg {
+.red {
   background-color: red;
 }
