@@ -30,3 +30,19 @@ button:hover {
   height: 40px;
   width: 40px;
 }
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#grey {
+  background-color: grey;
+}

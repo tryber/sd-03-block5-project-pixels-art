@@ -10,14 +10,17 @@ sessionStorage.setItem('color', 'black');
 pallete[0].className += ' selected';
 
 // Set collors initially
-pallete[0].style.backgroundColor = 'black';
-pallete[1].style.backgroundColor = 'red';
-pallete[2].style.backgroundColor = 'blue';
-pallete[3].style.backgroundColor = 'grey';
+function setColors() {
+  pallete[0].style.backgroundColor = 'black';
+  pallete[1].style.backgroundColor = 'red';
+  pallete[2].style.backgroundColor = 'blue';
+  pallete[3].style.backgroundColor = 'grey';
+}
+setColors();
 
 // Color selector
 pallete[0].addEventListener('click', function() {
-  sessionStorage.setItem('color', 'black');
+  sessionStorage.setItem('color', pallete[0].style.backgroundColor);
   for (let i = 0; i < pallete.length; i += 1) {
     if (i === 0) {
       pallete[i].className += ' selected';
@@ -27,7 +30,7 @@ pallete[0].addEventListener('click', function() {
   }
 });
 pallete[1].addEventListener('click', function() {
-  sessionStorage.setItem('color', 'red');
+  sessionStorage.setItem('color', pallete[1].style.backgroundColor);
   for (let i = 0; i < pallete.length; i += 1) {
     if (i === 1) {
       pallete[i].className += ' selected';
@@ -37,7 +40,7 @@ pallete[1].addEventListener('click', function() {
   }
 });
 pallete[2].addEventListener('click', function() {
-  sessionStorage.setItem('color', 'blue');
+  sessionStorage.setItem('color', pallete[2].style.backgroundColor);
   for (let i = 0; i < pallete.length; i += 1) {
     if (i === 2) {
       pallete[i].className += ' selected';
@@ -47,7 +50,7 @@ pallete[2].addEventListener('click', function() {
   }
 });
 pallete[3].addEventListener('click', function() {
-  sessionStorage.setItem('color', 'grey');
+  sessionStorage.setItem('color', pallete[3].style.backgroundColor);
   for (let i = 0; i < pallete.length; i += 1) {
     if (i === 3) {
       pallete[i].className += ' selected';
