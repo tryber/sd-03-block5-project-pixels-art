@@ -1,39 +1,48 @@
 let corPintura = 'color cor1 selected';
+let paletteButons = document.getElementsByClassName("color ");
+let pixelUnit = document.getElementsByClassName('pixel ');
+
+for (let i = 0; i<paletteButons.length; i += 1) {
+  //console.log(paletteButons[i]);
+  paletteButons[i].addEventListener('click', function () {    
+    const corSelecionada = event.srcElement;
+  //  Limpa a seleção
+    document.getElementsByClassName('cor1')[0].className = 'color cor1';
+    document.getElementsByClassName('cor2')[0].className = 'color cor2';
+    document.getElementsByClassName('cor3')[0].className = 'color cor3';
+    document.getElementsByClassName('cor4')[0].className = 'color cor4';
+  //  Seleciona nova cor
+    if (document.getElementsByClassName('cor1')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    } else if (document.getElementsByClassName('cor2')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    } else if (document.getElementsByClassName('cor3')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    } else if (document.getElementsByClassName('cor4')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    }
+    corPintura = corSelecionada.className;
+  });
+}
+
+for (j = 0; j<pixelUnit.length; j += 1) {
+  pixelUnit[j].addEventListener('click', function () {
+    const pixelSelecionado = event.srcElement;
+    if (corPintura === 'color cor1 selected') {
+      pixelSelecionado.style.backgroundColor = 'black';
+    }
+    if (corPintura === 'color cor2 selected') {
+      pixelSelecionado.style.backgroundColor = 'red';
+    }
+    if (corPintura === 'color cor3 selected') {
+      pixelSelecionado.style.backgroundColor = 'green';
+    }
+    if (corPintura === 'color cor4 selected') {
+      pixelSelecionado.style.backgroundColor = 'blue';
+    }
+  });
+}
+
 /* exported global_var */
-let colorSelector;
-colorSelector = function () {    
-  const corSelecionada = event.srcElement;
-//  Limpa a seleção
-  document.getElementsByClassName('cor1')[0].className = 'color cor1';
-  document.getElementsByClassName('cor2')[0].className = 'color cor2';
-  document.getElementsByClassName('cor3')[0].className = 'color cor3';
-  document.getElementsByClassName('cor4')[0].className = 'color cor4';
-//  Seleciona nova cor
-  if (document.getElementsByClassName('cor1')[0] === corSelecionada) {
-    corSelecionada.className += ' selected';
-  } else if (document.getElementsByClassName('cor2')[0] === corSelecionada) {
-    corSelecionada.className += ' selected';
-  } else if (document.getElementsByClassName('cor3')[0] === corSelecionada) {
-    corSelecionada.className += ' selected';
-  } else if (document.getElementsByClassName('cor4')[0] === corSelecionada) {
-    corSelecionada.className += ' selected';
-  }
-  corPintura = corSelecionada.className;
-};
-/* exported global_var */
-let pintaCorSelecionada;
-pintaCorSelecionada = function () {
-  const pixelSelecionado = event.srcElement;
-  if (corPintura === 'color cor1 selected') {
-    pixelSelecionado.style.backgroundColor = 'black';
-  }
-  if (corPintura === 'color cor2 selected') {
-    pixelSelecionado.style.backgroundColor = 'red';
-  }
-  if (corPintura === 'color cor3 selected') {
-    pixelSelecionado.style.backgroundColor = 'green';
-  }
-  if (corPintura === 'color cor4 selected') {
-    pixelSelecionado.style.backgroundColor = 'blue';
-  }
-};
+//let pintaCorSelecionada;
+//pintaCorSelecionada = ;
