@@ -39,3 +39,7 @@ body {
 .selected {
   background-color: black;
 }
+
+p1.pixel{
+  background-color: rgb(0, 0, 0);
+}
