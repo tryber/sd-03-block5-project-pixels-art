@@ -19,7 +19,36 @@ let piXel = document.getElementsByClassName('pixel');
 corBlack1.addEventListener('click', function() {
     let corpreta = corBlack;
     corBlack1.classList.add('selected');
-
+    corRed1.classList.remove('selected');
+    corBlue1.classList.remove('selected');
+    corGreen1.classList.remove('selected');
     console.log(corpreta);
 
+})
+
+corRed1.addEventListener('click', function() {
+    let corVermelha = corRed;
+    corRed1.classList.add('selected');
+    corBlack1.classList.remove('selected');
+    corBlue1.classList.remove('selected');
+    corGreen1.classList.remove('selected');
+    console.log(corVermelha);
+
+})
+corBlue1.addEventListener('click', function() {
+    let corazul = corBlue;
+    corBlue1.classList.add('selected');
+    corRed1.classList.remove('selected');
+    corBlack1.classList.remove('selected');
+    corGreen1.classList.remove('selected');
+    console.log(corAzul);
+
+})
+
+corGreen1.addEventListener('click', function() {
+    let corverde = corGreen;
+    corGreen1.classList.add('selected');
+    corRed1.classList.remove('selected');
+    corBlack1.classList.remove('selected');
+    corBlue1.classList.remove('selected');
 })

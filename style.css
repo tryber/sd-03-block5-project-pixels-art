@@ -10,7 +10,7 @@
     width: 40px;
     height: 40px;
     border: 1px solid black;
-    margin: -1px;
+    margin: 1px;
 }
 
 .selected {
