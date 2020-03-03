@@ -1,10 +1,9 @@
 let corPintura = 'color cor1 selected';
-let paletteButons = document.getElementsByClassName("color ");
-let pixelUnit = document.getElementsByClassName('pixel ');
+const paletteButons = document.getElementsByClassName('color ');
+const pixelUnit = document.getElementsByClassName('pixel ');
 
-for (let i = 0; i<paletteButons.length; i += 1) {
-  //console.log(paletteButons[i]);
-  paletteButons[i].addEventListener('click', function () {    
+for (let i = 0; i < paletteButons.length; i += 1) {
+  paletteButons[i].addEventListener('click', function () {
     const corSelecionada = event.srcElement;
   //  Limpa a seleção
     document.getElementsByClassName('cor1')[0].className = 'color cor1';
@@ -25,7 +24,7 @@ for (let i = 0; i<paletteButons.length; i += 1) {
   });
 }
 
-for (j = 0; j<pixelUnit.length; j += 1) {
+for (let j = 0; j < pixelUnit.length; j += 1) {
   pixelUnit[j].addEventListener('click', function () {
     const pixelSelecionado = event.srcElement;
     if (corPintura === 'color cor1 selected') {
@@ -42,7 +41,3 @@ for (j = 0; j<pixelUnit.length; j += 1) {
     }
   });
 }
-
-/* exported global_var */
-//let pintaCorSelecionada;
-//pintaCorSelecionada = ;
