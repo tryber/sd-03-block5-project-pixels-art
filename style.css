@@ -20,23 +20,7 @@
     margin: 1px;
 }
 
-.first-row {
-    display: flex;
-}
-
-.second-row {
-    display: flex;
-}
-
-.third-row {
-    display: flex;
-}
-
-.fourth-row {
-    display: flex;
-}
-
-.fifth-row {
+.row {
     display: flex;
 }
 
@@ -44,7 +28,7 @@
     margin: 70px;
 }
 
-.button {
+.clear-board {
     height: 40px;
     width: 70px;
     border: black solid 1px;

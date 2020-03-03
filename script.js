@@ -25,8 +25,6 @@ for (let i = 0; i < 4; i++) {
 
 let pickPixel = document.getElementsByClassName("pixel")
 
-
-
 for (let i = 0; i < 25; i++) {
     pickPixel[i].addEventListener("click", changeColor)
 
@@ -36,7 +34,7 @@ for (let i = 0; i < 25; i++) {
     }
 }
 
-let button = document.querySelector(".button")
+let button = document.querySelector(".clear-board")
 button.addEventListener("click", cleanOut)
 
 
