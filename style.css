@@ -9,10 +9,15 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: solid black 1px;
     margin: 1px;
 }
 
 .selected {
     border: solid rgb(5, 221, 210) 1px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
 }

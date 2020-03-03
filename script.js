@@ -1,54 +1,28 @@
-let corBlack = document.getElementsByClassName("color")[0].style.backgroundColor = "Black";
-let corBlack1 = document.getElementById('preto');
+const backColor = document.querySelectorAll('.color');
+const back = document.querySelectorAll('.color').length;
 
-let corRed = document.getElementsByClassName("color")[1].style.backgroundColor = "red";
-let corRed1 = document.getElementById('vermelho');
+const pixeL = document.querySelectorAll('.pixel');
+const tpixel = document.querySelectorAll('.pixel').length;
 
-let corBlue = document.getElementsByClassName("color")[2].style.backgroundColor = "blue";
-let corBlue1 = document.getElementById('azul');
+for (let i = 0; i < back; i++) {
+    const cores = ['black', 'red', 'blue', 'green'];
+    backColor[i].style.backgroundColor = cores[i];
+}
+backColor[0].classList.add('selected');
 
-let corGreen = document.getElementsByClassName("color")[3].style.backgroundColor = "green";
-let corGreen1 = document.getElementById('verde');
+sessionStorage.setItem('color', backColor[0].style.backgroundColor);
 
-let select = document.getElementsByClassName('selected');
-let selecionaCor = document.getElementById('color-pallette');
+for (let elemento = 0; elemento < back; elemento++) {
+    backColor[elemento].addEventListener('click', function() {
+        document.querySelector('.selected').classList.remove('selected');
+        backColor[elemento].classList.add('selected');
+        sessionStorage.setItem('color', backColor[elemento].style.backgroundColor)
+    })
+}
 
-let pixelBoard = document.getElementById('pixel-board');
-let piXel = document.getElementsByClassName('pixel');
+for (let cont = 0; cont < tpixel; cont++) {
+    pixeL[cont].addEventListener('click', function() {
+        pixeL[cont].style.backgroundColor = sessionStorage.color;
+    })
 
-corBlack1.addEventListener('click', function() {
-    let corpreta = corBlack;
-    corBlack1.classList.add('selected');
-    corRed1.classList.remove('selected');
-    corBlue1.classList.remove('selected');
-    corGreen1.classList.remove('selected');
-    console.log(corpreta);
-
-})
-
-corRed1.addEventListener('click', function() {
-    let corVermelha = corRed;
-    corRed1.classList.add('selected');
-    corBlack1.classList.remove('selected');
-    corBlue1.classList.remove('selected');
-    corGreen1.classList.remove('selected');
-    console.log(corVermelha);
-
-})
-corBlue1.addEventListener('click', function() {
-    let corazul = corBlue;
-    corBlue1.classList.add('selected');
-    corRed1.classList.remove('selected');
-    corBlack1.classList.remove('selected');
-    corGreen1.classList.remove('selected');
-    console.log(corAzul);
-
-})
-
-corGreen1.addEventListener('click', function() {
-    let corverde = corGreen;
-    corGreen1.classList.add('selected');
-    corRed1.classList.remove('selected');
-    corBlack1.classList.remove('selected');
-    corBlue1.classList.remove('selected');
-})
+}
