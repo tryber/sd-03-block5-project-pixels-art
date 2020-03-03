@@ -3,7 +3,8 @@ window.onload = function() {
     let pickedColor;
 
 
-
+    //Padrão incial cor preta;
+    pickedColor = window.getComputedStyle(selectedColorPalette, null).backgroundColor;
 
     //Remove a classe Selected e depois Adiciona classe 'selected' na cor da paleta selecionada e armazena a cor selected na pickedColor
     document.querySelectorAll('.color').forEach(element =>
@@ -25,6 +26,14 @@ window.onload = function() {
         })
 
     });
+
+    //
+    function clear() {
+        document.querySelectorAll('.pixel').forEach(element => {
+            element.style.backgroundColor = 'white';
+        });
+    }
+    document.getElementById('btn-clear').addEventListener('click', clear);
 
 
 

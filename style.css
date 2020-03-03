@@ -3,24 +3,24 @@
         font-size: 1.5em;
         color: black;
     }
-
+    
     .pixel {
         width: 40px;
         height: 40px;
         border: solid 1px black;
         background-color: white;
     }
-
+    
     #pixel-board {
         display: flex;
         background-color: white;
     }
-
+    
     #color-palette {
         display: flex;
         margin-bottom: 20px;
     }
-
+    
     .color {
         width: 30px;
         height: 30px;
@@ -28,27 +28,23 @@
         margin-right: 2px;
     }
     /*Color Palette*/
-
+    
     .A {
         background-color: black;
     }
-
+    
     .B {
         background-color: #365abd;
     }
-
+    
     .C {
         background-color: #d1c6b9;
     }
-
+    
     .D {
-        background-color: #f8f7f2;
+        background-color: #48b8e7;
     }
-
-    .E {
-        background-color: #48b8e7
-    }
-
+    
     #container {
         display: flex;
         flex-direction: column;
