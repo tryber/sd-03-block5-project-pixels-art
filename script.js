@@ -77,7 +77,7 @@ function defineSize() {
             let divColumn = document.createElement("div")
             divColumn.className = "pixel"
             divColumn.id = "pixel"
-            document.getElementById("row").appendChild(divColumn)
+            divRow.appendChild(divColumn)
 
         }
 
