@@ -3,13 +3,11 @@ let red = document.querySelector("#red");
 let blue = document.querySelector("#blue");
 let green = document.querySelector("#green");
 let pixel = document.querySelectorAll(".pixel");
-let mouseSelect = " ";
+let mouseSelect = "black";
 
-if(typeof(Storage) != undefined){
+if (typeof (Storage) != undefined) {
   Cor("black")
-  
 }
-
 else {
 }
 
