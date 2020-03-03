@@ -1,51 +1,38 @@
-function cor1() {
-  const color = 'black';
-  const p1 = document.getElementById('p1');
-  p1.className = "selected";
-  return color;
+let cor = 'black';
+const blocos = document.getElementsByClassName('pixel');
+const paleta = document.getElementsByClassName('color');
+const clear = document.getElementById('clear-board');
+
+//https://www.w3schools.com/jsref/event_target.asp
+//https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
+
+function cls() {
+  for (const a of blocos)
+  clear.addEventListener('click', function() {
+    a.style.background = 'white'
+  });
 }
 
-function cor2() {
-  const color = 'red';
-  return color;
-}
+function select() {
+  for (const n of paleta) {
+    n.addEventListener('click', function(e) {
+      const pick = document.querySelector("#" + e.target.id);
+      const selected = window.getComputedStyle(pick).getPropertyValue('background-color');
+      cor = selected;
 
-function cor3() {
-  const color = 'blue';
-  return color;
-}
-
-function cor4() {
-  const color = 'green';
-  return color;
-}
-
-// function paint() {
-//   for (let i=1; i<=25; i++) {
-//     const pixel = document.getElementById(`p${i}`);
-//     pixel.style.backgroundColor = cor1();
-//   }
-// }
-
-const c1 = document.getElementById('c1');
-c1.addEventListener('click', cor1);
-
-const c2 = document.getElementById('c2');
-c2.addEventListener('click', cor2);
-
-const c3 = document.getElementById('c3');
-c3.addEventListener('click', cor3);
-
-const c4 = document.getElementById('c4');
-c4.addEventListener('click', cor4);
-
-function ctam() {
-  const p1 = document.getElementsByClassName('pixel');
-  for (let i=0; i<25; i+=1) {
-    p1[i].style.width = tam.value+'px';
-    p1[i].style.height = tam.value+'px';
+      c4 = document.getElementsByClassName('.selected');
+      c5.style.backgroundColor = selected;
+    });
   }
 }
 
-const tam = document.getElementById('board-size');
-tam.addEventListener('change', ctam);
+function paint() {
+  for (const p of blocos)
+      p.addEventListener('click', function () {
+        p.style.background = cor;
+  });
+}
+
+select();
+paint();
+cls();
