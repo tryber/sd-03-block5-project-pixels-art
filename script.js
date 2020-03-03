@@ -7,21 +7,20 @@
 //     }
 // }
 
-let paleta = document.getElementById("color-palette")
+const paleta = document.getElementById("color-palette")
 
-let paletaCor = document.getElementsByClassName("color")
+const paletaCor = document.getElementsByClassName("color")
 
-let black = document.getElementsByClassName("color")[0]
-let red = document.getElementsByClassName("color")[1]
-let green = document.getElementsByClassName("color")[2]
-let blue = document.getElementsByClassName("color")[3]
+const selecionado = document.getElementsByClassName("selected")
 
-function selected(x){
-    for (let i = 0; i < paletaCor.length; i++){
+function selected(s){
+    for (let i = 0; i < paletaCor.length; i += 1)
     paletaCor[i].classList.remove("selected")
+    const name = "selected"
+    const array = paletaCor[s].className.split (" ")
+    if (array.indexOf(name) === -1){
+        paletaCor[s].className += " " + name
     }
-    x.classList.add("selected")
 }
 
-black.addEventListener("click", selected(black))
-red.addEventListener("click", selected(red))
+
