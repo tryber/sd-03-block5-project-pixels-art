@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <header>
+        <meta charset="utf-8">
+        <title>Color Palette</title>
+        <link rel="stylesheet" href="style.css">
+    </header>
+    <body>
+        <h1 id="title">Paleta de Cores</h1> <!-- Project requirement => title "Paleta de Cores", h1 tag, title id -->
+        <div class="forms">
+            <ul class="line-methods" id="color-palette"> <!-- Project requirement => color-palette id -->
+                <li class="color-palette color1">
+                    <input name="line_methods" class="color1" checked type="radio" value="#000000" id="color1">
+                    <label for="color1"></label>
+                </li>
+                <li class="color-palette color2">
+                    <input name="line_methods" class="color2" type="radio" value="#FF0000" id="color2">
+                    <label for="color2"></label>
+                </li>
+                <li class="color-palette color3">
+                    <input name="line_methods" class="color3" type="radio" value="#FFFF00" id="color3">
+                    <label for="color3"></label>
+                </li>
+                <li class="color-palette color4">
+                    <input name="line_methods" class="color4" type="radio" value="#0fa36b" id="color4">
+                    <label for="color4"></label>
+                </li>
+            </ul>
+            <table id="pixel-board"> <!-- Project requirement => pixel-board id -->
+                <tr>
+                    <td class="pixel"></td> <!-- Project requirement => for each pixel => pixel class -->
+                    <td class="pixel"></td> <!-- Project requirement => for each pixel => 40px width 40px height 1px border -->
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+                <tr>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                    <td class="pixel"></td>
+                </tr>
+            </table>
+        <div class="styleButton" id="styleButton">
+                <input type="button" class="clear-board" id="clear-board" value="Clean the frame"></input>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>

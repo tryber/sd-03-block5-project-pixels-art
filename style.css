@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.color-palette label {
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.color1 + label {
+    background-color: #000000;
+}
+
+.color2 + label {
+    background-color: #FF0000;
+}
+
+.color3 + label {
+    background-color: #FFFF00;
+}
+
+.color4 + label {
+    background-color: #0fa36b;
+}
+
+.line-methods {
+    background-color: rgb(255, 255, 255);
+    display: inline;
+    left: 43%;
+    list-style: none;
+    position: relative;
+    top: 5%;
+}
+
+.line-methods input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.line-methods input[type="radio"]:checked + label {
+    border:3px solid black;
+    color: black;
+    opacity: 0.5;
+}
+
+.line-methods input[type="radio"]:focus + label {
+    border: 3px groove #444;
+}
+
+.forms ul li{
+    display: inline;
+}
+
+.pixel{
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+table{
+    margin-left: 39%;
+    margin-top: 1%;
+}
+
+.clear-board{
+    background-color: blue;
+    border-radius: 10px;
+    color:white;
+    height: 40px;
+    text-align: center;
+    width: 120px;
+}
+
+.styleButton{
+    text-align: center;
+    margin-top: 2%;
+}
