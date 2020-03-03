@@ -28,6 +28,7 @@
     background-color: green;
 }
 #pixel-board{
+    background-color: black;
     border: 1px solid black;
     height: 200px;
     margin: auto;
@@ -35,7 +36,7 @@
 }
 .pixel{
     background-color: white;
-    border: 1px solid black;
+    margin: 1px;
     float: left;
     height: 38px;
     width: 38px;
