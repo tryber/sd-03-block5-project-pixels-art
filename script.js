@@ -20,7 +20,7 @@ function paintPixel(i) {
 }
 
 function clearArt() {
-    for (i in pixels) {
+    for (let i = 0; i < pixels.length; i++) {
         pixels[i].style.backgroundColor = 'white';
     }
 }
