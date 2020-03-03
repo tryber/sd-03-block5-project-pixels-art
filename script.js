@@ -9,6 +9,7 @@ window.addEventListener("click", function(s){
             aplicarCorSelecionada(s.toElement,selecionado.style.backgroundColor);
         }
         if(verificarPaleta(s.toElement)){
+            removerSelected(selecionado);
             guardarElementCorSelecionada(s.toElement);
         }
     });
@@ -21,6 +22,9 @@ function verificarMatriz(elemento){
 }
 function guardarElementCorSelecionada(elemento){
      selecionado = elemento;
+}
+function removerSelected(elemento){
+     elemento.classList.remove("selected");
 }   
 function aplicarCorSelecionada(elemento,cor){
     console.log("essa é cor "+cor);
