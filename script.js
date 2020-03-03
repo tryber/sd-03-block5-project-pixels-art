@@ -1,5 +1,7 @@
 function cor1() {
   const color = 'black';
+  const p1 = document.getElementById('p1');
+  p1.className = "selected";
   return color;
 }
 
