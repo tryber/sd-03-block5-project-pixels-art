@@ -45,8 +45,8 @@ body {
     background: white;
 }
 td.pixel {
-    width: 40px;
-    height: 41px;
+    width: 41px;
+    height: 40px;
     border: 1px solid black;
 }
 #botoes {
