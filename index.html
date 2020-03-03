@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Project</title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src='script.js' type='text/javascript'></script>
+</head>
+
+<body>
+    <h1 id='title'>Paleta de Cores</h1>
+    <div id='color-palette'>
+        <button type='button' class='color selected' id='black-color' onclick='getColor("black", "black-color")'></button>
+        <button type='button' class='color' id='blue-color' onclick='getColor("blue", "blue-color")'></button>
+        <button type='button' class='color' id='green-color' onclick='getColor("green", "green-color")'></button>
+        <button type='button' class='color' id='red-color' onclick='getColor("red", "red-color")'></button>
+    </div>
+    <br>
+    <!-- Fix 'pixel-board has to be below of { Object ... }' issue -->
+    <table id='pixel-board'>
+        <tbody>
+            <td class='pixel' onclick='paintPixel(0)'></td>
+            <td class='pixel' onclick='paintPixel(1)'></td>
+            <td class='pixel' onclick='paintPixel(2)'></td>
+            <td class='pixel' onclick='paintPixel(3)'></td>
+            <td class='pixel' onclick='paintPixel(4)'></td>
+        </tbody>
+        <tbody>
+            <td class='pixel' onclick='paintPixel(5)'></td>
+            <td class='pixel' onclick='paintPixel(6)'></td>
+            <td class='pixel' onclick='paintPixel(7)'></td>
+            <td class='pixel' onclick='paintPixel(8)'></td>
+            <td class='pixel' onclick='paintPixel(9)'></td>
+        </tbody>
+        <tbody>
+            <td class='pixel' onclick='paintPixel(10)'></td>
+            <td class='pixel' onclick='paintPixel(11)'></td>
+            <td class='pixel' onclick='paintPixel(12)'></td>
+            <td class='pixel' onclick='paintPixel(13)'></td>
+            <td class='pixel' onclick='paintPixel(14)'></td>
+        </tbody>
+        <tbody>
+            <td class='pixel' onclick='paintPixel(15)'></td>
+            <td class='pixel' onclick='paintPixel(16)'></td>
+            <td class='pixel' onclick='paintPixel(17)'></td>
+            <td class='pixel' onclick='paintPixel(18)'></td>
+            <td class='pixel' onclick='paintPixel(19)'></td>
+        </tbody>
+        <tbody>
+            <td class='pixel' onclick='paintPixel(20)'></td>
+            <td class='pixel' onclick='paintPixel(21)'></td>
+            <td class='pixel' onclick='paintPixel(22)'></td>
+            <td class='pixel' onclick='paintPixel(23)'></td>
+            <td class='pixel' onclick='paintPixel(24)'></td>
+        </tbody>
+    </table>
+    <button type="button" id="clear-board" onclick='clearArt()'>Limpar Obra de Arte</button>
+</body>
+
+</html>
