@@ -17,11 +17,12 @@ for (let i = 0; i < colors_pallet.length; i++) {
   
   //Criando quadro de pixels
   function board(number){
+
     document.getElementById('pixel-board').remove();
     const pixel_board = document.createElement('article');
     pixel_board.id = 'pixel-board';
     document.getElementById('main').appendChild(pixel_board);
-    
+
     if(number > 50 || number < 5){
       alert('Numero minimo: 5, numero máximo: 50');
       return false;
@@ -35,7 +36,7 @@ for (let i = 0; i < colors_pallet.length; i++) {
       }
       let newdiv = document.createElement('div');
       newdiv.className = 'pixel';
-      pixel_board.append(newdiv);
+      pixel_board.appendChild(newdiv);
     }
 
     pixels = document.querySelectorAll('.pixel');
