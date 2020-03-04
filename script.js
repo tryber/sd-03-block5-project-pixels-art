@@ -1,6 +1,7 @@
 // Variaveis e constantes
 
-const paletaCores = ['black', 'red', 'blue', 'green'];
+//Criar paleta de cores aleatória
+const paletaCores = criarPaleta();
 let corEscolhida = paletaCores[0];
 let ultimaCorEscolhida = null;
 
@@ -36,6 +37,17 @@ function construirTabela(qtdLinCol) {
       }
   }
   return tabela;
+}
+
+function criarPaleta() {
+  let vetor = ['black'];
+  for (let i = 0; i<3; i+=1){
+    let rgbA = Math.floor(Math.random() * 255);
+    let rgbB = Math.floor(Math.random() * 255);
+    let rgbC = Math.floor(Math.random() * 255);
+    vetor.push('rgb('+rgbA.toString()+','+rgbB.toString()+','+rgbC.toString()+')');
+  }
+  return vetor;
 }
 
 function limparTabela() {
