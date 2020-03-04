@@ -33,3 +33,7 @@ div{
 #pixel-board{
   width: 250px;
 }
+
+#clear-board{
+  cursor: pointer;
+}
