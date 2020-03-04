@@ -30,7 +30,7 @@ window.onload = function() {
   }
 
   colorBlack.addEventListener("click",() => {
-    anyColor(document.getElementsByClassName("black")[0].style.backgroundColor);
+    anyColor("black");
     for (let i = 0; i < document.querySelectorAll(".color").length; i++) {
       document.querySelectorAll(".color")[i].classList.remove("selected");
     }
@@ -159,7 +159,7 @@ window.onload = function() {
     return 'rgb(' + r + ', ' + g + ', ' + b + ')';
   }
 
-  document.getElementsByClassName("black")[0].style.backgroundColor = getRandomRgb();
+  //document.getElementsByClassName("black")[0].style.backgroundColor = getRandomRgb();
   document.getElementsByClassName("red")[0].style.backgroundColor = getRandomRgb();
   document.getElementsByClassName("blue")[0].style.backgroundColor = getRandomRgb();
   document.getElementsByClassName("green")[0].style.backgroundColor = getRandomRgb();
