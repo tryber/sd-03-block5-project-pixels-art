@@ -29,5 +29,5 @@ window.onload = function () {
     });
   }
 
-  clear.addEventListener('click', clearBoard());
+  clear.addEventListener('click', clearBoard);
 }
