@@ -1,0 +1,39 @@
+.color {
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.cor1 {
+  background-color: black;
+}
+
+.cor2 {
+  background-color: green;
+  color: green;
+}
+
+.cor3 {
+  background-color: yellow;
+  color: yellow;
+}
+
+.cor4 {
+  background-color: blue;
+  color: blue;
+}
+
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.selected {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}

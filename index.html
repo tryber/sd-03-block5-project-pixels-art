@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Paleta de Cores</h1>
+
+    <table id="color-palette" class="color-palette">
+      <tbody>
+        <tr>
+          <td class="color cor1" id="black" onclick="mudaSelected(0)">
+            &#10004;
+          </td>
+          <td class="color cor2" id="green" onclick="mudaSelected(1)">
+            &#10004;
+          </td>
+          <td class="color cor3" id="yellow" onclick="mudaSelected(2)">
+            &#10004;
+          </td>
+          <td class="color cor4" id="blue" onclick="mudaSelected(3)">
+            &#10004;
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+
+    <table id="pixel-board">
+      <tbody>
+        <tr>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+        </tr>
+
+        <button id="clear-board">limpar tela</button>
+        <br />
+        <p>escolha o tamanho da tela</p>
+        <input type="text" />
+        <button>vai</button>
+
+        <tr>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+        </tr>
+
+        <tr>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+        </tr>
+
+        <tr>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+        </tr>
+
+        <tr>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+          <td class="pixel"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
