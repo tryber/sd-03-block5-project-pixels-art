@@ -35,3 +35,9 @@
     1px solid rgb(0, 0, 0)
     
 }
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+  }
