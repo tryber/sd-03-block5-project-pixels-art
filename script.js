@@ -1,14 +1,7 @@
-// Variaveis e constantes
-
-//Criar paleta de cores aleatória
-const paletaCores = criarPaleta();
-let corEscolhida = paletaCores[0];
-let ultimaCorEscolhida = null;
-
 // elementos
 
 const divCores = document.querySelectorAll('.color');
-let pixel = document.querySelectorAll('.pixel'); //array
+const pixel = document.querySelectorAll('.pixel');
 const limpaTudo = document.querySelector('#clear-board');
 const gerarQuadro = document.querySelector('#generate-board');
 const paleta = document.querySelector('#color-palette');
@@ -18,7 +11,6 @@ const paleta = document.querySelector('#color-palette');
 function arrumarClasseCss(ultimaCor, refCorAtual) {
   divCores[ultimaCor].classList.remove('selected');
   divCores[refCorAtual].classList.add('selected');
-  //   return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
 }
 
 function colorir(event) {
@@ -26,13 +18,13 @@ function colorir(event) {
 }
 
 function construirTabela(qtdLinCol) {
-  let tabela = document.createElement('table');
+  const tabela = document.createElement('table');
   tabela.setAttribute('id', 'pixel-board');
   tabela.setAttribute('class', 'tabela');
   for (let i = 0; i < qtdLinCol; i += 1) {
-    let linha = tabela.insertRow(i);
-    for (let i = 0; i < qtdLinCol; i += 1) {
-      let coluna = linha.insertCell(i);
+    const linha = tabela.insertRow(i);
+    for (let j = 0; j < qtdLinCol; j += 1) {
+      const coluna = linha.insertCell(j);
       coluna.setAttribute('class', 'pixel');
     }
   }
@@ -40,19 +32,19 @@ function construirTabela(qtdLinCol) {
 }
 
 function criarPaleta() {
-  let vetor = ['black'];
+  const vetor = ['black'];
   for (let i = 0; i < 3; i += 1) {
-    let rgbA = Math.floor(Math.random() * 255);
-    let rgbB = Math.floor(Math.random() * 255);
-    let rgbC = Math.floor(Math.random() * 255);
-    vetor.push('rgb(' + rgbA.toString() + ',' + rgbB.toString() + ',' + rgbC.toString() + ')');
+    const rgbA = Math.floor(Math.random() * 255);
+    const rgbB = Math.floor(Math.random() * 255);
+    const rgbC = Math.floor(Math.random() * 255);
+    vetor.push(`rgb(${rgbA.toString()},${rgbB.toString()},${rgbC.toString()})`);
   }
   return vetor;
 }
 
 function limparTabela() {
   let pixel = document.querySelectorAll('.pixel');
-  corEscolhida = 'white'
+  corEscolhida = 'white';
   for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].style.backgroundColor = corEscolhida;
   }
@@ -62,7 +54,6 @@ function setLocalStorage(refCorAtual) {
   localStorage.clear();
   localStorage.setItem('color', refCorAtual);
   ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
-  //   return alert("Efetuado limpeza no storage e setado a cor escolhida")
 }
 
 function setDeCores() {
@@ -95,20 +86,20 @@ function pintarPixel(pixel) {
 }
 
 function refazerTabela() {
-  //primeiro remove a tabela default
+  // primeiro remove a tabela default
   document.querySelector('#pixel-board').remove();
 
-  //segundo verifica o parametro passado pelo user e arruma default(checa se e menor que 5 ou maior que 50)
+  // segundo verifica o parametro passado pelo user e arruma default(checa se e menor que 5 ou maior que 50)
   let qtdLinCol = parseInt(document.querySelector('#board-size').value);
   qtdLinCol = setDefaultParamLinCol(qtdLinCol);
 
-  //constroi nova tabela de acordo com o que o user definiu
+  // constroi nova tabela de acordo com o que o user definiu
   let tabela = construirTabela(qtdLinCol);
 
-  //inserir nova tabela no documento
+  // inserir nova tabela no documento
   paleta.insertAdjacentElement('afterend', tabela);
 
-  //chamar função pintarPixel novamente para reler a nova tabela
+  // chamar função pintarPixel novamente para reler a nova tabela
   let pixel = document.querySelectorAll('.pixel');
   pintarPixel(pixel);
 }
@@ -141,6 +132,14 @@ divCores[3].addEventListener('click', function () {
 
 limpaTudo.addEventListener('click', limparTabela);
 gerarQuadro.addEventListener('click', refazerTabela);
+
+// Criar paleta de cores aleatória
+const paletaCores = criarPaleta();
+
+// Variaveis e constantes
+
+let corEscolhida = paletaCores[0];
+let ultimaCorEscolhida = null;
 
 // execução de Funções ao carregar a página
 
