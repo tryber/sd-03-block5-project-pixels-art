@@ -18,16 +18,20 @@
 
 .selected{
     background-color: black;
+    color: black;
 }
 
 .azul{
     background-color: blue;
+    color: blue;
 }
 
 .verde{
     background-color: green;
+    color: green;
 }
 
 .vermelho{
     background-color: red;
+    color: red;
 }
