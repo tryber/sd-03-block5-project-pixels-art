@@ -1,17 +1,14 @@
 const paletaDeCores = document.getElementById('color-palette');
 
-function backgroundColorPaletaDeCores() {
+/* function backgroundColorPaletaDeCores() {
   for (let i = 0; i < paletaDeCores.children.length; i += 1) {
     paletaDeCores.children[i].style.backgroundColor = paletaDeCores.children[i].id;
   }
 }
 
-backgroundColorPaletaDeCores();
+backgroundColorPaletaDeCores(); */
 
 const corPreta = document.getElementById('black');
-const corVermelha = document.getElementById('red');
-const corAzul = document.getElementById('blue');
-const corVerde = document.getElementById('green');
 
 corPreta.classList.add('selected');
 let corSelecionada = document.querySelector('.selected');
@@ -85,3 +82,23 @@ function geradorQuadroDePixels() {
 }
 
 geradorQuadroDePixels();
+
+let arrayNumerosAleatorios = [Math.round(Math.random() * 4), Math.round(Math.random() * 4), Math.round(Math.random() * 4), Math.round(Math.random() * 4)]
+
+function backgroundColorPaletaDeCoresAleatorias() {
+  let arrayNumerosAleatorios = ['x', Math.round(Math.random() * 3), Math.round(Math.random() * 3), Math.round(Math.random() * 3)];
+  const cores1 = ['DodgerBlue', 'LawnGreen', 'Yellow', 'DarkMagenta', 'blue'];
+  const cores2 = ['LightCyan', 'MidnightBlue', 'DarkSlateBlue', 'Sienna', 'red'];
+  const cores3 = ['MistyRose', 'DarkCyan', 'grey', 'green', 'Turquoise'];
+
+  const conjutoDeCores = ['x', cores1, cores2, cores3];
+
+  corPreta.style.backgroundColor = corPreta.id;
+
+  for (let i = 1; i < paletaDeCores.children.length; i += 1) {
+    paletaDeCores.children[i].style.backgroundColor = conjutoDeCores[i][arrayNumerosAleatorios[i]];
+    paletaDeCores.children[i].setAttribute('id', conjutoDeCores[i][arrayNumerosAleatorios[i]])
+  }
+}
+
+backgroundColorPaletaDeCoresAleatorias();
