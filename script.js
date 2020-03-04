@@ -56,6 +56,8 @@ const tamanhoDoQuadroDePixels = document.getElementById('board-size');
 const botaoGeradorDePixels = document.getElementById('generate-board');
 
 function geradorQuadroDePixels() {
+  const mainContainer = document.getElementById('main-container');
+  let tamanahoMainContainer = 980;
   botaoGeradorDePixels.addEventListener('click', () => {
     if (tamanhoDoQuadroDePixels.value < 5) {
       tamanhoDoQuadroDePixels.value = 5;
@@ -75,6 +77,9 @@ function geradorQuadroDePixels() {
         tr.appendChild(td);
       }
     }
+    
+    tamanahoMainContainer = Math.round(tamanhoDoQuadroDePixels.value) * 42 + 10;
+    mainContainer.style.width = `${tamanahoMainContainer}px`
     tamanhoDoQuadroDePixels.value = '';
   });
 }
