@@ -11,7 +11,9 @@
     height: 40px;
     width: 40px;
     border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
   }
-.line{
-    display: flex;
-  }
+#pixel-board{
+    height: 240px;
+    width: 240px;
+}
