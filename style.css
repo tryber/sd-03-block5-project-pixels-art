@@ -1,0 +1,54 @@
+.pixel{
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    background-color:white;
+    border: 1px black solid;
+}
+.color{
+    height: 70px;
+    width: 70px;
+    border: 1px black solid;
+    display: inline-block;
+}
+.white{
+    background: white;
+}
+.black{
+    
+    background: black;
+}
+.green{
+    background: green;
+}
+.yellow{
+    background: yellow;
+}
+.blue{
+    background: blue;
+}
+#black{
+    background: black;
+}
+#green{
+    background: green;
+}
+#blue{
+    background: blue;
+}
+#yellow{
+    background: yellow;
+}
+#pixel-board{
+    width: 250px;
+    height: 250px;
+    /* border-style: dotted;
+    border-width: 1px;
+    border-color: red; */
+}
+#color-palette{
+    width: 250px;
+    display: flex;
+}
