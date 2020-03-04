@@ -49,7 +49,6 @@ function clear() {
 start();
 paint();
 clear();
-selectionPalette();
 
 // onePalette[0].classList.add('selected');
 // sessionStorage.setItem('color', onePalette[0].style.backgroundColor);
