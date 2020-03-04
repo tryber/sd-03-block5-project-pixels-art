@@ -14,20 +14,22 @@ console.log("colors", color)
 color[0].classList.add('selected');
 buttonDelete.addEventListener("click",function(){
     for(i= 0; i <pixels.length; i++){   
-
+     
      pixels[i].style.backgroundColor="rgb(255,255,255)"
-
+     
     }
 
 })
 
 for(x= 0; x <color.length; x++){  
 color[x].addEventListener("click",function(event){
+    document.querySelector('.selected').classList.remove('selected');
       elementid = event.target.getAttribute("id");
    let element = document.getElementById(elementid);
    var style = window.getComputedStyle(element,"");
+   event.target.classList.add('selected');
    corselect =style.getPropertyValue("background-color");
-   console.log(elementid);
+   console.log(event.target);
 })
 }
 
