@@ -1,4 +1,3 @@
-let pixel_board = document.getElementById('pixel-board');
 let colors_pallet = document.querySelectorAll('.color');
 let pixels;
 
@@ -18,19 +17,20 @@ for (let i = 0; i < colors_pallet.length; i++) {
   
   //Criando quadro de pixels
   function board(number){
-
+    document.getElementById('pixel-board').remove();
+    const pixel_board = document.createElement('article');
+    pixel_board.id = 'pixel-board';
+    document.getElementById('main').appendChild(pixel_board);
+    
     if(number > 50 || number < 5){
       alert('Numero minimo: 5, numero máximo: 50');
       return false;
     }
 
-    let qtdPixelsFuturo = number ** 2;
-    let qtdPixelsAtual = document.querySelectorAll('.pixel').length;
-
    pixel_board.style.width = (number*5) * 10 + "px";
 
-   for (let i = 0; i < qtdPixelsFuturo; i++) {
-     if( qtdPixelsAtual >=  number**2){
+   for (let i = 0; i < number ** 2; i++) {
+     if( document.querySelectorAll('.pixel').length >=  number**2){
        break;
       }
       let newdiv = document.createElement('div');
@@ -38,16 +38,11 @@ for (let i = 0; i < colors_pallet.length; i++) {
       pixel_board.append(newdiv);
     }
 
-
-    while(document.querySelectorAll('.pixel').length > number**2){
-      document.querySelector('.pixel').parentNode.removeChild(document.querySelector('.pixel'));
-    }
-
     pixels = document.querySelectorAll('.pixel');
   
     [].forEach.call(pixels, pixel => {
-      pixel.addEventListener('click', function(){
-         pixel.style.backgroundColor = selected[0].getAttribute("id");
+      pixel.addEventListener('click', () =>{
+        pixel.style.backgroundColor = selected[0].getAttribute("id");
       });
     });
 
@@ -59,13 +54,13 @@ for (let i = 0; i < colors_pallet.length; i++) {
 let selected = document.getElementsByClassName('selected');
 
 
-document.getElementById('clear-board').addEventListener('click', function(){
+document.getElementById('clear-board').addEventListener('click', () => {
   [].forEach.call(pixels, pixel => {
       pixel.style.backgroundColor = 'white';
   });
 });
 
-document.getElementById('generate-board').addEventListener('click', function(){
+document.getElementById('generate-board').addEventListener('click',() => {
   let qtdPixels = document.getElementById('board-size').value;
   board(qtdPixels);
 });
