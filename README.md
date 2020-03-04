@@ -1,5 +1,3 @@
-# Boas vindas ao repositório do projeto de Arte com Pixels!
-
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
@@ -96,7 +94,6 @@ Ou seja, se o valor passado para o input for 7, ao clicar no botão, vai ser ger
 
 O novo quadro deve ter todos os pixels preenchidos com a cor branca.
 
-O input e o botão deve ter os **ids** `board-size` e `generate-board`, respectivamente.
 
 Caso o valor digitado fuja do intervalo de 5 a 50, faça:
 - Valor menor que 5, considerar 5 como padrão;
