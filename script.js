@@ -1,20 +1,3 @@
-const linhasDaTabela = document.querySelectorAll('tr');
-const pixels = document.querySelectorAll('.pixel');
-/* 
-function colocarBordarTodosPixels() {
-  for (let i = 0; i < pixels.length; i += 1) {
-    pixels[i].style.borderRight = '1px solid black';
-    pixels[i].style.borderTop = '1px solid black'
-  }
-  for (let i = 0; i < linhasDaTabela.length; i += 1) {
-    linhasDaTabela[i].children[0].style.borderLeft = '1px solid black'
-    linhasDaTabela[linhasDaTabela.length -1].children[i].style.borderBottom = '1px solid black'
-  }
-}
-
-colocarBordarTodosPixels(); */
-
-
 const paletaDeCores = document.getElementById('color-palette');
 
 function backgroundColorPaletaDeCores() {
@@ -47,7 +30,7 @@ function selecionarCor() {
 
 selecionarCor();
 
-const quadroDePixels = document.getElementById('pixel-board');
+let quadroDePixels = document.getElementById('pixel-board');
 
 function backgroundColorQuadroDePixels() {
   quadroDePixels.addEventListener('click', (event) => {
@@ -60,6 +43,7 @@ backgroundColorQuadroDePixels();
 function apagaQuadroPixels() {
   const botaoApagaQuadro = document.getElementById('clear-board');
   botaoApagaQuadro.addEventListener('click', () => {
+    const pixels = document.querySelectorAll('.pixel');
     for (let i = 0; i < pixels.length; i += 1) {
       pixels[i].style.backgroundColor = 'rgb(255, 255, 255)'
     }
@@ -67,3 +51,32 @@ function apagaQuadroPixels() {
 }
 
 apagaQuadroPixels();
+
+const tamanhoDoQuadroDePixels = document.getElementById('board-size');
+const botaoGeradorDePixels = document.getElementById('generate-board');
+
+function geradorQuadroDePixels() {
+  botaoGeradorDePixels.addEventListener('click', () => {
+    if (tamanhoDoQuadroDePixels.value < 5) {
+      tamanhoDoQuadroDePixels.value = 5;
+    } else if (tamanhoDoQuadroDePixels.value > 50) {
+      tamanhoDoQuadroDePixels.value = 50;
+    }
+    quadroDePixels = document.getElementById('pixel-board');
+    while (quadroDePixels.children.length > 0) {
+      quadroDePixels.removeChild(quadroDePixels.children[0]);
+    }
+    for (let i = 0; i < Math.round(tamanhoDoQuadroDePixels.value); i += 1) {
+      let tr = document.createElement('tr');
+      quadroDePixels.appendChild(tr)
+      for (let x = 0; x < Math.round(tamanhoDoQuadroDePixels.value); x += 1) {
+        let td = document.createElement('td');
+        td.classList.add('pixel');
+        tr.appendChild(td);
+      }
+    }
+    tamanhoDoQuadroDePixels.value = '';
+  });
+}
+
+geradorQuadroDePixels();

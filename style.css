@@ -4,7 +4,7 @@
 }
 
 #main-container {
-  width: 950px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@
   background-color: rgb( 255 , 255 , 255 );
 }
 
-#clear-board {
+#clear-board, #board-size, #generate-board {
   display: block;
   margin: 20px auto 0px;
   padding: 10px;
