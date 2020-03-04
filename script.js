@@ -66,7 +66,7 @@ cor4.addEventListener('click', function () {
 let pixel = document.querySelectorAll('.pixel');
 
 function pintaPixel(i) {
-  let pintaPixel = pixel[i].addEventListener('click', function () {
+  pixel[i].addEventListener('click', function () {
     pixel[i].style.backgroundColor = sessionStorage.color;
   });
 }
