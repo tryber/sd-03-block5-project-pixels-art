@@ -4,6 +4,7 @@ window.onload = function() {
   let colorBlue = document.getElementsByClassName("blue")[0];
   let colorGreen = document.getElementsByClassName("green")[0];
   let pixel = document.querySelectorAll(".pixel");
+  let buttonClear = document.querySelector(".limpando-quadro");
   let mouseColor = "black";
 
   for (let i = 0; i < pixel.length; i++){
@@ -55,6 +56,11 @@ window.onload = function() {
     colorGreen.classList.add("selected");
   });
 
-  
+  function clearBoard() {
+    for (let i = 0; i < document.querySelectorAll(".pixel").length; i++){
+      document.querySelectorAll(".pixel")[i].style.backgroundColor = "white";
+    }
+  }
+  buttonClear.addEventListener("click", clearBoard);
   
 }
