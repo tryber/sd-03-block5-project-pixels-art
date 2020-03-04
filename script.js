@@ -44,8 +44,8 @@ for(i= 0; i <pixels.length; i++){
                 event.target.style.backgroundColor= corselect;
                 break;
             case "color4":
-                    event.target.style.backgroundColor= corselect;
-                    break;
+                event.target.style.backgroundColor= corselect;
+                break;
             }})
 
 }
