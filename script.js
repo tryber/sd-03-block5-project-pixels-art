@@ -26,7 +26,7 @@ function clearBoard() {
 
 window.onload = function () {
   for (let i = 0; i < colorSelector.length; i++) {
-    colorSelector[i].addEventListener('click', selectionPalette);
+    colorSelector[i].addEventListener('click', selectionPalette, false)
   }
 
   for (let i = 0; i < pixelColor.length; i += 1) {
@@ -36,11 +36,4 @@ window.onload = function () {
   }
 
   clear.addEventListener('click', clearBoard);
-}// Class Selected
-    for (let i = 0; i < colorSelector.length; i += 1) {
-      colorSelector[i].classList.remove('selected');
-    };
-    console.log(`${selectedColor}`);
-    
-    e.target.classList.add('selected');
-};
+}
