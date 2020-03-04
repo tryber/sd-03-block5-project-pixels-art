@@ -23,6 +23,8 @@ window.onload= function(){
       }
    }
    valor.addEventListener("click", gerarTabela)
+   
+   
 //   let apBotao= document.getElementsByClassName("generate-board")[0];
 //   let apTb= document.getElementsByClassName("tabela")
 //   function apagaTabela(){
@@ -31,7 +33,9 @@ window.onload= function(){
 //   }
 //   apBotao.addEventListener("click", apagaTabela)
 }
-
 function setcaneta(pixel){
    caneta=pixel
  }
+function trocaCor(selected){
+   selected.style.backgroundColor=caneta;
+}
