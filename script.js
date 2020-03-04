@@ -1,3 +1,6 @@
+//variaveis
+let ultimaCorEscolhida = null;
+
 // elementos
 
 const divCores = document.querySelectorAll('.color');
@@ -43,7 +46,7 @@ function criarPaleta() {
 }
 
 function limparTabela() {
-  let pixel = document.querySelectorAll('.pixel');
+  const pixel = document.querySelectorAll('.pixel');
   corEscolhida = 'white';
   for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].style.backgroundColor = corEscolhida;
@@ -53,7 +56,7 @@ function limparTabela() {
 function setLocalStorage(refCorAtual) {
   localStorage.clear();
   localStorage.setItem('color', refCorAtual);
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color',10));
 }
 
 function setDeCores() {
@@ -64,9 +67,9 @@ function setDeCores() {
 
 function setDefaultParamLinCol(qtdLinCol) {
   if (qtdLinCol < 5) {
-    qtdLinCol = 5
+    qtdLinCol = 5;
   } else if (qtdLinCol > 50) {
-    qtdLinCol = 50
+    qtdLinCol = 50;
   }
   return qtdLinCol;
 }
@@ -76,7 +79,7 @@ function setCorPadrao() {
   divCores[0].style.backgroundColor = 'black';
   localStorage.clear();
   localStorage.setItem('color', '0');
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color'));
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color',10));
 }
 
 function pintarPixel(pixel) {
@@ -136,13 +139,11 @@ gerarQuadro.addEventListener('click', refazerTabela);
 // Criar paleta de cores aleatória
 const paletaCores = criarPaleta();
 
-// Variaveis e constantes
-
-let corEscolhida = paletaCores[0];
-let ultimaCorEscolhida = null;
 
 // execução de Funções ao carregar a página
 
 setDeCores();
 setCorPadrao();
 pintarPixel(pixel);
+let corEscolhida = paletaCores[0];
+
