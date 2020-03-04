@@ -6,7 +6,7 @@
     width: 40px;
     height: 40px;
     display: table-cell;
-    border: dotted rgb(255, 240, 152)
+    1px solid rgb(0, 0, 0)
 }
 .black{
     background-color: black;
