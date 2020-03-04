@@ -65,15 +65,15 @@ cor4.addEventListener('click', function () {
 
 let pixel = document.querySelectorAll('.pixel');
 
-function pintaPixel() {
-  for (let i = 0; i < pixel.length; i += 1) {
-    pixel[i].addEventListener('click', function () {
-      pixel[i].style.backgroundColor = sessionStorage.color;
-    });
-  }
+function pintaPixel(i) {
+  let pintaPixel = pixel[i].addEventListener('click', function () {
+    pixel[i].style.backgroundColor = sessionStorage.color;
+  });
 }
 
-pintaPixel();
+for (let i = 0; i < pixel.length; i += 1) {
+  pintaPixel(i);
+}
 
 const botaoLimpar = document.querySelector('#clear-board');
 
@@ -117,7 +117,9 @@ function criaQuadro() {
 
   pixel = document.querySelectorAll('.pixel');
 
-  pintaPixel();
+  for (let l = 0; l < pixel.length; l += 1) {
+    pintaPixel(l);
+  }
 
   inputTamanho.value = '';
   tr = document.querySelectorAll('tr');
