@@ -24,10 +24,10 @@ function procreatetd () {
 }
 function paletter (){
     let pal = document.getElementsByClassName("color")
-    for(let i in pal.length){
+    for(let i=0;i<pal.length;i++){
         pal[i].addEventListener("click",function(){
             if(pal[i].classList.length===2){
-                for(let j in pal.length){
+                for(let j=0;j<pal.length;j++){
                     if(i===j){
                         pal[j].classList.add("selected")
                     }
