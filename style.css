@@ -1,0 +1,24 @@
+.color{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 5%;
+    padding:10px 5px 15px 20px;
+}
+
+#preto{
+    background-color: black;
+}
+
+#vermelho{
+    background-color: red;
+}
+
+#azul{
+    background-color: blue;
+}
+
+#verde{
+    background-color: green;
+}
