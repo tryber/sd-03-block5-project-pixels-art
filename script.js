@@ -63,7 +63,7 @@ botaoTamanhoQuadro.addEventListener('click', function () {
     vezes = 50;
   }
   let i2 = 1;
-  const j = 1;
+  let j = 1;
   for (; i2 <= vezes;) {
   for (; j <= vezes;) {
       quadroPixels.appendChild(document.createElement('div')).setAttribute('class', 'pixel');
