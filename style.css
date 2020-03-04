@@ -1,0 +1,41 @@
+.color {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: solid 1px black;
+    margin-left: 0px;
+}
+.black{
+    background-color: black;
+}
+#black-palette{
+}
+.blue{
+    background-color: blue;
+}
+#blue-palette{
+}
+.red{
+    background-color: red;
+}
+#red-palette{
+}
+.yellow{
+    background-color: yellow;
+}
+#yellow-palette{
+}
+.pixel{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    border: solid 1px black;
+}
+#pixel-board{
+    width: 216px;
+    height: 210px;
+}
