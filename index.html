@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paleta de Cores</title>
+    <title>Paleta de Cores v0.91</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,16 +13,17 @@
         <h1 id="title">Paleta de Cores</h1>
     </header>
     <article>
-        <div id="collor-palette" class="paleta">
+        <div id="color-palette" class="paleta">
             <div id="cor01" style="background-color: black;" class="color selected"></div>
-            <div id="cor02" style="background-color: crimson;" class="color"></div>
-            <div id="cor03" style="background-color: dodgerblue;" class="color"></div>
-            <div id="cor04" style="background-color: lawngreen;" class="color"></div>
+            <div id="cor02" class="color"></div>
+            <div id="cor03" class="color"></div>
+            <div id="cor04" class="color"></div>
         </div>
         <div class="controles">
+            <button id="generate-colors" onclick="geraPaleta()">Gerar paleta de cores (3 últimas)</button>
             <button id="clear-board" onclick="limpaGrade()">Limpar grade</button>
-            Insira a quantidade de linhas/colunas desejada: <input type="number" id="cxLinhasColunas" value=7>
-            <button onclick="geraGrade()">Gerar tabela com tamanho selecionado</button>
+            Insira a quantidade de linhas/colunas desejada: <input type="number" id="board-size" value=7>
+            <button id="generate-board" onclick="geraGrade()">Gerar tabela com tamanho selecionado</button>
         </div>
         <div class="grade">
             <table id="pixel-board">

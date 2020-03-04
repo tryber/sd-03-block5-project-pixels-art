@@ -1,7 +1,28 @@
-const matrizPixels = document.getElementsByClassName('pixel');
+let corespaleta = document.getElementById("color-palette");
+//const matrizPixels = document.getElementsByClassName('pixel');
+const matrizPixels = document.getElementsByTagName("td");
+const cor1 = document.getElementById('cor01');
+const cor2 = document.getElementById('cor02');
+const cor3 = document.getElementById('cor03');
+const cor4 = document.getElementById('cor04');
+cor1.addEventListener('click', selectCor);
+cor2.addEventListener('click', selectCor);
+cor3.addEventListener('click', selectCor);
+cor4.addEventListener('click', selectCor);
+//  Colocando diretamente no HTML o evento onclick=(selectCor()) não funcionou
 
-for (let i = 0; i < 25; i += 1) {
-  matrizPixels[i].addEventListener('click', pixelPaint);
+window.onload = geraPaleta(), adicionaInteracao();
+
+function adicionaInteracao() {
+  for (let i = 0; i < matrizPixels.length; i += 1) {
+    matrizPixels[i].addEventListener('click', pixelPaint);
+  }
+}
+
+function geraPaleta() {
+  cor2.style.backgroundColor = 'rgb(' + geraRGB() +','+geraRGB() +','+geraRGB()+')';
+  cor3.style.backgroundColor = 'rgb(' + geraRGB() +','+geraRGB() +','+geraRGB()+')';
+  cor4.style.backgroundColor = 'rgb(' + geraRGB() +','+geraRGB() +','+geraRGB()+')';
 }
 
 function pixelPaint() {
@@ -17,31 +38,31 @@ function selectCor() {
   this.classList.add('selected');
 }
 
+function geraRGB() {
+  return (Math.floor(Math.random() * 256));
+}
+
 function geraGrade() {
   //Função que exclui a tabela anterior e gera uma nova no local
-  var dimensao = document.getElementById("cxLinhasColunas").value;
-  if (dimensao > 5 && dimensao < 50) {
+  var dimensao = document.getElementById("board-size").value;
+  if (dimensao > 4 && dimensao < 50) {
     document.getElementById("pixel-board").remove(self);
     var tabelaGerada = document.createElement("table");
-    tabelaGerada.classList.add("pixel-board");
+    tabelaGerada.id = "pixel-board";
     for (let numlinha = 0; numlinha < dimensao; numlinha++) {
       var linha = tabelaGerada.insertRow(numlinha);
-      for (let numcoluna = 0; numcoluna < dimensao; numcoluna++)
+      for (let numcoluna = 0; numcoluna < dimensao; numcoluna++) {
         linha.insertCell(numcoluna);
     }
-    document.body.appendChild(tabelaGerada);
+  }
+    document.getElementsByClassName("grade")[0].appendChild(tabelaGerada);
+    adicionaInteracao();
   }
   else
     alert("Esqueci de falar, tem que estar entre 5 e 50!!");
 }
 
-document.getElementById('cor01').addEventListener('click', selectCor);
-document.getElementById('cor02').addEventListener('click', selectCor);
-document.getElementById('cor03').addEventListener('click', selectCor);
-document.getElementById('cor04').addEventListener('click', selectCor);
-//  Colocando no HTML o evento onclick=(selectCor()) não funcionou
-
 function limpaGrade() {
-  for (i = 0; i < 25; i += 1)
+  for (i = 0; i < matrizPixels.length; i += 1)
     matrizPixels[i].style.backgroundColor = "white";
 }
