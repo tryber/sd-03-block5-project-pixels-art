@@ -11,7 +11,7 @@ for (let i=0;i<n;i++){
 }
 function procreatetr () {
     let tr = document.createElement("tr")
-     document.getElementById("content").appendChild(tr);
+     document.getElementById("pixel-board").appendChild(tr);
 }
 function procreatetd () {
     let td = document.createElement("td")
@@ -20,7 +20,7 @@ function procreatetd () {
         let select = document.querySelector(".selected")
         td.style.backgroundColor = getComputedStyle(select).backgroundColor;        
     })
-     document.getElementById("content").lastChild.appendChild(td);
+     document.getElementById("pixel-board").lastChild.appendChild(td);
 }
 function paletter (){
     let pal = document.getElementsByClassName("color")
