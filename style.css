@@ -1,0 +1,38 @@
+.cores {
+    margin-bottom: 20px;
+}
+
+.color {
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: table-cell;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pixel {
+    background-color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: table-cell;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+}
