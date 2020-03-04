@@ -19,14 +19,14 @@ for (let i = 0; i < colors_pallet.length; i++) {
   //Criando quadro de pixels
   function board(number){
 
-    if(number > 50){
-      alert('Numero maior que 50 não é permitido.');
+    if(number > 50 || number < 5){
+      alert('Numero minimo: 5, numero máximo: 50');
       return false;
     }
 
     let qtdPixelsFuturo = number ** 2;
     let qtdPixelsAtual = document.querySelectorAll('.pixel').length;
-    
+
    pixel_board.style.width = (number*5) * 10 + "px";
 
    for (let i = 0; i < qtdPixelsFuturo; i++) {
