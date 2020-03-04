@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+}
+
+th {
+  border: 1px solid #000;
+  height: 100px;
+  width: 100px;
+}
+
+.pixel {
+  background-color: white;
+  border:1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.selected {
+  background-color: black;
+}
