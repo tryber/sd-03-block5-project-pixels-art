@@ -7,9 +7,11 @@ sessionStorage.setItem('color', 'black');
 
 // Seletor de cores - Paleta
 let selectionPalette = function(e) {
-    selectedColor = window.getComputedStyle( e.target ).getPropertyValue( 'background-color' )
-    selectedColor = colorSelector.classList.add('selected');
-    console.log(`a cor selecionada é ${selectedColor}`);
+    selectedColor = window.getComputedStyle( e.target ).getPropertyValue( 'background-color' );
+    for (let i = 0; i < colorSelector.length; i += 1) {
+      colorSelector[i].classList.remove('selected');
+    };
+    e.target.classList.add('selected');
 };
 
 function clearBoard() {
