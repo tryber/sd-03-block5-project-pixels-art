@@ -11,6 +11,7 @@ let color = document.getElementsByClassName("color");
 let buttonDelete =document.getElementById("clear-board");
 console.log("colors", color)
 
+color[0].setAttribute("class","selected");
 buttonDelete.addEventListener("click",function(){
     for(i= 0; i <pixels.length; i++){   
 
