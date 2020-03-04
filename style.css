@@ -27,6 +27,5 @@
     display: table-cell;
 }
 #pixel-board{
-    border:dotted rgb(255, 240, 152);
-    width: max-content;
+    1px solid rgb(0, 0, 0)
 }
