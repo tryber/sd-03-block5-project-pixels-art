@@ -15,6 +15,7 @@ label {
 
 .paleta {
   clear: right;
+  display: block;
   float: left;
   margin-bottom: 1em;
   margin-left: 1em;

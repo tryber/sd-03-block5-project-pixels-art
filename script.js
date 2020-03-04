@@ -7,10 +7,10 @@ let ultimaCorEscolhida = null;
 // elementos
 
 const divCores = document.querySelectorAll('.color');
-const pixel = document.querySelectorAll('.pixel');
+let pixel = document.querySelectorAll('.pixel'); //array
 const limpaTudo = document.querySelector('#clear-board');
 const gerarQuadro = document.querySelector('#generate-board');
-let body = document.querySelector('body');
+const paleta = document.querySelector('#color-palette');
 
 // funções
 
@@ -26,16 +26,20 @@ function colorir(event) {
 
 function construirTabela(qtdLinCol) {
   let tabela = document.createElement('table');
+    tabela.setAttribute('id','pixel-board');
+    tabela.setAttribute('class','tabela');
   for (let i = 0; i<qtdLinCol; i+=1) {
     let linha = tabela.insertRow(i);
       for(let i = 0; i<qtdLinCol; i+=1){
-        linha.insertCell(i);
+        let coluna = linha.insertCell(i);
+        coluna.setAttribute('class','pixel');
       }
   }
   return tabela;
 }
 
 function limparTabela() {
+  let pixel = document.querySelectorAll('.pixel');
   corEscolhida = 'white'
   for(let i=0; i<pixel.length; i+=1) {
     pixel[i].style.backgroundColor = corEscolhida;
@@ -69,18 +73,14 @@ function setCorPadrao() {
   divCores[0].style.backgroundColor = 'black';
   localStorage.clear();
   localStorage.setItem('color', '0');
-  ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
+  ultimaCorEscolhida = parseInt(localStorage.getItem('color'));
 }
 
-function pintarPixel() {
+function pintarPixel(pixel) {
   for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].addEventListener('click', colorir);
   }
 }
-
-// function refinarTabela(tabela) {
-//   tabela.removeChild('tbody')
-// }
 
 function refazerTabela() {
   //primeiro remove a tabela default
@@ -94,10 +94,11 @@ function refazerTabela() {
   let tabela = construirTabela(qtdLinCol);
 
   //inserir nova tabela no documento
-  console.log(body);
+  paleta.insertAdjacentElement('afterend',tabela);
 
-  //refinar a tabela com atributos
-  // refinarTabela(tabela);
+  //chamar função pintarPixel novamente para reler a nova tabela
+  let pixel = document.querySelectorAll('.pixel');
+  pintarPixel(pixel);
 }
 
 // eventListeners
@@ -133,4 +134,4 @@ gerarQuadro.addEventListener('click', refazerTabela);
 
 setDeCores();
 setCorPadrao();
-pintarPixel();
+pintarPixel(pixel);
