@@ -9,23 +9,23 @@ ul#color-palette li {
     border: 1px solid black;
 }
 
-ul#color-palette .color:nth-child(1) {
-    background-color:black;
-}​
-
-ul#color-palette .color:nth-child(2) {
-    background-color:red;
-}​
-
-ul#color-palette .color:nth-child(3) {
-    background-color:red;
-}​
-
-ul#color-palette li.color{
-    background-color: black;    
+.black {
+    background-color: black;
 }
 
-div#pixel-board div.linha div.pixel {
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+div.pixel {
     display: inline-block;
     margin: -3px;
     width: 40px;
