@@ -7,29 +7,25 @@ for (let i = 0; i < colorir.length ; i++) {
     //cria o evento de click na lista colorir
     colorir[i].addEventListener("click", function porCor (event) {
         let clicado = colorir[i];
-        if (clicado.classList.contains("selected")) {
-            
+        //remove todas a classe selected existente
+        for (let i = 0; i < colorir.length ; i++) {
+            colorir[i].classList.remove("selected");
         }
+        //adiciona a classe salected no clicado
+        event.target.classList.add("selected");
+        //cria a cor atual
         corAtual = optCores[i];
-        //subir corAtual para o sessionStorage
+        //sobe a corAtual para o localStorage
         localStorage.setItem("corAtual", corAtual);
-    })
-
-    //else {
-        //Criar a classe selected;
-        //colorir[i].classList.add("selected");
-    //}
-    //gravar cor
+        }
+    )
 }
-
-console.log(localStorage.getItem("corAtual"));
+corAtual = localStorage.getItem("corAtual");
 for (let i = 0; i < pixels.length; i++) {
     //cria o evento de click na lista pixels
     pixels[i].addEventListener("click", function px (event) {
         //alterar o background para o selacted
-        let pxAtual = document.querySelectorAll("pixels[i]");
-        //let corAtual = 
-        //pixels[i].classList.add(corAtual);
+        event.target.style.backgroundColor =  corAtual;
         }
     )
 }
