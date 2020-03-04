@@ -9,6 +9,7 @@ window.onload = function(){
 let pixels = document.getElementsByClassName("pixel");
 let color = document.getElementsByClassName("color");
 let buttonDelete =document.getElementById("clear-board");
+console.log("colors", color)
 
 buttonDelete.addEventListener("click",function(){
     for(i= 0; i <pixels.length; i++){   
@@ -33,16 +34,16 @@ for(i= 0; i <pixels.length; i++){
     
     pixels[i].addEventListener("click", function(event){
         switch (elementid) {
-            case "black":
-                event.target.style.backgroundColor="rgb(0,0,0)";    
-                break;
             case "color1":
-                event.target.style.backgroundColor= corselect;
+                event.target.style.backgroundColor="rgb(0,0,0)";    
                 break;
             case "color2":
                 event.target.style.backgroundColor= corselect;
                 break;
             case "color3":
+                event.target.style.backgroundColor= corselect;
+                break;
+            case "color4":
                     event.target.style.backgroundColor= corselect;
                     break;
             }})
