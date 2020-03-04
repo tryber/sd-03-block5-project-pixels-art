@@ -9,6 +9,8 @@ window.onload = function() {
   let inputNumber = document.querySelector(".input1");
   let mouseColor = "black";
 
+
+
   for (let i = 0; i < pixel.length; i++){
     pixel[i].addEventListener("click", function() {
       pixel[i].style.backgroundColor = mouseColor})
@@ -28,7 +30,7 @@ window.onload = function() {
   }
 
   colorBlack.addEventListener("click",() => {
-    anyColor("black");
+    anyColor(document.getElementsByClassName("black")[0].style.backgroundColor);
     for (let i = 0; i < document.querySelectorAll(".color").length; i++) {
       document.querySelectorAll(".color")[i].classList.remove("selected");
     }
@@ -36,7 +38,7 @@ window.onload = function() {
     })
 
   colorRed.addEventListener("click", () => {
-    anyColor("red");
+    anyColor(document.getElementsByClassName("red")[0].style.backgroundColor);
     for (let i = 0; i < document.querySelectorAll(".color").length; i++) {
       document.querySelectorAll(".color")[i].classList.remove("selected");
     }
@@ -44,7 +46,7 @@ window.onload = function() {
   });
 
   colorBlue.addEventListener("click",() => {
-    anyColor("blue")
+    anyColor(document.getElementsByClassName("blue")[0].style.backgroundColor)
     for (let i = 0; i < document.querySelectorAll(".color").length; i++) {
       document.querySelectorAll(".color")[i].classList.remove("selected");
     }
@@ -52,7 +54,7 @@ window.onload = function() {
   });
 
   colorGreen.addEventListener("click", () => {
-    anyColor("green");
+    anyColor(document.getElementsByClassName("green")[0].style.backgroundColor);
     for (let i = 0; i < document.querySelectorAll(".color").length; i++) {
       document.querySelectorAll(".color")[i].classList.remove("selected");
     }
@@ -149,5 +151,17 @@ window.onload = function() {
   //   }
   // }
 
-  console.log(document.querySelectorAll(".pixel").length)
+  function getRandomRgb() {
+    var num = Math.round(0xffffff * Math.random());
+    var r = num >> 16;
+    var g = num >> 8 & 255;
+    var b = num & 255;
+    return 'rgb(' + r + ', ' + g + ', ' + b + ')';
+  }
+
+  document.getElementsByClassName("black")[0].style.backgroundColor = getRandomRgb();
+  document.getElementsByClassName("red")[0].style.backgroundColor = getRandomRgb();
+  document.getElementsByClassName("blue")[0].style.backgroundColor = getRandomRgb();
+  document.getElementsByClassName("green")[0].style.backgroundColor = getRandomRgb();
+  
 }
