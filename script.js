@@ -8,7 +8,10 @@ window.onload = function (){
         cor[i].style.backgroundColor = cores[i];
         cor[i].addEventListener("click",function(){
         let corAtual = cores[i];
-        sessionStorage.setItem("backgroundColor", corAtual)       
+        sessionStorage.setItem("backgroundColor", corAtual)
+        let corSelecionada = document.getElementsByClassName("selected")
+        corSelecionada[0].classList.remove("selected")
+        cor[i].classList.add("selected")       
         })
     }
     let pixels = document.getElementsByClassName('pixel');
