@@ -1,8 +1,28 @@
+@font-face {
+    font-family: "Concert";
+    src: url(./font/concertone-regular.ttf);
+}
+body {
+    background: linear-gradient(179.65deg, rgba(249, 243, 118, 0.34) 13.85%, rgba(156, 241, 226, 0.19) 54.04%, #FFDEDE 88.29%);
+}
+#container {
+    margin-left: 500px;
+    font-family: "Concert";
+}
+h1 {
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-left: 15px;
+}
+table {
+
+}
 .color {
     border: black 2px solid;
     width: 40px;
     height: 40px;
     display: inline-block;
+    margin-bottom: 10px;
 }
 #preto {
     background: black;
@@ -27,4 +47,64 @@ table td{
     border: black 2px solid;
     width: 40px;
     height: 40px;
+    background-color: white;
+}
+button {
+    background: #6B86E3;
+    border: black 2px solid;
+    border-radius: 50px;
+    font-family: "Concert";
+    height: 30px;
+}
+button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    
+}
+button:hover {
+    color: white;
+}
+input {
+    width: 50px;
+    height: 15px;
+   font-size: 15px;
+   text-align: center;
+   border: purple 2px solid;
+  
+}
+#btns {
+    margin-left: 70px;
+}
+#alterar {
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 20px;
+    background: rgba(239, 89, 89, 0.31);
+    margin-right: 100px;
+    font-size: 10px;
+    text-align: center;
+    
+}
+h2 {
+    padding-top: 5px;
+    width: 120px;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 10px;
+
+    
+}
+h3 {
+    
+    text-align: right;
+    width: 100px;
+    font-size: 10px;
+    padding-left: 20px;
+}
+#generate-board {
+    height: 20px;
+    
 }
