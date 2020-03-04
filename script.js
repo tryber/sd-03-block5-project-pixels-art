@@ -67,7 +67,10 @@ window.onload = function() {
   buttonClear.addEventListener("click", clearBoard);
 
   function resizeBoard() {
-    
+    document.getElementsByClassName("body-pixel")[0].remove();
+    let tb = document.createElement("tbody")
+    tb.classList.add("body-pixel");
+    document.getElementById("pixel-board").appendChild(tb);
     resizeLines();
     resizeColums();
     let pixel1 = document.querySelectorAll(".pixel");
@@ -76,14 +79,16 @@ window.onload = function() {
         pixel1[i].style.backgroundColor = mouseColor})
     };
   };
+  
+  resizeBoard(inputNumber.value = "5");
 
   function resizeLines () {
     if(parseInt(inputNumber.value) < 5) {
-      inputNumber.value = 5;
+      inputNumber.value = "5";
       lines();
     }
     else if(parseInt(inputNumber.value) > 50) {
-      inputNumber.value = 50;
+      inputNumber.value = "50";
       lines();
     } else{
       lines();
@@ -104,28 +109,45 @@ window.onload = function() {
   }
   buttonSize.addEventListener("click", resizeBoard);
 
+  function lines() {
+    for (let i = 0; i < parseInt(inputNumber.value); i++) {
+      let line = document.createElement("tr");
+      document.getElementsByClassName("body-pixel")[0].appendChild(line.cloneNode());
+    }
+  }
+
   function colums() {
-    for (let i = 0; i < 5; i++){
-      coluna = document.createElement("td");
-      coluna.classList.add("pixel");
-      document.getElementsByClassName("body-pixel")[0].children[i];
-      for (let j = 0; j < parseInt(inputNumber.value) - 5; j++){
-        document.getElementsByClassName("body-pixel")[0].children[i].appendChild(coluna.cloneNode())
+    for (let i = 0; i < parseInt(inputNumber.value); i++) {
+      let colum = document.createElement("td");
+      colum.classList.add("pixel");
+      for(let j = 0; j < parseInt(inputNumber.value); j++) {
+        document.getElementsByClassName("body-pixel")[0].children[i].appendChild(colum.cloneNode())
       }
     }
   }
 
-  function lines() {
-    for (let i = 0; i < parseInt(inputNumber.value) - 5; i++){
-      linha = document.createElement("tr");
-      coluna = document.createElement("td");
-      coluna.classList.add("pixel");
-      document.getElementsByClassName("body-pixel")[0].appendChild(linha);
-      for(let j = 0; j < parseInt(inputNumber.value); j++){
-        document.getElementsByClassName("body-pixel")[0].lastChild.appendChild(coluna.cloneNode());
-      }
-    }
-  }
+  // function colums() {
+  //   for (let i = 0; i < 5; i++){
+  //     coluna = document.createElement("td");
+  //     coluna.classList.add("pixel");
+  //     document.getElementsByClassName("body-pixel")[0].children[i];
+  //     for (let j = 0; j < parseInt(inputNumber.value) - 5; j++){
+  //       document.getElementsByClassName("body-pixel")[0].children[i].appendChild(coluna.cloneNode())
+  //     }
+  //   }
+  // }
+
+  // function lines() {
+  //   for (let i = 0; i < parseInt(inputNumber.value) - 5; i++){
+  //     linha = document.createElement("tr");
+  //     coluna = document.createElement("td");
+  //     coluna.classList.add("pixel");
+  //     document.getElementsByClassName("body-pixel")[0].appendChild(linha);
+  //     for(let j = 0; j < parseInt(inputNumber.value); j++){
+  //       document.getElementsByClassName("body-pixel")[0].lastChild.appendChild(coluna.cloneNode());
+  //     }
+  //   }
+  // }
 
   console.log(document.querySelectorAll(".pixel").length)
 }
