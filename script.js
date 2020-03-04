@@ -14,6 +14,7 @@ let selectionPalette = function(e) {
     e.target.classList.add('selected');
 };
 
+//Botão de limpar
 function clearBoard() {
   for (let i = 0; i < pixelColor.length; i += 1) {
     pixelColor[i].style.backgroundColor = 'white';
