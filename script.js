@@ -9,7 +9,8 @@ window.onload = function(){
 let pixels = document.getElementsByClassName("pixel");
 let color = document.getElementsByClassName("color");
 let buttonDelete =document.getElementById("clear-board");
-console.log("colors", color)
+let tamanhoQuadro = document.getElementById("board-size");
+let botaoTamanhoQuadro = document.getElementById("generate-board");
 
 color[0].classList.add('selected');
 buttonDelete.addEventListener("click",function(){
@@ -52,3 +53,18 @@ for(i= 0; i <pixels.length; i++){
             }})
 
 }
+
+botaoTamanhoQuadro.addEventListener("click", function(){
+  let quadroPixels = document.getElementById("pixel-board")
+  let vezes = tamanhoQuadro.value;
+  quadroPixels.innerHTML="";
+  if(vezes < 5 ){
+   vezes = 5 ;
+   }else if(vezes > 50){
+   vezes = 50;
+  }
+  for(i=1; i <=vezes; i++){
+  for(j=1; j<=vezes; j++){
+   quadroPixels.appendChild(document.createElement("div")).setAttribute("class","pixel");
+  }}
+})
