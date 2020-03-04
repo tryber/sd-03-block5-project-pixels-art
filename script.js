@@ -67,6 +67,7 @@ window.onload = function() {
   buttonClear.addEventListener("click", clearBoard);
 
   function resizeBoard() {
+    
     resizeLines();
     resizeColums();
     let pixel1 = document.querySelectorAll(".pixel");
@@ -91,11 +92,11 @@ window.onload = function() {
 
   function resizeColums() {
     if(parseInt(inputNumber.value) < 5) {
-      inputNumber.value = 5;
+      inputNumber.value = "5";
       colums();
     }
     else if(parseInt(inputNumber.value) > 50) {
-      inputNumber.value = 50;
+      inputNumber.value = "50";
       colums();
     } else{
       colums();
