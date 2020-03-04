@@ -31,9 +31,6 @@ for (let i = 0; i < colors_pallet.length; i++) {
    pixel_board.style.width = (number*5) * 10 + "px";
 
    for (let i = 0; i < number ** 2; i++) {
-     if( document.querySelectorAll('.pixel').length >=  number**2){
-       break;
-      }
       let newdiv = document.createElement('div');
       newdiv.className = 'pixel';
       pixel_board.appendChild(newdiv);
