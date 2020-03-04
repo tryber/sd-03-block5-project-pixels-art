@@ -2,6 +2,7 @@ let corselect ;
 let elementid ="black";
 
 window.onload = function(){
+
     corselect = "black" ;
 }  
 
@@ -33,7 +34,7 @@ for(i= 0; i <pixels.length; i++){
     pixels[i].addEventListener("click", function(event){
         switch (elementid) {
             case "black":
-                event.target.style.backgroundColor=corselect;    
+                event.target.style.backgroundColor="rgb(0,0,0)";    
                 break;
             case "color1":
                 event.target.style.backgroundColor= corselect;
