@@ -10,6 +10,7 @@
 .color-palette {
     display: inline-flex;
     margin-left: auto;
+    margin-bottom: 20px;
 }
 
 .pixel {
@@ -35,4 +36,23 @@
     background-color: white;
     vertical-align: middle;
     display: table-cell;
+}
+
+.central {
+    width: 28%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+body {
+    background-color: lightcoral;
+}
+
+.clear-board{
+    background-color: lightseagreen;
+}
+
+span {
+    margin-right: 20px;
 }
