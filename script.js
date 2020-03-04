@@ -12,7 +12,8 @@ window.onload = function() {
   for (let i = 0; i < pixel.length; i++){
     pixel[i].addEventListener("click", function() {
       pixel[i].style.backgroundColor = mouseColor})
-  }    
+  };
+      
   // for (let i of pixel){
   //  i.addEventListener("click", (event) =>{
   //    event.target.style.backgroundColor = mouseColor})
@@ -66,9 +67,14 @@ window.onload = function() {
   buttonClear.addEventListener("click", clearBoard);
 
   function resizeBoard() {
-      resizeLines();
-      resizeColums();
-    }
+    resizeLines();
+    resizeColums();
+    let pixel1 = document.querySelectorAll(".pixel");
+    for (let i = 0; i < pixel1.length; i++){
+      pixel1[i].addEventListener("click", function() {
+        pixel1[i].style.backgroundColor = mouseColor})
+    };
+  };
 
   function resizeLines () {
     if(parseInt(inputNumber.value) < 5) {
@@ -120,5 +126,5 @@ window.onload = function() {
     }
   }
 
-
+  console.log(document.querySelectorAll(".pixel").length)
 }
