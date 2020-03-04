@@ -44,44 +44,44 @@ for (i = 0; i < pixel.length; i += 1) {
 
 mudaSelected(0);
 
-function alteraCor1() {
-  let color = "";
-  let newCor = "";
-  for (let i = 0; i < 3; i++) {
-    var sub = Math.floor(Math.random() * 256).toString(16);
-    color += sub.length == 1 ? "0" + sub : sub;
-  }
-  newCor = "#" + color;
-  coresArr[1].style.backgroundColor = newCor;
-  coresArr[1].style.color = newCor;
-}
+// function alteraCor1() {
+//   let color = "";
+//   let newCor = "";
+//   for (let i = 0; i < 3; i++) {
+//     var sub = Math.floor(Math.random() * 256).toString(16);
+//     color += sub.length == 1 ? "0" + sub : sub;
+//   }
+//   newCor = "#" + color;
+//   coresArr[1].style.backgroundColor = newCor;
+//   coresArr[1].style.color = newCor;
+// }
 
-alteraCor1()
+// alteraCor1()
 
-function alteraCor2() {
-  let color = "";
-  let newCor = "";
-  for (let i = 0; i < 3; i++) {
-    var sub = Math.floor(Math.random() * 256).toString(16);
-    color += sub.length == 1 ? "0" + sub : sub;
-  }
-  newCor = "#" + color;
-  coresArr[2].style.backgroundColor = newCor;
-  coresArr[2].style.color = newCor;
-}
+// function alteraCor2() {
+//   let color = "";
+//   let newCor = "";
+//   for (let i = 0; i < 3; i++) {
+//     var sub = Math.floor(Math.random() * 256).toString(16);
+//     color += sub.length == 1 ? "0" + sub : sub;
+//   }
+//   newCor = "#" + color;
+//   coresArr[2].style.backgroundColor = newCor;
+//   coresArr[2].style.color = newCor;
+// }
 
-alteraCor2();
+// alteraCor2();
 
-function alteraCor3() {
-  let color = "";
-  let newCor = "";
-  for (let i = 0; i < 3; i++) {
-    var sub = Math.floor(Math.random() * 256).toString(16);
-    color += sub.length == 1 ? "0" + sub : sub;
-  }
-  newCor = "#" + color;
-  coresArr[3].style.backgroundColor = newCor;
-  coresArr[3].style.color = newCor;
-}
+// function alteraCor3() {
+//   let color = "";
+//   let newCor = "";
+//   for (let i = 0; i < 3; i++) {
+//     var sub = Math.floor(Math.random() * 256).toString(16);
+//     color += sub.length == 1 ? "0" + sub : sub;
+//   }
+//   newCor = "#" + color;
+//   coresArr[3].style.backgroundColor = newCor;
+//   coresArr[3].style.color = newCor;
+// }
 
-alteraCor3();
+// alteraCor3();
