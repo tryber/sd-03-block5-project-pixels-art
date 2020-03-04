@@ -3,7 +3,7 @@ header {
   border: 2px solid black;
   display: inline-block;
   flex-wrap: wrap;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 3px;
   text-align: center;
   width: 100%;
@@ -26,8 +26,8 @@ article {
 }
 
 .controles {
-  text-align: center;
   padding: 20px;
+  text-align: center;
   width: 100%;
 }
 
@@ -42,6 +42,6 @@ td {
   border: 1px solid black;
   height: 50px;
   margin: 1px;
-  position: relative; 
+  position: relative;
   width: 50px;
 }
