@@ -18,7 +18,7 @@ const paleta = document.querySelector('#color-palette');
 function arrumarClasseCss(ultimaCor, refCorAtual) {
   divCores[ultimaCor].classList.remove('selected');
   divCores[refCorAtual].classList.add('selected');
-//   return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
+  //   return alert("Removido classe selected do ultimo elemento e adicionado ao novo escolhido")
 }
 
 function colorir(event) {
@@ -27,25 +27,25 @@ function colorir(event) {
 
 function construirTabela(qtdLinCol) {
   let tabela = document.createElement('table');
-    tabela.setAttribute('id','pixel-board');
-    tabela.setAttribute('class','tabela');
-  for (let i = 0; i<qtdLinCol; i+=1) {
+  tabela.setAttribute('id', 'pixel-board');
+  tabela.setAttribute('class', 'tabela');
+  for (let i = 0; i < qtdLinCol; i += 1) {
     let linha = tabela.insertRow(i);
-      for(let i = 0; i<qtdLinCol; i+=1){
-        let coluna = linha.insertCell(i);
-        coluna.setAttribute('class','pixel');
-      }
+    for (let i = 0; i < qtdLinCol; i += 1) {
+      let coluna = linha.insertCell(i);
+      coluna.setAttribute('class', 'pixel');
+    }
   }
   return tabela;
 }
 
 function criarPaleta() {
   let vetor = ['black'];
-  for (let i = 0; i<3; i+=1){
+  for (let i = 0; i < 3; i += 1) {
     let rgbA = Math.floor(Math.random() * 255);
     let rgbB = Math.floor(Math.random() * 255);
     let rgbC = Math.floor(Math.random() * 255);
-    vetor.push('rgb('+rgbA.toString()+','+rgbB.toString()+','+rgbC.toString()+')');
+    vetor.push('rgb(' + rgbA.toString() + ',' + rgbB.toString() + ',' + rgbC.toString() + ')');
   }
   return vetor;
 }
@@ -53,7 +53,7 @@ function criarPaleta() {
 function limparTabela() {
   let pixel = document.querySelectorAll('.pixel');
   corEscolhida = 'white'
-  for(let i=0; i<pixel.length; i+=1) {
+  for (let i = 0; i < pixel.length; i += 1) {
     pixel[i].style.backgroundColor = corEscolhida;
   }
 }
@@ -62,7 +62,7 @@ function setLocalStorage(refCorAtual) {
   localStorage.clear();
   localStorage.setItem('color', refCorAtual);
   ultimaCorEscolhida = parseInt(localStorage.getItem('color', 8));
-//   return alert("Efetuado limpeza no storage e setado a cor escolhida")
+  //   return alert("Efetuado limpeza no storage e setado a cor escolhida")
 }
 
 function setDeCores() {
@@ -101,12 +101,12 @@ function refazerTabela() {
   //segundo verifica o parametro passado pelo user e arruma default(checa se e menor que 5 ou maior que 50)
   let qtdLinCol = parseInt(document.querySelector('#board-size').value);
   qtdLinCol = setDefaultParamLinCol(qtdLinCol);
-  
+
   //constroi nova tabela de acordo com o que o user definiu
   let tabela = construirTabela(qtdLinCol);
 
   //inserir nova tabela no documento
-  paleta.insertAdjacentElement('afterend',tabela);
+  paleta.insertAdjacentElement('afterend', tabela);
 
   //chamar função pintarPixel novamente para reler a nova tabela
   let pixel = document.querySelectorAll('.pixel');
