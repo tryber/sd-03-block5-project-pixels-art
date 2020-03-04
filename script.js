@@ -20,10 +20,6 @@ function select() {
       const pick = document.getElementById(e.target.id);
       const selecionada = window.getComputedStyle(pick).getPropertyValue('background-color');
       cor = selecionada;
-
-      c5 = document.getElementsByClassName('.selected');
-      // c5.style.backgroundColor = selecionada;
-      
     });
   }
 }
