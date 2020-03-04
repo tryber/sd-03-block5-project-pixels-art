@@ -90,6 +90,18 @@ const botaoQuadro = document.getElementById('generate-board');
 let tr = document.querySelectorAll('tr');
 const tbody = document.querySelector('tbody');
 
+function criaTabela() {
+  for (let j = 0; j < inputTamanho.value; j += 1) {
+    const trCriado = document.createElement('tr');
+    tbody.appendChild(trCriado);
+    for (let k = 0; k < inputTamanho.value; k += 1) {
+      const tdCriado = document.createElement('td');
+      tdCriado.className = 'pixel';
+      trCriado.appendChild(tdCriado);
+    }
+  }
+}
+
 function criaQuadro() {
   for (let i = 0; i < tr.length; i += 1) {
     tr[i].remove();
@@ -101,15 +113,7 @@ function criaQuadro() {
     inputTamanho.value = 5;
   }
 
-  for (let j = 0; j < inputTamanho.value; j += 1) {
-    const trCriado = document.createElement('tr');
-    tbody.appendChild(trCriado);
-    for (let k = 0; k < inputTamanho.value; k += 1) {
-      const tdCriado = document.createElement('td');
-      tdCriado.className = 'pixel';
-      trCriado.appendChild(tdCriado);
-    }
-  }
+  criaTabela();
 
   pixel = document.querySelectorAll('.pixel');
 
