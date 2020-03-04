@@ -6,7 +6,7 @@ const cor4 = document.querySelectorAll('.color')[3];
 function corAleatoria() {
   const hexadecimais = '0123456789ABCDEF';
   let cor = '#';
-  for (let i = 0; i < 6; i += 1 ) {
+  for (let i = 0; i < 6; i += 1) {
     cor += hexadecimais[Math.floor(Math.random() * 16)];
   }
   return cor;
@@ -65,11 +65,15 @@ cor4.addEventListener('click', function () {
 
 let pixel = document.querySelectorAll('.pixel');
 
-for (let i = 0; i < pixel.length; i += 1) {
-  pixel[i].addEventListener('click', function () {
-    pixel[i].style.backgroundColor = sessionStorage.color;
-  });
+function pintaPixel() {
+  for (let i = 0; i < pixel.length; i += 1) {
+    pixel[i].addEventListener('click', function () {
+      pixel[i].style.backgroundColor = sessionStorage.color;
+    });
+  }
 }
+
+pintaPixel();
 
 const botaoLimpar = document.querySelector('#clear-board');
 
@@ -87,35 +91,31 @@ let tr = document.querySelectorAll('tr');
 const tbody = document.querySelector('tbody');
 
 function criaQuadro() {
-  for(let i = 0; i < tr.length; i += 1) {
+  for (let i = 0; i < tr.length; i += 1) {
     tr[i].remove();
-  };
+  }
 
-  if(inputTamanho.value > 50) {
+  if (inputTamanho.value > 50) {
     inputTamanho.value = 50;
   } else if (inputTamanho.value < 5) {
     inputTamanho.value = 5;
-  };
+  }
 
-  for(let j = 0; j < inputTamanho.value; j += 1) {
+  for (let j = 0; j < inputTamanho.value; j += 1) {
     const trCriado = document.createElement('tr');
     tbody.appendChild(trCriado);
-    for(let k = 0; k < inputTamanho.value; k += 1) {
+    for (let k = 0; k < inputTamanho.value; k += 1) {
       const tdCriado = document.createElement('td');
-      tdCriado.className = 'pixel'
+      tdCriado.className = 'pixel';
       trCriado.appendChild(tdCriado);
     }
-  };
+  }
 
   pixel = document.querySelectorAll('.pixel');
 
-  for (let i = 0; i < pixel.length; i += 1) {
-    pixel[i].addEventListener('click', function () {
-      pixel[i].style.backgroundColor = sessionStorage.color;
-    });
-  }
+  pintaPixel();
 
-  inputTamanho.value = "";
+  inputTamanho.value = '';
   tr = document.querySelectorAll('tr');
 }
 
