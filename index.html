@@ -12,17 +12,17 @@
   <h1 id='title'>Paleta de Cores</h1>
   <div id='color-palette'>
     <ul>
-      <button class="color selected" style='background-color:black'></button>
-      <button class="color" style='background-color:rgb(7, 30, 133)'></button>
-      <button class="color" style='background-color: yellow'></button>
-      <button class="color" style='background-color: rgb(185, 8, 52)'></button>
+      <button class="color selected" style='background-color: black;'></button>
+      <button class="color" style='background-color: rgb(7, 30, 133);'></button>
+      <button class="color" style='background-color: yellow;'></button>
+      <button class="color" style='background-color: rgb(185, 8, 52);'></button>
     </ul>
   </div>
   <button id='clear-board'>Clear</button>
   <form>
     <label> Insira um tamanho de 5-50 para o quadro</label>
-      <input id='board-size' max="50" min="5">
-      <button id='generate-board'>generate</button>
+    <input id='board-size' max="50" min="5" type='number'>
+    <button id='generate-board' type="button">generate</button>
   </form>
   <div id='pixel-board'>
   </div>
