@@ -1,9 +1,12 @@
 let corselect ;
-let elementid ="black";
+let elementid ="color1";
 
 window.onload = function(){
-
+   
     corselect = "black" ;
+    this.corAleatoria("color2");
+    this.corAleatoria("color3");
+    this.corAleatoria("color4");
 }  
 
 let pixels = document.getElementsByClassName("pixel");
@@ -68,3 +71,13 @@ botaoTamanhoQuadro.addEventListener("click", function(){
    quadroPixels.appendChild(document.createElement("div")).setAttribute("class","pixel");
   }}
 })
+
+function corAleatoria(id){
+    let r = Math.floor(Math.random()*256);          
+    let g = Math.floor(Math.random()*256);          
+    let b = Math.floor(Math.random()*256);          
+    let rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+    this.document.getElementById(id).style.background = rgb;
+    
+
+}
