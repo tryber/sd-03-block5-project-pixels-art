@@ -9,8 +9,8 @@ width: 25px;
 #color1{
   /*   border: 1px solid rgb(0,0,0); */
     background-color: rgb(0,0,0);
-    }
-    
+}
+
 #color2{
     background-color: rgb(218, 240, 23);
 }
@@ -20,12 +20,12 @@ width: 25px;
 }
 
 #color4{
-    background-color: rgb(21, 55, 209);    
+    background-color: rgb(21, 55, 209);   
 }
 
 #pixel-board{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   position: absolute;
 }
 
@@ -33,10 +33,10 @@ width: 25px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(0,0,0);
   height: 40px;
-  width: 40px; 
+  width: 40px;
 }
 
 #clear-board{
-  vertical-align: auto;
   margin-left: 10px;
+  vertical-align: auto;
 }
