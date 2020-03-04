@@ -23,6 +23,11 @@
   color: blue;
 }
 
+.cor5 {
+  background-color: violet;
+  color: violet;
+}
+
 .pixel {
   background-color: white;
   border: 1px solid black;
