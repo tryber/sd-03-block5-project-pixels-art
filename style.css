@@ -1,3 +1,4 @@
+
 h1 {
   text-align: center;
 }
@@ -11,19 +12,19 @@ h1 {
   width: 40px;
 }
 
-.color1 + label {
+#color1 + label {
   background-color: black;
 }
 
-.color2 + label {
+#color2 + label {
   background-color: red;
 }
 
-.color3 + label {
+#color3 + label {
   background-color: yellow;
 }
 
-.color4 + label {
+#color4 + label {
   background-color: green;
 }
 
