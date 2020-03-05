@@ -39,8 +39,8 @@ const pintaPixel = function () {
   }
 };
 
-function limpa(){
-  let quadro = document.getElementsByClassName('pixel ');
+function limpa() {
+  const quadro = document.getElementsByClassName('pixel ');
   for (let i = 0; i < quadro.length -1; i += 1) {
     quadro[i].style.backgroundColor = 'white';
   }
