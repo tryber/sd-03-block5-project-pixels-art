@@ -1,29 +1,23 @@
 let corselect ;
-let elementid ="color1";
-
-window.onload = function(){
-   
-    corselect = "black" ;
-    this.corAleatoria("color2");
-    this.corAleatoria("color3");
-    this.corAleatoria("color4");
-}  
-
-let pixels = document.getElementsByClassName("pixel");
-let color = document.getElementsByClassName("color");
-let buttonDelete =document.getElementById("clear-board");
-let tamanhoQuadro = document.getElementById("board-size");
-let botaoTamanhoQuadro = document.getElementById("generate-board");
+let elementid = 'color1';
+window.onload = function () {   
+  corselect = 'black';
+  this.corAleatoria('color2');
+  this.corAleatoria('color3');
+  this.corAleatoria('color4');
+};  
+const pixels = document.getElementsByClassName('pixel');
+let color = document.getElementsByClassName('color');
+let buttonDelete =document.getElementById('clear-board');
+let tamanhoQuadro = document.getElementById('board-size');
+let botaoTamanhoQuadro = document.getElementById('generate-board');
 
 color[0].classList.add('selected');
-buttonDelete.addEventListener("click",function(){
-    for(i= 0; i <pixels.length; i++){   
-     
-     pixels[i].style.backgroundColor="rgb(255,255,255)"
-     
+buttonDelete.addEventListener('click', function () {
+  for (i = 0; i < pixels.length; i++) {      
+      pixels[i].style.backgroundColor = 'rgb(255,255,255)';
     }
-
-})
+});
 
 for(x= 0; x <color.length; x++){  
 color[x].addEventListener("click",function(event){
