@@ -1,7 +1,7 @@
 let corPintura = 'color cor1 selected';
 const paletteButons = document.getElementsByClassName('color ');
 const pixelUnit = document.getElementsByClassName('pixel ');
-const limpaQuadro = document.getElementById('limpa-quadro');
+const limpaQuadro = document.getElementById('clear-board');
 
 const selecionaCor = function () {
   const corSelecionada = event.srcElement;
