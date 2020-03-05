@@ -7,11 +7,12 @@ h1{
     text-align: center;
 }
 
-.td {
+.pixel{
     background-color: white;
     border:1px solid black;
     height: 40px;
     width: 40px;
+    cursor: pointer;
   }
   
   .selecionado {
@@ -23,6 +24,7 @@ h1{
       border:1px solid black;
       height: 40px;
       width: 40px;
+      cursor: pointer;
   }
 
   .tdyellow{
@@ -30,6 +32,7 @@ h1{
       border:1px solid black;
       height: 40px;
       width: 40px;
+      cursor: pointer;
   }
 
   .tdblue{
@@ -37,6 +40,7 @@ h1{
       border:1px solid black;
       height: 40px;
       width: 40px;
+      cursor: pointer;
   }
 
   .tdgreen{
@@ -44,4 +48,5 @@ h1{
       border:1px solid black;
       height: 40px;
       width: 40px;
+      cursor: pointer;
   }

@@ -2,7 +2,7 @@ let preto = document.querySelector("#tdblack");
 let amarelo = document.querySelector("#tdyellow");
 let azul = document.querySelector("#tdblue");
 let verde = document.querySelector("#tdgreen");
-let pixel = document.querySelectorAll(".td");
+let pixel = document.querySelectorAll(".pixeld");
 let mouseSelect = "preto";
 
 if (typeof (Storage) != undefined) {
