@@ -5,3 +5,21 @@ function limpa() {
     }
   }
   
+  let corPintura = 'ctdblack selected';
+  const selecionaCor = function () {
+    const corSelecionada = event.srcElement;
+    document.getElementsByClassName('tdblack')[0].className = 'color tdblack';
+    document.getElementsByClassName('tdyellow')[0].className = 'color tdyellow';
+    document.getElementsByClassName('tdblue')[0].className = 'color tdblue';
+    document.getElementsByClassName('tdgreen')[0].className = 'color tdgreen';
+    if (document.getElementsByClassName('tdblack')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    } else if (document.getElementsByClassName('tdyellow')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    } else if (document.getElementsByClassName('tdblue')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    } else if (document.getElementsByClassName('tdgreen')[0] === corSelecionada) {
+      corSelecionada.className += ' selected';
+    }
+    corPintura = corSelecionada.className;
+  };

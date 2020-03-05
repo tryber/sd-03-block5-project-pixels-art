@@ -21,32 +21,27 @@ h1{
 
   .tdblack{
       background-color: black;
-      border:1px solid black;
-      height: 40px;
-      width: 40px;
       cursor: pointer;
   }
 
   .tdyellow{
       background-color: yellow;
-      border:1px solid black;
-      height: 40px;
-      width: 40px;
       cursor: pointer;
   }
 
   .tdblue{
       background-color: blue;
-      border:1px solid black;
-      height: 40px;
-      width: 40px;
       cursor: pointer;
   }
 
   .tdgreen{
       background-color: green;
-      border:1px solid black;
-      height: 40px;
-      width: 40px;
       cursor: pointer;
+  }
+
+  .color {
+    border: 1px solid black;
+    height: 34px;
+    padding: 2px;
+    width: 34px;
   }
