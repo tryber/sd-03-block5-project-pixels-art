@@ -9,3 +9,7 @@ const cores = [
     "blue",
     "green",
 ];
+
+function limpar(){
+   document.querySelectorAll('.pixel').style.backgroundColor = "rgb(255, 255, 255)";
+}
