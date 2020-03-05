@@ -6,8 +6,7 @@ function limpa() {
   }
   
   let corPintura = 'ctdblack selected';
-  const selecionaCor = selecionar()
-  function selecionar() {
+  const selecionaCor = function () {
     const corSelecionada = event.srcElement;
     document.getElementsByClassName('tdblack')[0].className = 'color tdblack';
     document.getElementsByClassName('tdyellow')[0].className = 'color tdyellow';
@@ -24,3 +23,7 @@ function limpa() {
     }
     corPintura = corSelecionada.className;
   };
+
+  for (let i = 0; i < paletteButons.length; i += 1) {
+    paletteButons[i].addEventListener('click', selecionaCor);
+  }
