@@ -8,7 +8,9 @@ let mouseSelect = "preto";
 if (typeof (Storage) != undefined) {
   Cor("preto")
 }
+else{
 
+}
 preto.addEventListener("click", function () {
   Cor("preto");
   preto.classList.add("selecionado");
@@ -26,11 +28,11 @@ verde.addEventListener("click", function () {
   verde.classList.add("verde");
 });
 
-function selecao(element) {
+function selecionado(element) {
   element.style.backgroundColor = mouseSelect;
 }
 
-pixel.forEach(function selected(element) {
+pixel.forEach(function selecionado(element) {
   element.addEventListener("click", function () { element.style.backgroundColor = mouseSelect })
 });
 
