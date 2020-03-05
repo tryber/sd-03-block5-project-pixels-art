@@ -2,6 +2,7 @@ let corselect ;
 let elementid ="color1";
 
 window.onload = function(){
+   
     corselect = "black" ;
     this.corAleatoria("color2");
     this.corAleatoria("color3");
