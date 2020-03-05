@@ -1,0 +1,47 @@
+*{
+    margin: auto;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.td {
+    background-color: white;
+    border:1px solid black;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .selecionado {
+    background-color: black;
+  }
+
+  .tdblack{
+      background-color: black;
+      border:1px solid black;
+      height: 40px;
+      width: 40px;
+  }
+
+  .tdyellow{
+      background-color: yellow;
+      border:1px solid black;
+      height: 40px;
+      width: 40px;
+  }
+
+  .tdblue{
+      background-color: blue;
+      border:1px solid black;
+      height: 40px;
+      width: 40px;
+  }
+
+  .tdgreen{
+      background-color: green;
+      border:1px solid black;
+      height: 40px;
+      width: 40px;
+  }
