@@ -2,6 +2,10 @@ body {
   background-color: white;
 }
 
+.button {
+  position: relative;
+}
+
 .color {
   border: 1px solid black;
   height: 34px;
@@ -23,6 +27,14 @@ body {
 
 .cor4 {
   background-color: blue;
+}
+
+.footer {
+  bottom: 10px;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  width: auto;
 }
 
 .paleta {

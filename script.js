@@ -1,6 +1,7 @@
 let corPintura = 'color cor1 selected';
 const paletteButons = document.getElementsByClassName('color ');
 const pixelUnit = document.getElementsByClassName('pixel ');
+const limpaQuadro = document.getElementById('limpa-quadro');
 
 const selecionaCor = function () {
   const corSelecionada = event.srcElement;
@@ -38,6 +39,13 @@ const pintaPixel = function () {
   }
 };
 
+function limpa(){
+  let quadro = document.getElementsByClassName('pixel ');
+  for (let i = 0; i < quadro.length -1; i += 1) {
+    quadro[i].style.backgroundColor = 'white';
+  }
+}
+
 for (let i = 0; i < paletteButons.length; i += 1) {
   paletteButons[i].addEventListener('click', selecionaCor);
 }
@@ -45,3 +53,5 @@ for (let i = 0; i < paletteButons.length; i += 1) {
 for (let j = 0; j < pixelUnit.length; j += 1) {
   pixelUnit[j].addEventListener('click', pintaPixel);
 }
+
+limpaQuadro.addEventListener('click', limpa);
