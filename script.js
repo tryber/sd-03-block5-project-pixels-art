@@ -6,7 +6,8 @@ function limpa() {
   }
   
   let corPintura = 'ctdblack selected';
-  const selecionaCor = function () {
+  const selecionaCor = selecionar()
+  function selecionar() {
     const corSelecionada = event.srcElement;
     document.getElementsByClassName('tdblack')[0].className = 'color tdblack';
     document.getElementsByClassName('tdyellow')[0].className = 'color tdyellow';
