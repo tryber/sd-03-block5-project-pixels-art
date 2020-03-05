@@ -41,7 +41,7 @@ const pintaPixel = function () {
 
 function limpa() {
   const quadro = document.getElementsByClassName('pixel ');
-  for (let i = 0; i < quadro.length -1; i += 1) {
+  for (let i = 0; i < quadro.length; i += 1) {
     quadro[i].style.backgroundColor = 'white';
   }
 }
