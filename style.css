@@ -1,0 +1,35 @@
+#title{
+    font-size: 50px;
+}
+.color{
+    width: 40px;
+    height: 40px;
+    display: table-cell;
+}
+.black{
+    background-color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+.red{
+    background-color: red;
+    border: 1px solid rgb(0, 0, 0);
+}
+.blue{
+    background-color: blue;
+    border: 1px solid rgb(0, 0, 0);
+}
+.green{
+    background-color: green;
+    border: 1px solid rgb(0, 0, 0);
+}
+.pixel{
+    width: 40px;
+    height: 40px;
+    border:solid 1px black;
+    display: table-cell;
+    background-color: rgb(255, 255, 255)
+}
+.flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
