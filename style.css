@@ -1,0 +1,47 @@
+*{
+    margin: auto;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.pixel{
+    background-color: rgb(255, 255, 255);
+    border:1px solid black;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: black;
+  }
+
+  .tdblack{
+      background-color: black;
+      cursor: pointer;
+  }
+
+  .tdyellow{
+      background-color: yellow;
+      cursor: pointer;
+  }
+
+  .tdblue{
+      background-color: blue;
+      cursor: pointer;
+  }
+
+  .tdgreen{
+      background-color: green;
+      cursor: pointer;
+  }
+
+  .color {
+    border: 1px solid black;
+    height: 34px;
+    padding: 2px;
+    width: 34px;
+  }
