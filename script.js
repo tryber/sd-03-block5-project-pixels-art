@@ -1,11 +1,7 @@
-const preto = document.getElementsByClassName('tdblack');
-const amarelo = document.getElementsByClassName('tdyellow');
-const azul = document.getElementsByClassName('tdblue');
-const verde = document.getElementsByClassName('tdgreen');
-
-const cores = [
-    "black",
-    "yellow",
-    "blue",
-    "green",
-];
+function limpa() {
+    const quadro = document.getElementsByClassName('pixel ');
+    for (let i = 0; i < quadro.length; i += 1) {
+      quadro[i].style.backgroundColor = 'white';
+    }
+  }
+  
