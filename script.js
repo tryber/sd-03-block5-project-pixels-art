@@ -1,3 +1,1 @@
-function colorSelected (){
-    
-}
+//aqui  eu vou sofrer 
