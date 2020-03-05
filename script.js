@@ -4,6 +4,7 @@ function limpa() {
       quadro[i].style.backgroundColor = 'white';
     }
   }
+  const paletteButons = document.getElementsByClassName('color ');
   
   let corPintura = 'ctdblack selected';
   const selecionaCor = function () {
