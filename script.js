@@ -14,39 +14,37 @@ const botaoTamanhoQuadro = document.getElementById('generate-board');
 
 color[0].classList.add('selected');
 buttonDelete.addEventListener('click', function () {
-  for (i = 0; i < pixels.length; i++) {  
+  for (i = 0; i < pixels.length; i++) {
     pixels[i].style.backgroundColor = 'rgb(255,255,255)';
   }
 });
 
 for (x = 0; x < color.length; x++) {
-  color[x].addEventListener('click', function (event) {
-  document.querySelector('.selected').classList.remove('selected');
-  elementid = event.target.getAttribute('id');
-  let element = document.getElementById(elementid);
-  var style = window.getComputedStyle(element,'');
-  event.target.classList.add('selected');
-  corselect =style.getPropertyValue('background-color');
-  console.log(event.target);
-})
+    color[x].addEventListener('click', function (event) {
+    document.querySelector('.selected').classList.remove('selected');
+    elementid = event.target.getAttribute('id');
+    const element = document.getElementById(elementid);
+    let style = window.getComputedStyle(element, '');
+    event.target.classList.add('selected');
+    corselect = style.getPropertyValue('background-color');
+    console.log(event.target);
+  });
 }
-
-for(i= 0; i <pixels.length; i++){   
-    
-    pixels[i].addEventListener("click", function(event){
-        switch (elementid) {
-            case "color1":
-                event.target.style.backgroundColor="rgb(0,0,0)";    
-                break;
-            case "color2":
-                event.target.style.backgroundColor= corselect;
-                break;
-            case "color3":
-                event.target.style.backgroundColor= corselect;
-                break;
-            case "color4":
-                event.target.style.backgroundColor= corselect;
-                break;
+for (i = 0; i < pixels.length; i++) {
+    pixels[i].addEventListener('click', function(event) {
+      switch (elementid) {
+          case 'color1':
+            event.target.style.backgroundColor = 'rgb(0,0,0)';
+            break;
+          case 'color2':
+            event.target.style.backgroundColor = corselect;
+            break;
+          case 'color3':
+            event.target.style.backgroundColor = corselect;
+            break;
+          case 'color4':
+            event.target.style.backgroundColor = corselect;
+            break;
             }})
 
 }
