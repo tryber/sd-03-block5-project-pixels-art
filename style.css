@@ -1,0 +1,46 @@
+body {
+    margin: 5px;
+    padding: 0px;
+}
+
+.color{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding:10px 5px 15px 20px;
+}
+
+.pixel{
+    background-color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 1px; 
+}
+
+.selected {
+    border: 1px solid black;
+}
+
+#pixel-board{
+    margin-left: 150px;
+}
+
+#preto{
+    background-color: black;
+}
+
+#vermelho{
+    background-color: red;
+}
+
+#azul{
+    background-color: blue;
+}
+
+#verde{
+    background-color: green;
+}
