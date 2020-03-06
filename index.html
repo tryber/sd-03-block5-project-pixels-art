@@ -7,65 +7,21 @@
         <link rel="stylesheet" href="style.css">
     </header>
     <body>
-        <h1 id="title">Paleta de Cores</h1> <!-- Project requirement => title "Paleta de Cores", h1 tag, title id -->
-        <div class="forms">
-            <ul class="line-methods" id="color-palette"> <!-- Project requirement => color-palette id -->
-                <li class="color-palette color1">
-                    <input name="line_methods" class="color" checked type="radio" value="black" id="color1"> <!-- Project requirement => class id -->
-                    <label for="color1" class="selected"></label>
-                </li>
-                <li class="color-palette color2">
-                    <input name="line_methods" class="color" type="radio" value="red" id="color2"> <!-- Project requirement => class id -->
-                    <label for="color2"></label>
-                </li>
-                <li class="color-palette color3">
-                    <input name="line_methods" class="color" type="radio" value="yellow" id="color3"> <!-- Project requirement => class id -->
-                    <label for="color3"></label>
-                </li>
-                <li class="color-palette color4">
-                    <input name="line_methods" class="color" type="radio" value="green" id="color4"> <!-- Project requirement => class id -->
-                    <label for="color4"></label>
-                </li>
-            </ul>
-            <table id="pixel-board"> <!-- Project requirement => pixel-board id -->
-                <tr>
-                    <td class="pixel" id="pixel"></td> <!-- Project requirement => for each pixel => pixel class -->
-                    <td class="pixel" id="pixel"></td> <!-- Project requirement => for each pixel => 40px width, 40px height, 1px border -->
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                </tr>
-                <tr>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                </tr>
-                <tr>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                </tr>
-                <tr>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                </tr>
-                <tr>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                    <td class="pixel" id="pixel"></td>
-                </tr>
-            </table>
-        <div class="styleButton" id="styleButton">
-                <input type="button" class="clear-board" id="clear-board" value="Clean the frame"></input> <!-- Project requirement => clear-board id -->
+        <div class="content">
+          <header><h1 id="title">Paleta de Cores</h1></header> <!-- Project requirement => title "Paleta de Cores", h1 tag, title id -->
+          <div id="color-palette" class="flex-container"> <!-- Project requirement => color-palette id -->
+            <div class="color selected"></div> <!-- Project requirement => color class, selected class -->
+            <div class="color"></div> <!-- Project requirement => color class -->
+            <div class="color"></div>
+            <div class="color"></div>
+          </div>
+          <div id="board-div" class="flex-container">
+            <div id="pixel-board" class="pixel-board"></div> <!-- Project requirement => for each pixel => pixel class -->
+          </div>
+            <label for="board-size">Digite o numero de pixels:</label>
+            <input type="number" id="board-size" min="5" max="50" /> <!-- Project requirement => board-size id -->
+            <input type="button" value="Change the frame size" id="generate-board" /> <!-- Project requirement => generate-size id -->
+            <input type="button" value="Clean the board" id="clear-board" /> <!-- Project requirement => clear-board id -->
         </div>
         <script src="script.js"></script>
     </body>
