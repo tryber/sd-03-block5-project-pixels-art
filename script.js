@@ -2,8 +2,8 @@
 sessionStorage.color = 'black'
 let n = 5;
 function makeGrid(tamanho) {
-  const where = document.getElementById('pixel-board');
-  where.appendChild(document.createElement('table'))
+  const onde = document.getElementById('pixel-board');
+  onde.appendChild(document.createElement('table'))
   for (let i = 0; i < tamanho; i++) {
     let row = document.createElement('tr');
     const table = document.getElementsByTagName('table')[0]
@@ -19,18 +19,6 @@ function makeGrid(tamanho) {
     }
   }
 }
-/* table.appendChild(col)
-for (let j = 0; j < n; j++) {
-  let createTr = document.createElement('tr')
-  let td = document.getElementsByTagName('td')[i]
-  td.appendChild(createTr)
-  let tr = document.getElementsByTagName('tr')[j]
-  let div = document.createElement('div')
-  div.className = 'pixel';
-  div.id = 'pixel_' + i + '_' + j
-  tr.appendChild(div)
-
-} */
 makeGrid(n)
 const buttons = document.getElementsByTagName('button')
 
