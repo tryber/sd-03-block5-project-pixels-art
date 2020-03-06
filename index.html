@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="utf-8">
+        <title>Color Palette</title>
+        <link rel="stylesheet" href="style.css">
+    </header>
+    <body>
+        <div class="content">
+          <header><h1 id="title">Paleta de Cores</h1></header> <!-- Project requirement => title "Paleta de Cores", h1 tag, title id -->
+          <div id="color-palette" class="flex-container"> <!-- Project requirement => color-palette id -->
+            <div class="color selected"></div> <!-- Project requirement => color class, selected class -->
+            <div class="color"></div> <!-- Project requirement => color class -->
+            <div class="color"></div>
+            <div class="color"></div>
+          </div>
+          <div id="board-div" class="flex-container">
+            <div id="pixel-board" class="pixel-board"></div> <!-- Project requirement => for each pixel => pixel class -->
+          </div>
+            <label for="board-size">Digite o numero de pixels:</label>
+            <input type="number" id="board-size" min="5" max="50" /> <!-- Project requirement => board-size id -->
+            <input type="button" value="Change the frame size" id="generate-board" /> <!-- Project requirement => generate-size id -->
+            <input type="button" value="Clean the board" id="clear-board" /> <!-- Project requirement => clear-board id -->
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
