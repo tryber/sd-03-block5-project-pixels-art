@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(74, 180, 74)
+}
+
+#title {
+    font-size: 50px;
+    color:white;
+}
+
+.color{
+    width: 40px;
+    height: 40px;
+  }
+
+#black {
+    background-color: black;
+  }
+    
+  #red {
+    background-color: red;
+  }
+    
+  #blue {
+    background-color: blue;
+  }
+    
+  #green {
+    background-color: green;
+  }
