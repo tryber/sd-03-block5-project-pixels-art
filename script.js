@@ -8,7 +8,6 @@ function colorDef() {
   for (let i = 0; i < selecThree; i += 1) {
     const colors = ['black', 'red', 'green', 'blue'];
     selecFour[i].style.backgroundColor = colors[i];
-    selecFour[0].classList.add('.selected');
     sessionStorage.setItem('color', selecFour[0].style.backgroundColor);
 }
 }
