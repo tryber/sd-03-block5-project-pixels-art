@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+#title{
+  color: #3D7051;
+  font-size: 42px;
+}
+table{
+  border-spacing: 0;
+}
+.palette{
+  margin-top: 60px;
+}
+.color{
+  border: 1px black solid;
+  margin-top: 20px;
+  height: 60px;
+  width: 65px;
+}
+#c1{
+  background-color: black;
+  border: 1px solid black;
+}
+#c2{
+  background-color: blue;
+  border: 1px solid black;
+}
+#c3{
+  background-color: red;
+  border: 1px solid black;
+}
+#c4{
+  background-color: green;
+  border: 1px solid black;
+}
+#pixel-board{
+  margin-top: 60px;
+  background-color: white;
+
+}
+.pixel{
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+.selected{
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+}
