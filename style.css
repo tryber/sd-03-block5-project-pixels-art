@@ -1,0 +1,17 @@
+h1 {
+  color: rgb(100, 12, 182);
+  font-family: Arial;
+}
+
+.color {
+  border: 1px solid black;
+  height: 51px;
+  width: 51px;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
