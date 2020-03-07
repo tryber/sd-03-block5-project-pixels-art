@@ -1,32 +1,27 @@
 
-// let selecOne = document.getElementsByClassName("black-palet");
-// let selecTwo = document.getElementsByClassName("green-palet");
-// let selecThree = document.getElementsByClassName("yellow-palet");
-// let selecFour = document.getElementsByClassName("red-palet");
-// let corSel = " ";
+const selecOne = document.querySelectorAll('.pixel').length;
+const selecTwo = document.querySelectorAll('.pixel');
+const selecThree = document.querySelectorAll('.color').length;
+const selecFour = document.querySelectorAll('.color');
 
-// selecOne.addEventListener("click", change); 
-// selecTwo.addEventListener("click" changeTwo); 
-// selecThree.addEventListener("click" changeThree); 
-// selecFour.addEventListener("click" changeFour); 
+function colorDef() {
+  for (let i = 0; i < selecThree; i += 1) {
+    const colors = ['black', 'red', 'green', 'blue'];
+    selecFour[i].style.backgroundColor = colors[i];
+    selecFour[0].classList.add('.selected');
+    sessionStorage.setItem('color', selecFour[0].style.backgroundColor);
+}
+}
 
-// function change () {
-//     let corSel = style.background-color
-// }
+for (let i = 0; i < selecThree; i += 1) {
+  colorDef();
+  selecFour[i].addEventListener('click', function () {
+  sessionStorage.setItem('color', selecFour[i].style.backgroundColor);
+  });
+}
 
-
-
-// for (let i = 0; i < selector.length; i++) {
-//         selector[i].addEventListener("click", function () {
-//             let corSel = selector[i].style.color;
-//     }
-//     )
-//     }
-
-
-// let botao = document.querySelectorAll("button");
-//                 for (let i = 0; i < botao.length ; i++) {
-//                    botao[i].addEventListener("click", function() {
-//                     let corT = botao[i].innerHTML;
-//                     localStorage.setItem("Cor", corT);
-//                     document.body.style.backgroundColor = localStorage.getItem("Cor")
+for (let i = 0; i < selecOne; i += 1) {
+  selecTwo[i].addEventListener('click', function () {
+    selecTwo[i].style.backgroundColor = sessionStorage.color;
+  });
+}
