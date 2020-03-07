@@ -42,7 +42,7 @@ function createPixels() {
     newRow.className = 'row';
     document.getElementById('pixel-board').appendChild(newRow);
     for (let k = 0; k < size; k += 1) {
-      let newPixel = document.createElement('div');
+      const newPixel = document.createElement('div');
       newPixel.className = 'pixel';
       newRow.appendChild(newPixel);
     }
