@@ -1,19 +1,19 @@
 function randomColor() {
-  let colorArray = document.querySelectorAll('.color');
-  for (let j = 1; j < colorArray.length; j += 1){
-    var letters = '0123456789ABCDEF';
-    var newColor = '#';
-    for (var i = 0; i < 6; i++) {
+  const colorArray = document.querySelectorAll('.color');
+  for (let j = 1; j < colorArray.length; j += 1) {
+    const letters = '0123456789ABCDEF';
+    let newColor = '#';
+    for (let i = 0; i < 6; i += 1) {
       newColor += letters[Math.floor(Math.random() * 16)];
     }
     colorArray[j].style.backgroundColor = newColor;
     colorArray[j].id = newColor;
-    }
   }
+}
 randomColor();
 
 function eraseColors() {
-  let pixels = document.querySelectorAll('.pixel');
+  const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].style.backgroundColor = 'white';
   }
@@ -24,9 +24,9 @@ function selectColor(event) {
   event.target.classList.add('selected');
 }
 
-function pixelColor(event){
-  let colorSquare = document.querySelector('.selected');
-  let color = colorSquare.id;
+function pixelColor(event) {
+  const colorSquare = document.querySelector('.selected');
+  const color = colorSquare.id;
   event.target.style.backgroundColor = color;
 }
 
@@ -34,15 +34,14 @@ function createPixels() {
   let size = document.querySelector('#board-size').value;
   if (size < 5) {
     size = 5;
-  }
-  else if (size > 50) {
+  } else if (size > 50) {
     size = 50;
   }
-  for (let i = 0; i < size; i += 1){
-    let newRow = document.createElement('div');
+  for (let i = 0; i < size; i += 1) {
+    const newRow = document.createElement('div');
     newRow.className = 'row';
     document.getElementById('pixel-board').appendChild(newRow);
-    for (let i = 0; i < size; i += 1){
+    for (let k = 0; k < size; k += 1) {
       let newPixel = document.createElement('div');
       newPixel.className = 'pixel';
       newRow.appendChild(newPixel);
@@ -51,26 +50,26 @@ function createPixels() {
 }
 
 function changeBoardSize() {
-  document.getElementById('pixel-board').innerHTML='';
+  document.getElementById('pixel-board').innerHTML = '';
   createPixels();
-  let pixels = document.querySelectorAll('.pixel');
+  const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
-  pixels[i].addEventListener('click', pixelColor);
+    pixels[i].addEventListener('click', pixelColor);
   }
 }
 
-let colors = document.querySelectorAll('.color');
+const colors = document.querySelectorAll('.color');
 for (let i = 0; i < colors.length; i += 1) {
   colors[i].addEventListener('click', selectColor);
 }
 
-let pixels = document.querySelectorAll('.pixel');
+const pixels = document.querySelectorAll('.pixel');
 for (let i = 0; i < pixels.length; i += 1) {
-    pixels[i].addEventListener('click', pixelColor);
+  pixels[i].addEventListener('click', pixelColor);
 }
 
-let buttonErase = document.getElementById('clear-board');
+const buttonErase = document.getElementById('clear-board');
 buttonErase.addEventListener('click', eraseColors);
 
-let buttonSize = document.getElementById('generate-board');
+const buttonSize = document.getElementById('generate-board');
 buttonSize.addEventListener('click', changeBoardSize);
