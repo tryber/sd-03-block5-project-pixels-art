@@ -24,6 +24,7 @@ function select() {
       const selecionada = window.getComputedStyle(pick).getPropertyValue('background-color');
       cor = selecionada;
       c1.className = 'color cor1';
+      pick.classList.add('selected');
     });
   }
 }
