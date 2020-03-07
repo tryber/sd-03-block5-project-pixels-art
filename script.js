@@ -2,6 +2,9 @@ let cor = 'black';
 const paleta = document.getElementsByClassName('color');
 const blocos = document.getElementsByClassName('pixel');
 const clear = document.getElementById('clear-board');
+const c1 = document.getElementById('c1');
+c1.className = 'color cor1 selected';
+
 
 //https://www.w3schools.com/jsref/event_target.asp
 //https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
