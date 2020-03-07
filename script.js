@@ -1,4 +1,3 @@
-
 const selecOne = document.querySelectorAll('.pixel').length;
 const selecTwo = document.querySelectorAll('.pixel');
 const selecThree = document.querySelectorAll('.color').length;
@@ -9,13 +8,12 @@ function colorDef() {
     const colors = ['black', 'red', 'green', 'blue'];
     selecFour[i].style.backgroundColor = colors[i];
     sessionStorage.setItem('color', selecFour[0].style.backgroundColor);
-}
-}
+}}
 
 for (let i = 0; i < selecThree; i += 1) {
   colorDef();
   selecFour[i].addEventListener('click', function () {
-  sessionStorage.setItem('color', selecFour[i].style.backgroundColor);
+    sessionStorage.setItem('color', selecFour[i].style.backgroundColor);
   });
 }
 
