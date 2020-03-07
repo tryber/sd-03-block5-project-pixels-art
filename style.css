@@ -1,0 +1,74 @@
+body {
+    margin: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    border-bottom: 1.75px solid black;
+    width: 28%;
+}
+
+#main-content {}
+
+#color-palette {}
+
+.tabela {
+    border-collapse: collapse;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+
+.color:hover {
+    opacity: 0.6;
+}
+
+#pixel-board {
+    position: relative;
+    left: 5px;
+}
+
+.pixel {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    background-color: white;
+}
+
+.pixel:hover {
+    border: 3px solid gray;
+}
+
+td {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+}
+
+#colorRed {
+    background-color: red;
+}
+
+#colorBlue {
+    background-color: blue;
+}
+
+.selected {
+    background-color: black;
+}
+
+#colorGreen {
+    background-color: green;
+}
+
+#colorBlack {
+    background-color: black;
+}
