@@ -8,17 +8,20 @@ body {
   height: 40px;
   width: 40px;
 }
-.cor1 {
+.paleta-preta {
   background-color: black;
 }
-.cor2 {
+
+.paleta-2 {
   background-color: red;
 }
-.cor3 {
-  background-color: orange;
+
+.paleta-3 {
+  background-color: green;
 }
-.cor4 {
-  background-color: yellow;
+
+.paleta-4 {
+  background-color: blue;
 }
 .selected {
   outline: 2px solid greenyellow;
@@ -30,6 +33,7 @@ body {
   width: 40px;
 }
 .container-buttons {
+  font-family: "Dancing Script", cursive;
   text-align: center;
 }
 h1 {
