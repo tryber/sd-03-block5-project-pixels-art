@@ -8,17 +8,16 @@ body {
   height: 40px;
   width: 40px;
 }
-.black {
-    background-color: black;
-}
-
 .cor1 {
-  background-color: red;
+  background-color: black;
 }
 .cor2 {
-  background-color: blue;
+  background-color: red;
 }
 .cor3 {
+  background-color: blue;
+}
+.cor4 {
   background-color: green;
 }
 .selected {
