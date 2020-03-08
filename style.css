@@ -3,32 +3,41 @@ body {
   padding: 0;
 }
 .color {
-  border-color: black;
   border-style: solid;
   border-width: 1px;
   height: 40px;
   width: 40px;
 }
-.cor1 {
-  background-color: black;
+.black {
+    background-color: black;
 }
-.cor2 {
+
+.cor1 {
   background-color: red;
 }
-.cor3 {
+.cor2 {
   background-color: blue;
 }
-.cor4 {
+.cor3 {
   background-color: green;
 }
 .selected {
-  background-color: rgb(0, 0, 0);
+  outline: 2px solid greenyellow;
 }
 .pixel {
   background-color: white;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid black;
   height: 40px;
   width: 40px;
+}
+table {
+  border-spacing: 0;
+  margin: 0;
+  margin: auto;
+  padding: 0;
+}
+td {
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
 }

@@ -9,22 +9,20 @@
   <body>
     <h1 id="title">Paleta de Cores</h1>
     <label for="board-size"> Tamanho do quadro:</label>
-    <input id="board-size" type="text" placeholder="Digite o tamanho" />
-    <button id="generate-board" class="generate-board">Gerar quadro</button>
+    <input type="text" name="tamamho" id="board-size">
+    <button id="generate-board">Gerar Quadro</button>
     <button id="clear-board">Limpar</button>
     
 
-    <table id="color-palette" class="color-palette">
-      <tr>
-        <td class="color cor1 selected"></td>
-        <td class="color cor2"></td>
-        <td class="color cor3"></td>
-        <td class="color cor4"></td>
-      </tr>
-    </table>
+    <div id="color-palette">
+      <div class="color black selected"></div>
+      <div class="color cor1"></div>
+      <div class="color cor2"></div>
+      <div class="color cor3"></div>
+  </div>
 
-    <br />
-    <table id="pixel-board" class="pixel-board">
+    <br>
+    <table id="pixel-board">
       <tr>
         <td class="pixel"></td>
         <td class="pixel"></td>
