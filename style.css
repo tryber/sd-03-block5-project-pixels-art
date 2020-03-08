@@ -5,6 +5,11 @@
   width: 40px;
 }
 
+.pixel-board {
+  height: 210px;
+  width: 210px;
+}
+
 .palette1 {
   background-color: black;
 }
@@ -19,4 +24,12 @@
 
 .palette4 {
   background-color: green;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  float: left;
+  height: 40px;
+  width: 40px;
 }
