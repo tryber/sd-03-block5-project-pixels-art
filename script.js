@@ -1,27 +1,34 @@
-window.onload = function(){
+window.onload = function() {
 
-  sessionStorage.setItem("backgroundColor", "black");
+  sessionStorage.setItem('backgroundColor', 'black');
 
   let cores = document.getElementsByClassName('color');
   let cor = ["black","orange", "blue", "green"];
 
-  for (let i = 0; i < cores.length; i += 1){
+  for (let i = 0; i < cores.length; i += 1) {
     cores[i].style.backgroundColor = cor[i];
-    cores[i].addEventListener('click', function(){
-      let corAtual = cor[i];
-     sessionStorage.setItem("backgroundColor", corAtual);
-     let mudaSelected = document.getElementsByClassName('selected');
+    cores[i].addEventListener('click', function() {
+      const corAtual = cor[i];
+      sessionStorage.setItem('backgroundColor', corAtual);
 
-     mudaSelected[0].classList.remove('selected');
-     cores[i].classList.add('selected');
-    })
-   };
+      const mudaSelected = document.getElementsByClassName('selected');
+      mudaSelected[0].classList.remove('selected');
+      cores[i].classList.add('selected');
+    });
+    }
 
-  let pixel = document.getElementsByClassName('pixel');
+  const pixel = document.getElementsByClassName('pixel');
 
-  for (let i = 0; i < pixel.length; i += 1){
-    pixel[i].addEventListener('click', function(){
-      pixel[i].style.backgroundColor = sessionStorage.getItem("backgroundColor");
-    })
-  };
-}
+  for (let i = 0; i < pixel.length; i += 1) {
+    pixel[i].addEventListener('click', function() {
+      pixel[i].style.backgroundColor = sessionStorage.getItem('backgroundColor');
+    });
+  }
+
+  const limpa = document.getElementById('botaolimpa');
+
+  limpa.addEventListener('click', function() {
+    for (let i = 0; i < pixel.length; i += 1)
+    pixel[i].style.backgroundColor = 'white';
+  })
+};
