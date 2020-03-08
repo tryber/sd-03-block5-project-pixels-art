@@ -1,9 +1,22 @@
 const pixels = document.querySelectorAll('.pixel');
 const paleta = document.querySelectorAll('.color');
-const cores = ['paleta-preta', 'paleta-2', 'paleta-3', 'paleta-4'];
+let cores = ['black', 'paleta-2', 'paleta-3', 'paleta-4'];
 const reset = document.querySelector('.botao');
 const paletaAtual = ['preta', '2', '3', '4'];
-let cor = 'paleta-preta';
+let cor = 'black';
+function gera_cor() {
+  let hexadecimais = '0123456789ABCDEF';
+  let corAleatoria = '#';
+  for (let i = 0; i < 6; i += 1) {
+    corAleatoria += hexadecimais[Math.floor(Math.random() * 16)];
+  }
+  return corAleatoria;
+}
+for(let i = 1; i <= 3; i += 1) { 
+  let corAleatoria = gera_cor();
+  paleta[i].style.backgroundColor = corAleatoria;
+  cores[i] = corAleatoria;
+}
 function removerSelected() {
   for (let i = 0; i < paleta.length; i += 1) {
     paleta[i].className = `color paleta-${paletaAtual[i]}`;
@@ -19,7 +32,7 @@ function selecionaCor() {
   }
 }
 function atribuirCorAoPixel() {
-  this.className = `pixel ${cor}`;
+  this.style.backgroundColor = cor;
 }
 for (let i = 0; i < paleta.length; i += 1) {
   paleta[i].addEventListener('click', selecionaCor);
@@ -30,6 +43,7 @@ for (let i = 0; i < pixels.length; i += 1) {
 function resetarPixelBoard() {
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].className = 'pixel';
+    pixels[i].style.backgroundColor = 'white';
   }
 }
 reset.addEventListener('click', resetarPixelBoard);
