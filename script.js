@@ -50,4 +50,10 @@ document.getElementById('generate-board').addEventListener('click', function(){
  console.log(n, size.value)
  document.getElementsByTagName('table')[0].remove()
  makeGrid(n)
+ for (let i = 0; i < pix.length; i++) {
+  pix[i].addEventListener('click', function () {
+    pix[i].style.backgroundColor = sessionStorage.color;
+  })
+}
+sessionStorage.color = 'black'
 })
