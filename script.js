@@ -25,7 +25,7 @@ window.onload = function() {
     });
   }
 
-  const limpa = document.getElementById('botaolimpa');
+  const limpa = document.getElementById('clear-board');
 
   limpa.addEventListener('click', function() {
     for (let i = 0; i < pixel.length; i += 1)
