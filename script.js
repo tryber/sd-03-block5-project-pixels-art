@@ -1,17 +1,17 @@
- function escolher_Cor(acao) {
-  const cor = acao.target.style.backgroundColor;
+ function escolher_Cor(event) {
+  const cor = event.target.style.backgroundColor;
   window.sessionStorage.setItem('color', cor);
 }
 
 function selecionar() {
   const ultima = document.getElementsByClassName('selected')[0];
   ultima.classList.remove('selected');
-  acao.target.classList.add('selected');
+  event.target.classList.add('selected');
 }
 
-function colocar_Cor(acao) {
+function colocar_Cor(event) {
   const selecionarCor = sessionStorage.color;
-  acao.target.style.backgroundColor = selecionarCor;
+  event.target.style.backgroundColor = selecionarCor;
 }
 
 
