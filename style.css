@@ -8,6 +8,9 @@ body {
   height: 40px;
   width: 40px;
 }
+.color-palette{
+  align-items: flex-start;
+}
 .cor1 {
   background-color: black;
 }
@@ -15,11 +18,27 @@ body {
   background-color: red;
 }
 .cor3 {
-  background-color: blue;
+  background-color: orange;
 }
 .cor4 {
+  background-color: yellow;
+}
+.cor5 {
   background-color: green;
 }
+.cor6 {
+  background-color: blue;
+}
+.cor7 {
+  background-color: indigo;
+}
+.cor8 {
+  background-color: violet;
+}
+.cor9 {
+  background-color: white;
+}
+
 .selected {
   outline: 2px solid greenyellow;
 }
