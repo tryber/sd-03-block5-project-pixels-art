@@ -8,6 +8,12 @@ body {
   height: 40px;
   width: 40px;
 }
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+}
 .paleta-preta {
   background-color: black;
 }
@@ -34,6 +40,13 @@ body {
 }
 .container-buttons {
   font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+footer {
+  border-spacing: 0;
+  margin: 0;
+  margin: auto;
+  padding: 0;
   text-align: center;
 }
 h1 {
