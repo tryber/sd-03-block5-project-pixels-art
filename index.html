@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paleta de Cores</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1 id="title">Paleta de Cores</h1>
-    <label for="board-size"> Tamanho do quadro:</label>
-    <input type="text" name="tamamho" id="board-size" />
-    <button id="generate-board">Gerar Quadro</button>
-    <button id="clear-board">Limpar</button>
-
-    <div id="color-palette" class="color-palette">
-      <div class="color black cor1 selected"></div>
-      <div class="color cor2"></div>
-      <div class="color cor3"></div>
-      <div class="color cor4"></div>
-      <div class="color cor5"></div>
-      <div class="color cor6"></div>
-      <div class="color cor7"></div>
-      <div class="color cor8"></div>
-      <div class="color cor9"></div>
+    <div class="container-buttons">
+      <label for="board-size"> Tamanho do quadro:</label>
+      <input type="text" name="tamamho" id="board-size" />
+      <button id="generate-board">Gerar Quadro</button>
+      <button id="clear-board">Limpar</button>
     </div>
+    <br>
+    <table id="color-palette" class="color-palette">
+      <td class="color black cor1 selected"></td>
+      <td class="color cor2"></td>
+      <td class="color cor3"></td>
+      <td class="color cor4"></td>
+      <td class="color cor5"></td>
+      <td class="color cor6"></td>
+      <td class="color cor7"></td>
+      <td class="color cor8"></td>
+      <td class="color cor9"></td>
+      <td class="color cor10"></td>
+    </table>
+    <br />
     <table id="pixel-board">
       <tr>
         <td class="pixel"></td>

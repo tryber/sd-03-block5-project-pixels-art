@@ -8,9 +8,6 @@ body {
   height: 40px;
   width: 40px;
 }
-.color-palette{
-  align-items: flex-start;
-}
 .cor1 {
   background-color: black;
 }
@@ -38,6 +35,9 @@ body {
 .cor9 {
   background-color: white;
 }
+.cor10 {
+  background-color: brown;
+}
 
 .selected {
   outline: 2px solid greenyellow;
@@ -47,6 +47,15 @@ body {
   border: 1px solid black;
   height: 40px;
   width: 40px;
+}
+.container-buttons {
+  text-align: center;
+}
+h1 {
+  background-color: cyan;
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  text-decoration: crimson;
 }
 table {
   border-spacing: 0;
