@@ -1,14 +1,10 @@
 body{
     background-color: grey;
 }
-#title{
+.centralizar{
     text-align: center;
 }
 
-#color-palette{
-    text-align: center;
-    
-}
 .color{
     border: 1px solid black;
     display: inline-block;
@@ -16,21 +12,21 @@ body{
     width: 40px;
    
 }
-#paleta-preta{
+.paleta-preta{
     background-color: black;
 }
 
-#paleta-2{
+.paleta-2{
     background-color: red;
 }
 
-#paleta-3{
+.paleta-3{
     background-color: blue;
 }
-#paleta-4{
+.paleta-4{
     background-color: green;
 }
-#pixel-board{
+.board{
     border: 1px solid black;
     height: 210px;
     margin: auto; 
@@ -43,19 +39,19 @@ body{
     height: 40px;
     width: 40px;
 }
-.black {
+.paleta-preta{
     background-color: black;
 }
 
-.red {
+.paleta-2{
     background-color: red;
 }
 
-.green {
+.paleta-3{
     background-color: green;
 }
 
-.blue{
+.paleta-4{
     background-color: blue;
 }
 
