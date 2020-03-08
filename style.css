@@ -1,0 +1,40 @@
+#centro {
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  background-image:url("foto.jpg");
+  
+}
+#centralizar {
+  margin-left: 140px;
+}
+
+.paletaPrincipal {
+  margin-left: 25px;
+}
+
+  .pixel {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: solid 1px black;
+  }
+  
+ 
+  .color {
+    background-color: white;
+    border: solid 1px black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+  }
+
+   .quadrados {
+    display: flex;
+  }
+  label {
+    font-size: 25px;
+    color:blue;
+    margin-left: 20px;
+    
+  }
