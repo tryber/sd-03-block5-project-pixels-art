@@ -9,17 +9,17 @@ c1.className = 'color cor1 selected';
 // https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
 
 function cls() {
-  for (const i of blocos) {
-    clear.addEventListener('click', function() {
-      i.style.background = 'white';
-      cor = '';
-    });      
-  }
+  clear.addEventListener('click', function () {
+    for (const i of blocos) {
+        i.style.background = 'white';
+        cor = '';
+    }
+  });
 }
 
 function select() {
   for (const i of paleta) {
-    i.addEventListener('click', function(e) {
+    i.addEventListener('click', function (e) {
       document.querySelector('.selected').classList.remove('selected');
       const pick = document.getElementById(e.target.id);
       const selecionada = window.getComputedStyle(pick).getPropertyValue('background-color');
