@@ -1,4 +1,4 @@
-function escolher_Cor(acao) {
+ function escolher_Cor(acao) {
   const cor = acao.target.style.backgroundColor;
   window.sessionStorage.setItem('color', cor);
 }
