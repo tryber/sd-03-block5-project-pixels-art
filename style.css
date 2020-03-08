@@ -8,7 +8,7 @@ body{
     border: 1px solid black;
     display: inline-block;
     height: 40px;
-    width: 40px;  
+    width: 40px;
 }
 .paleta-preta{
     background-color:black;
@@ -25,7 +25,7 @@ body{
 .board{
     border: 1px solid black;
     height: 210px;
-    margin: auto; 
+    margin: auto;
     width: 210px;
 }
 .pixel{
@@ -44,7 +44,6 @@ body{
 .paleta-3{
     background-color: green;
 }
-
 .paleta-4{
     background-color: blue;
 }
