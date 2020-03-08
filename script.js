@@ -29,23 +29,19 @@ const selecionaCor = function () {
   } else if (document.getElementsByClassName('cor4')[0] === corSelecionada) {
     corSelecionada.className += ' selected';
   }
-  corPintura = corSelecionada.className;
+  // captura cor do elemento
+  corPintura = event.toElement.style.cssText;
+
+  // Transforma cor selecionada em cor rgb
+  corPintura = corPintura.split(':');
+  corPintura = corPintura[1].toString();
+  corPintura = corPintura.split(';');
+  corPintura = corPintura[0].toString();
 };
 
 const pintaPixel = function () {
   const pixelSelecionado = event.srcElement;
-  if (corPintura === 'color cor1 selected') {
-    pixelSelecionado.style.backgroundColor = 'black';
-  }
-  if (corPintura === 'color cor2 selected') {
-    pixelSelecionado.style.backgroundColor = 'red';
-  }
-  if (corPintura === 'color cor3 selected') {
-    pixelSelecionado.style.backgroundColor = 'green';
-  }
-  if (corPintura === 'color cor4 selected') {
-    pixelSelecionado.style.backgroundColor = 'blue';
-  }
+  pixelSelecionado.style.backgroundColor = corPintura;
 };
 
 function limpa() {
@@ -67,6 +63,7 @@ limpaQuadro.addEventListener('click', limpa);
 
 // muda a cor ao carregar a página
 window.onload = function () {
+  document.getElementsByClassName('cor1')[0].style.backgroundColor = 'rgb(0,0,0)';  
   geraCor();
   document.getElementsByClassName('cor2')[0].style.backgroundColor = rgb;
 
