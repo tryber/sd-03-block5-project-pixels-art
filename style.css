@@ -1,12 +1,22 @@
-.palette1{
-    background-color: black;
+.color {
+  border: 1px solid black;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
-.palette2{
-    background-color: orange;
+
+.palette1 {
+  background-color: black;
 }
-.palette3{
-    background-color: blue;
+
+.palette2 {
+  background-color: orange;
 }
-.palette4{
-    background-color: green;
+
+.palette3 {
+  background-color: blue;
+}
+
+.palette4 {
+  background-color: green;
 }
