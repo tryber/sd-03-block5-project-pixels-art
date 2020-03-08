@@ -1,18 +1,3 @@
-window.onload = carregar();
-
-function carregar() {
-  const cores = document.getElementById('color-palette');
-  cores.addEventListener('click', escolher_Cor);
-  cores.addEventListener('click', selecionar);
-  window.sessionStorage.setItem('color', 'black');
-
-  const quadrado = document.getElementById('pixel-board');
-  quadrado.addEventListener('click', colocar_Cor);
-
-  entrar_Cor();
-}
-
-
 function escolher_Cor(acao) {
   const cor = acao.target.style.backgroundColor;
   window.sessionStorage.setItem('color', cor);
@@ -76,3 +61,16 @@ function entrar_Cor() {
   }
 }
 
+window.onload = carregar();
+
+function carregar() {
+  const cores = document.getElementById('color-palette');
+  cores.addEventListener('click', escolher_Cor);
+  cores.addEventListener('click', selecionar);
+  window.sessionStorage.setItem('color', 'black');
+
+  const quadrado = document.getElementById('pixel-board');
+  quadrado.addEventListener('click', colocar_Cor);
+
+  entrar_Cor();
+}
