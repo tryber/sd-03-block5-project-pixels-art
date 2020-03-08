@@ -1,6 +1,7 @@
 #centro {
   margin: auto;
   width: 500px;
+  height: 400px;
   background-image:url("foto.jpg");
   
 }
@@ -30,4 +31,10 @@
 
    .quadrados {
     display: flex;
+  }
+  label {
+    font-size: 25px;
+    color:blue;
+    margin-left: 20px;
+    
   }
