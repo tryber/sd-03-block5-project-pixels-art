@@ -5,25 +5,25 @@ const reset = document.querySelector('.botao');
 const paletaAtual = ['preta', '2', '3', '4'];
 let cor = 'paleta-preta';
 function removerSelected() {
-    for(let i = 0;i < paleta.length;i=i+1) {
+    for (let i = 0; i < paleta.length; i += 1) {
         paleta[i].className = `color paleta-${paletaAtual[i]}`;
     }
 }
-for(let i = 0;i < paleta.length;i=i+1) {
-    paleta[i].addEventListener('click', function() {
+for (let i = 0; i < paleta.length; i += 1) {
+    paleta[i].addEventListener('click', function () {
         console.log(paleta[i]);
         removerSelected();
         paleta[i].className = `color paleta-${paletaAtual[i]} selected`;
             cor = cores[i];
     });
 }
-for(let i = 0; i < pixels.length; i=i+1) {
-    pixels[i].addEventListener('click', function() {
+for (let i = 0; i < pixels.length; i += 1 ) {
+    pixels[i].addEventListener('click', function () {
         pixels[i].className = `pixel ${cor}`;
     });
 }
 function resetarPixelBoard() {
-    for(let i = 0; i < pixels.length; i=i+1){
+    for (let i = 0; i < pixels.length; i += 1){
         pixels[i].className = 'pixel';
     }
 }
