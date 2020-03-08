@@ -1,19 +1,19 @@
 const pixels = document.querySelectorAll('.pixel');
 const paleta = document.querySelectorAll('.color');
-let cores = ['black', 'paleta-2', 'paleta-3', 'paleta-4'];
+const cores = ['black', 'paleta-2', 'paleta-3', 'paleta-4'];
 const reset = document.querySelector('.botao');
 const paletaAtual = ['preta', '2', '3', '4'];
 let cor = 'black';
-function gera_cor() {
-  let hexadecimais = '0123456789ABCDEF';
-  let corAleatoria = '#';
+function geraCor() {
+  const hexadecimais = '0123456789ABCDEF';
+  const corAleatoria = '#';
   for (let i = 0; i < 6; i += 1) {
     corAleatoria += hexadecimais[Math.floor(Math.random() * 16)];
   }
   return corAleatoria;
 }
-for(let i = 1; i <= 3; i += 1) { 
-  let corAleatoria = gera_cor();
+for (let i = 1; i <= 3; i += 1) {
+  let corAleatoria = geraCor();
   paleta[i].style.backgroundColor = corAleatoria;
   cores[i] = corAleatoria;
 }
