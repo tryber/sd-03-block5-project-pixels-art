@@ -28,4 +28,6 @@
     display: inline-block;
   }
 
- 
+  .quadrados {
+    display: flex;
+  }
