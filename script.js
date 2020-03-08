@@ -11,8 +11,8 @@ c1.className = 'color cor1 selected';
 function cls() {
   clear.addEventListener('click', function () {
     for (const i of blocos) {
-        i.style.background = 'white';
-        cor = '';
+      i.style.background = 'white';
+      cor = '';
     }
   });
 }
