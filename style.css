@@ -21,7 +21,7 @@ body {
 }
 
 .pixel {
-  background-color: rgb(255,255,255);
+  background-color: white;
   border: 1px solid black;
   float: left;
   height: 40px;
@@ -29,7 +29,7 @@ body {
 }
 
 .paleta-preta {
-  background-color: black
+  background-color: black;
 }
 
 .paleta-2 {
