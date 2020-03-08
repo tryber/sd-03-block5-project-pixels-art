@@ -25,12 +25,10 @@ body {
   background-color: rgb(0, 0, 0);
 }
 .pixel {
-  background-color: rgb(0, 0, 0)
+  background-color: white;
   border-color: black;
   border-style: solid;
   border-width: 1px;
   height: 40px;
   width: 40px;
 }
-
-
