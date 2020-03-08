@@ -6,14 +6,14 @@ const paletaAtual = ['preta', '2', '3', '4'];
 let cor = 'black';
 function geraCor() {
   const hexadecimais = '0123456789ABCDEF';
-  const corAleatoria = '#';
+  let corAleatoria = '#';
   for (let i = 0; i < 6; i += 1) {
     corAleatoria += hexadecimais[Math.floor(Math.random() * 16)];
   }
   return corAleatoria;
 }
 for (let i = 1; i <= 3; i += 1) {
-  let corAleatoria = geraCor();
+  const corAleatoria = geraCor();
   paleta[i].style.backgroundColor = corAleatoria;
   cores[i] = corAleatoria;
 }
