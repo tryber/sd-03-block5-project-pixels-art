@@ -9,13 +9,12 @@ function removerSelected() {
     paleta[i].className = `color paleta-${paletaAtual[i]}`;
   }
 }
-function selecionaCor (event) {
-  for(let i = 0; i < 4; i += 1){
-    if(this.className == `color paleta-${paletaAtual[i]}`){
+function selecionaCor() {
+  for (let i = 0; i < 4; i += 1) {
+    if (this.className === `color paleta-${paletaAtual[i]}`) {
       removerSelected();
       this.className = `color paleta-${paletaAtual[i]} selected`;
       cor = cores[i];
-      console.log(cor);
     }
   }
 }
