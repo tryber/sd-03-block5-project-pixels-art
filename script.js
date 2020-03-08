@@ -2,6 +2,15 @@ let corPintura = 'color cor1 selected';
 const paletteButons = document.getElementsByClassName('color ');
 const pixelUnit = document.getElementsByClassName('pixel ');
 const limpaQuadro = document.getElementById('clear-board');
+let corGerada = [];
+let rgb = {};
+
+function geraCor() {
+  for (let i = 0; i < 3; i += 1) {
+    corGerada[i] = parseInt(Math.random()*128);  
+  }
+  rgb = 'rgb('+ corGerada +')';  
+} 
 
 const selecionaCor = function () {
   const corSelecionada = event.srcElement;
@@ -55,3 +64,17 @@ for (let j = 0; j < pixelUnit.length; j += 1) {
 }
 
 limpaQuadro.addEventListener('click', limpa);
+
+// muda a cor ao carregar a página
+window.onload = function () {
+
+geraCor();
+document.getElementsByClassName('cor2')[0].style.backgroundColor=rgb;
+
+geraCor();
+document.getElementsByClassName('cor3')[0].style.backgroundColor=rgb;
+
+geraCor();
+document.getElementsByClassName('cor4')[0].style.backgroundColor=rgb;
+
+};
