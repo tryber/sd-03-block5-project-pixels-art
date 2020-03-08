@@ -18,13 +18,14 @@ function selecionaCor() {
     }
   }
 }
+function atribuirCorAoPixel() {
+  this.className = `pixel ${cor}`;
+}
 for (let i = 0; i < paleta.length; i += 1) {
   paleta[i].addEventListener('click', selecionaCor);
 }
 for (let i = 0; i < pixels.length; i += 1) {
-  pixels[i].addEventListener('click', function () {
-    pixels[i].className = `pixel ${cor}`;
-  });
+  pixels[i].addEventListener('click', atribuirCorAoPixel);
 }
 function resetarPixelBoard() {
   for (let i = 0; i < pixels.length; i += 1) {
