@@ -9,7 +9,7 @@ function geraCor() {
   for (let i = 0; i < 3; i += 1) {
     corGerada[i] = parseInt(Math.random() * 128, 10);
   }
-  rgb =`rgb(${corGerada})`;
+  rgb = `rgb(${corGerada})`;
 }
 
 const selecionaCor = function () {
@@ -63,7 +63,7 @@ limpaQuadro.addEventListener('click', limpa);
 
 // muda a cor ao carregar a página
 window.onload = function () {
-  document.getElementsByClassName('cor1')[0].style.backgroundColor = 'rgb(0,0,0)';  
+  document.getElementsByClassName('cor1')[0].style.backgroundColor = 'rgb(0,0,0)';
   geraCor();
   document.getElementsByClassName('cor2')[0].style.backgroundColor = rgb;
 
