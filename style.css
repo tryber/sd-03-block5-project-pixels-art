@@ -1,34 +1,35 @@
 body {
-    background-color: rgb(74, 180, 74);
+  background-color: rgb(74, 180, 74);
 }
 
 div {
   display:inline-block;
+  border: 1px solid black;
 }
 
 #title {
-    font-size: 50px;
-    color:white;
+  font-size: 50px;
+  color:white;
 }
 
 .color {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
   }
 
-#preto {
-    background-color: black;
+#black {
+  background-color: black;
   }
     
-#vermelho {
+#red {
   background-color: red;
 }
     
-#azul {
-    background-color: blue;
+#blue {
+  background-color: blue;
 }
     
-#verde {
+#green {
   background-color: green;
 }
 
