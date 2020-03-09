@@ -10,10 +10,10 @@ for (i = 0; i < 4; i++) {
         coresDisponiveis[i].classList.add("selected");
     }
     coresDisponiveis[i].addEventListener("click", selecionaNovaCor);
-    for (j = 0; j < 25; j++) {
-        function preencheCor () {
-            aplicaCor[j].style.backgroundColor = corSelecionada.innerHTML;
-        }
-        aplicaCor[j].addEventListener("click", preencheCor);
+}
+for (j = 0; j < 25; j++) {
+    function preencheCor () {
+        aplicaCor[j].style.backgroundColor = corSelecionada.innerHTML;
     }
+    aplicaCor[j].addEventListener("click", preencheCor);
 }

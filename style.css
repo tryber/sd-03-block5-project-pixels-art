@@ -1,9 +1,19 @@
 table {
-    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
 }
+
+td {
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .color-palette {
     display: inline-flex;
 }
+
 .color {
     border: 3px solid black;
     height: 40px;
@@ -11,21 +21,26 @@ table {
     margin-right: 5px;
     width: 40px;
 }
+
 .black {
     background-color: black;
 }
+
 .red {
     background-color: red;
 }
+
 .blue {
     background-color: blue;
 }
+
 .green {
     background-color: green;
 }
+
 .pixel {
     background-color: white;
     border: 1px solid black;
-    height: 38px;
-    width: 38px;
+    height: 40px;
+    width: 40px;
 }
