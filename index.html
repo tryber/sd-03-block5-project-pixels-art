@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paleta de Cores</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1 id='title'>Paleta de Cores</h1>
+  <div id='color-palette' class="color-pallete">
+    <ul>
+      <button class="color selected" style='background-color: black;'></button>
+      <button class="color" style='background-color: rgb(7, 30, 133);'></button>
+      <button class="color" style='background-color: yellow;'></button>
+      <button class="color" style='background-color: rgb(185, 8, 52);'></button>
+    </ul>
+  </div>
+  <button id='clear-board'>Clear</button>
+  <form>
+    <label> Insira um tamanho de 5-50 para o quadro</label>
+    <input id='board-size' max="50" min="5" type='number'>
+    <button id='generate-board' type="button">generate</button>
+  </form>
+  <div id='pixel-board'>
+  </div>
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>

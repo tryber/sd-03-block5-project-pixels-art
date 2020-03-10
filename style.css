@@ -1,0 +1,40 @@
+body {
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.color {
+  background-color: rgb(57, 47, 68);
+  border: 1px solid black;
+  height: 40px;
+  list-style: none;
+  width: 40px;
+
+}
+
+.color-pallete {
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+.color .selected {
+  border: 1px solid black;
+
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+
+}
+
+table {
+  background-color: black;
+  border: 2px groove black;
+  display: inline-block;
+
+}
