@@ -64,20 +64,26 @@ function verificaTamanho(tamanho) {
   }
   return tamanho;
 }
+function aumentarQuadrado(novoTamanho, pixelsLength) {
+  for (let i = 0; i < (novoTamanho ** 2) - pixelsLength; i = i + 1) {
+    const novoPixel = criarPixel();
+    board.appendChild(novoPixel);
+  }
+}
+function diminuirQuadrado(novoTamanho, pixelsLength) {
+  for (let i = 0; i < pixels.length - (novoTamanho ** 2); i = i + 1) {
+    pixels[i].remove();
+  }
+}
 function alterarQuadro() {
   let novoTamanho = document.querySelectorAll('.tamanho')[0].value;
   novoTamanho = verificaTamanho(novoTamanho);
   board.style.height = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
   board.style.width = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
   if (novoTamanho ** 2 > pixels.length) {
-    for (let i = 0; i < (novoTamanho ** 2) - pixels.length; i += 1) {
-      const novoPixel = criarPixel();
-      board.appendChild(novoPixel);
-    }
+    aumentarQuadrado(novoTamanho, pixels.length);
   } else {
-    for (let i = 0; i < pixels.length - (novoTamanho ** 2); i += 1) {
-      pixels[i].remove();
-    }
+    diminuirQuadrado(novoTamanho, pixels.length);
   }
   pixels = document.querySelectorAll('.pixel');
   resetarPixelBoard();
