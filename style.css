@@ -33,6 +33,7 @@
     margin: 0px;
     padding: 0px;
     display: inline-block;
+    position: relative;
     border: solid 1px black;
 }
 #pixel-board{
