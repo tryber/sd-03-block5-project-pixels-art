@@ -4,7 +4,7 @@ const rgbRandom = () => `rgb(${rgbColor()} ,${rgbColor()} ,${rgbColor()})`;
 
 function erasePixel(event) {
   sessionStorage.setItem('SelectedColor', event.target.style.backgroundColor);
-    for (let cont = 1; cont < 8; cont += 1) {
+    for (let cont = 1; cont < 5; cont += 1) {
       document.querySelectorAll('.color')[cont].style.border = "1px solid black"; 
       document.querySelectorAll('.reloader')[0].style.border = "none";  
     }
@@ -14,7 +14,7 @@ function erasePixel(event) {
 function reloadColors(event) {
   document.querySelectorAll('.color')[0].style.border = "3px solid green"; 
   document.querySelectorAll('.color')[0].style.backgroundColor = 'black';
-  for (let cont = 1; cont < 8; cont += 1) {
+  for (let cont = 1; cont < 5; cont += 1) {
     document.querySelectorAll('.color')[cont].style.backgroundColor = rgbRandom();
     document.querySelectorAll('.color')[cont].style.border = "1px solid black";
     document.querySelectorAll('.eraser')[0].style.border = "none";
@@ -28,7 +28,7 @@ document.querySelectorAll('.color')
   document.getElementsByClassName('selected')[0].classList.remove('selected');
   sessionStorage.setItem('SelectedColor', event.target.style.backgroundColor);
   element.classList.add('selected');
-  for (let cont = 0; cont < 8; cont += 1) {
+  for (let cont = 0; cont < 5; cont += 1) {
     document.querySelectorAll('.color')[cont].style.border = "1px solid black"; 
     document.querySelectorAll('.eraser')[0].style.border = "none"; 
     document.querySelectorAll('.reloader')[0].style.border = "none"; 
