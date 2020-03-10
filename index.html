@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pixels Art - O Dev Junior</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d6ab7a8fae.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="./imgs/favicon_r.ico" />
+        <link href='https://fonts.googleapis.com/css?family=Alata&display=swap' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <h1 id="tittle" style="display: none;">Paleta de Cores</h1>
+            <a href="#"><img src="./imgs/white_logo.png" alt="Logo Trybe"></a>
+            <nav>
+                <li><a href="">Home</a></li>
+                <li><a href="">Trybe</a></li>
+                <li><a href="">Projetos</a></li>
+            </nav>
+        </header>
+            <main>
+                <section>
+                    <article class="menu">
+                        <img style="display: flex; margin: 0 auto;" src="./imgs/pixels_logo.png" alt="Pixel Logo"><br>                   
+                        <form style="display: flex; margin: 0; justify-content: center;">
+                            <input type="number" style="width: 220px; font-size: 14pt;" id="board-size" placeholder="Quantidade de Pixels" min="5" max="50" />
+                            <input type="button" class="button" value="Alterar Pixels" id="generate-board" />
+                            <input type="button" class="button" value="Limpar Tudo" id="clear-board" />
+                          </form>
+                    </article>        
+                    <article id="color-palette" class="paleta">
+                        <div class="color selected"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="eraser" id="tools"><img src="./imgs/eraser.png" style="max-width: 50px; padding-left: 15px;" alt="eraser"  onclick="erasePixel(event)"></div>
+                        <div class="reloader" id="tools"><img src="./imgs/reload.png" style="max-width: 50px; padding-left: 15px;" alt="reload" onclick="reloadColors(event)" ></div>
+                    </article>
+                    <article id="pixel-box" class="pixel_board">
+                        <div id="pixel-board" class="quadro"></div>
+                    </article>
+                </section>
+            </main>
+        <footer>
+            <ul>
+                <p style="padding-right: 15px;">© Roberto Asgon | Contato : </p> 
+                <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li> 
+                <li><a href=""><i class="fab fa-instagram-square"></i></a></li> 🚀
+            </ul>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
