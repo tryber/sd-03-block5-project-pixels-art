@@ -1,0 +1,51 @@
+body {
+  background-color: grey;
+}
+
+.centralizar {
+  text-align: center;
+}
+
+.color {
+  border: 1px solid black;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.board {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 210px;
+  margin: auto;
+  width: 210px;
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  float: left;
+  height: 40px;
+  width: 40px;
+}
+
+.paleta-preta {
+  background-color: black;
+}
+
+.paleta-2 {
+  background-color: red;
+}
+
+.paleta-3 {
+  background-color: green;
+}
+
+.paleta-4 {
+  background-color: blue;
+}
+
+.botao {
+  margin: 10px 47% 0;
+}
