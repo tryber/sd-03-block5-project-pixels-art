@@ -59,8 +59,7 @@ function resetarPixelBoard() {
 function verificaTamanho(tamanho) {
   if (tamanho > 50) {
     return 50;
-  }
-  else if (tamanho < 5) {
+  } else if (tamanho < 5) {
     return 5;
   }
   return tamanho;
@@ -77,8 +76,7 @@ function alterarQuadro() {
         board.appendChild(novoPixel);
       }
     }
-  }
-  else {
+  } else {
     for (let i = 0; i < pixels.length - (novoTamanho ** 2); i += 1) {
       pixels[i].remove();
     }
