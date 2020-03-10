@@ -2,8 +2,8 @@ body {
   background-color: lightgrey;
 }
 
-color.selected {
-  border: 1px brown;
+.selected {
+  border: 4px brown;
 }
 
 .color {
@@ -18,14 +18,15 @@ color.selected {
   flex-wrap: wrap;
 }
 
-#pixel-board {
+.pixelboard {
   height: 250px;
   width: 250px;
 }
+
 .pixel {
   background-color: white;
   border: 1px solid black;
+  display: inline-block;
   height: 40px;
   width: 40px;
-  display: inline-block;
 }
