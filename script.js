@@ -71,8 +71,10 @@ function alterarQuadro() {
   board.style.width = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
   if (novoTamanho ** 2 > pixels.length) {
     for (let i = 0; i < (novoTamanho ** 2) - pixels.length; i += 1) {
-      const novoPixel = criarPixel();
-      board.appendChild(novoPixel);
+      if (pixels.length <= 50) {
+        const novoPixel = criarPixel();
+        board.appendChild(novoPixel);
+      }
     }
   } else {
     for (let i = 0; i < pixels.length - (novoTamanho ** 2); i += 1) {
