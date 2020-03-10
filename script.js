@@ -48,32 +48,30 @@ function resetarPixelBoard() {
   }
 }
 function redimencionarBoard() {
-  novoTamanho = document.querySelectorAll('.tamanho')[0].value;
-  console.log(board);
+  const novoTamanho = document.querySelectorAll('.tamanho')[0].value;
   for (let i = 0; i < pixels.length; i += 1) {
     if (novoTamanho < 5) {
       const tamanhoMinimo = 5;
-      board.style.height = tamanhoMinimo * 5 + 10 + 'px';
-      board.style.width = tamanhoMinimo* 5 + 10 + 'px';
-      pixels[i].style.height = tamanhoMinimo + 'px';
-      pixels[i].style.width = tamanhoMinimo + 'px';
+      board.style.height = parseInt(`${tamanhoMinimo * 5}`) + 10 + 'px';
+      board.style.width = parseInt(`${tamanhoMinimo * 5}`) + 10 + 'px';
+      pixels[i].style.height = `${tamanhoMinimo}px`;
+      pixels[i].style.width = `${tamanhoMinimo}px`;
     }
     else if (novoTamanho > 50) {
       const tamanhoMaximo = 50;
-      board.style.height = tamanhoMaximo * 5 + 10 + 'px';
-      board.style.width = tamanhoMaximo * 5 + 10 + 'px';
-      pixels[i].style.height = tamanhoMaximo + 'px';
-      pixels[i].style.width = tamanhoMaximo + 'px';
+      board.style.height = parseInt(`${tamanhoMaximo * 5}`) + 10 + 'px';
+      board.style.width = parseInt(`${tamanhoMaximo * 5}`) + 10 + 'px';
+      pixels[i].style.height = `${tamanhoMaximo}px`;
+      pixels[i].style.width = `${tamanhoMaximo}px`;
     }
-    else { 
-      board.style.height = novoTamanho * 5 + 10 + 'px';
-      board.style.width = novoTamanho * 5 + 10 + 'px';
-      pixels[i].style.width = novoTamanho + 'px';
-      pixels[i].style.height = novoTamanho + 'px';
+    else {
+      board.style.height = parseInt(`${novoTamanho * 5}`) + 10 + 'px';
+      board.style.width = parseInt(`${novoTamanho * 5}`) + 10 + 'px';
+      pixels[i].style.width = `${novoTamanho}px`;
+      pixels[i].style.height = `${novoTamanho}px`;
     }
   }
   resetarPixelBoard();
 }
 botao[0].addEventListener('click', resetarPixelBoard);
 botao[1].addEventListener('click', redimencionarBoard);
-  
