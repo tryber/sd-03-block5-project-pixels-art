@@ -34,6 +34,15 @@ window.onload= function(){
    }
    valor.addEventListener("click", gerarTabela)
 
+   let limpaQuadro=document.getElementById("clear-board")
+   function apagaCores(){
+      let tabela=document.querySelectorAll(".pixel")
+      tabela.forEach(i =>{
+         i.style.backgroundColor="white"
+      })
+   }
+   limpaQuadro.addEventListener("click", apagaCores)
+
 }
 function setcaneta(pixel){
    caneta=pixel
