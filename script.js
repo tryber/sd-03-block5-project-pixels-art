@@ -56,24 +56,22 @@ function resetarPixelBoard() {
   paleta[0].className = `color paleta-${paletaAtual[0]} selected`;
   cor = 'black';
 }
-function verificaTamanho(tamanho){
+function verificaTamanho(tamanho) {
   if (tamanho > 50) {
     return 50;
   }
   else if (tamanho < 5) {
     return 5;
   }
-  else {
-    return tamanho;
-  }
+  return tamanho;
 }
 function alterarQuadro() {
   let novoTamanho = document.querySelectorAll('.tamanho')[0].value;
   novoTamanho = verificaTamanho(novoTamanho);
+  board.style.height = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
+  board.style.width = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
   if (novoTamanho * novoTamanho > pixels.length) {
     for (let i = 0; i < (novoTamanho * novoTamanho) - pixels.length; i += 1) {
-      board.style.height = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
-      board.style.width = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
       if (pixels.length <= 50) {
         const novoPixel = criarPixel();
         board.appendChild(novoPixel);
@@ -84,8 +82,6 @@ function alterarQuadro() {
     for (let i = 0; i < pixels.length - (novoTamanho * novoTamanho); i += 1) {
       pixels[i].remove();
     }
-    board.style.height = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
-    board.style.width = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
   }
   pixels = document.querySelectorAll('.pixel');
   resetarPixelBoard();
