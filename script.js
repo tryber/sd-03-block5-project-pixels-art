@@ -1,10 +1,16 @@
-const pixels = document.querySelectorAll('.pixel');
+let pixels = document.querySelectorAll('.pixel');
 const paleta = document.querySelectorAll('.color');
 const cores = ['black', 'paleta-2', 'paleta-3', 'paleta-4'];
 const botao = document.querySelectorAll('.botao');
 const paletaAtual = ['preta', '2', '3', '4'];
 const board = document.querySelectorAll('.board')[0];
 let cor = 'black';
+function criarPixel() {
+  pixel = document.createElement('div');
+  pixel.className = 'pixel';
+  pixel.addEventListener('click', atribuirCorAoPixel);
+  return pixel;
+}
 function geraCor() {
   const hexadecimais = '0123456789ABCDEF';
   let corAleatoria = '#';
@@ -46,32 +52,40 @@ function resetarPixelBoard() {
     pixels[i].className = 'pixel';
     pixels[i].style.backgroundColor = 'white';
   }
+  removerSelected();
+  paleta[0].className = `color paleta-${paletaAtual[0]} selected`;
+  cor = 'black';
 }
-function redimencionarBoard() {
-  const novoTamanho = document.querySelectorAll('.tamanho')[0].value;
-  for (let i = 0; i < pixels.length; i += 1) {
-    if (novoTamanho < 5) {
-      const tamanhoMinimo = 5;
-      board.style.height = parseInt(`${tamanhoMinimo * 5}`) + 10 + 'px';
-      board.style.width = parseInt(`${tamanhoMinimo * 5}`) + 10 + 'px';
-      pixels[i].style.height = `${tamanhoMinimo}px`;
-      pixels[i].style.width = `${tamanhoMinimo}px`;
-    }
-    else if (novoTamanho > 50) {
-      const tamanhoMaximo = 50;
-      board.style.height = parseInt(`${tamanhoMaximo * 5}`) + 10 + 'px';
-      board.style.width = parseInt(`${tamanhoMaximo * 5}`) + 10 + 'px';
-      pixels[i].style.height = `${tamanhoMaximo}px`;
-      pixels[i].style.width = `${tamanhoMaximo}px`;
-    }
-    else {
-      board.style.height = parseInt(`${novoTamanho * 5}`) + 10 + 'px';
-      board.style.width = parseInt(`${novoTamanho * 5}`) + 10 + 'px';
-      pixels[i].style.width = `${novoTamanho}px`;
-      pixels[i].style.height = `${novoTamanho}px`;
+function alterarQuadro() {
+  let contadorDePixels = 0;
+  const tamanhoMaximo = 50;
+  const tamanhoMinimo = 5;
+  let novoTamanho = document.querySelectorAll('.tamanho')[0].value;
+  if(novoTamanho > 50){
+    novoTamanho = 50;
+  }
+  else if(novoTamanho < 5){
+    novoTamanho = 5;
+  }
+  if (novoTamanho*novoTamanho > pixels.length) {
+    for (let i = 0; i < (novoTamanho * novoTamanho) - pixels.length; i += 1) {
+        board.style.height = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+        board.style.width = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+      if (pixels.length <= 50) {
+        const novoPixel = criarPixel();
+        board.appendChild(novoPixel);
+      }
     }
   }
+  else {
+    for (let i = 0; i < pixels.length - (novoTamanho * novoTamanho); i += 1){
+      pixels[i].remove();
+    }
+    board.style.height = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+    board.style.width = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+    }
+  pixels = document.querySelectorAll('.pixel')
   resetarPixelBoard();
 }
+botao[1].addEventListener('click', alterarQuadro);
 botao[0].addEventListener('click', resetarPixelBoard);
-botao[1].addEventListener('click', redimencionarBoard);
