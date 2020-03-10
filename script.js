@@ -2,8 +2,17 @@ window.onload = function() {
 
   sessionStorage.setItem('backgroundColor', 'black');
 
+  function corAleatoria () {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    let cor = `rgb(${r}, ${g}, ${b})`;
+    return cor;
+  }
+
   let cores = document.getElementsByClassName('color');
-  let cor = ["black","orange", "blue", "green"];
+  let cor = ["black",corAleatoria(), corAleatoria(), corAleatoria()];
 
   for (let i = 0; i < cores.length; i += 1) {
     cores[i].style.backgroundColor = cor[i];

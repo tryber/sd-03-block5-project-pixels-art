@@ -2,7 +2,7 @@ body {
   background-color: lightgrey;
 }
 
-.selected {
+color.selected {
   border: 1px brown;
 }
 
