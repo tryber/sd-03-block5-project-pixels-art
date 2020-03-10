@@ -1,18 +1,14 @@
+main {
+    padding-top: 100px;
+}
+
+/* Cabeçalho + Rodapé */
 a {
     text-decoration: none; cursor: pointer;
 }
 
 a:hover {
     color:  #047248;
-}
-
-#Rising {
-    text-align: center; color: white;
-    font-weight: 5vh;
-    font-size: 3vh;
-    font-weight: 300;
-    font-family: Apple Chancery, cursive
-    
 }
 
 header {
@@ -68,172 +64,86 @@ footer ul li a {
     font-size: 3rem;
 }
 
-body{
-    padding-top: 100px;
-    padding-left: 50px;
-   
+
+
+table {
+    border-spacing: 0;
+}
+  
+input {
+    font-size: 20px;
+    height: 2em;
+    margin: 5px;
+    border-bottom: 2px solid rgb(5, 73, 5);
 }
 
-.container {
+.button:hover {
+    font-size: 20px;
+    height: 2em;
+    margin: 5px;
+    opacity: 0.8;
+    background-color: rgb(46, 121, 78);
+}
+  
+.color {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+
+}
+  
+.color:hover {
+    border: 1px solid rgb(46, 121, 78);
+    height: 50px;
+    width: 50px;
+    opacity: 0.8;
+    border-radius: 15%;
+}
+
+#tools:hover {
+    opacity: 0.5;
+}
+
+.paleta {
     display: flex;
-    flex-direction: row;
-    max-width: 1000px;
-    height: auto;
-	margin: 0 auto;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
 }
-
-.container-1 {
+  
+.pixel_board {
     display: flex;
-    flex-direction: row;
-    max-width: 800px;
-    height: auto;
-	margin: 0 auto;
-    align-items: center;
-}
-
-
-.item {
-    max-width: auto;
-    text-align: center;
-    flex-grow: 1;
-}
-
-.item-1 {
-    width: 450px;
-    height: 450px;
-    position: relative;
+    flex-direction: row-reverse;
+    justify-content: center;
     margin: 0 auto;
-    padding-top: 75px;
+    width: auto;
+
 }
 
-.item-2 {
-    flex-direction: row;
-    max-width: auto;
-    padding-right: 50px;
-    text-align: center;
-    flex-grow: 1;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+#tools img{
+    
+    max-width: 50px;
 }
 
-.item-2 img {
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
+.pixel {
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
 }
 
-.item-2 img:hover {
-    width: 200px;
-    height: 200px;
-    opacity: 0.9;
-    border-color: black;
+.eraser {
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
 }
-
-
-.memeImage {
-    background-color: #0fa36b;
-    margin: 10px 5px;
-    padding: 5px;
-    position: relative;
-}
-
-.editImage {
-    background-color: rgba(255, 255, 255, 1);
-    height: 400px;
-    width: 400px;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    position: absolute;
-}
-
-.memeText {
-    position: absolute;
-    margin: 0 auto;
-    text-align: center;
-    width: 395px;
-    font-family: Arial;
-    font-size: 35Px;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow:2px 2px 0 black,
-      -2px -2px 0 black,
-      2px -2px 0 black,
-      -2px 2px 0 black,
-      0px 2px 0 black,
-      2px 0px 0 black,
-      0px -2px 0 black,
-      -2px 0px 0 black,
-      2px 2px 5px black;
-    word-break: break-all;
-    top:75px;
-    padding-left: 5px;
-}
-
-
-.memeTextDown {
-    position: absolute;
-    margin: 0 auto;
-    text-align: center;
-    width: 395px;
-    font-family: Arial;
-    font-size: 35Px;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow:2px 2px 0 black,
-      -2px -2px 0 black,
-      2px -2px 0 black,
-      -2px 2px 0 black,
-      0px 2px 0 black,
-      2px 0px 0 black,
-      0px -2px 0 black,
-      -2px 0px 0 black,
-      2px 2px 5px black;
-    word-break: break-all;
-    bottom: 50px; 
-    padding-left: 5px;
-}
-
-
-@media (max-width: 700px){
-    header{flex-direction: column; margin-bottom: 25px;}
-    .container {
-        display: block;
+  
+@media (max-width:700px){
+    .pixel_board {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: auto;
     }
-    .container-1 {
-        flex-direction: column;
-        height: auto;
-        margin: 0 auto;
-        align-items: center;
-    }
-    .item-1 {
-        width: 450px;
-        height: 450px;
-        position: relative;
-        margin: 0 auto;
-        
-    }
-    .logoImage {
-        width: 300px;
-        margin: 0 auto;
-        
-    }
-    .item-2 {
-        flex-direction: column;
-        flex-grow: 1;
-        list-style-type: none;
-        display: block;
-        justify-content: space-between;
-        padding-right: 50px;
-        position: relative;
-    }
-    footer p {
-        display: none;
-    }
-
 }
-

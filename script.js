@@ -12,7 +12,6 @@ function erasePixel(event) {
 };
 
 function reloadColors(event) {
-  document.querySelectorAll('.color')[0].style.border = "3px solid green"; 
   document.querySelectorAll('.color')[0].style.backgroundColor = 'black';
   for (let cont = 1; cont < 4; cont += 1) {
     document.querySelectorAll('.color')[cont].style.backgroundColor = rgbRandom();
