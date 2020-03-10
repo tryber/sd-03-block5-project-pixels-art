@@ -1,8 +1,9 @@
 const pixels = document.querySelectorAll('.pixel');
 const paleta = document.querySelectorAll('.color');
 const cores = ['black', 'paleta-2', 'paleta-3', 'paleta-4'];
-const reset = document.querySelector('.botao');
+const botao = document.querySelectorAll('.botao');
 const paletaAtual = ['preta', '2', '3', '4'];
+const board = document.querySelectorAll('.board')[0];
 let cor = 'black';
 function geraCor() {
   const hexadecimais = '0123456789ABCDEF';
@@ -46,4 +47,33 @@ function resetarPixelBoard() {
     pixels[i].style.backgroundColor = 'white';
   }
 }
-reset.addEventListener('click', resetarPixelBoard);
+function redimencionarBoard() {
+  novoTamanho = document.querySelectorAll('.tamanho')[0].value;
+  console.log(board);
+  for (let i = 0; i < pixels.length; i += 1) {
+    if (novoTamanho < 5) {
+      const tamanhoMinimo = 5;
+      board.style.height = tamanhoMinimo * 5 + 10 + 'px';
+      board.style.width = tamanhoMinimo* 5 + 10 + 'px';
+      pixels[i].style.height = tamanhoMinimo + 'px';
+      pixels[i].style.width = tamanhoMinimo + 'px';
+    }
+    else if (novoTamanho > 50) {
+      const tamanhoMaximo = 50;
+      board.style.height = tamanhoMaximo * 5 + 10 + 'px';
+      board.style.width = tamanhoMaximo * 5 + 10 + 'px';
+      pixels[i].style.height = tamanhoMaximo + 'px';
+      pixels[i].style.width = tamanhoMaximo + 'px';
+    }
+    else { 
+      board.style.height = novoTamanho * 5 + 10 + 'px';
+      board.style.width = novoTamanho * 5 + 10 + 'px';
+      pixels[i].style.width = novoTamanho + 'px';
+      pixels[i].style.height = novoTamanho + 'px';
+    }
+  }
+  resetarPixelBoard();
+}
+botao[0].addEventListener('click', resetarPixelBoard);
+botao[1].addEventListener('click', redimencionarBoard);
+  
