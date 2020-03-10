@@ -1,14 +1,17 @@
-const coresDisponiveis = document.querySelectorAll('.color');
+let a = document.getElementsByClassName('selected')[0];
+
+const coresDisponiveis = document.getElementsByClassName('color');
 for (let i = 0; i < coresDisponiveis.length; i += 1) {
   coresDisponiveis[i].addEventListener('click', function () {
-    document.querySelector('.selected').classList.remove('selected');
+    a.classList.remove('selected');
     coresDisponiveis[i].classList.add('selected');
+    a = document.getElementsByClassName('selected')[0];
   });
 }
 
-const aplicaCor = document.querySelectorAll('.pixel');
+const aplicaCor = document.getElementsByClassName('pixel');
 for (let i = 0; i < aplicaCor.length; i += 1) {
   aplicaCor[i].addEventListener('click', function () {
-    aplicaCor[i].style.backgroundColor = document.querySelector('.selected').id;
+    aplicaCor[i].style.backgroundColor = document.getElementsByClassName('selected')[0].id;
   });
 }
