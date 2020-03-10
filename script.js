@@ -21,9 +21,10 @@ window.onload = function (){
         pixels[i].style.backgroundColor = sessionStorage.getItem("backgroundColor")
         })
     }
-        /*var limpaQuadro = document.getElementsByClassName("pixel")
-
-        limpaQuadro.addEventListener('click', function() {
-        for (let i = 0; i < pixel.length; i += 1)
-        pixel[i].style.backgroundColor = 'white';*/
-}
+    let limpar = document.getElementsByClassName('limpaQuadro')
+        limpar[0].addEventListener('click', function() {
+        for (let i = 0; i < pixels.length; i += 1){
+        pixels[i].style.backgroundColor = 'white';
+        }
+    })
+}   
