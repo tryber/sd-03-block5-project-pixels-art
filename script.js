@@ -2,7 +2,10 @@ document.body.onload = adcElementos;
 var colorPallet = document.getElementById("color-palette")
 var pixelBoard = document.getElementById("pixel-board")
 var colorSelect = document.getElementsByClassName("selected")
-var colorPicked = 'black'
+selecCor = document.getElementById('black')
+selecCor.classList.add("selected")
+colorPicked = 'black'
+
 
 function adcElementos() {
   for (var i = 1; i <= 25; i++) {
@@ -13,10 +16,22 @@ function adcElementos() {
   }
 }
 
+// function riscaTexto(event) {
+//   var getId = event.target.id;
+//   document.getElementById(getId).classList.toggle('completed');
+// }
+
 function pickColor(e) {
   var idSelect = (e.target.id);
   colorPicked = `${idSelect}`
-  var div = document.getElementById('colorPicked')
+  selecCor = document.getElementById(colorPicked) 
+  document.querySelector('.selected').classList.remove('selected');
+  document.getElementById(colorPicked).classList.add('selected');
+
+  
+  // selecCor.classList.add("selected")
+  // var div = document.getElementById('colorPicked')
+    
 }
 
 function changeColor(e) {
@@ -25,5 +40,6 @@ function changeColor(e) {
   box.style.backgroundColor = colorPicked;
 
 }
+
 colorPallet.addEventListener('click', pickColor)
 pixelBoard.addEventListener('click', changeColor)
