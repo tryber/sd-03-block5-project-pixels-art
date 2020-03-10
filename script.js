@@ -56,14 +56,20 @@ function resetarPixelBoard() {
   paleta[0].className = `color paleta-${paletaAtual[0]} selected`;
   cor = 'black';
 }
+function verificaTamanho(tamanho){
+  if (tamanho > 50) {
+    return 50;
+  }
+  else if (tamanho < 5) {
+    return 5;
+  }
+  else {
+    return tamanho;
+  }
+}
 function alterarQuadro() {
   let novoTamanho = document.querySelectorAll('.tamanho')[0].value;
-  if (novoTamanho > 50) {
-    novoTamanho = 50;
-  }
-  else if (novoTamanho < 5) {
-    novoTamanho = 5;
-  }
+  novoTamanho = verificaTamanho(novoTamanho);
   if (novoTamanho * novoTamanho > pixels.length) {
     for (let i = 0; i < (novoTamanho * novoTamanho) - pixels.length; i += 1) {
       board.style.height = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
@@ -78,8 +84,8 @@ function alterarQuadro() {
     for (let i = 0; i < pixels.length - (novoTamanho * novoTamanho); i += 1) {
       pixels[i].remove();
     }
-    board.style.height = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
-    board.style.width = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
+    board.style.height = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
+    board.style.width = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
   }
   pixels = document.querySelectorAll('.pixel');
   resetarPixelBoard();
