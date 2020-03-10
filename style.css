@@ -5,26 +5,7 @@
     border: solid 1px black;
     margin-left: 0px;
 }
-.black{
-    background-color: black;
-}
-#black-palette{
-}
-.blue{
-    background-color: blue;
-}
-#blue-palette{
-}
-.red{
-    background-color: red;
-}
-#red-palette{
-}
-.yellow{
-    background-color: yellow;
-}
-#yellow-palette{
-}
+
 .pixel{
     background-color: white;
     width: 40px;
@@ -36,6 +17,7 @@
     position: relative;
     border: solid 1px black;
 }
+
 #pixel-board{
     width: 216px;
     height: 210px;

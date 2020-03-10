@@ -2,6 +2,7 @@ window.onload=function(){
     let cores = ['black','blue','red','yellow'];
     let paleta = document.getElementsByClassName('color');
     let pixelColor = document.getElementsByClassName('pixel');
+    let  clearBoard =document.getElementById('clear-board');
     sessionStorage.setItem('Escolha','black');
 
     for (let i = 0; i < cores.length; i+=1) {
@@ -20,6 +21,12 @@ window.onload=function(){
             pixelColor[i].style.backgroundColor = sessionStorage.getItem('Escolha');
         })
     } 
+
+    clearBoard.addEventListener('click',function(){
+        for (let i = 0; i < pixelColor.length; i+=1) {
+            pixelColor[i].style.backgroundColor = 'white';
+        } 
+    })
 
   
 }
