@@ -21,4 +21,9 @@ window.onload = function (){
         pixels[i].style.backgroundColor = sessionStorage.getItem("backgroundColor")
         })
     }
+        /*var limpaQuadro = document.getElementsByClassName("pixel")
+
+        limpaQuadro.addEventListener('click', function() {
+        for (let i = 0; i < pixel.length; i += 1)
+        pixel[i].style.backgroundColor = 'white';*/
 }
