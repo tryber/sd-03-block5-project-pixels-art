@@ -21,8 +21,8 @@ window.onload = function (){
         pixels[i].style.backgroundColor = sessionStorage.getItem("backgroundColor")
         })
     }
-    let limpar = document.getElementsByClassName('limpaQuadro')
-        limpar[0].addEventListener('click', function() {
+    let limpar = document.getElementById('clear-board')
+        limpar.addEventListener('click', function() {
         for (let i = 0; i < pixels.length; i += 1){
         pixels[i].style.backgroundColor = 'white';
         }
