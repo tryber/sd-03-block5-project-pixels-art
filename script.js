@@ -2,17 +2,15 @@ window.onload= function(){
    caneta ="black"
    let valor= document.getElementsByClassName("generate-board")[0];
    let tamanho= document.getElementsByClassName("board-size")[0];
-
-
-   let apTb= document.getElementsByClassName("tabela")[0];
+   
    function apagaTabela(){
-      apTb.parentNode.removeChild(apTb)
-      let recria= document.createElement("section")
-      recria.classList.add("tabela")
-      document.getElementsByClassName("recria")[0].appendChild(recria)
+      let tabela=document.querySelectorAll(".tabela")
+      tabela.forEach(i =>{
+         i.innerHTML=""
+      })
    }
-  valor.addEventListener("click", apagaTabela)
-
+   valor.addEventListener("click", apagaTabela)
+   
 
    function gerarTabela(){
       if(tamanho.value<5 || tamanho.value>50){
@@ -35,12 +33,11 @@ window.onload= function(){
       }
    }
    valor.addEventListener("click", gerarTabela)
-   
 
 }
 function setcaneta(pixel){
    caneta=pixel
- }
+}
 function trocaCor(selected){
    selected.style.backgroundColor=caneta;
 }

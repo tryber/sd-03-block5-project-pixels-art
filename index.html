@@ -10,7 +10,7 @@
 <body>
     <h1 id="title">Paleta de Cores</h1>
     <section id="color-palette">
-        <div class="color selected" onclick="setcaneta('black')"></div>
+        <div class="color black selected" onclick="setcaneta('black')"></div>
         <div class="color azul" onclick="setcaneta('blue')"></div>
         <div class="color vermelho" onclick="setcaneta('red')"></div>
         <div class="color verde" onclick="setcaneta('green')"></div>
@@ -18,45 +18,43 @@
     <table id="pixel-board">
         <input type="number" name="digite" min="5" max="50" class="board-size">
         <button class="generate-board">escolha um valor</button>
-        <section class="recria">
-            <section class="tabela">
-                <section>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                </section>
-                <section>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                </section>
-                <section>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                </section>
-                <section>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                </section>
-                <section>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                    <div class="pixel" onclick="trocaCor(this)"></div>
-                </section>
+        <section class="tabela">
+            <section class="tab">
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
             </section>
-        </section>    
+            <section class="tab">
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+            </section>
+            <section class="tab">
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+            </section>
+            <section class="tab">
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+            </section>
+            <section class="tab">
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+                <div class="pixel" onclick="trocaCor(this)"></div>
+            </section>
+        </section> 
     </table>
     <script src="script.js"></script>
 </body>
