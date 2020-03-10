@@ -5,8 +5,11 @@ const botao = document.querySelectorAll('.botao');
 const paletaAtual = ['preta', '2', '3', '4'];
 const board = document.querySelectorAll('.board')[0];
 let cor = 'black';
+function atribuirCorAoPixel() {
+  this.style.backgroundColor = cor;
+}
 function criarPixel() {
-  pixel = document.createElement('div');
+  const pixel = document.createElement('div');
   pixel.className = 'pixel';
   pixel.addEventListener('click', atribuirCorAoPixel);
   return pixel;
@@ -38,9 +41,6 @@ function selecionaCor() {
     }
   }
 }
-function atribuirCorAoPixel() {
-  this.style.backgroundColor = cor;
-}
 for (let i = 0; i < paleta.length; i += 1) {
   paleta[i].addEventListener('click', selecionaCor);
 }
@@ -57,20 +57,17 @@ function resetarPixelBoard() {
   cor = 'black';
 }
 function alterarQuadro() {
-  let contadorDePixels = 0;
-  const tamanhoMaximo = 50;
-  const tamanhoMinimo = 5;
   let novoTamanho = document.querySelectorAll('.tamanho')[0].value;
-  if(novoTamanho > 50){
+  if (novoTamanho > 50) {
     novoTamanho = 50;
   }
-  else if(novoTamanho < 5){
+  else if (novoTamanho < 5) {
     novoTamanho = 5;
   }
-  if (novoTamanho*novoTamanho > pixels.length) {
+  if (novoTamanho * novoTamanho > pixels.length) {
     for (let i = 0; i < (novoTamanho * novoTamanho) - pixels.length; i += 1) {
-        board.style.height = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
-        board.style.width = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+      board.style.height = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+      board.style.width = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
       if (pixels.length <= 50) {
         const novoPixel = criarPixel();
         board.appendChild(novoPixel);
@@ -83,7 +80,7 @@ function alterarQuadro() {
     }
     board.style.height = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
     board.style.width = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
-    }
+  }
   pixels = document.querySelectorAll('.pixel')
   resetarPixelBoard();
 }
