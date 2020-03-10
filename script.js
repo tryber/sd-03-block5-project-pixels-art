@@ -59,7 +59,7 @@ function resetarPixelBoard() {
 function verificaTamanho(tamanho) {
   if (tamanho > 50) {
     return 50;
-  }else if (tamanho < 5) {
+  } else if (tamanho < 5) {
     return 5;
   }
   return tamanho;
@@ -71,10 +71,8 @@ function alterarQuadro() {
   board.style.width = `${(novoTamanho * 40) + (novoTamanho * 2)}px`;
   if (novoTamanho ** 2 > pixels.length) {
     for (let i = 0; i < (novoTamanho ** 2) - pixels.length; i += 1) {
-      if (pixels.length <= 50) {
-        const novoPixel = criarPixel();
-        board.appendChild(novoPixel);
-      }
+      const novoPixel = criarPixel();
+      board.appendChild(novoPixel);
     }
   } else {
     for (let i = 0; i < pixels.length - (novoTamanho ** 2); i += 1) {
