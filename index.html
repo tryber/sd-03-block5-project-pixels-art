@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paleta de Cores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1 id="title">Paleta de Cores</h1>
+  </header>
+
+  <div id="color-palette" class="container">
+    <div class="color selected" style="background-color: black;"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+  </div>
+  <br>
+  <div id="pixel-board" class="pixelboard">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+</div>
+
+<div>
+  <label for="input-text">Escolha o tamanho dos pixels: </label>
+  <input type="text" class="board-size" name="input-text" id="input-text" size="3" min="5" max="50" maxlength="2">
+  <button class="generate-board">Gerar borda</button>
+</div>
+
+<div>
+  <button id="clear-board">Limpa tudo</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
