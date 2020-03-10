@@ -1,19 +1,14 @@
-let corSelecionada = document.getElementsByClassName("selected");
-let coresDisponiveis = document.getElementsByClassName("color");
-let aplicaCor = document.getElementsByClassName("pixel");
-let i;
-let j;
-
-for (i = 0; i < 4; i++) {
-    function selecionaNovaCor () {
-        corSelecionada.classList.remove("selected");
-        coresDisponiveis[i].classList.add("selected");
-    }
-    coresDisponiveis[i].addEventListener("click", selecionaNovaCor);
+let coresDisponiveis = document.querySelectorAll('.color');
+for (let i = 0; i < coresDisponiveis.length; i += 1) {
+    coresDisponiveis[i].addEventListener('click', function() {
+        document.querySelector('.selected').classList.remove('selected');
+        coresDisponiveis[i].classList.add('selected');
+    });
 }
-for (j = 0; j < 25; j++) {
-    function preencheCor () {
-        aplicaCor[j].style.backgroundColor = corSelecionada.innerHTML;
-    }
-    aplicaCor[j].addEventListener("click", preencheCor);
+
+let aplicaCor = document.querySelectorAll('.pixel');
+for (let i = 0; i < aplicaCor.length; i += 1) {
+    aplicaCor[i].addEventListener('click', function() {
+        aplicaCor[i].style.backgroundColor = document.querySelector('.selected').id;
+    });
 }
