@@ -66,8 +66,8 @@ function alterarQuadro() {
   }
   if (novoTamanho * novoTamanho > pixels.length) {
     for (let i = 0; i < (novoTamanho * novoTamanho) - pixels.length; i += 1) {
-      board.style.height = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
-      board.style.width = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+      board.style.height = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
+      board.style.width = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
       if (pixels.length <= 50) {
         const novoPixel = criarPixel();
         board.appendChild(novoPixel);
@@ -75,13 +75,13 @@ function alterarQuadro() {
     }
   }
   else {
-    for (let i = 0; i < pixels.length - (novoTamanho * novoTamanho); i += 1){
+    for (let i = 0; i < pixels.length - (novoTamanho * novoTamanho); i += 1) {
       pixels[i].remove();
     }
-    board.style.height = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
-    board.style.width = parseInt(`${novoTamanho * 40}`) + parseInt(`${novoTamanho * 2}`)  + 'px';
+    board.style.height = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
+    board.style.width = (novoTamanho * 40) + (novoTamanho * 2) + 'px';
   }
-  pixels = document.querySelectorAll('.pixel')
+  pixels = document.querySelectorAll('.pixel');
   resetarPixelBoard();
 }
 botao[1].addEventListener('click', alterarQuadro);
