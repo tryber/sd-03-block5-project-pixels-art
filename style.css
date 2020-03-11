@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  display: table-cell;
+  padding: 0;
+}
+
+header {
+  font-size: 22pt;
+  margin-left: 400px;
+
+}
+
+table {
+  
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+#black {
+  background-color: black;
+}
+
+#blue {
+  background-color: blue;
+}
+
+.color {
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  height: 28px;
+  padding: 0;
+  width: 28px;
+}
+
+#green {
+  background-color: green;
+}
+
+.pixel {
+  background-color: white;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+
+.pixel-board{
+  margin-left: 450px;
+}
+
+.pixel-palette{
+  margin-left: 500px;
+}
+
+#red {
+  background-color: red;
+}
