@@ -3,15 +3,19 @@
 }
 
 body {
+  background-color: antiquewhite;
   display: table-cell;
   padding: 0;
 }
 
 header {
   font-size: 22pt;
+  margin-left: 400px;
+
 }
 
 table {
+  
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -48,6 +52,14 @@ td, th {
   margin: 0;
   padding: 0;
   width: 40px;
+}
+
+.pixel-board{
+  margin-left: 450px;
+}
+
+.pixel-palette{
+  margin-left: 500px;
 }
 
 #red {
