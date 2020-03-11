@@ -4,7 +4,7 @@ window.onload=function(){
     let pixelColor = document.getElementsByClassName('pixel');
     let clearBoard =document.getElementById('clear-board');
     let generateBoard =document.getElementById(`generate-board`);
-    
+
     sessionStorage.setItem('Escolha','black');
 
     function aleatorio(){
