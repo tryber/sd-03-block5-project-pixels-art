@@ -1,6 +1,18 @@
 window.onload = function () {
     this.sessionStorage.setItem("uColor", "black")
-    let colorArray = ["black", "red", "green", "blue"]
+    
+    function random() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+      
+        const cor = `rgb(${r}, ${g}, ${b})`;
+        return cor;
+    }
+
+    
+    let colorArray = ["black", random(), random(), random()]
+    
     let palColor = document.getElementsByClassName("color")
     for (let i = 0; i < colorArray.length; i+=1) {
         palColor[i].style.backgroundColor = colorArray[i];
@@ -10,7 +22,6 @@ window.onload = function () {
             let bgcolor = palColor[i].style.backgroundColor
             sessionStorage.setItem("uColor", bgcolor)
             palColor[i].classList.add("selected")
-            console.log(palColor[i].classList)
         })
     }
 
@@ -37,39 +48,39 @@ window.onload = function () {
     let size = document.getElementById("board-size");
     let generate = document.getElementById("generate-board");
     let board = document.getElementById("pixel-board");
-
+    
+     
+    
     
 
     generate.addEventListener('click', function(){
-        console.log (size.value)
-        let appPixels = (size.value*size.value) - pixels.length;
-        console.log (appPixels)
-        let multiplier = parseInt(size.value)+0.5;
-        console.log (multiplier)
-        let newDimensions = (40 * multiplier) + "px";
-        console.log (newDimensions)
+        let n = parseInt(size.value)
+        let newPixelNumber = n*n
+        let newDimensions = (42 * n) + "px";
         board.style.height = newDimensions;
-        console.log (board.style.height)
         board.style.width = newDimensions;
-        console.log (board.style.width);
-        
 
-        for (let z = 0; z<appPixels; z+=1){
-            let addPixel = document.createElement("div");
-            addPixel.className = "pixel";
-            board.appendChild(addPixel);
+        document.querySelectorAll('.pixel').forEach(e => e.remove());
+        if(n<5){
+            n = 5;
         }
-
-        for (let x = 0; x < pixels.length; x+=1) {
-
-
-            pixels[x].addEventListener('click', function () {
+        else if(n>50){
+            n = 50;
+        }
+       for (let k = 0; k < newPixelNumber; k++) {
+           let newPixel = document.createElement("div");
+           newPixel.classList = "pixel"
+           newPixel.addEventListener('click', function () {
                 let coloring = sessionStorage.getItem("uColor")
-                pixels[x].style.backgroundColor = coloring;
-            })
-    
+                newPixel.style.backgroundColor = coloring;
+           })
+            document.getElementById("pixel-board").appendChild(newPixel)
         }
     })
+
+        
+
+    
 
 
 
