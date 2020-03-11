@@ -12,7 +12,7 @@ window.onload = function () {
 
     
     let colorArray = ["black", random(), random(), random()]
-    
+
     let palColor = document.getElementsByClassName("color")
     for (let i = 0; i < colorArray.length; i+=1) {
         palColor[i].style.backgroundColor = colorArray[i];
@@ -55,18 +55,21 @@ window.onload = function () {
 
     generate.addEventListener('click', function(){
         let n = parseInt(size.value)
-        let newPixelNumber = n*n
-        let newDimensions = (42 * n) + "px";
-        board.style.height = newDimensions;
-        board.style.width = newDimensions;
-
-        document.querySelectorAll('.pixel').forEach(e => e.remove());
+        
         if(n<5){
             n = 5;
         }
         else if(n>50){
             n = 50;
         }
+        
+        let newPixelNumber = n*n
+        let newDimensions = (42 * n) + "px";
+        board.style.height = newDimensions;
+        board.style.width = newDimensions;
+
+        document.querySelectorAll('.pixel').forEach(e => e.remove());
+        
        for (let k = 0; k < newPixelNumber; k++) {
            let newPixel = document.createElement("div");
            newPixel.classList = "pixel"
