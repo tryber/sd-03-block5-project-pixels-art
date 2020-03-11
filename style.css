@@ -1,0 +1,47 @@
+header {
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  display: inline-block;
+  flex-wrap: wrap;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 3px;
+  text-align: center;
+  width: 100%;
+}
+
+article {
+  align-items: center;
+  background-color: burlywood;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+}
+
+.paleta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.controles {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+td {
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+}
+
+.color , .selected {
+  border: 1px solid black;
+  height: 50px;
+  margin: 1px;
+  position: relative;
+  width: 50px;
+}
