@@ -12,7 +12,7 @@ function changeSelectedColor(newColor) {
 
 function clearBoard() {
   const listaElem = document.querySelectorAll('.pixel');
-  for (let i = 0; i < listaElem.length; i+= 1) {
+  for (let i = 0; i < listaElem.length; i += 1) {
     listaElem[i].style.backgroundColor = 'white';
   }
 }
