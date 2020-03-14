@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1 id="title">Paleta de Cores</h1>
+    <br />
+    <div id="color-palette">
+      <div
+        class="color selected"
+        id="black"
+        style="background-color: black;"
+        onclick="changeSelectedColor('black')"
+      ></div>
+      <div
+        class="color"
+        id="red"
+        style="background-color: red;"
+        onclick="changeSelectedColor('red')"
+      ></div>
+      <div
+        class="color"
+        id="green"
+        style="background-color: green;"
+        onclick="changeSelectedColor('green')"
+      ></div>
+      <div
+        class="color"
+        id="blue"
+        style="background-color: blue;"
+        onclick="changeSelectedColor('blue')"
+      ></div>
+    </div>
+    <br />
+    <table id="pixel-board" class="pixel-board">
+      <tbody>
+        <tr>
+          <td class="pixel" id="pixel1" onclick="changeColor('pixel1')"></td>
+          <td class="pixel" id="pixel2" onclick="changeColor('pixel2')"></td>
+          <td class="pixel" id="pixel3" onclick="changeColor('pixel3')"></td>
+          <td class="pixel" id="pixel4" onclick="changeColor('pixel4')"></td>
+          <td class="pixel" id="pixel5" onclick="changeColor('pixel5')"></td>
+        </tr>
+        <tr>
+          <td class="pixel" id="pixel6" onclick="changeColor('pixel6')"></td>
+          <td class="pixel" id="pixel7" onclick="changeColor('pixel7')"></td>
+          <td class="pixel" id="pixel8" onclick="changeColor('pixel8')"></td>
+          <td class="pixel" id="pixel9" onclick="changeColor('pixel9')"></td>
+          <td class="pixel" id="pixel10" onclick="changeColor('pixel10')"></td>
+        </tr>
+        <tr>
+          <td class="pixel" id="pixel11" onclick="changeColor('pixel11')"></td>
+          <td class="pixel" id="pixel12" onclick="changeColor('pixel12')"></td>
+          <td class="pixel" id="pixel13" onclick="changeColor('pixel13')"></td>
+          <td class="pixel" id="pixel14" onclick="changeColor('pixel14')"></td>
+          <td class="pixel" id="pixel15" onclick="changeColor('pixel15')"></td>
+        </tr>
+        <tr>
+          <td class="pixel" id="pixel16" onclick="changeColor('pixel16')"></td>
+          <td class="pixel" id="pixel17" onclick="changeColor('pixel17')"></td>
+          <td class="pixel" id="pixel18" onclick="changeColor('pixel18')"></td>
+          <td class="pixel" id="pixel19" onclick="changeColor('pixel19')"></td>
+          <td class="pixel" id="pixel20" onclick="changeColor('pixel20')"></td>
+        </tr>
+        <tr>
+          <td class="pixel" id="pixel21" onclick="changeColor('pixel21')"></td>
+          <td class="pixel" id="pixel22" onclick="changeColor('pixel22')"></td>
+          <td class="pixel" id="pixel23" onclick="changeColor('pixel23')"></td>
+          <td class="pixel" id="pixel24" onclick="changeColor('pixel24')"></td>
+          <td class="pixel" id="pixel25" onclick="changeColor('pixel25')"></td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <button id="clear-board" class="clear-board" onclick="clearBoard()">clear</button>
+  </body>
+</html>
