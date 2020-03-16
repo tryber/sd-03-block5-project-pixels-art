@@ -4,7 +4,6 @@ const pixelColor = document.getElementsByClassName('pixel');
 const clear = document.getElementById('clear-board');
 const boardSize = document.getElementById('board-size');
 const inputSize = document.getElementById('generate-board');
-const tr = document.getElementsByTagName('tr');
 const tabela = document.getElementsByTagName('table');
 
 // Seletor de cores - Paleta
@@ -12,8 +11,8 @@ const selectionPalette = function (e) {
   selectedColor = window.getComputedStyle(e.target).getPropertyValue('background-color');
     // Class Selected
   for (let i = 0; i < colorSelector.length; i += 1) {
-      colorSelector[i].classList.remove('selected');
-    }
+    colorSelector[i].classList.remove('selected');
+  }
   e.target.classList.add('selected');
 };
 
@@ -79,7 +78,7 @@ window.onload = function () {
     colorSelector[i].addEventListener('click', selectionPalette, false);
   }
 
-  initPaint ();
+  initPaint();
 
   clear.addEventListener('click', clearBoard);
 
