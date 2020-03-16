@@ -6,21 +6,20 @@ body {
 
 h1 {
   border-bottom: 2px solid black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Courier New, Courier, monospace;
   margin: 50px;
 }
 
 footer {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Courier New, Courier, monospace;
   font-size: 15px;
   margin: 50px;
 }
 
 table {
   border-spacing: 0;
-  margin: 0;
   margin: auto;
   padding: 0;
 }
