@@ -19,7 +19,6 @@ const selectionPalette = function (e) {
 
 // Pintar Quadro
 function pintaPixel(e){
-  console.log(e.target)
   e.target.style.backgroundColor = selectedColor;
   e.target.style.borderColor = selectedColor;
 }
