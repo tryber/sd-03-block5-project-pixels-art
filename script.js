@@ -5,7 +5,6 @@ const clear = document.getElementById('clear-board');
 const boardSize = document.getElementById('board-size');
 const inputSize = document.getElementById('generate-board');
 const tr = document.getElementsByTagName('tr');
-const td = document.getElementsByTagName('td');
 const tabela = document.getElementsByTagName('table');
 
 // Seletor de cores - Paleta
@@ -19,7 +18,7 @@ const selectionPalette = function (e) {
 };
 
 // Pintar quadro
-function initPaint(){
+function initPaint() {
   for (let i = 0; i < pixelColor.length; i += 1) {
     pixelColor[i].addEventListener('click', function () {
       pixelColor[i].style.backgroundColor = selectedColor;
@@ -55,21 +54,15 @@ function aumentaQuadro() {
   initPaint();
 }
 
-function criaQuadro () {
-  for (let i = 0; i < tr.length; i += 1) {
-    tr[i].remove();
-  }
-}
-
 // Cores Aleatórias
-function randomColor () {
+function randomColor() {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
   return (`rgb(${r} , ${g}  , ${b})`);
 }
 
-function carregarAleatorias () {
+function carregarAleatorias() {
   for (let i = 0; i < colorSelector.length; i += 1) {
     if (i > '0' && i < colorSelector.length) {
       colorSelector[i].style.backgroundColor = randomColor();
@@ -82,15 +75,15 @@ function carregarAleatorias () {
 window.onload = function () {
   sessionStorage.setItem('color', 'black');
 
-  for (let i = 0; i < colorSelector.length; i++) {
-    colorSelector[i].addEventListener('click', selectionPalette, false)
+  for (let i = 0; i < colorSelector.length; i += 1) {
+    colorSelector[i].addEventListener('click', selectionPalette, false);
   }
 
-  initPaint()
+  initPaint ();
 
   clear.addEventListener('click', clearBoard);
 
   inputSize.addEventListener('click', aumentaQuadro);
 
   carregarAleatorias();
-}
+};
