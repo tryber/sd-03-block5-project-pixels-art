@@ -18,7 +18,7 @@ const selectionPalette = function (e) {
 };
 
 // Pintar Quadro
-function pintaPixel(e){
+function pintaPixel(e) {
   e.target.style.backgroundColor = selectedColor;
   e.target.style.borderColor = selectedColor;
 }
@@ -74,7 +74,7 @@ window.onload = function () {
     colorSelector[i].addEventListener('click', selectionPalette, false);
   }
 
-  pixelBoard.addEventListener('click', pintaPixel)
+  pixelBoard.addEventListener('click', pintaPixel);
 
   clear.addEventListener('click', clearBoard);
 
