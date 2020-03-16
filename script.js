@@ -5,6 +5,7 @@ const clear = document.getElementById('clear-board');
 const boardSize = document.getElementById('board-size');
 const inputSize = document.getElementById('generate-board');
 const tabela = document.getElementsByTagName('table');
+const pixelBoard = document.getElementById('pixel-board');
 
 // Seletor de cores - Paleta
 const selectionPalette = function (e) {
@@ -16,14 +17,11 @@ const selectionPalette = function (e) {
   e.target.classList.add('selected');
 };
 
-// Pintar quadro
-function initPaint() {
-  for (let i = 0; i < pixelColor.length; i += 1) {
-    pixelColor[i].addEventListener('click', function () {
-      pixelColor[i].style.backgroundColor = selectedColor;
-      pixelColor[i].style.borderColor = selectedColor;
-    });
-  }
+// Pintar Quadro
+function pintaPixel(e){
+  console.log(e.target)
+  e.target.style.backgroundColor = selectedColor;
+  e.target.style.borderColor = selectedColor;
 }
 
 // Botão de limpar
@@ -50,7 +48,6 @@ function aumentaQuadro() {
       trCriado.appendChild(tdCriado);
     }
   }
-  initPaint();
 }
 
 // Cores Aleatórias
@@ -78,7 +75,7 @@ window.onload = function () {
     colorSelector[i].addEventListener('click', selectionPalette, false);
   }
 
-  initPaint();
+  pixelBoard.addEventListener('click', pintaPixel)
 
   clear.addEventListener('click', clearBoard);
 
