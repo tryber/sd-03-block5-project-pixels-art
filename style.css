@@ -1,29 +1,28 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
 .color {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border: solid 1px black;
-    margin-left: 0px;
+  border: 1px solid black;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
-​
-.pixel{ 
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    border-spacing: 0px;
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-    position: relative;
-    border: solid 1px black;
+
+.pixel{
+  background-color: white;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
 }
-#pixel-board{
-    display: flex;
-    flex-direction: column;
-    border-spacing: 0px;
-    margin: 0px;
-    padding: 0px;
-}
-.linha {
-    display: flex;
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
