@@ -8,6 +8,7 @@ window.onload = function() {
   sessionStorage.setItem('Escolha','black');
 
   function colorGenerate(){
+    let simbolo = `0123456789ABCDEF`;
     let rand = `#`;
     for(var i=0;i<6;i++){
   rand += simbolo[Math.floor(Math.random()*16)];
@@ -32,3 +33,4 @@ window.onload = function() {
   
 
 }
+console.log("hello, world")
