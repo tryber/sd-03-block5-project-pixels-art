@@ -13,12 +13,31 @@ function makeColor() {
     return newRbg;
 }
   let pixelColor = document.getElementsByClassName('pixel');
+  let paleta = document.getElementsByClassName('color');
+  let cores = ['black',makeColor(),makeColor(),makeColor()];
+  for (let i = 0; i < cores.length; i+=1) {
+    paleta[i].style.backgroundColor = cores[i];
+    paleta[i].addEventListener('click', function () {
+    let selected = document.getElementsByClassName('selected');
+    selected[0].classList.remove('selected');
+    let corClicada = paleta[i].style.backgroundColor;
+    sessionStorage.setItem('Escolha', corClicada);
+    paleta[i].classList.add('selected');
+    })
+}
+for (let i = 0; i < pixelColor.length; i+=1) {
+    pixelColor[i].addEventListener('click', function () {
+        pixelColor[i].style.backgroundColor = sessionStorage.getItem('Escolha');
+    })
+} 
+
   let clearBoard =document.getElementById('clear-board');
   clearBoard.addEventListener('click',function(){
       for (let i = 0; i < pixelColor.length; i+=1) {
           pixelColor[i].style.backgroundColor = 'white';
         }
     })
+
     let generateBoard =document.getElementById(`generate-board`);
     generateBoard.addEventListener('click',function(){
         let n = document.getElementById('board-size').value;
