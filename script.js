@@ -12,4 +12,12 @@ function makeColor() {
     var newRbg = 'rgb(' + arr[0] + ',' + arr[1] + ',' + arr[2] + ')';
     return newRbg;
 }
+
+let pixelColor = document.getElementsByClassName('pixel');
+let clearBoard =document.getElementById('clear-board');
+clearBoard.addEventListener('click',function(){
+    for (let i = 0; i < pixelColor.length; i+=1) {
+        pixelColor[i].style.backgroundColor = 'white';
+    } 
+})
 console.log("hey")

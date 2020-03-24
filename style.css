@@ -40,3 +40,6 @@
   flex-direction: column;
   justify-content: center;
 }
+.selected {
+  background-color: red;
+}
