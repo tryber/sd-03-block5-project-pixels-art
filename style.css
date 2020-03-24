@@ -6,23 +6,32 @@
 }
 
 .pixel{ 
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    border-spacing: 0px;
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-    position: relative;
-    border: solid 1px black;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  border: solid 1px black;
 }
+
 #pixel-board{
-    display: flex;
-    flex-direction: column;
-    border-spacing: 0px;
-    margin: 0px;
-    padding: 0px;
+  display: flex;
+  flex-direction: column;
+  border-spacing: 0px;
+  margin: 0px;
+  padding: 0px;
 }
+
 .linha {
-    display: flex;
+  display: flex;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
