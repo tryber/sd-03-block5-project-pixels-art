@@ -5,6 +5,11 @@
   width: 40px;
 }
 
+#color-palette {
+    display: flex;
+    justify-content: center;
+}
+
 .pixel{ 
   background-color: white;
   width: 40px;
