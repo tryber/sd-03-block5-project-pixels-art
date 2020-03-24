@@ -1,6 +1,13 @@
 window.onload = function changeColor() {
   let newColor = makeColor();
   let box = document.querySelector('.random').style.backgroundColor = newColor;
+  let pixelColor = document.getElementsByClassName('pixel');
+  let clearBoard =document.getElementById('clear-board');
+  clearBoard.addEventListener('click',function(){
+    for (let i = 0; i < pixelColor.length; i+=1) {
+        pixelColor[i].style.backgroundColor = 'white';
+    } 
+})
 }
 
 function makeColor() {
@@ -13,11 +20,5 @@ function makeColor() {
     return newRbg;
 }
 
-let pixelColor = document.getElementsByClassName('pixel');
-let clearBoard =document.getElementById('clear-board');
-clearBoard.addEventListener('click',function(){
-    for (let i = 0; i < pixelColor.length; i+=1) {
-        pixelColor[i].style.backgroundColor = 'white';
-    } 
-})
+
 console.log("hey")
